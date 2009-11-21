@@ -1,0 +1,100 @@
+<?xml version='1.0' ?>
+<bibleQuiz>
+
+   <header 
+      topic="Genesis"
+      author="www.biblequizzes.com"
+      created="02-11-2008" 
+      note="Let your work speak for itself, and don't interrupt - Edgar Kaiser Jr." />
+
+   <item
+     question="What would the snake do to people as a punishment for his trickery in the Garden of Eden?"
+     answerA="Kill them"
+     answerB="Eat them"
+     answerC="Live with them as pets"
+     answerD="Bite their heels" 
+     answer="D" 
+     number="1" />	
+
+  <item
+     question="What food did God give to all the animals?"
+     answerA="Other animals"
+     answerB="Plants"
+     answerC="Man"
+     answerD="Fish"
+     answer="B"
+     number="2"  />
+
+  <item
+     question="What did the snake persuade Eve to do in the Garden of Eden?"
+     answerA="Eat from the forbidden tree"
+     answerB="Give the snake food"
+     answerC="Leave the garden of Eden"
+     answerD="Make her husband eat form the forbidden tree"
+     answer="A" 
+     number="3" />
+
+  <item
+     question="How many generations were between Adam and Noach inclusing Adam and Noach?"
+     answerA="15"
+     answerB="13"
+     answerC="10"
+     answerD="6"
+     answer="C"
+     number="4" />
+
+  <item
+     question="What was the name of Adams oldest son?"
+     answerA="Cain"
+     answerB="Abel"
+     answerC="Seth"
+     answerD="Lemech"
+     answer="A"
+     number="5" />
+
+  <item 
+     question="Who planted the Garden of Eden?"
+     answerA="Adam and Eve"
+     answerB="God"
+     answerC="Chava"
+     answerD="Adam"
+     answer="B"
+     number="6" />
+	
+  <item
+     question="Whose offering did God accept?"
+     answerA="Cains"
+     answerB="Both of their offerings"
+     answerC="Abels"
+     answerD="Neither of the offerings"
+     answer="C"
+     number="7" />
+
+  <item
+     question="Which animals was the most cunning of all the animals?"
+     answerA="The monkey"
+     answerB="The snake"
+     answerC="The lion"
+     answerD="The eagle"
+     answer="B"
+     number="8" />
+
+  <item
+     question="What did Adam do to all of the animals?"
+     answerA="He gave them food"
+     answerB="He offered them as sacrifices to God"
+     answerC="He tasted them to see which ones were good to eat"
+     answerD="He gave them names"
+     answer="D" 
+     number="9" />
+  
+  <item
+     question="What did Cain bring as an offering to God?"
+     answerA="A meal offering"
+     answerB="Water"
+     answerC="Produce form the ground"
+     answerD="Animals"
+     answer="C" 
+     number="10" />
+
+</bibleQuiz> 

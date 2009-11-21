@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='Creation of the earth'
+      author='www.biblequizzes.com'
+      created='17-11-2008'
+      language='en' 
+      note="If you say 'Behold, we did not know this,' does not He who weighs the heart perceive it? - Proverbs" />
+
+   <item
+     question='Before the creation of the world as we know it, the earth:'
+     answerA='was flat'
+     answerB='was bright'
+     answerC='was empty'
+     answerD='was inhabited by fish men' 
+     answer='C'
+     number='1' />	
+
+   <item
+     question='How many days did it take for God to complete creating the world?'
+     answerA='5 day'
+     answerB='not defined'
+     answerC='7 day'
+     answerD='8 million years' 
+     answer='C'
+     number='2' />
+
+   <item
+     question='On the first day, God saw that the light was:'
+     answerA='bright'
+     answerB='too dim'
+     answerC='not'
+     answerD='good' 
+     answer='D'
+     number='3' />
+
+   <item
+     question='In order to give light to the world, on the fourth day God created how many great lights?'
+     answerA='one'
+     answerB='two'
+     answerC='three'
+     answerD='four' 
+     answer='A'
+     number='4' />
+
+   <item
+     question='On which day were oxen created?'
+     answerA='6'
+     answerB='3'
+     answerC='5'
+     answerD='2' 
+     answer='D'
+     number='5' />
+
+   <item
+     question='God called the dry ground _______; and the gathering together of the waters he called ________.'
+     answerA='sand/oceans'
+     answerB='dust/lakes'
+     answerC='land/seas'
+     answerD='earth/tides' 
+     answer='C'
+     number='6' />
+
+   <item
+     question='Man was created on what day?'
+     answerA='2'
+     answerB='4'
+     answerC='6'
+     answerD='7' 
+     answer='C'
+     number='7' />
+
+   <item
+     question='Birds were created on the same day as:'
+     answerA='the heavens'
+     answerB='the land and sea'
+     answerC='land animals'
+     answerD='sea creatures' 
+     answer='C'
+     number='8' />
+
+   <item
+     question='How much of Gods creation was man given rule over?'
+     answerA='Everything on dry land'
+     answerB='Everything in the water'
+     answerC='Beasts and creeping things'
+     answerD='All the earth' 
+     answer='D'
+     number='9' />
+
+   <item
+     question='What was the first man formed from?'
+     answerA='A monkey'
+     answerB='Dust'
+     answerC='Leaves'
+     answerD='tree branches' 
+     answer='B'
+     number='10' />
+	
+</bibleQuiz> 
+
+
+
+

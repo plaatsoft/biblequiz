@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='Significant Numbers'
+      author='www.biblequizzes.com'
+      created='17-11-2008' 
+      note="For the LORD gives wisdom; from his mouth come knowledge and understanding - Proverbs" />
+
+   <item
+     question='In how many days did God create the earth?'
+     answerA='7'
+     answerB='6'
+     answerC='8'
+     answerD='40' 
+     answer='B'
+     number='1' />	
+
+   <item
+     question='Noah was in the ark for about how long?'
+     answerA='40 days'
+     answerB='about a year'
+     answerC='about 20 years'
+     answerD='7 days' 
+     answer='A'
+     number='2' />
+
+   <item
+     question='Jesus was in the tomb for:'
+     answerA='3 days'
+     answerB='4 days'
+     answerC='100 days'
+     answerD='200 days' 
+     answer='A'
+     number='3' />
+
+   <item
+     question='Animals went into the ark:'
+     answerA='2 by 2'
+     answerB='10 by 10'
+     answerC='3 by 3'
+     answerD='4 by 4' 
+     answer='A'
+     number='4' />
+
+   <item
+     question='The number of the plagues of Egypt:'
+     answerA='2'
+     answerB='1'
+     answerC='20'
+     answerD='10' 
+     answer='D'
+     number='5' />
+
+   <item
+     question='The number of apostles that followed Jesus:'
+     answerA='1'
+     answerB='2'
+     answerC='12'
+     answerD='144,000' 
+     answer='C'
+     number='6' />
+
+   <item
+     question='The number of days and nights it rained during the flood:'
+     answerA='7'
+     answerB='40'
+     answerC='6'
+     answerD='144,000' 
+     answer='B'
+     number='7' />
+
+   <item
+     question='The number of gospel accounts:'
+     answerA='12'
+     answerB='5'
+     answerC='3'
+     answerD='4' 
+     answer='A'
+     number='8' />
+
+   <item
+     question='The number of tribes of the children of Israel:'
+     answerA='12'
+     answerB='5'
+     answerC='3'
+     answerD='4' 
+     answer='A'
+     number='9' />
+
+   <item
+     question='The number of books in the Bible:'
+     answerA='66'
+     answerB='72'
+     answerC='29'
+     answerD='34' 
+     answer='A'
+     number='10' />
+
+</bibleQuiz> 

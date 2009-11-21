@@ -1,0 +1,193 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic="Joseph's Life"
+      author='www.biblequizzes.com'
+      created='17-11-2008' 
+      note="The beginning of wisdom is this: Get wisdom - Proverbs" />
+
+   <item
+     question='How many brothers did Joseph have?'
+     answerA='12'
+     answerB='6'
+     answerC='11'
+     answerD='2' 
+     answer='C'
+     number='1' />	
+
+   <item
+     question="What was Joseph's sisters name?"
+     answerA='Deborah'
+     answerB='Dinah'
+     answerC='Dorcas'
+     answerD='Diana' 
+     answer='B'
+     number='2' />
+
+   <item
+     question="Who was Joseph's real brother?"
+     answerA='Benjamin'
+     answerB='Dan'
+     answerC='Naphtali'
+     answerD='Asher' 
+     answer='A'
+     number='3' />
+
+   <item
+     question="In Joseph's first dream his brothers ________ bowed down to his ________?"
+     answerA='Carrots'
+     answerB='Stars'
+     answerC='Children'
+     answerD='Sheaves' 
+     answer='D'
+     number='4' />
+
+   <item
+     question='In his second dream the  __________ bowed down to him.'
+     answerA='Planets'
+     answerB='Sun, moon and stars'
+     answerC='Sheaves'
+     answerD='Children' 
+     answer='B'
+     number='5' />
+
+   <item
+     question="What did Joseph's father give him and not his brothers?"
+     answerA='Colored Coat'
+     answerB='Sheep'
+     answerC='Goat'
+     answerD='Car' 
+     answer='A'
+     number='6' />
+
+   <item
+     question="What did Joseph's brothers want to do to him when they saw him in the distance?"
+     answerA='Curse him'
+     answerB='Kiss him'
+     answerC='Hug him'
+     answerD='Kill him' 
+     answer='D'
+     number='7' />
+
+   <item
+     question='Who convinced the brothers to sell Joseph?'
+     answerA='Gad'
+     answerB='Judah'
+     answerC='Dan'
+     answerD='Naphtali' 
+     answer='A'
+     number='8' />
+
+   <item
+     question="Who was Joseph's mother?"
+     answerA='Leah'
+     answerB='Bilhah'
+     answerC='Rachel'
+     answerD='Zilpah' 
+     answer='C'
+     number='9' />
+
+   <item
+     question="What animals blood did the brothers dip Joseph's colored coat in?"
+     answerA='Goat'
+     answerB='Sheep'
+     answerC='Horse'
+     answerD='Cow' 
+     answer='B'
+     number='10' />
+
+   <item
+     question='How many shekels did the brothers sell Joseph for?'
+     answerA='10'
+     answerB='20'
+     answerC='30'
+     answerD='40' 
+     answer='C'
+     number='11' />
+
+   <item
+     question='Who did Joseph get hired as a slave by?'
+     answerA='Laban'
+     answerB='Jacob'
+     answerC='Barnabus'
+     answerD='Potiphar' 
+     answer='D'
+     number='12' />
+
+   <item
+     question='While in prison Joseph met two prisoners who had dreamed dreams. What were the prisoners jobs before they ended up in prison?'
+     answerA='Butler and Baker'
+     answerB='King and Priest'
+     answerC='Baker and Priest'
+     answerD='King and Butler' 
+     answer='A'
+     number='13' />
+
+   <item
+     question="How many thin cows came out of the river in Pharoh's dream?"
+     answerA='1'
+     answerB='2'
+     answerC='7'
+     answerD='20' 
+     answer='C'
+     number='14' />
+
+   <item
+     question="What object of Joseph's was placed in Benjamins sack?"
+     answerA='Silver cup'
+     answerB='Gold cup'
+     answerC='Spoon'
+     answerD='Fork' 
+     answer='B'
+     number='15' />
+
+   <item
+     question="What else was found in Benjamin's and all the brothers sacks?"
+     answerA='Sword'
+     answerB='Spoon'
+     answerC='Fork'
+     answerD='Money' 
+     answer='D'
+     number='16' />
+
+   <item
+     question='What did Joseph do when he first saw his brothers in Egypt?'
+     answerA='Blessed them'
+     answerB='Cursed them'
+     answerC='Spoke gently to them'
+     answerD='Spoke roughly to them' 
+     answer='D'
+     number='17' />
+
+   <item
+     question="Who was Joseph's father?"
+     answerA='Esau'
+     answerB='Jacob'
+     answerC='Abraham'
+     answerD='Isaac' 
+     answer='D'
+     number='18' />
+
+   <item
+     question="Who were Joseph's two sons?"
+     answerA='Ephraim and Manasseh'
+     answerB='Jacob and Esau'
+     answerC='Abraham and Issac'
+     answerD='Peter and James' 
+     answer='A'
+     number='19' />
+
+   <item
+     question='Where did Joseph live until he died?'
+     answerA='Canaan'
+     answerB='Israel'
+     answerC='Egypt'
+     answerD='New York' 
+     answer='C'
+     number='20' />
+	
+</bibleQuiz> 
+
+
+

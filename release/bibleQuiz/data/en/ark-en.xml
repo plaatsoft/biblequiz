@@ -1,0 +1,212 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic="Noah's Ark"
+      author="www.biblequizzes.com"
+      created="24-11-2008"
+      language="en" 
+      note="Happy is the man who finds wisdom, and the man who gets understanding - Proverbs " />
+
+   <item
+     question="Which particular failing of man resulted in the building of the ark?"
+     answerA="Greed"
+     answerB="Lust"
+     answerC="Violence"
+     answerD="Weakness"
+     answer="C"
+     explanation="Proof Passage (Genesis 6:13-17)"
+     number="1" />	
+
+   <item
+     question="What was the ark made of?"
+     answerA="Papyrus"
+     answerB="Wood"
+     answerC="Iron"
+     answerD="Bronze"
+     answer="B"
+     explanation="Proof Passage (Genesis 6:14)"
+     number="2" />
+
+   <item
+     question="What material was used to water-proof the ark?"
+     answerA="Glue"
+     answerB="Sap"
+     answerC="Gruel"
+     answerD="Pitch"
+     answer="D"
+     explanation="Proof Passage (Genesis 6:14)"
+     number="3" />
+
+   <item
+     question="How old was Noah when the flood came?"
+     answerA="150"
+     answerB="600"
+     answerC="500"
+     answerD="800"
+     answer="B"
+     explanation="Proof Passage (Genesis 7:6)"
+     number="4" />
+
+   <item
+     question="How many people were in the ark?"
+     answerA="10"
+     answerB="6"
+     answerC="20"
+     answerD="8"
+     answer="D"
+     explanation="Proof Passage (Genesis 7:7)"
+     number="5" />
+
+   <item
+     question="How long did it rain?"
+     answerA="12 days and 12 nights"
+     answerB="7 weeks"
+     answerC="40 days and 40 nights"
+     answerD="3 months"
+     answer="C"
+     explanation="(Genesis 7:17) "
+     number="6" />
+
+   <item
+     question="How many clean animals went into the ark?"
+     answerA="1 pair  of each"
+     answerB="2 pair  of each"
+     answerC="3 pair  of each"
+     answerD="7 pair  of each"
+     answer="D"
+     explanation="Proof Passage (Genesis 7:2)"
+     number="7" />
+
+   <item
+     question="Who closed the door?"
+     answerA="Noah"
+     answerB="One of his sons"
+     answerC="The Lord"
+     answerD="Noah's wife"
+     answer="C"
+     explanation="Proof Passage (Genesis 7:16)"
+     number="8" />
+
+   <item
+     question="How many Levels were in the ark?"
+     answerA="3"
+     answerB="5"
+     answerC="2"
+     answerD="4"
+     answer="A"
+     explanation="Proof Passage (Genesis 6:16)"
+     number="9" />
+
+   <item
+     question="At its highest, how high did the ark float? "
+     answerA="Above the buildings"
+     answerB="Over peoples heads"
+     answerC="Over the mountains"
+     answerD="Above the trees"
+     answer="C"
+     explanation="Proof Passage (Genesis 7:19)"
+     number="10" />
+
+   <item
+     question="How long was the ark floating?"
+     answerA="3 months"
+     answerB="150 days"
+     answerC="6 months"
+     answerD="200 days"
+     answer="B"
+     explanation="Proof Passage (Genesis 8:3)"
+     number="11" />
+
+   <item
+     question="Where did the ark come to rest?"
+     answerA="Hills of Judea"
+     answerB="Mountains of Ararat"
+     answerC="Valley of Eshcol"
+     answerD="Mount of Gilead"
+     answer="B"
+     explanation="Proof Passage (Genesis 8:4)"
+     number="12" />
+
+   <item
+     question="What was the first creature to leave the ark?"
+     answerA="Crow"
+     answerB="Dove"
+     answerC="Sparrow"
+     answerD="Raven"
+     answer="D"
+     explanation="Proof Passage (Genesis 8:7)"
+     number="13" />
+
+   <item
+     question="What was the second creature to leave the ark?"
+     answerA="Crow"
+     answerB="Dove"
+     answerC="Sparrow"
+     answerD="Raven"
+     answer="B"
+     explanation="Proof Passage (Genesis 8:8)"
+     number="14" />
+
+   <item
+     question="Who told Noah to leave the ark?"
+     answerA="Noah's son"
+     answerB="An Angel"
+     answerC="Noah's wife"
+     answerD="God"
+     answer="D"
+     explanation="Proof Passage (Genesis 8:15)"
+     number="15" />
+
+   <item
+     question="What did the dove bring back to the ark?"
+     answerA="A twig"
+     answerB="A pebble"
+     answerC="An olive leaf"
+     answerD="Another dove"
+     answer="C"
+     explanation="Proof Passage (Genesis 8:11)"
+     number="16" />
+
+   <item
+     question="What was the first thing Noah built when he left the ark?"
+     answerA="Altar"
+     answerB="House"
+     answerC="A tower"
+     answerD="A zoo"
+     answer="A"
+     explanation="Proof Passage (Genesis 8:20)"
+     number="17" />
+
+   <item
+     question="What did God promise Noah?"
+     answerA="Paradise"
+     answerB="A big family"
+     answerC="No more world-wide floods"
+     answerD="Long life"
+     answer="C"
+     explanation="Proof Passage (Genesis 9:11)"
+     number="18" />
+
+   <item
+     question="What was the sign or token of Gods covenant?"
+     answerA="Ring"
+     answerB="Fire"
+     answerC="Rainbow"
+     answerD="Sunrise"
+     answer="C"
+     explanation="Proof Passage (Genesis 9:13) "
+     number="19" />
+
+   <item
+     question="Why was Noah saved from the flood?"
+     answerA="He was a good boat builder"
+     answerB="He was a fervent preacher"
+     answerC="He was a good farmer"
+     answerD="He was a righteous man"
+     answer="D"
+     explanation="Proof Passage (Genesis 6:9)"
+     number="20" />   
+	
+</bibleQuiz> 
+

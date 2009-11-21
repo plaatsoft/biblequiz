@@ -1,0 +1,410 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic="David life"
+      author="www.biblequizzes.com"
+      created="19-11-2008" 
+      note="Go into all the world and preach the gospel. And if you must, use words - Francis of Assisi" />
+
+   <item
+     question="Who was David's father?"
+     answerA="Joseph"
+     answerB="Jesse"
+     answerC="Nebat"
+     answerD="Jehoram"
+     answer="B"
+     explanation="Proof Passage (1 Sam 16:1)"
+     number="1" />	
+
+   <item
+     question="Where did David live (in his youth)"
+     answerA="Jerusalem"
+     answerB="Samaria"
+     answerC="Ziklag"
+     answerD="Bethlehem"
+     answer="D"
+     explanation="Proof Passage (1 Sam 16:9)"
+     number="2" />
+
+   <item
+     question="Which of the following was David's brother?"
+     answerA="Shammah"
+     answerB="Jesse"
+     answerC="Jonathan"
+     answerD="Elah"
+     answer="A"
+     explanation="Proof Passage (1 Sam 16:9)"
+     number="3" />
+
+   <item
+     question="Which of David's talents first brought him into contact with Saul?"
+     answerA="Warrior"
+     answerB="Hunter"
+     answerC="Writer"
+     answerD="Musician"
+     answer="D"
+     explanation="Proof Passage (1 Sam 16:18,19)"
+     number="4" />
+
+   <item
+     question="Where was Goliath from?"
+     answerA="Hebron"
+     answerB="Ekron"
+     answerC="Gath"
+     answerD="Gaza"
+     answer="C"
+     explanation="Proof Passage (1 Sam 17:4)"
+     number="5" />
+
+   <item
+     question="What was Goliath's notable characteristic"
+     answerA="Tall"
+     answerB="Fast"
+     answerC="Fat"
+     answerD="Ugly"
+     answer="A"
+     explanation="Proof Passage (1 Sam 17:4)"
+     number="6" />
+
+   <item
+     question="How long did Goliath parade in front of the Israelites?"
+     answerA="3 Days"
+     answerB="7 Days"
+     answerC="12 Days"
+     answerD="40 Days"
+     answer="D"
+     explanation="Proof Passage (1 Sam 17:16)"
+     number="7" />
+
+   <item
+     question="How many of David's brothers were at the battle?"
+     answerA="2"
+     answerB="3"
+     answerC="4"
+     answerD="5"
+     answer="B"
+     explanation="Proof Passage (1 Sam 17:13)"
+     number="8" />
+
+   <item
+     question="Why did David come out to the battle?"
+     answerA="To kill Goliath"
+     answerB="To watch the action"
+     answerC="To bring provisions"
+     answerD="For fun"
+     answer="C"
+     explanation="Proof Passage (1 Sam 17:17)"
+     number="9" />
+
+   <item
+     question="What was David's reaction to Goliath's threat?"
+     answerA="Indignation"
+     answerB="Fear"
+     answerC="Laughter"
+     answerD="Admiration"
+     answer="A"
+     explanation="Proof Passage (1 Sam 17:44 - 46)"  
+     number="10" />
+
+   <item
+     question="What was Eliab's reaction to David's reaction?"
+     answerA="Indignation"
+     answerB="Fear"
+     answerC="Laughter"
+     answerD="Admiration"
+     answer="A"
+     explanation="Proof Passage (1 Sam 17:28)"
+     number="11" />
+
+   <item
+     question="Why did David NOT use Saul's armour"
+     answerA="It was too big for him"
+     answerB="It was too small for him"
+     answerC="Saul was trying to kill him"
+     answerD="He was unaccustomed to using it"
+     answer="D"
+     explanation="Proof Passage (1 Sam 17:39)"
+     number="12" />
+
+   <item
+     question="What was Goliath's reaction to David's appearance?"
+     answerA="Indignation"
+     answerB="Scorn"
+     answerC="Fear"
+     answerD="Admiration"
+     answer="B"
+     explanation="Proof Passage (1 Sam 17:43)"
+     number="13" />
+
+   <item
+     question="How many stones did David pick up?"
+     answerA="1"
+     answerB="3"
+     answerC="5"
+     answerD="7"
+     answer="C"
+     explanation="Proof Passage (1 Sam 17:40)"
+     number="14" />
+
+   <item
+     question="How many stones did David use?"
+     answerA="1"
+     answerB="3"
+     answerC="5"
+     answerD="7"
+     answer="A"
+     explanation="Proof Passage (1 Sam 17:49,50)"
+     number="15" />
+
+   <item
+     question="Who was the commander of Saul's army?"
+     answerA="Joab"
+     answerB="David"
+     answerC="Jonathan"
+     answerD="Abner"
+     answer="D"
+     explanation="Proof Passage (1 Sam 17:55)"
+     number="16" />
+
+   <item
+     question="How many Philistines did David kill in order to marry Michal?"
+     answerA="100"
+     answerB="200"
+     answerC="300"
+     answerD="400"
+     answer="B"
+     explanation="Proof Passage (1 Sam 18:27)"
+     number="17" />
+
+   <item
+     question="Who was Michal's father?"
+     answerA="Jesse"
+     answerB="Saul"
+     answerC="Samuel"
+     answerD="Abner"
+     answer="B"
+     explanation="Proof Passage (1 Sam 18:20)"
+     number="18" />
+
+   <item
+     question="Who was David's best friend?"
+     answerA="Joab"
+     answerB="Abner"
+     answerC="Jonathan"
+     answerD="Samuel"
+     answer="C"
+     explanation="Proof Passage (1 Sam 18:1)"
+     number="19" />
+
+   <item
+     question="David obtained help from the priests at which city?"
+     answerA="Nob"
+     answerB="Bethel"
+     answerC="Jerusalem"
+     answerD="Shiloh"
+     answer="A"
+     explanation="Proof Passage (1 Sam 21:1)"
+     number="20" />   
+
+   <item
+     question="When David arrived at Nob, what did he claim to be doing?"
+     answerA="Fleeing from Saul"
+     answerB="On a secret mission from Saul"
+     answerC="Fulfilling a vow"
+     answerD="Scouting for Philistines"
+     answer="B"
+     explanation="Proof Passage (1 Sam 21:2)"
+     number="21" />
+
+   <item
+     question="A certain man saw David at Nob, who was he?"
+     answerA="Doeg the Edomite"
+     answerB="Goliath of Gath"
+     answerC="Mesha the Moabite"
+     answerD="Eglon the Girgashite"
+     answer="A"
+     explanation="Proof Passage (1 Sam 21:7)"
+     number="22" />
+
+   <item
+     question="David obtained a weapon while at Nob, which consisted of?"
+     answerA="Jonathan's sword"
+     answerB="His old sling"
+     answerC="His brother's bow"
+     answerD="Goliath's sword"
+     answer="D"
+     explanation="Proof Passage (1 Sam 21:9)"
+     number="23" />
+
+   <item
+     question="After leaving Nob, David fled to which king?"
+     answerA="Agag king of the Amelekites"
+     answerB="Achish king of Gath"
+     answerC="Gilgamesh king of Ekron"
+     answerD="Mesha king of Moab"
+     answer="B"
+     explanation="Proof Passage (1 Sam 21:10)"
+     number="24" />
+
+   <item
+     question="In order to escape from this king, David pretended to be: "
+     answerA="A hero"
+     answerB="Saul"
+     answerC="Insane"
+     answerD="A Philistine"
+     answer="C"
+     explanation="Proof Passage (1 Sam 21:13)"
+     number="25" />
+
+   <item
+     question="David placed his familiy in the care of:"
+     answerA="The king of Moab"
+     answerB="Jonathan"
+     answerC="Samuel"
+     answerD="Achish"
+     answer="A"
+     explanation="Proof Passage (1 Sam 22:3)"
+     number="26" />
+
+   <item
+     question="While Saul was pursuing David, David managed to cut off a portion of Saul's robe without him knowing. What was Saul doing at the time?"
+     answerA="Sleeping"
+     answerB="Getting drunk"
+     answerC="Going to the bathroom"
+     answerD="In a trance"
+     answer="C"
+     explanation="Proof Passage (1 Sam 24:3,4) "
+     number="27" />
+
+   <item
+     question="When subsequently addressing Saul, what does David compare himself with?"
+     answerA="A hero"
+     answerB="A dead dog"
+     answerC="A hunted gazelle"
+     answerD="A prodigal son"
+     answer="B"
+     explanation="Proof Passage (1 Sam 24:14)"
+     number="28" />
+
+   <item
+     question="What was Saul's reaction to David's speech?"
+     answerA="He was angry"
+     answerB="He was scared"
+     answerC="He laughed"
+     answerD="He wept"
+     answer="D"
+     explanation="Proof Passage (1 Sam 24:16)"
+     number="29" />
+
+   <item
+     question="Where did Samuel live?"
+     answerA="Ramah"
+     answerB="Bethel"
+     answerC="Shiloh"
+     answerD="Nob"
+     answer="A"
+     explanation="Proof Passage (1 Sam 25:1)"
+     number="30" />
+
+   <item
+     question="David's wife Abigail was at one point married to:"
+     answerA="Jonathan"
+     answerB="Nabal"
+     answerC="Phalti"
+     answerD="Belial"
+     answer="B"
+     explanation="Proof Passage (1 Sam 25:3)"
+     number="31" />
+
+   <item
+     question="David's wife Michal was at one point married to:"
+     answerA="Jonathan"
+     answerB="Nabal"
+     answerC="Phalti"
+     answerD="Belial"
+     answer="C"
+     explanation="Proof Passage (1 Sam 25:44)"
+     number="32" />
+
+   <item
+     question="While Saul was pursuing David, David managed to steal Saul's spear and water bottle. What was Saul do ingat the time?"
+     answerA="Sleeping"
+     answerB="Getting drunk"
+     answerC="Going to the bathroom"
+     answerD="In a trance"
+     answer="A"
+     explanation="Proof Passage (1 Sam 26:7)"
+     number="33" />
+
+   <item
+     question="Who was with David at the time?"
+     answerA="Abishai"
+     answerB="Azahel"
+     answerC="Joab"
+     answerD="Benaiah"
+     answer="A"
+     explanation="Proof Passage (1 Sam 26:6)"
+     number="34" />
+
+   <item
+     question="What was this man's recommendation? "
+     answerA="Flee"
+     answerB="Hide"
+     answerC="Run him through with a spear"
+     answerD="Pray"
+     answer="C"
+     explanation="Proof Passage (1 Sam 26:8)"
+     number="35" />
+
+   <item
+     question="David fled to the king of Achish, who gave him a city to dwell in. Which city was it? "
+     answerA="Bethlehem"
+     answerB="Ziklag"
+     answerC="Gath"
+     answerD="Hebron"
+     answer="B"
+     explanation="Proof Passage (1 Sam 27:5,6)"
+     number="36" />
+
+   <item
+     question="The kings of the Philistines did not allow David to join the battle with them. David then returned to his city and found it in what state?"
+     answerA="Abandoned"
+     answerB="Celebrating"
+     answerC="Mourning"
+     answerD="Completely destroyed"
+     answer="D"
+     explanation="Proof Passage (1 Sam 30:1)"
+     number="37" />
+
+   <item
+     question="Saul and his sons died at which place?"
+     answerA="Mount Gilboa"
+     answerB="The plain of Aphek"
+     answerC="Valley of Jezreel"
+     answerD="Jerusalem"
+     answer="A"
+     explanation="Proof Passage (1 Sam 31:1,6)"
+     number="38" />
+
+   <item
+     question="What did the Philistines do with Saul's body?"
+     answerA="Buried it"
+     answerB="Burnt it"
+     answerC="Threw it in the river"
+     answerD="Hung it from the wall of the city"
+     answer="D"
+     explanation="Proof Passage (1 Sam 31:10) "
+     number="39" />
+
+   <item
+     question="What did David do to the man who 'confessed' to killing Saul?"
+     answerA="Rewarded him"
+     answerB="Killed him"
+     answerC="Promoted him"
+     answerD="Hired him"
+     answer="B"
+     explanation="Proof Passage (2 Sam 1:15)"
+     number="40" />
+
+</bibleQuiz> 

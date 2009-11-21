@@ -1,0 +1,1464 @@
+16-11-2009 07:14:26 [thread0-main] BibleQuiz 0.94 Started
+16-11-2009 07:14:26 [thread0-initGame] enter
+16-11-2009 07:14:26 [thread0-initGame] leave [void]
+16-11-2009 07:14:26 [thread0-initMusicTrack] enter
+16-11-2009 07:14:26 [thread0-initMusicTrack] leave [void]
+16-11-2009 07:14:26 [thread0-initThreads] enter
+16-11-2009 07:14:26 [thread1-tcp_start_thread] enter
+16-11-2009 07:14:26 [thread1-tcp_clear_memory] enter
+16-11-2009 07:14:26 [thread1-tcp_clear_memory] leave
+16-11-2009 07:14:26 [thread1-tcp_start_thread] leave [0]
+16-11-2009 07:14:26 [thread0-initThreads] leave [void]
+16-11-2009 07:14:26 [thread0-initLanguages] enter
+16-11-2009 07:14:26 [thread1-tcp_thread] enter
+16-11-2009 07:14:26 [thread1-tcp_thread] stateMachine=TCP_INIT
+16-11-2009 07:14:26 [thread0-initLanguages] leave [void]
+16-11-2009 07:14:26 [thread0-initTranslation] enter
+16-11-2009 07:14:26 [thread1-tcp_init] enter
+16-11-2009 07:14:26 [thread1-tcp_init] Waiting for network to initialise...
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-storeXmlValue] enter
+16-11-2009 07:14:26 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:26 [thread0-initTranslation] leave [void]
+16-11-2009 07:14:26 [thread0-initTopics] enter
+16-11-2009 07:14:26 [thread0-initTopics] leave [void]
+16-11-2009 07:14:26 [thread0-initQuestions] enter
+16-11-2009 07:14:26 [thread0-initQuestions] leave [void]
+16-11-2009 07:14:26 [thread0-initImages] enter
+16-11-2009 07:14:26 [thread0-initImages] leave [void]
+16-11-2009 07:14:26 [thread0-initHighScore] enter
+16-11-2009 07:14:26 [thread0-initHighScore] leave [void]
+16-11-2009 07:14:30 [thread1-tcp_init] Network initialised [10.240.136.110].
+16-11-2009 07:14:30 [thread1-tcp_init] leave [0]
+16-11-2009 07:14:30 [thread1-tcp_thread] stateMachine=TCP_REQUEST1a
+16-11-2009 07:14:30 [thread1-http_request] enter
+16-11-2009 07:14:30 [thread1-http_split_url] enter
+16-11-2009 07:14:30 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:30 [thread1-tcp_connect] enter [host=www.plaatsoft.nl|port=80]
+16-11-2009 07:14:30 [thread1-tcp_connect] net_gethostbyname successfull resolved
+16-11-2009 07:14:30 [thread1-tcp_socket] enter
+16-11-2009 07:14:30 [thread1-tcp_socket] net_socket succesfull
+16-11-2009 07:14:30 [thread1-tcp_socket] leave [0]
+16-11-2009 07:14:30 [thread1-tcp_connect] tcp_socket succesfull
+16-11-2009 07:14:30 [thread1-tcp_connect] DNS resolve=85.158.203.157
+16-11-2009 07:14:30 [thread1-tcp_connect] net_connect succesfull
+16-11-2009 07:14:30 [thread1-tcp_connect] leave [0]
+16-11-2009 07:14:30 [thread1-http_request] tcp_connect(www.plaatsoft.nl, 80) = 0
+16-11-2009 07:14:30 [thread1-http_request] request=GET /service/releasenotes2.html HTTP/1.1
+Host: www.plaatsoft.nl
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:30 [thread1-tcp_write] enter [bufsize=203]
+16-11-2009 07:14:30 [thread1-tcp_write] buffer=GET /service/releasenotes2.html HTTP/1.1
+Host: www.plaatsoft.nl
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:30 [thread1-tcp_write] leave [left=0]
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=16]
+16-11-2009 07:14:30 [thread1-http_request] HTTP/1.1 200 OK
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=36]
+16-11-2009 07:14:30 [thread1-http_request] Date: Mon, 16 Nov 2009 05:12:44 GMT
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=17]
+16-11-2009 07:14:30 [thread1-http_request] Server: Apache/2
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=45]
+16-11-2009 07:14:30 [thread1-http_request] Last-Modified: Fri, 18 Sep 2009 06:25:36 GMT
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=30]
+16-11-2009 07:14:30 [thread1-http_request] ETag: "1e8075b-1130-3331b800"
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=21]
+16-11-2009 07:14:30 [thread1-http_request] Accept-Ranges: bytes
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=21]
+16-11-2009 07:14:30 [thread1-http_request] Content-Length: 4400
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=39]
+16-11-2009 07:14:30 [thread1-http_request] Content-Type: text/html; charset=UTF-8
+16-11-2009 07:14:30 [thread1-tcp_readln] enter
+16-11-2009 07:14:30 [thread1-tcp_readln] leave [bufsize=1]
+16-11-2009 07:14:30 [thread1-http_request] 
+16-11-2009 07:14:30 [thread1-http_request] content_length=4400, status=200, linecount=8
+16-11-2009 07:14:30 [thread1-tcp_read] enter
+16-11-2009 07:14:33 [thread1-tcp_read] leave [left=0]
+16-11-2009 07:14:33 [thread1-http_request] leave [true]
+16-11-2009 07:14:33 [thread1-http_get_result] enter
+16-11-2009 07:14:33 [thread1-http_get_result] leave [true]
+16-11-2009 07:14:33 [thread1-http_findToken] enter [ Version ]
+16-11-2009 07:14:33 [thread1-http_findToken] len=9
+16-11-2009 07:14:33 [thread1-http_findToken] startpos=190
+16-11-2009 07:14:33 [thread1-http_findToken] endpos=203
+16-11-2009 07:14:33 [thread1-http_findToken] leave [0.93]
+16-11-2009 07:14:33 [thread1-tcp_thread] version=0.93
+16-11-2009 07:14:33 [thread1-tcp_thread] stateMachine=TCP_REQUEST1b
+16-11-2009 07:14:33 [thread1-http_split_url] enter
+16-11-2009 07:14:33 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] enter
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] domain=[www.plaatsoft.nl]
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] url=[/start/BibleQuiz/0.94]
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] id=[UA-6887062-1]
+16-11-2009 07:14:33 [thread1-http_encode_url] enter
+16-11-2009 07:14:33 [thread1-http_encode_url] buf=[www.plaatsoft.nl]
+16-11-2009 07:14:33 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:33 [thread1-http_encode_url] enter
+16-11-2009 07:14:33 [thread1-http_encode_url] buf=[http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii]
+16-11-2009 07:14:33 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:33 [thread1-http_encode_url] enter
+16-11-2009 07:14:33 [thread1-http_encode_url] buf=[%2Fstart%2FBibleQuiz%2F0.94]
+16-11-2009 07:14:33 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:33 [thread1-http_encode_url] enter
+16-11-2009 07:14:33 [thread1-http_encode_url] buf=[WiiBrew%20BibleQuiz%200.94]
+16-11-2009 07:14:33 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] utmac=[UA-6887062-1]
+16-11-2009 07:14:33 [thread1-http_encode_url] enter
+16-11-2009 07:14:33 [thread1-http_encode_url] buf=[BibleQuiz%3D0.94]
+16-11-2009 07:14:33 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] buffer=http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1758355673&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fstart%2FBibleQuiz%2F0.94&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355673.1258269273.1258442073.1258355673.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355673.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B
+16-11-2009 07:14:33 [thread1-http_googleAnalysicUrl] leave [void]
+16-11-2009 07:14:33 [thread1-http_request] enter
+16-11-2009 07:14:33 [thread1-http_split_url] enter
+16-11-2009 07:14:33 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:33 [thread1-tcp_connect] enter [host=www.google-analytics.com|port=80]
+16-11-2009 07:14:33 [thread1-tcp_connect] net_gethostbyname successfull resolved
+16-11-2009 07:14:33 [thread1-tcp_socket] enter
+16-11-2009 07:14:33 [thread1-tcp_socket] net_socket succesfull
+16-11-2009 07:14:33 [thread1-tcp_socket] leave [0]
+16-11-2009 07:14:33 [thread1-tcp_connect] tcp_socket succesfull
+16-11-2009 07:14:33 [thread1-tcp_connect] DNS resolve=74.125.77.139
+16-11-2009 07:14:33 [thread1-tcp_connect] net_connect succesfull
+16-11-2009 07:14:33 [thread1-tcp_connect] leave [0]
+16-11-2009 07:14:33 [thread1-http_request] tcp_connect(www.google-analytics.com, 80) = 0
+16-11-2009 07:14:33 [thread1-http_request] request=GET /__utm.gif?utmwv=1&utmn=1758355673&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fstart%2FBibleQuiz%2F0.94&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355673.1258269273.1258442073.1258355673.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355673.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:33 [thread1-tcp_write] enter [bufsize=716]
+16-11-2009 07:14:33 [thread1-tcp_write] buffer=GET /__utm.gif?utmwv=1&utmn=1758355673&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fstart%2FBibleQuiz%2F0.94&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355673.1258269273.1258442073.1258355673.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355673.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:33 [thread1-tcp_write] leave [left=0]
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=16]
+16-11-2009 07:14:33 [thread1-http_request] HTTP/1.1 200 OK
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=36]
+16-11-2009 07:14:33 [thread1-http_request] Date: Mon, 16 Nov 2009 05:12:47 GMT
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=19]
+16-11-2009 07:14:33 [thread1-http_request] Content-Length: 35
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=17]
+16-11-2009 07:14:33 [thread1-http_request] Pragma: no-cache
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=72]
+16-11-2009 07:14:33 [thread1-http_request] Cache-Control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=39]
+16-11-2009 07:14:33 [thread1-http_request] Expires: Wed, 19 Apr 2000 11:43:00 GMT
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=45]
+16-11-2009 07:14:33 [thread1-http_request] Last-Modified: Wed, 21 Jan 2004 19:50:30 GMT
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=24]
+16-11-2009 07:14:33 [thread1-http_request] Content-Type: image/gif
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=14]
+16-11-2009 07:14:33 [thread1-http_request] Server: Golfe
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=20]
+16-11-2009 07:14:33 [thread1-http_request] X-XSS-Protection: 0
+16-11-2009 07:14:33 [thread1-tcp_readln] enter
+16-11-2009 07:14:33 [thread1-tcp_readln] leave [bufsize=1]
+16-11-2009 07:14:33 [thread1-http_request] 
+16-11-2009 07:14:33 [thread1-http_request] content_length=35, status=200, linecount=10
+16-11-2009 07:14:33 [thread1-tcp_read] enter
+16-11-2009 07:14:33 [thread1-tcp_read] leave [left=0]
+16-11-2009 07:14:33 [thread1-http_request] leave [true]
+16-11-2009 07:14:33 [thread1-http_get_result] enter
+16-11-2009 07:14:33 [thread1-http_get_result] leave [true]
+GIF89a  €ÿ ÿÿÿ   ,       D ;16-11-2009 07:14:33 [thread1-tcp_thread] stateMachine=TCP_REQUEST2a
+16-11-2009 07:14:33 [thread1-http_request] enter
+16-11-2009 07:14:33 [thread1-http_split_url] enter
+16-11-2009 07:14:33 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:33 [thread1-tcp_connect] enter [host=www.plaatsoft.nl|port=80]
+16-11-2009 07:14:37 [thread1-tcp_connect] net_gethostbyname successfull resolved
+16-11-2009 07:14:37 [thread1-tcp_socket] enter
+16-11-2009 07:14:37 [thread1-tcp_socket] net_socket succesfull
+16-11-2009 07:14:37 [thread1-tcp_socket] leave [0]
+16-11-2009 07:14:37 [thread1-tcp_connect] tcp_socket succesfull
+16-11-2009 07:14:37 [thread1-tcp_connect] DNS resolve=85.158.203.157
+16-11-2009 07:14:37 [thread1-tcp_connect] net_connect succesfull
+16-11-2009 07:14:37 [thread1-tcp_connect] leave [0]
+16-11-2009 07:14:37 [thread1-http_request] tcp_connect(www.plaatsoft.nl, 80) = 0
+16-11-2009 07:14:37 [thread1-http_request] request=GET /service/releasenotes2.html HTTP/1.1
+Host: www.plaatsoft.nl
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:37 [thread1-tcp_write] enter [bufsize=203]
+16-11-2009 07:14:37 [thread1-tcp_write] buffer=GET /service/releasenotes2.html HTTP/1.1
+Host: www.plaatsoft.nl
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:37 [thread1-tcp_write] leave [left=0]
+16-11-2009 07:14:37 [thread1-tcp_readln] enter
+16-11-2009 07:14:37 [thread1-tcp_readln] leave [bufsize=16]
+16-11-2009 07:14:37 [thread1-http_request] HTTP/1.1 200 OK
+16-11-2009 07:14:37 [thread1-tcp_readln] enter
+16-11-2009 07:14:37 [thread1-tcp_readln] leave [bufsize=36]
+16-11-2009 07:14:37 [thread1-http_request] Date: Mon, 16 Nov 2009 05:12:51 GMT
+16-11-2009 07:14:37 [thread1-tcp_readln] enter
+16-11-2009 07:14:37 [thread1-tcp_readln] leave [bufsize=17]
+16-11-2009 07:14:37 [thread1-http_request] Server: Apache/2
+16-11-2009 07:14:37 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=45]
+16-11-2009 07:14:38 [thread1-http_request] Last-Modified: Fri, 18 Sep 2009 06:25:36 GMT
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=30]
+16-11-2009 07:14:38 [thread1-http_request] ETag: "1e8075b-1130-3331b800"
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=21]
+16-11-2009 07:14:38 [thread1-http_request] Accept-Ranges: bytes
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=21]
+16-11-2009 07:14:38 [thread1-http_request] Content-Length: 4400
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=39]
+16-11-2009 07:14:38 [thread1-http_request] Content-Type: text/html; charset=UTF-8
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=1]
+16-11-2009 07:14:38 [thread1-http_request] 
+16-11-2009 07:14:38 [thread1-http_request] content_length=4400, status=200, linecount=8
+16-11-2009 07:14:38 [thread1-tcp_read] enter
+16-11-2009 07:14:38 [thread1-tcp_read] leave [left=0]
+16-11-2009 07:14:38 [thread1-http_request] leave [true]
+16-11-2009 07:14:38 [thread1-http_get_result] enter
+16-11-2009 07:14:38 [thread1-http_get_result] leave [true]
+16-11-2009 07:14:38 [thread1-http_convertHTMlToAscii] enter [inSize=4400]
+16-11-2009 07:14:38 [thread1-http_convertHTMlToAscii] in=<html>
+
+<head>
+   <title>BibleQuiz Release Notes</title>
+</head>
+
+<body>
+
+<h2>Known Issues</h2>
+
+<h3>None</h3>
+<p>
+None
+</p>
+
+</br>
+<h2>Development Log</h2>
+
+<h3>18/09/2009 Version 0.93 </h3>
+<p>
+- This version is compiled with the newest available Wii libraries.</br>
+- Use the asndlib (part of libogc) now as standard sound engine.</br>
+- Use libfat 1.0.4 as disk access engine.</br>
+- Build game with libogc 1.7.1a and devkitPPC 1.5.0 (r17) compiler.</br>
+</p>
+
+<h3>13/03/2009 Version 0.92 </h3>
+<p>
+- Upgrade GRRLIB graphical render engine from v3.0 to v4.0.</br>
+- Improve intro screens.</br>
+- Added fps (frame-per-second) information on all screens.</br>
+- Added screenshot functionality. Press the plus button to make a picture.</br>
+- Pictures are stored on the SD Card in the sd:/apps/bibleQuiz directory</br>
+- Build game with libogc 1.7.1 and devkitPPC r16 compiler.</br>
+</p>
+
+<h3>06/02/2009 Version 0.91 </h3>
+<p>
+- Add multi player mode for two, three and four players.<br/>
+- Improve third intro screen.<br/>
+- Increase http receive buffer size to 8196 bytes.<br/>
+- Use only one unique cookie number during the game.<br/>
+- Bugfix: Highscore is now always loaded correctly.<br/>
+</p>
+
+<h3>15/01/2009 Version 0.90 </h3>
+<p>
+- Update url on intro screens to www.plaatsoft.nl (My new domain).<br/>
+- Network thread status is now showed on welcome screen.<br/>
+- Bugfix: Remove some small reported graphical bugs.<br/>
+- Bugfix: Highscore is now always loaded correctly.<br/>
+- Bugfix: Remove several bugs in network thread.<br/>
+</p>
+
+<h3>23/12/2008 Version 0.80 </h3>
+<p>
+- Added SDHC card support<br/>
+- Added power button support<br/>
+- Bugfix: IR pointer doesn't disappear anymore.<br/>
+</p>
+
+<h3>09/12/2008 Version 0.70 </h3>
+<p>
+- Added release notes screen</br>
+- Added functionality to fetch release notes from internet</br>
+- Improve highscore information (Show max score pre topic)</br>
+- Improve IR pointer</br>
+- Added google analytic http request (including highscore information)</br>
+- Improve result screen information</br>
+</p>
+
+<h3>27/11/2008 Version 0.60 </h3>
+<p>
+- All texts are now created with the freetype library (Thanks DrTwox) </br>
+</p>
+
+<h3>24/11/2008 Version 0.50 </h3>
+<p>
+- Added check if new version is available.</br>
+- Added animated screen icons</br>
+- Solved some minor reported bugs</br>
+- Content update:</br>
+  - Added 10 music tracks</br>
+  - Added 100 english questions (5 topics).</br>
+  - Added 20 dutch questions (1 topic).</br>
+  - Added 20 german questions (1 topic).</br>
+  - Added french translation.</br>
+  - Corrected some wrong answers.</br>
+</p>
+
+<h3>19/11/2008 Version 0.40 </h3>
+<p>
+- Added highscore screen</br>
+- Highscore is stored (in xml format) on the SD card</br>
+- Added credits screen</br>
+- Added help (minus button) screen</br>
+- Added 10 music tracks</br>
+- Use freetype library as font render engine for screen (sub) titles</br>
+- Content update:</br>
+  - Added 170 english questions (8 topics)</br>
+  - Added 100 dutch questions (4 topics)</br>
+  - Added spanisch translation</br>
+</p>
+
+<h3>18/11/2008 Version 0.31 </h3>
+<p>
+- Hotfix  to prevent core dump with 60Hz (480i) Tv mode</br>
+- Donated the bibleQuiz source code to the community.</br>
+</br>
+</p>
+
+<h3>15/11/2008 Version 0.30 </h3>
+<p>
+- First release for the Wii HomeBrew community</br>
+- Complete rebuild from game engine</br>
+- Added language / topic select screen</br>
+- Added goodbye screen</br>
+- Added sound volume control screen</br>
+- Content update:</br>
+  - Added German language</br>
+  - Added 10 english questions (1 topic)</br>
+  - Added 20 dutch questions (2 topics)</br>
+</p>
+
+<h3>08/11/2008 Version 0.20 </h3>
+<p>
+- Added support for xml question files</br>
+- Added question result image with animation</br>
+- Added multi language support</br>
+- Added three hint buttons</br>
+- Added support for 60Hz (480i) TV mode</br>
+- Added score result screen</br>
+- Added sndlib module with some sound effects</br>
+- Added exit button</br>
+- Added question word wrap function</br>
+</p>
+
+<h3>03/11/2008 Version 0.10 </h3>
+<p>
+- Started programmingt</br>
+- Gameboard designt</br>
+- Added WiiRemote IR controlt</br>
+- Added three welcome screenst</br>
+- Added button rumble effect</br>
+</p>
+
+</body>
+</html>€€€€
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_replaceString] enter
+16-11-2009 07:14:38 [thread1-http_convertHTMlToAscii] out=<html><head>   <title>BibleQuiz Release Notes
+</head><body>
+Known Issues
+
+None
+<p>None</p>
+
+Development Log
+
+18/09/2009 Version 0.93 
+<p>- This version is compiled with the newest available Wii libraries.
+- Use the asndlib (part of libogc) now as standard sound engine.
+- Use libfat 1.0.4 as disk access engine.
+- Build game with libogc 1.7.1a and devkitPPC 1.5.0 (r17) compiler.
+</p>
+13/03/2009 Version 0.92 
+<p>- Upgrade GRRLIB graphical render engine from v3.0 to v4.0.
+- Improve intro screens.
+- Added fps (frame-per-second) information on all screens.
+- Added screenshot functionality. Press the plus button to make a picture.
+- Pictures are stored on the SD Card in the sd:/apps/bibleQuiz directory
+- Build game with libogc 1.7.1 and devkitPPC r16 compiler.
+</p>
+06/02/2009 Version 0.91 
+<p>- Add multi player mode for two, three and four players.
+- Improve third intro screen.
+- Increase http receive buffer size to 8196 bytes.
+- Use only one unique cookie number during the game.
+- Bugfix: Highscore is now always loaded correctly.
+</p>
+15/01/2009 Version 0.90 
+<p>- Update url on intro screens to www.plaatsoft.nl (My new domain).
+- Network thread status is now showed on welcome screen.
+- Bugfix: Remove some small reported graphical bugs.
+- Bugfix: Highscore is now always loaded correctly.
+- Bugfix: Remove several bugs in network thread.
+</p>
+23/12/2008 Version 0.80 
+<p>- Added SDHC card support
+- Added power button support
+- Bugfix: IR pointer doesn't disappear anymore.
+</p>
+09/12/2008 Version 0.70 
+<p>- Added release notes screen
+- Added functionality to fetch release notes from internet
+- Improve highscore information (Show max score pre topic)
+- Improve IR pointer
+- Added google analytic http request (including highscore information)
+- Improve result screen information
+</p>
+27/11/2008 Version 0.60 
+<p>- All texts are now created with the freetype library (Thanks DrTwox) 
+</p>
+24/11/2008 Version 0.50 
+<p>- Added check if new version is available.
+- Added animated screen icons
+- Solved some minor reported bugs
+- Content update:
+  - Added 10 music tracks
+  - Added 100 english questions (5 topics).
+  - Added 20 dutch questions (1 topic).
+  - Added 20 german questions (1 topic).
+  - Added french translation.
+  - Corrected some wrong answers.
+</p>
+19/11/2008 Version 0.40 
+<p>- Added highscore screen
+- Highscore is stored (in xml format) on the SD card
+- Added credits screen
+- Added help (minus button) screen
+- Added 10 music tracks
+- Use freetype library as font render engine for screen (sub) titles
+- Content update:
+  - Added 170 english questions (8 topics)
+  - Added 100 dutch questions (4 topics)
+  - Added spanisch translation
+</p>
+18/11/2008 Version 0.31 
+<p>- Hotfix  to prevent core dump with 60Hz (480i) Tv mode
+- Donated the bibleQuiz source code to the community.
+
+</p>
+15/11/2008 Version 0.30 
+<p>- First release for the Wii HomeBrew community
+- Complete rebuild from game engine
+- Added language / topic select screen
+- Added goodbye screen
+- Added sound volume control screen
+- Content update:
+  - Added German language
+  - Added 10 english questions (1 topic)
+  - Added 20 dutch questions (2 topics)
+</p>
+08/11/2008 Version 0.20 
+<p>- Added support for xml question files
+- Added question result image with animation
+- Added multi language support
+- Added three hint buttons
+- Added support for 60Hz (480i) TV mode
+- Added score result screen
+- Added sndlib module with some sound effects
+- Added exit button
+- Added question word wrap function
+</p>
+03/11/2008 Version 0.10 
+<p>- Started programmingt
+- Gameboard designt
+- Added WiiRemote IR controlt
+- Added three welcome screenst
+- Added button rumble effect
+</p></body></html>€
+16-11-2009 07:14:38 [thread1-http_convertHTMlToAscii] leave [true]
+BibleQuiz Release Notes
+
+Known Issues
+
+None
+
+
+Development Log
+
+18/09/2009 Version 0.93 
+- This version is compiled with the newest available Wii libraries.
+- Use the asndlib (part of libogc) now as standard sound engine.
+- Use libfat 1.0.4 as disk access engine.
+- Build game with libogc 1.7.1a and devkitPPC 1.5.0 (r17) compiler.
+
+13/03/2009 Version 0.92 
+- Upgrade GRRLIB graphical render engine from v3.0 to v4.0.
+- Improve intro screens.
+- Added fps (frame-per-second) information on all screens.
+- Added screenshot functionality. Press the plus button to make a picture.
+- Pictures are stored on the SD Card in the sd:/apps/bibleQuiz directory
+- Build game with libogc 1.7.1 and devkitPPC r16 compiler.
+
+06/02/2009 Version 0.91 
+- Add multi player mode for two, three and four players.
+- Improve third intro screen.
+- Increase http receive buffer size to 8196 bytes.
+- Use only one unique cookie number during the game.
+- Bugfix: Highscore is now always loaded correctly.
+
+15/01/2009 Version 0.90 
+- Update url on intro screens to www.plaatsoft.nl (My new domain).
+- Network thread status is now showed on welcome screen.
+- Bugfix: Remove some small reported graphical bugs.
+- Bugfix: Highscore is now always loaded correctly.
+- Bugfix: Remove several bugs in network thread.
+
+23/12/2008 Version 0.80 
+- Added SDHC card support
+- Added power button support
+- Bugfix: IR pointer doesn't disappear anymore.
+
+09/12/2008 Version 0.70 
+- Added release notes screen
+- Added functionality to fetch release notes from internet
+- Improve highscore information (Show max score pre topic)
+- Improve IR pointer
+- Added google analytic http request (including highscore information)
+- Improve result screen information
+
+27/11/2008 Version 0.60 
+- All texts are now created with the freetype library (Thanks DrTwox) 
+
+24/11/2008 Version 0.50 
+- Added check if new version is available.
+- Added animated screen icons
+- Solved some minor reported bugs
+- Content update:
+  - Added 10 music tracks
+  - Added 100 english questions (5 topics).
+  - Added 20 dutch questions (1 topic).
+  - Added 20 german questions (1 topic).
+  - Added french translation.
+  - Corrected some wrong answers.
+
+19/11/2008 Version 0.40 
+- Added highscore screen
+- Highscore is stored (in xml format) on the SD card
+- Added credits screen
+- Added help (minus button) screen
+- Added 10 music tracks
+- Use freetype library as font render engine for screen (sub) titles
+- Content update:
+  - Added 170 english questions (8 topics)
+  - Added 100 dutch questions (4 topics)
+  - Added spanisch translation
+
+18/11/2008 Version 0.31 
+- Hotfix  to prevent core dump with 60Hz (480i) Tv mode
+- Donated the bibleQuiz source code to the community.
+
+
+15/11/2008 Version 0.30 
+- First release for the Wii HomeBrew community
+- Complete rebuild from game engine
+- Added language / topic select screen
+- Added goodbye screen
+- Added sound volume control screen
+- Content update:
+  - Added German language
+  - Added 10 english questions (1 topic)
+  - Added 20 dutch questions (2 topics)
+
+08/11/2008 Version 0.20 
+- Added support for xml question files
+- Added question result image with animation
+- Added multi language support
+- Added three hint buttons
+- Added support for 60Hz (480i) TV mode
+- Added score result screen
+- Added sndlib module with some sound effects
+- Added exit button
+- Added question word wrap function
+
+03/11/2008 Version 0.10 
+- Started programmingt
+- Gameboard designt
+- Added WiiRemote IR controlt
+- Added three welcome screenst
+- Added button rumble effect
+16-11-2009 07:14:38 [thread1-tcp_thread] stateMachine=TCP_REQUEST2b
+16-11-2009 07:14:38 [thread1-http_split_url] enter
+16-11-2009 07:14:38 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] enter
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] domain=[www.plaatsoft.nl]
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] url=[/service/releasenotes2.html]
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] id=[UA-6887062-1]
+16-11-2009 07:14:38 [thread1-http_encode_url] enter
+16-11-2009 07:14:38 [thread1-http_encode_url] buf=[www.plaatsoft.nl]
+16-11-2009 07:14:38 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:38 [thread1-http_encode_url] enter
+16-11-2009 07:14:38 [thread1-http_encode_url] buf=[http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii]
+16-11-2009 07:14:38 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:38 [thread1-http_encode_url] enter
+16-11-2009 07:14:38 [thread1-http_encode_url] buf=[%2Fservice%2Freleasenotes2.html]
+16-11-2009 07:14:38 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:38 [thread1-http_encode_url] enter
+16-11-2009 07:14:38 [thread1-http_encode_url] buf=[WiiBrew%20BibleQuiz%200.94]
+16-11-2009 07:14:38 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] utmac=[UA-6887062-1]
+16-11-2009 07:14:38 [thread1-http_encode_url] enter
+16-11-2009 07:14:38 [thread1-http_encode_url] buf=[BibleQuiz%3D0.94]
+16-11-2009 07:14:38 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] buffer=http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1758355678&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fservice%2Freleasenotes2.html&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355678.1258269278.1258442078.1258355678.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355678.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B
+16-11-2009 07:14:38 [thread1-http_googleAnalysicUrl] leave [void]
+16-11-2009 07:14:38 [thread1-http_request] enter
+16-11-2009 07:14:38 [thread1-http_split_url] enter
+16-11-2009 07:14:38 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:38 [thread1-tcp_connect] enter [host=www.google-analytics.com|port=80]
+16-11-2009 07:14:38 [thread1-tcp_connect] net_gethostbyname successfull resolved
+16-11-2009 07:14:38 [thread1-tcp_socket] enter
+16-11-2009 07:14:38 [thread1-tcp_socket] net_socket succesfull
+16-11-2009 07:14:38 [thread1-tcp_socket] leave [0]
+16-11-2009 07:14:38 [thread1-tcp_connect] tcp_socket succesfull
+16-11-2009 07:14:38 [thread1-tcp_connect] DNS resolve=74.125.77.139
+16-11-2009 07:14:38 [thread1-tcp_connect] net_connect succesfull
+16-11-2009 07:14:38 [thread1-tcp_connect] leave [0]
+16-11-2009 07:14:38 [thread1-http_request] tcp_connect(www.google-analytics.com, 80) = 0
+16-11-2009 07:14:38 [thread1-http_request] request=GET /__utm.gif?utmwv=1&utmn=1758355678&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fservice%2Freleasenotes2.html&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355678.1258269278.1258442078.1258355678.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355678.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:38 [thread1-tcp_write] enter [bufsize=720]
+16-11-2009 07:14:38 [thread1-tcp_write] buffer=GET /__utm.gif?utmwv=1&utmn=1758355678&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fservice%2Freleasenotes2.html&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355678.1258269278.1258442078.1258355678.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355678.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:38 [thread1-tcp_write] leave [left=0]
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=16]
+16-11-2009 07:14:38 [thread1-http_request] HTTP/1.1 200 OK
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=36]
+16-11-2009 07:14:38 [thread1-http_request] Date: Mon, 16 Nov 2009 05:12:52 GMT
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=19]
+16-11-2009 07:14:38 [thread1-http_request] Content-Length: 35
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=17]
+16-11-2009 07:14:38 [thread1-http_request] Pragma: no-cache
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=72]
+16-11-2009 07:14:38 [thread1-http_request] Cache-Control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=39]
+16-11-2009 07:14:38 [thread1-http_request] Expires: Wed, 19 Apr 2000 11:43:00 GMT
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=45]
+16-11-2009 07:14:38 [thread1-http_request] Last-Modified: Wed, 21 Jan 2004 19:50:30 GMT
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=24]
+16-11-2009 07:14:38 [thread1-http_request] Content-Type: image/gif
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=14]
+16-11-2009 07:14:38 [thread1-http_request] Server: Golfe
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=20]
+16-11-2009 07:14:38 [thread1-http_request] X-XSS-Protection: 0
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:38 [thread1-tcp_readln] leave [bufsize=1]
+16-11-2009 07:14:38 [thread1-http_request] 
+16-11-2009 07:14:38 [thread1-http_request] content_length=35, status=200, linecount=10
+16-11-2009 07:14:38 [thread1-tcp_read] enter
+16-11-2009 07:14:38 [thread1-tcp_read] leave [left=0]
+16-11-2009 07:14:38 [thread1-http_request] leave [true]
+16-11-2009 07:14:38 [thread1-http_get_result] enter
+16-11-2009 07:14:38 [thread1-http_get_result] leave [true]
+GIF89a  €ÿ ÿÿÿ   ,       D ;16-11-2009 07:14:38 [thread1-tcp_thread] stateMachine=TCP_REQUEST3a
+16-11-2009 07:14:38 [thread1-http_request] enter
+16-11-2009 07:14:38 [thread1-http_split_url] enter
+16-11-2009 07:14:38 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:38 [thread1-tcp_connect] enter [host=www.plaatsoft.nl|port=80]
+16-11-2009 07:14:38 [thread1-tcp_connect] net_gethostbyname successfull resolved
+16-11-2009 07:14:38 [thread1-tcp_socket] enter
+16-11-2009 07:14:38 [thread1-tcp_socket] net_socket succesfull
+16-11-2009 07:14:38 [thread1-tcp_socket] leave [0]
+16-11-2009 07:14:38 [thread1-tcp_connect] tcp_socket succesfull
+16-11-2009 07:14:38 [thread1-tcp_connect] DNS resolve=85.158.203.157
+16-11-2009 07:14:38 [thread1-tcp_connect] net_connect succesfull
+16-11-2009 07:14:38 [thread1-tcp_connect] leave [0]
+16-11-2009 07:14:38 [thread1-http_request] tcp_connect(www.plaatsoft.nl, 80) = 0
+16-11-2009 07:14:38 [thread1-http_request] request=GET /service/score_set.php?appl=BibleQuiz HTTP/1.1
+Host: www.plaatsoft.nl
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:38 [thread1-tcp_write] enter [bufsize=213]
+16-11-2009 07:14:38 [thread1-tcp_write] buffer=GET /service/score_set.php?appl=BibleQuiz HTTP/1.1
+Host: www.plaatsoft.nl
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:38 [thread1-tcp_write] leave [left=0]
+16-11-2009 07:14:38 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=16]
+16-11-2009 07:14:39 [thread1-http_request] HTTP/1.1 200 OK
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=36]
+16-11-2009 07:14:39 [thread1-http_request] Date: Mon, 16 Nov 2009 05:12:52 GMT
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=17]
+16-11-2009 07:14:39 [thread1-http_request] Server: Apache/2
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=35]
+16-11-2009 07:14:39 [thread1-http_request] X-Powered-By: PHP/5.2.9-0.dotdeb.1
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=19]
+16-11-2009 07:14:39 [thread1-http_request] Content-Length: 49
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=39]
+16-11-2009 07:14:39 [thread1-http_request] Content-Type: text/html; charset=UTF-8
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:39 [thread1-tcp_readln] leave [bufsize=1]
+16-11-2009 07:14:39 [thread1-http_request] 
+16-11-2009 07:14:39 [thread1-http_request] content_length=49, status=200, linecount=6
+16-11-2009 07:14:39 [thread1-tcp_read] enter
+16-11-2009 07:14:39 [thread1-tcp_read] leave [left=0]
+16-11-2009 07:14:39 [thread1-http_request] leave [true]
+16-11-2009 07:14:39 [thread1-http_get_result] enter
+16-11-2009 07:14:39 [thread1-http_get_result] leave [true]
+<?xml version='1.0'?>
+<highscore>
+</highscore>
+16-11-2009 07:14:39 [thread1-tcp_thread] stateMachine=TCP_REQUEST3b
+16-11-2009 07:14:39 [thread1-http_split_url] enter
+16-11-2009 07:14:39 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] enter
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] domain=[www.plaatsoft.nl]
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] url=[/service/score_set.php]
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] id=[UA-6887062-1]
+16-11-2009 07:14:39 [thread1-http_encode_url] enter
+16-11-2009 07:14:39 [thread1-http_encode_url] buf=[www.plaatsoft.nl]
+16-11-2009 07:14:39 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:39 [thread1-http_encode_url] enter
+16-11-2009 07:14:39 [thread1-http_encode_url] buf=[http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii]
+16-11-2009 07:14:39 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:39 [thread1-http_encode_url] enter
+16-11-2009 07:14:39 [thread1-http_encode_url] buf=[%2Fservice%2Fscore%5Fset.php]
+16-11-2009 07:14:39 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:39 [thread1-http_encode_url] enter
+16-11-2009 07:14:39 [thread1-http_encode_url] buf=[WiiBrew%20BibleQuiz%200.94]
+16-11-2009 07:14:39 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] utmac=[UA-6887062-1]
+16-11-2009 07:14:39 [thread1-http_encode_url] enter
+16-11-2009 07:14:39 [thread1-http_encode_url] buf=[BibleQuiz%3D0.94]
+16-11-2009 07:14:39 [thread1-http_encode_url] leave [char *]
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] buffer=http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1758355679&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fservice%2Fscore%5Fset.php&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355679.1258269279.1258442079.1258355679.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355679.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B
+16-11-2009 07:14:39 [thread1-http_googleAnalysicUrl] leave [void]
+16-11-2009 07:14:39 [thread1-http_request] enter
+16-11-2009 07:14:39 [thread1-http_split_url] enter
+16-11-2009 07:14:39 [thread1-http_split_url] leave [true]
+16-11-2009 07:14:39 [thread1-tcp_connect] enter [host=www.google-analytics.com|port=80]
+16-11-2009 07:14:39 [thread1-tcp_connect] net_gethostbyname successfull resolved
+16-11-2009 07:14:39 [thread1-tcp_socket] enter
+16-11-2009 07:14:39 [thread1-tcp_socket] net_socket succesfull
+16-11-2009 07:14:39 [thread1-tcp_socket] leave [0]
+16-11-2009 07:14:39 [thread1-tcp_connect] tcp_socket succesfull
+16-11-2009 07:14:39 [thread1-tcp_connect] DNS resolve=74.125.77.139
+16-11-2009 07:14:39 [thread1-tcp_connect] net_connect succesfull
+16-11-2009 07:14:39 [thread1-tcp_connect] leave [0]
+16-11-2009 07:14:39 [thread1-http_request] tcp_connect(www.google-analytics.com, 80) = 0
+16-11-2009 07:14:39 [thread1-http_request] request=GET /__utm.gif?utmwv=1&utmn=1758355679&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fservice%2Fscore%5Fset.php&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355679.1258269279.1258442079.1258355679.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355679.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:39 [thread1-tcp_write] enter [bufsize=717]
+16-11-2009 07:14:39 [thread1-tcp_write] buffer=GET /__utm.gif?utmwv=1&utmn=1758355679&utmcs=UTF-8&utmsr=640x528&utmsc=32-bit&utmul=en&utmje=1&utmfl=&utmcr=1&utmdt=WiiBrew%20BibleQuiz%200.94&utmhn=www.plaatsoft.nl&utmr=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3DBibleQuiz%2BWii&utmp=%2Fservice%2Fscore%5Fset.php&utmac=UA-6887062-1&utmcc=__utma=58346567.1358355679.1258269279.1258442079.1258355679.3%3B%2B__utmb=58346567%3B%2B__utmc=58346567%3B%2B__utmz=58346567.1258355679.3.2.utmccn=(direct)%3Dutmcsr=(direct)%3Dutmctr=(none)%3Dutmcmd=(none)%3B%2B__utmv%3D58346567.BibleQuiz%3D0.94%3B HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: BibleQuiz/0.94 (compatible; v3.X; Nintendo Wii)
+Accept: text/xml,text/html,text/plain,image/gif
+Cache-Control: no-cache
+
+
+16-11-2009 07:14:39 [thread1-tcp_write] leave [left=0]
+16-11-2009 07:14:39 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=16]
+16-11-2009 07:14:40 [thread1-http_request] HTTP/1.1 200 OK
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=36]
+16-11-2009 07:14:40 [thread1-http_request] Date: Mon, 16 Nov 2009 05:12:53 GMT
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=19]
+16-11-2009 07:14:40 [thread1-http_request] Content-Length: 35
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=17]
+16-11-2009 07:14:40 [thread1-http_request] Pragma: no-cache
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=72]
+16-11-2009 07:14:40 [thread1-http_request] Cache-Control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=39]
+16-11-2009 07:14:40 [thread1-http_request] Expires: Wed, 19 Apr 2000 11:43:00 GMT
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=45]
+16-11-2009 07:14:40 [thread1-http_request] Last-Modified: Wed, 21 Jan 2004 19:50:30 GMT
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=24]
+16-11-2009 07:14:40 [thread1-http_request] Content-Type: image/gif
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=14]
+16-11-2009 07:14:40 [thread1-http_request] Server: Golfe
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=20]
+16-11-2009 07:14:40 [thread1-http_request] X-XSS-Protection: 0
+16-11-2009 07:14:40 [thread1-tcp_readln] enter
+16-11-2009 07:14:40 [thread1-tcp_readln] leave [bufsize=1]
+16-11-2009 07:14:40 [thread1-http_request] 
+16-11-2009 07:14:40 [thread1-http_request] content_length=35, status=200, linecount=10
+16-11-2009 07:14:40 [thread1-tcp_read] enter
+16-11-2009 07:14:40 [thread1-tcp_read] leave [left=0]
+16-11-2009 07:14:40 [thread1-http_request] leave [true]
+16-11-2009 07:14:40 [thread1-http_get_result] enter
+16-11-2009 07:14:40 [thread1-http_get_result] leave [true]
+GIF89a  €ÿ ÿÿÿ   ,       D ;16-11-2009 07:14:40 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:40 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:42 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:42 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:42 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:43 [thread0-initTranslation] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-storeXmlValue] enter
+16-11-2009 07:14:43 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:43 [thread0-initTranslation] leave [void]
+16-11-2009 07:14:43 [thread0-initTopics] enter
+16-11-2009 07:14:43 [thread0-initTopics] leave [void]
+16-11-2009 07:14:43 [thread0-initQuestions] enter
+16-11-2009 07:14:43 [thread0-initQuestions] leave [void]
+16-11-2009 07:14:44 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:44 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:44 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:44 [thread0-initTranslation] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-storeXmlValue] enter
+16-11-2009 07:14:44 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:44 [thread0-initTranslation] leave [void]
+16-11-2009 07:14:44 [thread0-initTopics] enter
+16-11-2009 07:14:44 [thread0-initTopics] leave [void]
+16-11-2009 07:14:44 [thread0-initQuestions] enter
+16-11-2009 07:14:44 [thread0-initQuestions] leave [void]
+16-11-2009 07:14:45 [thread0-initTranslation] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-storeXmlValue] enter
+16-11-2009 07:14:45 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:45 [thread0-initTranslation] leave [void]
+16-11-2009 07:14:45 [thread0-initTopics] enter
+16-11-2009 07:14:45 [thread0-initTopics] leave [void]
+16-11-2009 07:14:45 [thread0-initQuestions] enter
+16-11-2009 07:14:46 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:46 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:46 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:46 [thread0-initTranslation] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-storeXmlValue] enter
+16-11-2009 07:14:46 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:46 [thread0-initTranslation] leave [void]
+16-11-2009 07:14:46 [thread0-initTopics] enter
+16-11-2009 07:14:46 [thread0-initQuestions] enter
+16-11-2009 07:14:47 [thread0-initTranslation] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-storeXmlValue] enter
+16-11-2009 07:14:47 [thread0-storeXmlValue] leave [void]
+16-11-2009 07:14:47 [thread0-initTranslation] leave [void]
+16-11-2009 07:14:47 [thread0-initTopics] enter
+16-11-2009 07:14:47 [thread0-initTopics] leave [void]
+16-11-2009 07:14:47 [thread0-initQuestions] enter
+16-11-2009 07:14:47 [thread0-initQuestions] leave [void]
+16-11-2009 07:14:48 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:48 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:48 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:50 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:50 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:50 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:52 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:52 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:52 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:54 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:54 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:54 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:54 [thread0-initMusicTrack] enter
+16-11-2009 07:14:54 [thread0-initMusicTrack] leave [void]
+16-11-2009 07:14:56 [thread0-initMusicTrack] enter
+16-11-2009 07:14:56 [thread0-initMusicTrack] leave [void]
+16-11-2009 07:14:56 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:56 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:56 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:14:57 [thread0-initMusicTrack] enter
+16-11-2009 07:14:57 [thread0-initMusicTrack] leave [void]
+16-11-2009 07:14:57 [thread0-initMusicTrack] enter
+16-11-2009 07:14:57 [thread0-initMusicTrack] leave [void]
+16-11-2009 07:14:58 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:14:58 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:14:58 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:00 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:00 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:00 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:02 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:02 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:02 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:04 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:04 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:04 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:06 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:06 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:06 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:08 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:08 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:08 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:10 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:10 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:10 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:12 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:12 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:12 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:14 [thread1-tcp_sleep] leave [void]
+16-11-2009 07:15:14 [thread1-tcp_thread] stateMachine=TCP_IDLE
+16-11-2009 07:15:14 [thread1-tcp_sleep] enter [wait=2 sec]
+16-11-2009 07:15:15 [thread1-tcp_stop_thread] enter
+16-11-2009 07:15:15 [thread1-tcp_stop_thread] leave [0]

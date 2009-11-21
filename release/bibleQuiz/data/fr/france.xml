@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<english>      
+      <labelWelcome value='Bienvenue' />
+      <labelTopic value='Matiere' />
+      <labelCreated value='Cree' />
+      <labelScore value='Points' />
+      <labelQuestion value='Question' />
+      <labelAnswers value='Reponse' />
+      <labelResult value='Comment allez-vous?' />
+      <labelCategory1 value='Wouah, le grand travail!' />
+      <labelCategory2 value='pas le mauvais!' />
+      <labelCategory3 value='Oops, essai encore!' />
+      <labelRight value='Droite' />
+      <labelWrong value='Mal' />
+      <labelAuthor value='Auteur' />
+      <labelGoodbye value='Au revoir' />
+      <labelMusic value='Volume de musique ' />
+      <labelEffects value='Effectue le volume' />
+	<labelHighScore value='Hauts points' />
+	<labelDate value='Date' />
+ 	<labelHints value='Conseils' />
+	<labelPlayTime value='Duree' />
+      <labelResults value='Resultats' />
+	<labelHelp value='Aide' />
+	<labelTrack value='Voie de musique' />
+      <labelNewVersion value='La nouvelle version est disponible' />
+
+      <buttonAnswerA value='Reponse A' />
+      <buttonAnswerB value='Reponse B' />
+      <buttonAnswerC value='Reponse C' />
+      <buttonAnswerD value='Reponse D' />
+      <buttonHint value='Hint' />
+      <buttonRetry value='Tentative' />
+      <buttonPlay value='Jeu' />
+      <buttonNext value='Apres' />
+      <buttonStop value='Arret' />
+      <buttonExit1 value='Sortez a HBC' />
+      <buttonExit2 value='Remise Wii' />
+      <buttonContinue value='Continuez' />
+      <buttonSound value='Bruit' />
+      <buttonBack value='Dos' />
+      <buttonCredits value='Credits' />
+      <buttonPrevious value='Precedent' />
+      <buttonReleaseNotes value='Release Notes'/>
+ 
+</english>
+
+   

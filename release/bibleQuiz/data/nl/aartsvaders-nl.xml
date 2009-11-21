@@ -1,0 +1,211 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='De aartsvaders'
+      author='wplaat'
+      created='16-11-2008'
+      note="Een vriend heeft te aller tijd lief; en een broeder wordt in de benauwdheid geboren - Spreuken" />
+
+   <item
+     question='Waar is Abram geboren?' 
+     answerA='Kanaan'
+     answerB='Egypte'
+     answerC='Ur der Chaldeeen'
+     answer='C'
+     number='1' />	
+
+   <item
+     question='Hoe heette de vader van Abram?'
+     answerA='Noach'
+     answerB='Lot'
+     answerC='Terach' 
+     answer='C'
+     number='2' />
+
+   <item
+     question='Waarom ging Abram naar Kanaan?'
+     answerA='Daar was werk genoeg'
+     answerB='God vroeg het aan hem'
+     answerC='Er woonde al familie van hem'
+     answer='B'
+     number='3' />
+
+   <item
+     question='Hoe heette de vrouw van Abram?'
+     answerA='Rebekka'
+     answerB='Rachel'
+     answerC='Sarai'
+     answer='C'
+     number='4' />
+
+   <item
+     question='Waarom gingen Abram en Sarai naar Egypte?'
+     answerA='Er was hongersnood in Kanaan'
+     answerB='Ze gingen met vakantie'
+     answerC='Daar was veel geld te verdienen'
+     answer='A'
+     number='5' />
+
+   <item
+     question='Met wie krijgt Abram in Egypte moeilijkheden?'
+     answerA='met zijn knechten'
+     answerB='met de Farao'
+     answerC='met zijn neef Lot'
+     answer='B'
+     number='6' />
+
+   <item
+     question='Ze gaan terug naar Kanaan. Waar gaat Lot wonen?'
+     answerA='In de Jordaanstreek.'
+     answerB='aan de kust'
+     answerC='in het gebergte.'
+     answer='A'
+     number='7' />
+
+   <item
+     question='Iemand brengt Abram bericht. Hij zegt: ................'
+     answerA='Het gaat goed met Lot.'
+     answerB='Lot is gestorven.'
+     answerC='Lot is gevangen genomen' 
+     answer='C'
+     number='8' />
+
+   <item
+     question='Abram heeft geen kinderen. Aan wie vertelt hij zijn zorgen?'
+     answerA='aan God.'
+     answerB='aan de buren.'
+     answerC='aan de familie.' 
+     answer='A'
+     number='9' />
+
+   <item
+     question='God zegt tegen Abram: .................'
+     answerA='Er komt wel een oplossing.'
+     answerB='Je nageslacht zal groot zijn.'
+     answerC='Laat de mensen maar praten.' 
+     answer='B'
+     number='10' />
+
+   <item
+     question='Sarai blijft onvruchtbaar. Wie wordt Abrams 2e vrouw?'
+     answerA='Hagar'
+     answerB='Rachel'
+     answerC='Zilpa' 
+     answer='A'
+     number='11' />
+
+   <item
+     question='Abram en Hagar krijgen een zoon. Ze noemen hem .........'
+     answerA='Lot'
+     answerB='Isaak'
+     answerC='Ismael'
+     answer='C'
+     number='12' />
+
+   <item
+     question='Abram en Sarai krijgen een nieuwe naam. Welke namen?'
+     answerA='Ibram en Sora'
+     answerB='Abraham en Sara'
+     answerC='Aram en Soraja'
+     answer='B'
+     number='13' />
+
+   <item
+     question='God gaat de mensen in Sodom verdelgen. Wat doet Abraham?'
+     answerA='Hij bidt voor die mensen'
+     answerB='Hij waarschuwt die mensen'
+     answerC='Het kan hem niets schelen' 
+     answer='A'
+     number='14' />
+
+   <item
+     question='Abraham en Sara krijgen eindelijk een zoon. Abraham is dan ......'
+     answerA='80 jaar'
+     answerB='90 jaar'
+     answerC='100 jaar'
+     answer='C'
+     number='15' />
+
+   <item
+     question='Waar moet Abraham Isaak offeren?'
+     answerA='op de berg Sinai'
+     answerB='op de berg Karmel'
+     answerC='op de berg Moria' 
+     answer='C'
+     number='16' />
+
+
+   <item
+     question='Door het nageslacht van Abraham zullen alle volken ............'
+     answerA='in Europa gezegend worden.'
+     answerB='op aarde gezegend worden.'
+     answerC='in Afrika gezegend worden.' 
+     answer='B'
+     number='17' />
+
+   <item
+     question='Isaak trouwt met .........'
+     answerA='Rebekka'
+     answerB='Rachel'
+     answerC='Bilha' 
+     answer='A'
+     number='18' />
+
+   <item
+     question='20 jaar later wordt er een tweeling geboren.'
+     answerA='Kain en Abel'
+     answerB='Ruben en Simeon'
+     answerC='Esau en Jakob' 
+     answer='C'
+     number='19' />
+
+   <item
+     question='Esau verkoopt aan Jakob ..........'
+     answerA='300 schapen.'
+     answerB='het eerstgeboorterecht.'
+     answerC='150 kamelen'
+     answer='B'
+     number='20' />
+
+   <item
+     question='Jakob steelt van Esau ........'
+     answerA='een kameelzadel.'
+     answerB='de vaderlijke zegen.'
+     answerC='20 schapen'
+     answer='B'
+     number='21' />
+
+   <item
+     question='Jakob vlucht naar Haran. Daar woont ............'
+     answerA='Noach'
+     answerB='Laban'
+     answerC='Abimelek'
+     answer='B'
+     number='22' />
+
+   <item
+     question='Onderweg heeft Jakob een droom. Waar?'
+     answerA='in Betel'
+     answerB='in Hebron'
+     answerC='in Jeruzalem'
+     answer='A'
+     number='23' />
+
+   <item
+     question='Jakob trouwt met 4 vrouwen en krijgt .........'
+     answerA='10 zonen'
+     answerB='12 zonen'
+     answerC='14 zonen'
+     answer='B'
+     number='24' />
+
+   <item
+     question='Jakob keert terug naar Kanaan. Hij krijgt een andere naam.  Welke?'
+     answerA='Efraim'
+     answerB='Gideon'
+     answerC='Israel'
+     answer='C'
+     number='25' />
+	
+</bibleQuiz> 

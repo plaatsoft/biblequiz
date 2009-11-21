@@ -1,0 +1,220 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic="Hills and mountains"
+      author="www.biblequizzes.com"
+      created="24-11-2008"
+      language="en" 
+      note="The beginning of wisdom is this: Get wisdom - Proverbs" />
+
+
+   <item
+     question="According to Psalms, how do mountains skip?"
+     answerA="Like goats"
+     answerB="Like children"
+     answerC="Like rams"
+     answerD="Like antelopes"
+     answer="C"
+     explanation="Proof Passage (Psalms 114:4)"
+     number="1" />	
+
+   <item
+     question="What is the name of the mountain of the Lord?"
+     answerA="Gerizim"
+     answerB="Zion"
+     answerC="Sinai"
+     answerD="Hermon"
+     answer="B"
+     explanation="Proof Passage (Joel 3:17) "
+     number="2" />
+
+   <item
+     question="Where did the ark come to rest on?"
+     answerA="Hills of Judea"
+     answerB="Mount Gilboa"
+     answerC="Forests of Lebanon"
+     answerD="Mountains of Ararat"
+     answer="D"
+     explanation="Proof Passage (Genesis 8:4) "
+     number="3" />
+
+   <item
+     question="Where did Solomon build the house of the Lord?"
+     answerA="Mount Moriah"
+     answerB="Mount of Olives"
+     answerC="Mount Carmel"
+     answerD="Mount Tabor"
+     answer="A"
+     explanation="Proof Passage (2 Chronicles 3:1)"
+     number="4" />
+
+   <item
+     question="Whose army was defeated at Mount Tabor?"
+     answerA="Sennacherib"
+     answerB="Sisera"
+     answerC="Jabin"
+     answerD="Joab"
+     answer="C"
+     explanation="Proof Passage (Judges 4:7)"
+     number="5" />
+
+   <item
+     question="Which of the following notable events happened at Mount Sinai? "
+     answerA="Jesus crucified"
+     answerB="Jesus ascended"
+     answerC="Joshua defeats Moab"
+     answerD="Ten commandments received"
+     answer="D"
+     explanation="Proof Passage (Exodus 31:18)"
+     number="6" />
+
+   <item
+     question="Which was the Mount of Blessing? "
+     answerA="Gerizim"
+     answerB="Nebo"
+     answerC="Zion"
+     answerD="Olives"
+     answer="A"
+     explanation="Proof Passage (Deuteronomy 11:29)"
+     number="7" />
+
+   <item
+     question=") Moses saw the promised land from this mountain:"
+     answerA="Ebal"
+     answerB="Hermon"
+     answerC="Tabor"
+     answerD="Nebo"
+     answer="D"
+     explanation="Proof Passage (Deuteronomy 34:1-7)"
+     number="8" />
+
+   <item
+     question="What did Joshua build on Mount Ebal?"
+     answerA="Temple"
+     answerB="Idol"
+     answerC="Altar"
+     answerD="House"
+     answer="C"
+     explanation="Proof Passage (Joshua 8:30)"
+     number="9" />
+
+   <item
+     question="What is an alternative name for Mount Hermon?"
+     answerA="Zion"
+     answerB="Sirion"
+     answerC="Smyrna"
+     answerD="Sinai"
+     answer="B"
+     explanation="Proof Passage (Deuteronomy 3:9)"
+     number="10" />
+
+   <item
+     question="As Jesus walked to the cross, he warned the 'Daughters of Jerusalem' that they would say this to the mountains: "
+     answerA="Run from us"
+     answerB="Rise for us"
+     answerC="Fall on us"
+     answerD="Protect us"
+     answer="C"
+     explanation="Proof Passage (Luke 23:28-30)"
+     number="11" />
+
+   <item
+     question="In the battle of the Amalekites and Israelites what did Moses do on the hill top? "
+     answerA="Stood up and cheered"
+     answerB="Waved them on"
+     answerC="Held up his hands"
+     answerD="Prayed"
+     answer="C"
+     explanation="Proof Passage (Exodus 17:8-16) "
+     number="12" />
+
+   <item
+     question="Luke quotes a prophecy concerning John the Baptist in which every mountain will be:"
+     answerA="A high place"
+     answerB="Green"
+     answerC="Exalted"
+     answerD="Made low"
+     answer="D"
+     explanation="Proof Passage (Luke 3:4-5)"
+     number="13" />
+
+   <item
+     question="Who inherited Shechem in Mount Ephraim? "
+     answerA="Merarites"
+     answerB="Children of Aaron"
+     answerC="Kohathites"
+     answerD="Gershomites"
+     answer="C"
+     explanation="Proof Passage (Joshua 21:21) "
+     number="14" />
+
+   <item
+     question="Who dwelt in Mount Seir? "
+     answerA="Esau"
+     answerB="Jacob"
+     answerC="Lot"
+     answerD="Ishmael"
+     answer="A"
+     explanation="Proof Passage (Genesis 36:8)"
+     number="15" />
+
+   <item
+     question="What is remembered at hill Mizar? "
+     answerA="A successful Battle"
+     answerB="God"
+     answerC="Happiness"
+     answerD="Joy"
+     answer="B"
+     explanation="Proof Passage (Psalms 42:6) "
+     number="16" />
+
+   <item
+     question="Jesus was on this mount when he delivered a famous prophecy about the times of the end:"
+     answerA="Mount of Olives"
+     answerB="Mount Sinai"
+     answerC="Mount Hermon"
+     answerD="Mount Zion"
+     answer="A"
+     explanation="Proof Passage (Mark 13:3)"
+     number="17" />
+
+   <item
+     question="As the mountains surround Jerusalem, so the Lord surrounds __________." 
+     answerA="His enemies"
+     answerB="His people"
+     answerC="The land"
+     answerD="The earth"
+     answer="B"
+     explanation="Proof Passage (Psalm 125:2)"
+     number="18" />
+
+   <item
+     question="What Mount is a Sabbath day's journey from Jerusalem?"
+     answerA="Mount Zion"
+     answerB="Mount Moriah"
+     answerC="Mount of Olives"
+     answerD="Mount Horeb"
+     answer="C"
+     explanation="Proof Passage (Acts 1:12)"
+     number="19" />
+
+   <item
+     question="Where did Gideon have his army prior to confronting the Midianites?"
+     answerA="Mount Gilead"
+     answerB="Mount Tabor"
+     answerC="Mount Gerizim"
+     answerD="Mount Gilboa"
+     answer="A"
+     explanation="Proof Passage (Judges 7:1-3)"
+     number="20" />   
+	
+</bibleQuiz> 
+
+
+
+
+
+
+
+
