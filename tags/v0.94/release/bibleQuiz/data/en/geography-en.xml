@@ -1,0 +1,211 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic="Bible geography"
+      author="www.biblequizzes.com"
+      created="24-11-2008"
+      language="en" 
+      note="For the LORD gives wisdom; from his mouth come knowledge and understanding - Proverbs" />
+
+   <item
+     question="The meek will inherit: "
+     answerA="the mountains"
+     answerB="the garden"
+     answerC="the earth"
+     answerD="peace"
+     answer="C"
+     explanation="Proof Passage (Matthew 5:5)"
+     number="1" />	
+
+   <item
+     question="Jesus gave his 'sermon' starting in Matthew 5 from which geographical feature?"
+     answerA="on a river in a boat"
+     answerB="on a mountain"
+     answerC="on a plain"
+     answerD="in a valley"
+     answer="B"
+     explanation="Proof Passage (Matthew 5:1)"
+     number="2" />
+
+   <item
+     question="Lebanon was at one time known for its:"
+     answerA="forests"
+     answerB="deserts"
+     answerC="pools"
+     answerD="wells"
+     answer="A"
+     explanation="Proof Passage (2 Chronicles 2:8)"
+     number="3" />
+
+   <item
+     question="Matthew speaks of famines, pestilences, and these in various places:"
+     answerA="flooding"
+     answerB="hail"
+     answerC="thunderstorms"
+     answerD="earthquakes"
+     answer="D"
+     explanation="Proof Passage (Matthew 24:7)"
+     number="4" />
+
+   <item
+     question="In the beginning, the earth was without form and covered with: "
+     answerA="water"
+     answerB="fire"
+     answerC="debris"
+     answerD="forest"
+     answer="A"
+     explanation="Proof Passage (Genesis 1:2)"
+     number="5" />
+
+   <item
+     question="Although raised in Nazareth, Jesus was born in this city near Jerusalem:"
+     answerA="Bethel"
+     answerB="Philadelphia"
+     answerC="Tyre"
+     answerD="Bethlehem"
+     answer="D"
+     explanation="Proof Passage (Luke 2:4)"
+     number="6" />
+
+   <item
+     question="To escape the Egyptians, the Hebrews crossed this body of water:"
+     answerA="the Nile River"
+     answerB="the Red Sea"
+     answerC="the Jordan River"
+     answerD="the Mediterranean Sea"
+     answer="B"
+     explanation="Proof Passage (Exodus 15:22)"
+     number="7" />
+
+   <item
+     question="David was king in this city before he reigned in Jerusalem:"
+     answerA="Hinnom"
+     answerB="Bethel"
+     answerC="Hebron"
+     answerD="Bethlehem"
+     answer="C"
+     explanation="Proof Passage (2 Samuel 2:11)"
+     number="8" />
+
+   <item
+     question="This Church in Asia was mentioned in Revelation and means 'brotherly love':"
+     answerA="Agape"
+     answerB="Magog"
+     answerC="Philadelphia"
+     answerD="Jerusalem"
+     answer="C"
+     explanation="Proof Passage (Rev 3:7)"
+     number="9" />
+
+   <item
+     question="From which Philistine city was Goliath?"
+     answerA="Ekron"
+     answerB="Damascus"
+     answerC="Ashkelon"
+     answerD="Gath"
+     answer="D"
+     explanation="Proof Passage (1 Samuel 17:4)"
+     number="10" />
+
+   <item
+     question="The queen of which land came to meet Solomon? "
+     answerA="Samaria"
+     answerB="Syria"
+     answerC="Sheba"
+     answerD="Smyrna"
+     answer="C"
+     explanation="Proof Passage (1 Kings 10:1)"
+     number="11" />
+
+   <item
+     question="According to Jesus' parable of the sower, a person who receives the word happily, but falls away due to persecution is described as this type of ground:"
+     answerA="thorny"
+     answerB="rocky"
+     answerC="fertile"
+     answerD="blossoming"
+     answer="B"
+     explanation="Proof Passage (Matthew 13:19-20)"
+     number="12" />
+
+   <item
+     question="The Psalmist describes the Messiah's kingdom stretching from:"
+     answerA="the Red Sea to the Great Sea"
+     answerB="shore to shore"
+     answerC="sea to sea"
+     answerD="shore to the far lands"
+     answer="C"
+     explanation="Proof Passage (Psalm 72:8)"
+     number="13" />
+
+   <item
+     question="The Apocalypse was written from which island?"
+     answerA="Tarshish"
+     answerB="Madagascar"
+     answerC="Cyprus"
+     answerD="Patmos"
+     answer="D"
+     explanation="Proof Passage (Revelation 1:9)"
+     number="14" />
+
+   <item
+     question="'These were more noble...in that they received the word...and searched the scriptures daily':"
+     answerA="those in Ephesus"
+     answerB="those in Berea"
+     answerC="those in Thessolonica"
+     answerD="those in Galatia"
+     answer="B"
+     explanation="Proof Passage (Acts 17:10,11)"
+     number="15" />
+
+   <item
+     question="According to Zechariah, in that day his feet shall stand on:"
+     answerA="Mt. Zion"
+     answerB="Mt. Hermon"
+     answerC="Mt. of Olives"
+     answerD="Mt. Ararat"
+     answer="C"
+     explanation="Proof Passage (Zechariah 14:4)"
+     number="16" />
+
+   <item
+     question="Job was a native of this land:"
+     answerA="Uz"
+     answerB="Ur"
+     answerC="Upharsin"
+     answerD="Meshech"
+     answer="A"
+     explanation="Proof Passage (Job 1:1)"
+     number="17" />
+
+   <item
+     question="The LORD will gather all nations and plead with them in the valley of:"
+     answerA="Kidron"
+     answerB="the plain"
+     answerC="Hinnom"
+     answerD="Jehoshaphat"
+     answer="D"
+     explanation="Proof Passage (Joel 3:2)"
+     number="18" />
+
+   <item
+     question="Joseph (surnamed Barnabas) sold land in this country:"
+     answerA="Turkey"
+     answerB="Cyprus"
+     answerC="Italy"
+     answerD="Sicily"
+     answer="B"
+     explanation="Proof Passage (Acts 4:36-37)"
+     number="19" />
+
+   <item
+     question="The location of the palace of king Ahasuerus (Xerxes):"
+     answerA="Simeon"
+     answerB="Cyprus"
+     answerC="Susa"
+     answerD="Babylon"
+     answer="C"
+     explanation="Proof Passage (Esther 1:2)"
+     number="20" />   
+
+</bibleQuiz> 

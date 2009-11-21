@@ -1,0 +1,211 @@
+<?xml version='1.0'?>
+
+<bibleQuiz>
+   <header
+      topic='Jozef in Eqypte'
+      author='wplaat'
+      created='14-11-2008'  
+      note="De smeltkroes is voor het zilver, en de oven voor het goud; maar de HEERE proeft de harten - Spreuken" />
+
+   <item
+     question='Hoe heette de oudste zoon van Jakob?'
+     answerA='Issakar'
+     answerB='Ruben'
+     answerC='Zebulon' 
+     answer='B' 
+     number='1' />
+	
+   <item
+     question='De zonen van Rachel heten?'
+     answerA='Ruben en Simeon'
+     answerB='Levi en Juda'
+     answerC='Jozef en Benjamin'
+     answer='C' 
+     number='2' />
+
+   <item
+     question='Jozef droomt over ...........?'
+     answerA='Buigende korenschoven'
+     answerB='Vleesetende koeien'
+     answerC='De bakker en de schenker'
+     answer='A'
+     number='3'  />
+
+<item
+     question='Hoeveel broers heeft Jozef?'
+     answerA='tien'
+     answerB='elf'
+     answerC='twaalf' 
+     answer='B'
+     number='4' />
+
+   <item
+     question='Kooplieden brengen Jozef naar ........'
+     answerA='Kanaan'
+     answerB='Griekenland'
+     answerC='Egypte'
+     answer='C'
+     number='5' />
+
+   <item
+     question='Jozef wordt verkocht aan .......'
+     answerA='Potifar'
+     answerB='Farao'
+     answerC='Jetro' 
+     answer='A'
+     number='6' />
+
+   <item
+     question='De Here zegent Jozef. Alles wat hij onderneemt ........'
+     answerA='mislukt'
+     answerB='gelukt'
+     answerC='valt tegen'
+     answer='B'
+     number='7' />
+
+   <item
+     question='Jozef komt in de gevangenis. Waarom ?'
+     answerA='Hij heeft gestolen'
+     answerB='Hij is vals beschuldigd.'
+     answerC='Hij heeft iemand vermoord.'
+     answer='B'
+     number='8' />
+
+   <item
+     question='In de gevangenis legt Jozef de dromen uit van ......'
+     answerA='de Farao'
+     answerB='de directeur'
+     answerC='de bakker en de schenker'
+     answer='C'
+     number='9' />
+
+   <item
+     question='De Farao heeft gedroomd over .......'
+     answerA='koeien en korenhalmen.'
+     answerB='zon,maan en sterren.'
+     answerC='piramiden.'
+     answer='A'
+     number='10' />
+
+
+   <item
+     question='Er komen jaren van ............'
+     answerA='ziekte-gezondheid'
+     answerB='oorlog-vrede'
+     answerC='overvloed-hongersnood' 
+     answer='C'
+     number='11' />
+
+   <item
+     question='Jozef wordt ........'
+     answerA='directeur van een graanbedrijf.'
+     answerB='onderkoning van Egypte.'
+     answerC='gevangenis-directeur.'
+     answer='B'
+     number='12' />
+
+   <item
+     question='Jozef trouwt met Asnat. Hun twee zonen heten ......'
+     answerA='Jakob en Esau'
+     answerB='Mozes en Aaron'
+     answerC='Efraim en Manasse'
+     answer='C'
+     number='13' />
+
+   <item
+     question='De broers van Jozef reizen naar Egypte. Waarom?'
+     answerA='Ze gaan er heen met vakantie'
+     answerB='Ze gaan er koren kopen'
+     answerC='Ze willen Jozef terugkopen' 
+     answer='B'
+     number='14' />
+
+   <item
+     question='Er komen grote moeilijkheden door ......'
+     answerA='een zilveren beker.'
+     answerB='niet betaalde rekeningen.'
+     answerC='taalproblemen'
+     answer='A'
+     number='15' />
+
+   <item
+     question='De hele familie van Jakob gaat wonen in ......'
+     answerA='Raamses'
+     answerB='Pitom'
+     answerC='Gosen' 
+     answer='C'
+     number='16' />
+
+   <item
+     question='De Israelieten worden Hebreeen genoemd. Die naam betekent ......'
+     answerA='zij die komen van de overzijde.'
+     answerB='zij die komen uit een ver land.'
+     answerC='zij die komen uit het buitenland' 
+     answer='A'
+     number='17' />
+
+   <item
+     question='De Hebreeen worden slaven. Ze moeten voorraadsteden bouwen.'
+     answerA='Pitom en Raamses'
+     answerB='Raamses en Sukkot'
+     answerC='Pitom en Gosen' 
+     answer='A'
+     number='18' />
+
+   <item
+     question='Mozes,een Hebreeuwse prins wil de Israelieten helpen.'
+     answerA='Dat bevalt hem goed.'
+     answerB='Hij moet vluchten.'
+     answerC='Hij wordt gekozen als leider' 
+     answer='B'
+     number='19' />
+
+   <item
+     question='In de woestijn heeft hij een ontmoeting met God .......'
+     answerA='bij de berg Horeb'
+     answerB='bij de berg Sinai'
+     answerC='bij de Schelfzee'
+     answer='B'
+     number='20' />
+
+   <item
+     question='Mozes keert terug naar Egypte. Hij wordt de leider van het volk Israel.'
+     answerA='Het volk koos hem uit.'
+     answerB='De Farao wees hem aan.'
+     answerC='God stelde hem aan'
+     answer='C'
+     number='21' />
+
+   <item
+     question='Mozes en Aaron gaan naar de Farao en zeggen: ............'
+     answerA='Wilt u toestemming geven om te mogen vertrekken'
+     answerB='Laat Israel vertrekken.'
+     answerC='Laten we onderhandelen.' 
+     answer='B'
+     number='22' />
+
+   <item
+     question='De Farao weigert. Er komen dan ........'
+     answerA='10 rampen'
+     answerB='12 rampen'
+     answerC='14 rampen'
+     answer='A'
+     number='23' />
+
+   <item
+     question='Wanneer mogen de Israelieten vertrekken ?'
+     answerA='na 3 dagen lang geen zonlicht.'
+     answerB='na de sprinkhanenplaag.'
+     answerC='als de eerstgeborenen dood zijn.'
+     answer='C'
+     number='24' />
+
+   <item
+     question='De Israelieten gaan droogvoets door de Schelfzee.'
+     answerA='Het Egyptische leger keert terug.'
+     answerB='Het Egyptische leger kijkt toe.'
+     answerC='Het Egyptische leger verdrinkt.' 
+     answer='C'
+     number='25' />
+	
+</bibleQuiz> 
