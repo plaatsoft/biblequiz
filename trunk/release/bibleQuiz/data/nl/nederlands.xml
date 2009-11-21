@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<nederlands>
+      <labelWelcome value='Welkom ' />
+      <labelTopic value='Onderwerp' />
+      <labelCreated value='Gemaakt' />
+      <labelScore value='Score' />
+      <labelQuestion value='Vraag' />
+      <labelAnswers value='Antwoorden' />
+      <labelResult value='Hoe heb je het gedaan?' />
+      <labelCategory1 value='Wow, Fantatisch!' />
+      <labelCategory2 value='Niet slecht!' />
+      <labelCategory3 value='Oeps, probeer het opnieuw!' />
+      <labelRight value='Goed' />
+      <labelWrong value='Fout' />
+      <labelAuthor value='Auteur' />
+      <labelGoodbye value='Tot ziens' />
+      <labelMusic value='Muziek volume' />
+      <labelEffects value='Effect volume' />
+	<labelHighScore value='Hoogste Score' />
+	<labelDate value='Datum' />
+ 	<labelHints value='Hints' />
+	<labelPlayTime value='Speeltijd' />
+      <labelResults value='Resultaten' />
+	<labelHelp value='Help' />
+      <labelTrack value='Muziek nummer' />
+      <labelNewVersion value='Nieuwe versie is beschikbaar' />
+  
+      <buttonAnswerA value='Antwoord A' />
+      <buttonAnswerB value='Antwoord B' />
+      <buttonAnswerC value='Antwoord C' />
+      <buttonAnswerD value='Antwoord D' />
+      <buttonHint value='Hint' />
+      <buttonRetry value='Opnieuw' />
+      <buttonPlay value='Speel' />
+      <buttonNext value='Volgende' />
+      <buttonStop value='Stoppen' />
+      <buttonExit1 value='Naar HBC' />
+      <buttonExit2 value='Reset Wii' />
+      <buttonContinue value='Terug' />
+      <buttonSound value='Geluid' />
+      <buttonBack value='Terug' />
+      <buttonCredits value='Informatie' />
+      <buttonPrevious value='Vorige' />
+      <buttonReleaseNotes value='Release Notes'/>
+</nederlands>
+
+   

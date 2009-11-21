@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='Belangrijke Bijbelse nummers'
+      author='wplaat'
+      created='24-11-2008' 
+      note="Wie zijn medemens kleineert, heeft geen verstand, iemand met inzicht zwijgt - Spreuken" />
+
+   <item
+     question='In hoeveel dagen heeft God de aarde geschapen?'
+     answerA='7'
+     answerB='6'
+     answerC='8'
+     answerD='40' 
+     answer='B'
+     number='1' />	
+
+   <item
+     question='Hoelang was Noah in de ark?'
+     answerA='40 dagen'
+     answerB='Ongeveer een jaar'
+     answerC='Ongeveer 20 jaar'
+     answerD='7 dagen' 
+     answer='A'
+     number='2' />
+
+   <item
+     question='Jezus was in het graf voor:'
+     answerA='3 dagen'
+     answerB='4 dagen'
+     answerC='100 dagen'
+     answerD='200 dagen' 
+     answer='A'
+     number='3' />
+
+   <item
+     question='Dieren gingen in de ark:'
+     answerA='2 bij 2'
+     answerB='10 bij 10'
+     answerC='3 bij 3'
+     answerD='4 bij 4' 
+     answer='A'
+     number='4' />
+
+   <item
+     question='Hoeveel plagen waren er in Egypte:'
+     answerA='2'
+     answerB='1'
+     answerC='20'
+     answerD='10' 
+     answer='D'
+     number='5' />
+
+   <item
+     question='Hoeveel apostelen had Jezus:'
+     answerA='1'
+     answerB='2'
+     answerC='12'
+     answerD='144,000' 
+     answer='C'
+     number='6' />
+
+   <item
+     question='Hoeveel dagen en nachten regende in genesis:'
+     answerA='7'
+     answerB='40'
+     answerC='6'
+     answerD='144,000' 
+     answer='B'
+     number='7' />
+
+   <item
+     question='Hoeveel apostellen rollen waren er:'
+     answerA='12'
+     answerB='5'
+     answerC='3'
+     answerD='4' 
+     answer='C'
+     number='8' />
+
+   <item
+     question='Hoeveel stammen had Israel:'
+     answerA='12'
+     answerB='5'
+     answerC='3'
+     answerD='4' 
+     answer='A'
+     number='9' />
+
+   <item
+     question='Hoeveel bijbelboeken zijn er:'
+     answerA='66'
+     answerB='72'
+     answerC='29'
+     answerD='34' 
+     answer='A'
+     number='10' />
+
+</bibleQuiz> 

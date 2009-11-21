@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<espanol>      
+      <labelWelcome value='Bienvenido' />
+      <labelTopic value='Topico' />
+      <labelCreated value='Creado' />
+      <labelScore value='Puntuacion' />
+      <labelQuestion value='Pregunta' />
+      <labelAnswers value='Respuestas' />
+      <labelResult value='Como te ha ido?' />
+      <labelCategory1 value='Uau, Buen trabajo!!' />
+      <labelCategory2 value='No esta mal!' />
+      <labelCategory3 value='Ooh, Intentalo otra vez!' />
+      <labelRight value='Bien' />
+      <labelWrong value='Mal' />
+      <labelAuthor value='Autor' />
+      <labelGoodbye value='Adios' />
+      <labelMusic value='volumen de la Musica' />
+      <labelEffects value='volumende los Efectos ' />
+      <labelHighScore value='Alta cuenta' />
+      <labelDate value='Fecha' />
+      <labelHints value='Indirectas' />
+      <labelPlayTime value='Duracion' />
+	<labelResults value='Resultados' />
+	<labelHelp value='Ayuda' />
+	<labelTrack value='Pista de la musica' />
+      <labelNewVersion value='La nueva version esta disponible' />
+	
+      <buttonAnswerA value='Respuesta A' />
+      <buttonAnswerB value='Respuesta B' />
+      <buttonAnswerC value='Respuesta C' />
+      <buttonAnswerD value='Respuesta D' />
+      <buttonHint value='Pista' />
+      <buttonRetry value='Reintentar' />
+      <buttonPlay value='Jugar' />
+      <buttonNext value='Siguiente' />
+      <buttonStop value='Parar' />
+      <buttonExit1 value='Salir al  HBC' />
+      <buttonExit2 value='Resetear Wii' />
+      <buttonContinue value='Continuar' />
+      <buttonSound value='Sonido' />
+      <buttonBack value='Atras' />
+      <buttonCredits value='Creditos' />
+      <buttonPrevious value='Anterior' />
+      <buttonReleaseNotes value='Release Notes'/>
+</espanol>

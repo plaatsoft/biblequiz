@@ -1,0 +1,219 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic="Wine in the bible"
+      author="www.biblequizzes.com"
+      created="24-11-2008"
+      language="en" 
+      note="Give instruction to a wise man, and he will be still wiser - Proverbs " />
+
+   <item
+     question="This son of David had been drinking a lot of wine when he was killed:"
+     answerA="Adonijah"
+     answerB="Absalom"
+     answerC="Amnon"
+     answerD="Amminadab"
+     answer="C"
+     explanation="Proof Passage (2 Samuel 13:28)"
+     number="1" />	
+
+   <item
+     question="Which Jewish feast would be celebrated once the produce of the winepress was gathered in?"
+     answerA="Passover"
+     answerB="Hanukkah"
+     answerC="Feast of Tabernacles"
+     answerD="Purim"
+     answer="C"
+     explanation="Proof Passage (Deuteronomy 16:13) "
+     number="2" />
+
+   <item
+     question="Who deceived Joshua with old skins of wine?"
+     answerA="Gileadites"
+     answerB="Gibeonites"
+     answerC="Gilonites"
+     answerD="Girgashites"
+     answer="B"
+     explanation="Proof Passage (Joshua 9:3-4)"
+     number="3" />
+
+   <item
+     question="Who supplied two skins of wine to David while he was a renegade?"
+     answerA="Ahinoam"
+     answerB="Jonathan"
+     answerC="Barzillai"
+     answerD="Abigail"
+     answer="D"
+     explanation="Proof Passage (1 Samuel 25:18) "
+     number="4" />
+
+   <item
+     question="During this 40 year period the Israelites drank no wine:"
+     answerA="Wilderness journey"
+     answerB="Reign of Saul"
+     answerC="Reign of David"
+     answerD="When Othniel was Judge"
+     answer="A"
+     explanation="Proof Passage (Deuteronomy 29:6)"
+     number="5" />
+
+   <item
+     question="This man was not supposed to drink wine:"
+     answerA="Samson"
+     answerB="Jesus"
+     answerC="Jonah"
+     answerD="Samuel"
+     answer="A"
+     explanation="Proof Passage (Judges 13:7) "
+     number="6" />
+
+   <item
+     question="The king of Susa had been drinking wine when he commanded this woman be brought out:"
+     answerA="Esther"
+     answerB="Zeresh"
+     answerC="Admatha"
+     answerD="Vashti"
+     answer="D"
+     explanation="Proof Passage (Esther 1:10-11)"
+     number="7" />
+
+   <item
+     question="Lemuel is told in Proverbs that it is not good for people with this occupation to drink wine:"
+     answerA="Surgeons"
+     answerB="Kings"
+     answerC="Prophets"
+     answerD="Priests"
+     answer="B"
+     explanation="Proof Passage (Proverbs 31:4) "
+     number="8" />
+
+   <item
+     question="However, the same chapter in Proverbs tell us that wine is good for people in this circumstance:"
+     answerA="At a wedding"
+     answerB="In their youth"
+     answerC="In anguish"
+     answerD="In a celebration"
+     answer="C"
+     explanation="Proof Passage (Proverbs 31:6)"
+     number="9" />
+
+   <item
+     question="Wine is often equated with this other liquid:"
+     answerA="Tears"
+     answerB="Water"
+     answerC="Oil"
+     answerD="Blood"
+     answer="D"
+     explanation="Proof Passage (1 Cor 11:25;Gen 49:11;Isaiah 49:26)"
+     number="10" />
+
+   <item
+     question="In Proverbs wine is described as:"
+     answerA="A Drink"
+     answerB="White"
+     answerC="A Mocker"
+     answerD="Red"
+     answer="C"
+     explanation="Proof Passage (Proverbs 20:1)"
+     number="11" />
+
+   <item
+     question="When Jacob blessed this son he said his son would wash his garments in wine, his robes in the blood of grapes."
+     answerA="Reuben"
+     answerB="Dan"
+     answerC="Benjamin"
+     answerD="Judah"
+     answer="D"
+     explanation="Proof Passage (Genesis 49:11) "
+     number="12" />
+
+   <item
+     question="This man drank too much wine and ended up naked in his tent!"
+     answerA="Nebuchadnezzar"
+     answerB="Nahum"
+     answerC="Noah"
+     answerD="Nehemiah"
+     answer="C"
+     explanation="Proof Passage (Genesis 9:21)"
+     number="13" />
+
+   <item
+     question="According to Hosea, which Middle East country is famed for its wine? "
+     answerA="Lebanon"
+     answerB="Syria"
+     answerC="Israel"
+     answerD="Egypt"
+     answer="A"
+     explanation="Proof Passage (Hosea 14:7)"
+     number="14" />
+
+   <item
+     question="Paul tells Timothy he should drink a little wine for this:"
+     answerA="his sorrow"
+     answerB="his joy"
+     answerC="his stomach"
+     answerD="his merriment"
+     answer="C"
+     explanation="Proof Passage (1 Timothy 5:23)"
+     number="15" />
+
+   <item
+     question="In Jesus' first miracle he turned this into wine:"
+     answerA="grapes"
+     answerB="milk"
+     answerC="honey"
+     answerD="water"
+     answer="D"
+     explanation="Proof Passage (John 2:9)"
+     number="16" />
+
+   <item
+     question="What happens to new wine when put in old wineskins? "
+     answerA="skins burst"
+     answerB="it ferments"
+     answerC="it spoils"
+     answerD="it is drunk"
+     answer="A"
+     explanation="Proof Passage (Mark 2:22)"
+     number="17" />
+
+   <item
+     question="The good samaritan poured on wine and _______ to heal the injured man."
+     answerA="vinegar"
+     answerB="oil"
+     answerC="water"
+     answerD="disinfectant"
+     answer="B"
+     explanation="Proof Passage (Luke 10:34)"
+     number="18" />
+
+   <item
+     question="Who was accused of being filled with new wine on the day of Pentecost?"
+     answerA="Pharisees"
+     answerB="Sadducees"
+     answerC="Jews"
+     answerD="Apostles"
+     answer="D"
+     explanation="Proof Passage (Acts 1:26; 2:1-13)"
+     number="19" />
+
+   <item
+     question="Jesus was offered wine to drink on the cross, but he refused to drink it.  What was the wine mixed with?"
+     answerA="Gall"
+     answerB="Syrup"
+     answerC="Water"
+     answerD="Oil"
+     answer="A"
+     explanation="Proof Passage (Matthew 27:34) "
+     number="20" />   
+	
+</bibleQuiz> 
+
+
+
+
+
+
+
+
