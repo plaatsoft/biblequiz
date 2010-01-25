@@ -134,8 +134,3 @@ bool GRRLIB_ScrShot(const char*);
 
 #endif
 
-/**
- * @mainpage GRRLIB Documentation
- * @image html grrlib_logo.png
- * Welcome to the GRRLIB documentation.
- */
