@@ -12,6 +12,119 @@
  * @section Credits
  * Documentation  : wplaat\n
  *
+ * @section ReleaseNotes
+ *
+ *  19/11/2009 Version 0.94
+ *  - Maintenance release
+ *  - Added functionality to trace game events to trace file.
+ *  - Improve network thread
+ *  - Use libfat 1.0.6 as disk access engine
+ *  - Use libmxml 2.6 library as xml engine
+ *  - Use libogc 1.8.0 library as Wii interface engine
+ *  - Build game with devkitPPC r19 compiler.
+ *
+ *  10/09/2009 Version 0.93
+ *  - Use the asndlib (part of libogc) now as standard sound engine.
+ *  - Use libfat 1.0.4 as disk access engine.
+ *  - Improve intro screens.
+ *  - Build game with libogc 1.7.1a and devkitPPC (r17) compiler.
+ *
+ *  13/03/2009 Version 0.92
+ *  - Added new GRRLIB v4.0 library as graphical render engine.
+ *  - Improve intro screens.
+ *  - Added fps information on all screens.
+ *  - Added screenshot functionality with plus button.
+ *  - Pictures are store on the SdCard in the following directory sd:/apps/bibleQuiz
+ *
+ *  06/02/2009 Version 0.91
+ *  - Add multi player mode for two, three and four players.
+ *  - Improve third intro screen.
+ *  - Increase http receive buffer size to 8196 bytes.
+ *  - Use only one unique cookie number during the game.
+ *  - Bugfix: Highscore is now always loaded correctly.
+ *  - Build game with libogc 1.7.1 and devkitPPC r16 compiler.
+ *
+ *  15/01/2009 Version 0.90
+ *  - Update url on intro screens to www.plaatsoft.nl (My new domain).
+ *  - Network thread status is now showed on welcome screen.
+ *  - Bugfix: Remove some small reported graphical bugs.
+ *  - Bugfix: Remove several bugs in network thread.
+ *  - Build game with libogc 1.7.1 and devkitPPC r16 compiler.
+ *
+ *  23/12/2008 Version 0.80
+ *  - Added SDHC card support
+ *  - Added power button support
+ *  - Bugfix: IR pointer doesn't disappear anymore.
+ *  - Build game with new libogc 1.7.1 and devkitPPC r16 compiler
+ *
+ *  09/12/2008 Version 0.70
+ *  - Added release notes screen.
+ *  - Added functionality to fetch release notes from internet.
+ *  - Improve highscore information (Show maximun score pre topic). 
+ *  - Improve IR pointer.
+ *  - Added google analytic http request (including highscore information).
+ *  - Improve result screen information. 
+ * 
+ *  26/11/2008 Version 0.60
+ *  - All texts are now created with the freetype library (Thanks DrTwox) 
+ *
+ *  24/11/2008 Version 0.51
+ *  - Added check if new version is available.
+ *  - Added animated screen icons
+ *  - Solved some minor reported bugs
+ *  - Content update:
+ *  	- Added 100 english questions (4 topics).
+ *  	- Added 10 dutch questions (1 topic).
+ *  	- Added 10 german questions (1 topic).
+ *  	- Added france translation.
+ *      - Corrected some wrong answers.
+ *
+ *  19/11/2008 Version 0.40
+ *  - Added highscore screen.
+ *  - Highscore is stored (in xml format) on the SD card
+ *  - Added credits screen.
+ *  - Added help (minus button) screen.
+ *  - Added 10 music tracks.
+ *  - Use freetype library as font render engine for screen (sub)titles.
+ *  - Content update:
+ *  	- Added 170 english questions (8 topics).
+ *  	- Added 100 dutch questions (4 topics).
+ *  	- Added spanisch translation.
+ *
+ *  16/11/2008 Version 0.31
+ *  - Hotfix to prevent core dump with 60Hz (480i) Tv mode
+ *  - Donated the bibleQuiz source code to the community. Comments are welcome ;-} 
+ * 
+ *  15/11/2008 Version 0.30
+ *  - First release for the Wii HomeBrew community
+ *  - Complete rebuild from game engine
+ *  - Added language / topic select screen
+ *  - Added goodbye screen
+ *  - Added sound volume control screen
+ *  - Content Update:
+ *  	- Added German language
+ *		- Added 20 English question (1 topic)
+ *  	- Added 10 Dutch question (1 topic)
+ * 
+ *  08/11/2008 Version 0.20
+ *  - Added support for xml question files
+ *  - Added question result image with animation
+ *  - Added multi language support
+ *  - Added three hint buttons
+ *  - Added support for 60Hz (480i) TV mode
+ *  - Added score result screen
+ *  - Added sndlib module with some sound effects
+ *  - Added exit button
+ *  - Added question word wrap function 
+ * 
+ *  03/11/2008 Version 0.10
+ *  - Started programming
+ *  - Gameboard design
+ *  - Added WiiRemote IR control
+ *  - Added three welcome screens
+ *  - Added button rumble effect 
+ *  - Build game with new libogc 1.6.0 and devkitPPC r15 compiler
+ *
  * @section Licence
  * Copyright (c) 2008-2010 Plaatsoft
  *
