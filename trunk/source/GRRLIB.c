@@ -516,10 +516,10 @@ GRRLIB_texImg GRRLIB_LoadTextureJPG(const unsigned char my_jpg[]) {
  * Print formatted output.
  * @param xpos
  * @param ypos
- * @param tex
- * @param color
+ * @param text
  * @param zoom
  * @param text
+ * @param bmf
  * @param ... Optional arguments.
  */
 void GRRLIB_PrintBMF(f32 xpos, f32 ypos, GRRLIB_bytemapFont bmf, f32 zoom, const char *text, ...) {
