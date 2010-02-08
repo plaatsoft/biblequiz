@@ -1,6 +1,6 @@
 /** 
  *  @file
- *  Wii network module
+ *  @brief Wii network module
  *
  *  Created by wplaat (www.plaatsoft.nl)
  *

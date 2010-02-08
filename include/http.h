@@ -1,6 +1,6 @@
 /** 
  *  @file
- *  Wii network include file
+ *  @brief Wii network include file
  *
  *  Created by wplaat (www.plaatsoft.nl)
  *
