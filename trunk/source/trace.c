@@ -1,6 +1,6 @@
 /** 
  *  @file
- *  Wii trace module
+ *  @brief Wii trace module
  *
  *  Created by wplaat (www.plaatsoft.nl)
  *

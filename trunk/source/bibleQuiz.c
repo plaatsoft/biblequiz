@@ -1,6 +1,6 @@
 /** 
  *  @file
- *  Wii BibleQuiz game core
+ *  @brief Wii BibleQuiz game core
  *
  *  Created by wplaat (www.plaatsoft.nl)
  *

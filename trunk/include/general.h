@@ -1,5 +1,9 @@
 /**
+ * @file
+ * @brief This file contain all defines
+ *
  * @mainpage Wii BibleQuiz Documentation
+ * @image html BibleQuiz.png
  * Welcome to the BibleQuiz documentation.
  *
  * @section Introduction
