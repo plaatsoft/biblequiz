@@ -2846,7 +2846,7 @@ int main()
     GRRLIB_Init();
     
 	// Make screen black
-	GRRLIB_FillScreen(0xFFFFFF);
+	GRRLIB_FillScreen(0x00000000);
     GRRLIB_Render();
 			
 	// Repeat forever
