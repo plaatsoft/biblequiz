@@ -17,7 +17,6 @@
  * Documentation  : wplaat\n
  *
  * @section ReleaseNotes
- *
  *  XX-XX-XXXX Version 0.95 (Up coming release)
  *  - Added source code to Google Code Repository
  *  - Added source code documentation (Javadoc style).
@@ -105,9 +104,6 @@
  *  	- Added 170 english questions (8 topics).
  *  	- Added 100 dutch questions (4 topics).
  *  	- Added spanisch translation.
- *  - Build game with devkitPPC r15 compiler.
- *
- *  16-11-2008 Version 0.31
  *  - Hotfix to prevent core dump with 60Hz (480i) Tv mode
  *  - Donated the bibleQuiz source code to the community. Comments are welcome ;-} 
  *  - Build game with devkitPPC r15 compiler.

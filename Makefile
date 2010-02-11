@@ -29,14 +29,14 @@ include $(DEVKITPPC)/wii_rules
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
-TARGET		:=	$(notdir $(CURDIR))
-BUILD		:=	build
+TARGET		:=	boot
+BUILD			:=	build
 SOURCES		:=	source
 IMAGES		:=	images
-DATA		:=	snd
-FONT		:=	font
-XML  		:=	xml
-INCLUDES	:=  include
+DATA			:=	snd
+FONT			:=	font
+XML  			:=	xml
+INCLUDES		:= include
 
 #---------------------------------------------------------------------------------
 # options for code generation
