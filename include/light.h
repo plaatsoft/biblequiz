@@ -1,6 +1,6 @@
-/** 
+/**  
  *  @file
- *  @brief Wii trace include file
+ *  @brief Wii Light include file
  *  @author wplaat
  *
  *  Copyright (C) 2008-2010 PlaatSoft
@@ -19,38 +19,47 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef __TRACE_H__
-#define __TRACE_H__
+#ifndef __LIGHT_H__
+#define __LIGHT_H__
 
 /**
- * Create trace file
- * @param filename  The filename of the trace file
+ * Init Wii Light 
  */
-int traceOpen(char *filename);
-
+void WIILIGHT_Init();
 
 /**
- * Close trace file
+ * Get current Wii light intensity level
+ *
+ * @return Intensity [0..255]
  */
-int traceClose();
- 
-/**
- * Save trace event in trace file
- * @param functionName	The functionName
- * @param threadNr		The thread number [0=main thread, 1=network thread]
- * @param event			The event discription
- * @param ...				Optional parameters.
- * @return Zero is succesful.
- */ 
-int traceEvent( char *functionName, int threadNr, char *event, ...);
-
+int WIILIGHT_GetLevel();
 
 /**
- * Save trace event in trace file.
- * @param character	The character range between 0...255
- * @return Zero is succesful.
- */ 
-int traceEventRaw( char character);
+ * Set Wii Light intensity
+ * @param level	THe intensity level
+ * @return return set level.
+ */
+int WIILIGHT_SetLevel(int i);
 
+/**
+ * Set Wii Light on and start the looping thread
+ */
+void WIILIGHT_TurnOn();
+
+/**
+ * Set Wii Light Off (looping thread terminate)
+ */
+void WIILIGHT_TurnOff();
+
+/**
+ * Toggl Wii Light
+ * Switch the light on or off!
+ */
+ void WIILIGHT_Toggle();
+
+/**
+ * Close Wii Light (stop loop thread)
+ */
+void WIILIGHT_close();
 
 #endif

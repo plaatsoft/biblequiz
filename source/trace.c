@@ -1,11 +1,9 @@
 /** 
  *  @file
  *  @brief Wii trace module
+ *  @author wplaat
  *
- *  Created by wplaat (www.plaatsoft.nl)
- *
- *  Copyright (C) 2009-2010
- *  =======================
+ *  Copyright (C) 2008-2010 PlaatSoft
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -40,7 +38,11 @@ bool traceOn = false;
 
 FILE *fp = NULL;
 
-// Create trace file
+/**
+ * Create trace file
+ * @author wplaat
+ * @param filename  The filename of the trace file
+ */
 int traceOpen(char *filename)
 {
    int returnValue=0;
@@ -57,7 +59,10 @@ int traceOpen(char *filename)
 }
 
 
-// Close trace file
+/**
+ * Close trace file
+ * @author wplaat
+ */
 int traceClose()
 {
    int returnValue=0;
@@ -70,7 +75,11 @@ int traceClose()
 }
 
 
-// Create trace timestamp
+/**
+ * Create trace timestamp
+ * @author wplaat
+ * @return The timestamp in Dutch format.
+ */
 char *getDate()
 {
   struct tm *now = NULL;
@@ -94,7 +103,15 @@ char *getDate()
   return buf;
 }
 
-// Save trace event in trace file
+/**
+ * Save trace event in trace file
+ * @author wplaat
+ * @param functionName	The functionName
+ * @param threadNr		The thread number [0=main thread, 1=network thread]
+ * @param event			The event discription
+ * @param ...				Optional parameters.
+ * @return Zero is succesful.
+ */
 int traceEvent( char *functionName, int threadNr, char *event, ...)
 {
    int returnValue=0;
@@ -125,7 +142,12 @@ int traceEvent( char *functionName, int threadNr, char *event, ...)
 }
 
 
-// Save trace event in trace file
+/**
+ * Save trace event in trace file.
+ * @author wplaat
+ * @param character	The character range between 0...255
+ * @return Zero is succesful.
+ */ 
 int traceEventRaw( char character)
 {
    int returnValue=0;
