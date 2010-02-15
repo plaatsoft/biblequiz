@@ -1,11 +1,9 @@
 /** 
  *  @file
  *  @brief Wii network module
+ *  @author wplaat
  *
- *  Created by wplaat (www.plaatsoft.nl)
- *
- *  Copyright (C) 2009-2010
- *  =======================
+ *  Copyright (C) 2008-2010 PlaatSoft
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -48,9 +46,9 @@
 #define TCP_BLOCK_RECV_TIMEOUT  4000
 #define TCP_BLOCK_SEND_TIMEOUT  4000
 #define HTTP_TIMEOUT            300000
-#define MAX_LEN        			256
+#define MAX_LEN        			  256
 #define NUM_THREADS             1
-#define MAX_BUFFER_SIZE		    8192
+#define MAX_BUFFER_SIZE		     10240
 
 // -----------------------------------------------------------
 // ENUMS
@@ -128,6 +126,13 @@ u8  *outbuf;
 // TCP METHODES
 // -----------------------------------------------------------
 
+/**
+ * Open tcp socket.
+ *
+ * @author wplaat
+ *
+ * @return status (<0 failure, >=0 succesful)
+ */
 s32 tcp_socket(void) 
 {
 		char *s_fn="tcp_socket";
@@ -148,6 +153,16 @@ s32 tcp_socket(void)
         return s;
 }
 
+/**
+ * Make tcp connect.
+ *
+ * @author wplaat
+ *
+ * @param host		The host name
+ * @param port		Port number
+ *
+ * @return Network handler
+ */
 s32 tcp_connect(char *host, const u16 port)
 {
 		char *s_fn="tcp_connect";
@@ -223,6 +238,18 @@ s32 tcp_connect(char *host, const u16 port)
         return s;
 }
 
+/** 
+ * Read line out received tcp information.
+ *
+ * @author wplaat
+ *
+ * @param s					Network handler.
+ * @param max_length		Max length of return string.
+ * @param start_time		Start time.
+ * @param timeout			Max waiting before timeout.
+ *
+ * @return received line
+ */
 char * tcp_readln(const s32 s, const u16 max_length, const u64 start_time, const u16 timeout) 
 {		
         char *s_fn="tcp_readln";
@@ -274,6 +301,17 @@ char * tcp_readln(const s32 s, const u16 max_length, const u64 start_time, const
 		return ret;
 }
 
+/**
+ * Receive data out tcp layer.
+ *
+ * @author wplaat
+ *
+ * @param s			Network handler.
+ * @param buffer	Receive buffer.
+ * @param length	Amount of bytes received.
+ *
+ * @return succesful
+ */
 bool tcp_read(const s32 s, u8 **buffer, const u32 length) 
 {
 	    char *s_fn="tcp_read";
@@ -329,6 +367,17 @@ bool tcp_read(const s32 s, u8 **buffer, const u32 length)
         return left == 0;
 }
 
+/** 
+ * Write data to tcp layer.
+ *
+ * @author wplaat
+ *
+ * @param s			The network handler.
+ * @param buffer	THe data buffer.
+ * @param length	The data lenght.
+ *
+ * @return succusfull
+ */
 bool tcp_write(const s32 s, const u8 *buffer, const u32 length)
 {
 	    char *s_fn="tcp_write";
@@ -386,6 +435,13 @@ bool tcp_write(const s32 s, const u8 *buffer, const u32 length)
 }
 
 
+/** 
+ * Init tcp layer.
+ *
+ * @author wplaat
+ *
+ * @return succesful (<0 failure)
+ */
 int tcp_init(void) 
 {    
     char *s_fn="tcp_init";
@@ -419,6 +475,13 @@ int tcp_init(void)
 }
 
 
+/**
+ * Sleep some time.
+ *
+ * @author wplaat
+ *
+ * @param seconds 	The wait time in seconds.
+ */
 void tcp_sleep(unsigned int seconds)
 {
    char *s_fn="tcp_sleep";
@@ -433,6 +496,17 @@ void tcp_sleep(unsigned int seconds)
 // HTTP METHODES
 // -----------------------------------------------------------
 
+/**
+ * Splits url in parts.
+ *
+ * @author wplaat
+ *
+ * @param host		The host part.
+ * @param path		The path part.
+ * @param url 		The input URL.
+ *
+ * @return succesfull
+ */
 bool http_split_url(char **host, char **path, const char *url)
 {
 	    char *s_fn="http_split_url";
@@ -763,46 +837,6 @@ void http_googleAnalysicUrl(char *buffer, char *domain, char *url, char *id)
 	traceEvent(s_fn,1,"leave [void]"); 
 }
 
-// Google Analytic without JavaScript (php example)
-/*header("Content-type:image/gif");
-$var_utmac=$_REQUEST['t']?$_REQUEST['t']:'UA-5199105-1'; //enter the new urchin code
-$var_utmhn=$_REQUEST['d']?$_REQUEST['d']:'wap.metamobile.com.my'; //enter your domain
-$var_utmn=rand(  1000000000,9999999999);//random request number
-$var_cookie=rand(10000000,99999999);//random cookie number
-$var_random=rand(1000000000,2147483647); //number under 2147483647
-$var_today=time(); //today
-$var_referer=$_SERVER['HTTP_REFERER']; //referer url
-
-$var_uservar='-'; //enter your own user defined variable
-$var_utmp='/rss/'.$_SERVER['REMOTE_ADDR']; //this example adds a fake page request to the (fake) rss directory (the viewer IP to check for absolute unique RSS readers)
-$urchinUrl='http://www.google-analytics.com/__utm.gif?utmwv=1&utmn='.$var_utmn.'&utmsr=-&utmsc=-&utmul=-&utmje=0&utmfl=-&utmdt=-&utmhn='.$var_utmhn.'&utmr='.$var_referer.'&utmp='.$var_utmp.'&utmac='.$var_utmac.'&utmcc=__utma%3D'
-.$var_cookie.'.'.$var_random.'.'.$var_today.'.'.$var_today.'.'.$var_today.'.2%3B%2B__utmb%3D'.$var_cookie.'%3B%2B__utmc%3D'.$var_cookie.'%3B%2B__utmz%3D'.$var_cookie.'.'.$var_today.'.2.2.utmccn%3D(direct)%7Cutmcsr%3D(direct)
-                                                                                                                                            %7Cutmcmd%3D(none)%3B%2B__utmv%3D'.$var_cookie.'.'.$var_uservar.'%3B';
-
-$urchinUrl='http://www.google-analytics.com/__utm.gif';
- 
-echo Curl_to_GA($urchinUrl); 
-
-function Curl_to_GA($target,$post_vars=''){
-    while (list($k,$v) = each($_SERVER)) {
-        if (strstr ($k,"HTTP_") && $k != 'HTTP_HOST')    
-            $reqHeaders[] = str_replace(" ","-",ucwords(strtolower(str_replace("_"," ",str_replace("HTTP_","",$k))))) . ": " . $v;
-    }
-	$ch = curl_init(); //var_dump($reqHeaders);
-	curl_setopt($ch, CURLOPT_URL, $target);
-	curl_setopt($ch, CURLOPT_HEADER, 0);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-	if (count($reqHeaders) > 0) {
-		curl_setopt($ch, CURLOPT_HTTPHEADER, $reqHeaders);
-	} 	if ($post_vars != '') { 
-		curl_setopt($ch, CURLOPT_POST, 1);
-		curl_setopt($ch, CURLOPT_POSTFIELDS, $post_vars);
-	}
-	$response = curl_exec($ch);
-	curl_close($ch);
-    return $response;
-}*/
-
 extern bool http_request(char *url, const u32 max_size)
 {
     char *s_fn="http_request";
@@ -1081,216 +1115,223 @@ char * http_findToken(u8 *buffer, int bufsize, char *token)
         // Check for new application version					 
 		case TCP_REQUEST1a: 
 		{		
-		  traceEvent(s_fn,1, "stateMachine=TCP_REQUEST1a"); 
-          retval = http_request(appl_url1, 1 << 31);
-          if (!retval) 
-          {
-		     tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+			traceEvent(s_fn,1, "stateMachine=TCP_REQUEST1a"); 
+         retval = http_request(appl_url1, 1 << 31);
+         if (!retval) 
+         {
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn, 1,"Error making http request1a"); 
-          }
-          else
-          {     
+         }
+         else
+         {     
 	         char *tmp;	
 	         http_get_result(&http_status, &outbuf, &outlen);   	 			
-			 tmp=http_findToken(outbuf, outlen, appl_token);		 
+				tmp=http_findToken(outbuf, outlen, appl_token);		 
 			 
-			 LWP_MutexLock(mutexversion);
-			 if (tmp!=NULL) 
-			 {
-			     strncpy(appl_new_version, tmp, sizeof(tmp));	 	 
-				 traceEvent(s_fn, 1,"version=%s",appl_new_version); 
-		     }
-			 else
-			 {
-			     traceEvent(s_fn,1, "version=<none>");  
-			 }
-			 LWP_MutexUnlock(mutexversion);
+				LWP_MutexLock(mutexversion);
+				if (tmp!=NULL) 
+				{
+					strncpy(appl_new_version, tmp, sizeof(tmp));	 	 
+					traceEvent(s_fn, 1,"version=%s",appl_new_version); 
+				}
+				else
+				{
+					traceEvent(s_fn,1, "version=<none>");  
+				}
+				LWP_MutexUnlock(mutexversion);
 			 
 	         free(outbuf);			 
-			 tcp_state=TCP_REQUEST1b;
-          } 	 
-          //tcp_sleep(10);	 		  
+				tcp_state=TCP_REQUEST1b;
+         } 	 
 		} 	
-        break;	 
+      break;	 
 		
 		// Update Google Statistics
 		case TCP_REQUEST1b: 
 		{	
-		  traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST1b"); 
+			traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST1b"); 
 				  
-		  char buffer[512];
-		  memset(buffer,0x00,sizeof(buffer));
+			char buffer[512];
+			memset(buffer,0x00,sizeof(buffer));
 		
-          char url1[MAX_LEN];
-          memset(url1,0x00,sizeof(url1));
-          sprintf(url1,"/start/%s/%s",appl_name,appl_version);		    
+         char url1[MAX_LEN];
+         memset(url1,0x00,sizeof(url1));
+         sprintf(url1,"/start/%s/%s",appl_name,appl_version);		    
 			
-		  if (!http_split_url(&appl_host, &appl_path, appl_url1)) return false;
+			if (!http_split_url(&appl_host, &appl_path, appl_url1)) return false;
 			
-		  http_googleAnalysicUrl(buffer,appl_host,url1,appl_id1);
-          retval = http_request(buffer, 1 << 31);
-          if (!retval) 
-          {
-		     tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+			http_googleAnalysicUrl(buffer,appl_host,url1,appl_id1);
+			free (appl_host);
+         free (appl_path);	 
+			 
+         retval = http_request(buffer, 1 << 31);
+         if (!retval) 
+         {
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn,1, "Error making http request1b"); 			 
-          }
-          else
-          {     		    
+         }
+         else
+         {     		    
 	         http_get_result(&http_status, &outbuf, &outlen);   	
-			 int i; 
-			 for (i=0; i<outlen; i++) traceEventRaw(outbuf[i]);  
-			 free(outbuf);
-			 tcp_state=TCP_REQUEST2a;
-          } 	
-		  free (appl_host);
-          free (appl_path);	 
+				int i; 
+				for (i=0; i<outlen; i++) traceEventRaw(outbuf[i]);  
+				free(outbuf);
+				tcp_state=TCP_REQUEST2a;
+         } 	 
 	    }
 		break;
 				
 		// Get Release note information
 		case TCP_REQUEST2a: 
 		{		  
-		  traceEvent(s_fn,1,"stateMachine=TCP_REQUEST2a"); 
-          retval = http_request(appl_url2, 1 << 31);
-          if (!retval) 
-          {
-		  	 tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+		   traceEvent(s_fn,1,"stateMachine=TCP_REQUEST2a"); 
+         retval = http_request(appl_url2, 1 << 31);
+         if (!retval) 
+         {
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn, 1,"Error making http request2a"); 
-          }
-          else
-          {     		    
-			 http_get_result(&http_status, &outbuf, &outlen);   			 
-			 http_convertHTMlToAscii((char *) outbuf, outlen);  	          
+         }
+         else
+         {     		    
+				http_get_result(&http_status, &outbuf, &outlen);   			 
+				http_convertHTMlToAscii((char *) outbuf, outlen);  	          
 			 
-			 // Terminated received data
-			 char* result=strstr(appl_release_notes,"Other:");
-			 if (result!=NULL) result[0]=0x00;
+				// Terminated received data
+				char* result=strstr(appl_release_notes,"Other:");
+				if (result!=NULL) result[0]=0x00;
 			 			
-			 int i;  
-			 for (i=0; i<strlen(appl_release_notes); i++) traceEventRaw( appl_release_notes[i] ); 
+				int i;  
+				for (i=0; i<strlen(appl_release_notes); i++) 
+				{ 
+					traceEventRaw( appl_release_notes[i] ); 
+				}
 	
-			 free(outbuf);			 
-			 tcp_state=TCP_REQUEST2b;			
-          } 	
+				free(outbuf);			 
+				tcp_state=TCP_REQUEST2b;			
+         } 	
 		} 	
         break;	 
 		
 		// Update Google Statistics
 		case TCP_REQUEST2b: 
 		{		
-		  char buffer[512];
-		  memset(buffer,0x00,sizeof(buffer));
+			char buffer[512];
+			memset(buffer,0x00,sizeof(buffer));
 		  
-		  traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST2b"); 
+			traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST2b"); 
 		 	  
-		  if (!http_split_url(&appl_host, &appl_path, appl_url2)) return false;
+			if (!http_split_url(&appl_host, &appl_path, appl_url2)) return false;
 			  		  		  		    
-		  http_googleAnalysicUrl(buffer, appl_host, appl_path, appl_id2);
-          retval = http_request(buffer, 1 << 31);
-          if (!retval) 
-          {
-		  	 tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+			http_googleAnalysicUrl(buffer, appl_host, appl_path, appl_id2);
+			free (appl_host);
+         free (appl_path);	
+         
+			retval = http_request(buffer, 1 << 31);
+         if (!retval) 
+         {
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn, 1,"Error making http request2b"); 
-          }
-          else
-          {     		    
+         }
+         else
+         {     		    
 	         http_get_result(&http_status, &outbuf, &outlen);   	
-			 int i; 
-			 for (i=0; i<outlen; i++) traceEventRaw(outbuf[i] );  
-			 free(outbuf);
-			 tcp_state=TCP_REQUEST3a;
-          } 
-		  free (appl_host);
-          free (appl_path);	 
-		  // tcp_sleep(10);
+				int i; 
+				for (i=0; i<outlen; i++) traceEventRaw(outbuf[i] );  
+				free(outbuf);
+				tcp_state=TCP_REQUEST3a;
+			}  
 		} 	
         break;	 
 		
 		// Get today high score from all players in the world.
 		case TCP_REQUEST3a: 
 		{
-		  traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST3a"); 
+			traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST3a"); 
 		  
 
-          char url[MAX_LEN];
+         char url[MAX_LEN];
 		  		  
-		  memset(url,0x00,sizeof(url));		    
-		  sprintf(url, "%s?%s",appl_url3, appl_userData3);		
-          retval = http_request(url, 1 << 31);
-          if (!retval) 
-          {
-		  	 tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+			memset(url,0x00,sizeof(url));		    
+			sprintf(url, "%s?%s",appl_url3, appl_userData3);		
+         retval = http_request(url, 1 << 31);
+         if (!retval) 
+         {
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn, 1,"Error making http request3a"); 		 
-          }
-          else
-          {  
-		     http_get_result(&http_status, &outbuf, &outlen);   	
+         }
+         else
+         {  
+				http_get_result(&http_status, &outbuf, &outlen);   	
  
-			 int i;   		   					 
-			 memset(appl_today_highscore,0x00,sizeof(appl_today_highscore));
-  		     for (i=0; i<outlen; i++) appl_today_highscore[i]=outbuf[i];	
+				int i;   		   					 
+				memset(appl_today_highscore,0x00,sizeof(appl_today_highscore));
+				for (i=0; i<outlen; i++) appl_today_highscore[i]=outbuf[i];	
 
 			 
-		     char* result=strstr(appl_today_highscore,"</highscore>");
-			 if (result!=NULL) 
-			 {
-			    // Terminated received xml data 
-			    result[13]=0x00; 
-    			for (i=0; i<strlen(appl_today_highscore); i++) traceEventRaw(appl_today_highscore[i] ); 
+				char* result=strstr(appl_today_highscore,"</highscore>");
+				if (result!=NULL) 
+				{
+					// Terminated received xml data 
+					result[13]=0x00; 
+					for (i=0; i<strlen(appl_today_highscore); i++) 
+					{
+						traceEventRaw(appl_today_highscore[i] ); 
+					}
 				   
-				tcp_state=TCP_REQUEST3b;
-			 }
-			 else
-			 {
-			    // Something is wrong with the response
-				traceEvent(s_fn, 1,"Received today highscore xml data was corrupt" ); 
+					tcp_state=TCP_REQUEST3b;
+				}
+				else
+				{
+					// Something is wrong with the response
+					traceEvent(s_fn, 1,"Received today highscore xml data was corrupt" ); 
 				
-				// Clear received trash
-				memset(appl_today_highscore,0x00,sizeof(appl_today_highscore));
+					// Clear received trash
+					memset(appl_today_highscore,0x00,sizeof(appl_today_highscore));
 				
-				// Try again.
-				tcp_state_prev=tcp_state;
-		        tcp_state=TCP_RETRY;  
-			 }
-			 free(outbuf);			 			
-          } 	 
+					// Try again.
+					tcp_state_prev=tcp_state;
+					tcp_state=TCP_RETRY;  
+				}
+				free(outbuf);			 			
+         } 	 
 		} 	
-        break;	 
+      break;	 
 				
 		// Update Google Statistics
 		case TCP_REQUEST3b: 
 		{		
-		  char buffer[512];
-		  memset(buffer,0x00,sizeof(buffer));
+			char buffer[512];
+			memset(buffer,0x00,sizeof(buffer));
 		  
-		  traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST3b"); 
+			traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST3b"); 
 		 		  
-		  if (!http_split_url(&appl_host, &appl_path, appl_url3)) return false;
+			if (!http_split_url(&appl_host, &appl_path, appl_url3)) return false;
 		  		  
-		  http_googleAnalysicUrl(buffer, appl_host, appl_path, appl_id3);
-          retval = http_request(buffer, 1 << 31);
-          if (!retval) 
-          {
-		  	 tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+			http_googleAnalysicUrl(buffer, appl_host, appl_path, appl_id3);
+			free (appl_host);
+         free (appl_path);
+			
+         retval = http_request(buffer, 1 << 31);
+         if (!retval) 
+         {
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn, 1,"Error making http request3b"); 
-          }
-          else
-          {     		    
+         }
+         else
+         {     		    
 	         http_get_result(&http_status, &outbuf, &outlen);   	
-			 int i; for (i=0; i<outlen; i++) traceEventRaw( outbuf[i] ); 
-			 free(outbuf);
-			 tcp_state=TCP_REQUEST4a;
-          } 	
-		  free (appl_host);
-          free (appl_path); 
+				int i; for (i=0; i<outlen; i++) traceEventRaw( outbuf[i] ); 
+				free(outbuf);
+				tcp_state=TCP_REQUEST4a;
+         } 	
 		} 	
-        break;	
+      break;	
 		
 		// Get global high score from all players in the world.
 		case TCP_REQUEST4a: 
@@ -1346,32 +1387,33 @@ char * http_findToken(u8 *buffer, int bufsize, char *token)
 		// Update Google Statistics
 		case TCP_REQUEST4b: 
 		{		
-		  char buffer[512];
-		  memset(buffer,0x00,sizeof(buffer));
+			char buffer[512];
+			memset(buffer,0x00,sizeof(buffer));
 		  
-		  traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST4b"); 
+			traceEvent(s_fn, 1,"stateMachine=TCP_REQUEST4b"); 
 		 		  
-		  if (!http_split_url(&appl_host, &appl_path, appl_url4)) return false;
+			if (!http_split_url(&appl_host, &appl_path, appl_url4)) return false;
 		  		  
-		  http_googleAnalysicUrl(buffer, appl_host, appl_path, appl_id4);
-          retval = http_request(buffer, 1 << 31);
-          if (!retval) 
-          {
-		  	 tcp_state_prev=tcp_state;
-		     tcp_state=TCP_RETRY;
+			http_googleAnalysicUrl(buffer, appl_host, appl_path, appl_id4);
+			free (appl_host);
+         free (appl_path);
+			
+         retval = http_request(buffer, 1 << 31);
+         if (!retval) 
+			{
+				tcp_state_prev=tcp_state;
+				tcp_state=TCP_RETRY;
 	         traceEvent(s_fn, 1,"Error making http request4b"); 
-          }
-          else
-          {     		    
+         }
+         else
+         {     		    
 	         http_get_result(&http_status, &outbuf, &outlen);   	
-			 int i; for (i=0; i<outlen; i++) traceEventRaw( outbuf[i] ); 
-			 free(outbuf);
-			 tcp_state=TCP_IDLE;
-          } 	
-		  free (appl_host);
-          free (appl_path); 
+				int i; for (i=0; i<outlen; i++) traceEventRaw( outbuf[i] ); 
+				free(outbuf);
+				tcp_state=TCP_IDLE;
+         } 	
 		} 	
-        break;	 
+      break;	 
 		
 		// Error ocure during http request, retry after 120 seconds.
 		case TCP_RETRY:
