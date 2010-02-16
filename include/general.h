@@ -19,6 +19,7 @@
  * @section ReleaseNotes
  *  <b>XX-XX-XXXX Version 0.95 (Up coming release)</b>
  *  - GUI:
+ *    - Update main menu screen information.
  *  - Core:
  *    - Improve network thread.
  *  - General:
