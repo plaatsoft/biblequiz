@@ -1,10 +1,11 @@
 /** 
  *  @file
  *  @brief Wii BibleQuiz game core
+ *  @author wplaat
  *
  *  Created by wplaat (www.plaatsoft.nl)
  *
- *  Copyright (C) 2009-2010
+ *  Copyright (C) 2008-2010
  *  =======================
  *
  *  This program is free software; you can redistribute it and/or modify

@@ -4,17 +4,17 @@
  *
  * @mainpage Wii BibleQuiz Documentation
  * @image html BibleQuiz.png
- * Welcome to the BibleQuiz documentation.
+ *   Welcome to the BibleQuiz documentation.
  *
  * @section Introduction
- * BibleQuiz is a classic bible quiz game for the Nintendo Wii.
+ *   BibleQuiz is a classic bible quiz game for the Nintendo Wii.
  *
  * @section Links
- * Website: http://www.plaatsoft.nl\n
- * Code: http://code.google.com/p/biblequiz\n
+ *   Website: http://www.plaatsoft.nl\n
+ *   Code: http://code.google.com/p/biblequiz\n
  *
  * @section Credits
- * Documentation  : wplaat\n
+ *   Documentation: wplaat\n
  *
  * @section ReleaseNotes
  *  <b>XX-XX-XXXX Version 0.95 (Up coming release)</b>
@@ -38,7 +38,7 @@
  *   - Use libmxml 2.6 library as xml engine.
  *   - Use libogc 1.8.0 library as Wii interface engine.
  *  - Content:
- *   - Added 10 spanisch questions (1 topic)
+ *   - Added 10 spanish questions (1 topic)
  *  - General:
  *   - Maintenance release.
  *   - Build game with devkitPPC r19 compiler.
@@ -184,20 +184,20 @@
  *   - Build game with devkitPPC r15 compiler.
  *
  * @section Licence
- * Copyright (c) 2008-2010 Plaatsoft
+ *   <b>Copyright (c) 2008-2010 Plaatsoft</b>
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, version 2.
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, version 2.
  *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, write to the Free Software
+ *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
 #include "GRRLIB.h"
@@ -209,8 +209,8 @@
 #define LAN(x) x
 
 #define PROGRAM_NAME	    		"BibleQuiz"
-#define PROGRAM_VERSION     	"0.94"
-#define RELEASE_DATE        	"19-11-2009" 
+#define PROGRAM_VERSION     	"0.95"
+#define RELEASE_DATE        	"18-02-2009" 
 
 #define FILENAME_LANGUAGES  	"languages.xml"
 #define DATA_DIRECTORY      	"sd:/apps/bibleQuiz/data"
