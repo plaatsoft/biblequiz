@@ -19,7 +19,7 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
 #include <stdio.h>
@@ -279,15 +279,6 @@ extern int      xml1length;
 // English translation xml file.
 extern char     xml2data[];
 extern int      xml2length;
-
-// -----------------------------------------------------------
-// PROTOTYPES
-// -----------------------------------------------------------
- 
-void freeTypePrintf(int pen_x, int pen_y, u32 color, int fontSize, char *text);
-void buttonExit(int index);
-void drawGoodbyeScreen1(int channel);
-void drawText(int x, int y, int type, char *text );
 
 // -----------------------------------------------------------
 // GAME LOGIC
@@ -594,7 +585,6 @@ void initLanguages(char* filename)
    traceEvent(s_fn,0,"leave [void]");
 }
 
-
 void initMusicTrack(void)
 {
    char *s_fn="initMusicTrack";
@@ -742,6 +732,33 @@ void initTranslation(char* filename)
    mxmlDelete(tree);
    
    traceEvent(s_fn,0,"leave [void]");
+}
+
+void initPointer()
+{
+   int i;
+	
+	for (i=0; i<MAX_POINTERS; i++)
+	{
+		switch(i)
+		{
+		   case 0: 
+				pointers[i].image = images.pointer1;
+				break;
+
+		   case 1: 
+				pointers[i].image = images.pointer2;
+				break;
+
+		   case 2: 
+				pointers[i].image = images.pointer3;
+				break;
+
+		   case 3: 
+				pointers[i].image = images.pointer4;
+				break;
+		}
+	}		
 }
 
 void initTopics(char* filename)
@@ -996,104 +1013,102 @@ void initButtons(void)
 {  
    switch (stateMachine)
    {
-      case stateWelcome:
-	  {
+      case stateMenu:
+		{
 
-   maxButtons=6;
-   angle=0;
-   alfa=0;
-   alfa_direction=true;
+			maxButtons=6;
+			angle=0;
+			alfa=0;
+			alfa_direction=true;
    
-   // Language button
-   buttons[0].image=images.button1;
-   buttons[0].imageSelect=images.button1select;
-   strcpy(buttons[0].name,languages[selectedLanguage].name);
-   buttons[0].x=10;
-   buttons[0].y=332+yOffset;
-   buttons[0].enabled=true;
-   buttons[0].xtext=buttons[0].x+(buttons[0].image.w/2)-((strlen(buttons[0].name)*13)/2);
-   buttons[0].ytext=buttons[0].y+25;
+			// Language button
+			buttons[0].image=images.button1;
+			buttons[0].imageSelect=images.button1select;
+			strcpy(buttons[0].name,languages[selectedLanguage].name);
+			buttons[0].x=10;
+			buttons[0].y=332+yOffset;
+			buttons[0].enabled=true;
+			buttons[0].xtext=buttons[0].x+(buttons[0].image.w/2)-((strlen(buttons[0].name)*13)/2);
+			buttons[0].ytext=buttons[0].y+25;
   
-   // Topic button
-   buttons[1].image=images.button1;
-   buttons[1].imageSelect=images.button1select;
-   strcpy(buttons[1].name,topics[selectedTopic].name);
-   buttons[1].x=10;
-   buttons[1].y=391+yOffset;
-   if (maxQuestions!=-1) buttons[1].enabled=true; else buttons[1].enabled=false;
-   buttons[1].xtext=buttons[1].x+(buttons[1].image.w/2)-((strlen(buttons[1].name)*13)/2);
-   buttons[1].ytext=buttons[1].y+25;
+			// Topic button
+			buttons[1].image=images.button1;
+			buttons[1].imageSelect=images.button1select;
+			strcpy(buttons[1].name,topics[selectedTopic].name);
+			buttons[1].x=10;
+			buttons[1].y=391+yOffset;
+			if (maxQuestions!=-1) buttons[1].enabled=true; else buttons[1].enabled=false;
+			buttons[1].xtext=buttons[1].x+(buttons[1].image.w/2)-((strlen(buttons[1].name)*13)/2);
+			buttons[1].ytext=buttons[1].y+25;
    
-    // Sound button
-   buttons[2].image=images.button1;
-   buttons[2].imageSelect=images.button1select;
-   strcpy(buttons[2].name,translation.buttonSound);
-   buttons[2].x=194;
-   buttons[2].y=332+yOffset;
-   buttons[2].enabled=true;
-   buttons[2].xtext=buttons[2].x+(buttons[2].image.w/2)-((strlen(buttons[2].name)*13)/2);
-   buttons[2].ytext=buttons[2].y+25;
+			// Sound button
+			buttons[2].image=images.button1;
+			buttons[2].imageSelect=images.button1select;
+			strcpy(buttons[2].name,translation.buttonSound);
+			buttons[2].x=194;
+			buttons[2].y=332+yOffset;
+			buttons[2].enabled=true;
+			buttons[2].xtext=buttons[2].x+(buttons[2].image.w/2)-((strlen(buttons[2].name)*13)/2);
+			buttons[2].ytext=buttons[2].y+25;
   
-   // Play button
-   buttons[3].image=images.button1;
-   buttons[3].imageSelect=images.button1select;
-   strcpy(buttons[3].name,translation.buttonPlay);
-   buttons[3].x=(MAX_HORZ_PIXELS-200);
-   buttons[3].y=332+yOffset;
-   if (maxQuestions!=-1) buttons[3].enabled=true; else buttons[3].enabled=false;
-   buttons[3].xtext=buttons[3].x+(buttons[3].image.w/2)-((strlen(buttons[3].name)*13)/2);
-   buttons[3].ytext=buttons[3].y+25;
+			// Play button
+			buttons[3].image=images.button1;
+			buttons[3].imageSelect=images.button1select;
+			strcpy(buttons[3].name,translation.buttonPlay);
+			buttons[3].x=(MAX_HORZ_PIXELS-200);
+			buttons[3].y=332+yOffset;
+			if (maxQuestions!=-1) buttons[3].enabled=true; else buttons[3].enabled=false;
+			buttons[3].xtext=buttons[3].x+(buttons[3].image.w/2)-((strlen(buttons[3].name)*13)/2);
+			buttons[3].ytext=buttons[3].y+25;
    
-    // Stop button
-   buttons[4].image=images.button1;
-   buttons[4].imageSelect=images.button1select;
-   strcpy(buttons[4].name,translation.buttonStop);
-   buttons[4].x=(MAX_HORZ_PIXELS-200);
-   buttons[4].y=391+yOffset;
-   buttons[4].enabled=true;
-   buttons[4].xtext=buttons[4].x+(buttons[4].image.w/2)-((strlen(buttons[4].name)*13)/2);
-   buttons[4].ytext=buttons[4].y+25;
+			// Stop button
+			buttons[4].image=images.button1;
+			buttons[4].imageSelect=images.button1select;
+			strcpy(buttons[4].name,translation.buttonStop);
+			buttons[4].x=(MAX_HORZ_PIXELS-200);
+			buttons[4].y=391+yOffset;
+			buttons[4].enabled=true;
+			buttons[4].xtext=buttons[4].x+(buttons[4].image.w/2)-((strlen(buttons[4].name)*13)/2);
+			buttons[4].ytext=buttons[4].y+25;
    
-    // High Score button
-   buttons[5].image=images.button1;
-   buttons[5].imageSelect=images.button1select;
-   strcpy(buttons[5].name,translation.labelHighScore);
-   buttons[5].x=194;
-   buttons[5].y=391+yOffset;
-   if (maxQuestions!=-1) buttons[5].enabled=true; else buttons[5].enabled=false;
-   buttons[5].xtext=buttons[5].x+(buttons[5].image.w/2)-((strlen(buttons[5].name)*13)/2);
-   buttons[5].ytext=buttons[5].y+25;  
+			// High Score button
+			buttons[5].image=images.button1;
+			buttons[5].imageSelect=images.button1select;
+			strcpy(buttons[5].name,translation.labelHighScore);
+			buttons[5].x=194;
+			buttons[5].y=391+yOffset;
+			if (maxQuestions!=-1) buttons[5].enabled=true; else buttons[5].enabled=false;
+			buttons[5].xtext=buttons[5].x+(buttons[5].image.w/2)-((strlen(buttons[5].name)*13)/2);
+			buttons[5].ytext=buttons[5].y+25;  
+		}
+		break;
 	  
-	  }
-	  break;
-	  
-	  case stateQuestion:
-	  {
-	  
-   maxButtons=7;
-   angle=0;
+		case stateQuestion:
+		{
+			maxButtons=7;
+			angle=0;
 
-   // Hint1 button 
-   buttons[0].image=images.button2;
-   buttons[0].imageSelect=images.button2select;
-   strcpy(buttons[0].name,translation.buttonHint);
-   buttons[0].x=375;
-   buttons[0].y=350+yOffset;
-   buttons[0].enabled=true;
-   buttons[0].xtext=buttons[0].x+20;
-   buttons[0].ytext=buttons[0].y+35;
+			// Hint1 button 
+			buttons[0].image=images.button2;
+			buttons[0].imageSelect=images.button2select;
+			strcpy(buttons[0].name,translation.buttonHint);
+			buttons[0].x=375;
+			buttons[0].y=350+yOffset;
+			buttons[0].enabled=true;
+			buttons[0].xtext=buttons[0].x+20;
+			buttons[0].ytext=buttons[0].y+35;
    
-   // Hint2 button 
-   buttons[1].image=images.button2;
-   buttons[1].imageSelect=images.button2select;
-   strcpy(buttons[1].name,translation.buttonHint);   
-   buttons[1].x=455;
-   buttons[1].y=350+yOffset;
-   buttons[1].enabled=true;
-   buttons[1].xtext=buttons[1].x+20;
-   buttons[1].ytext=buttons[1].y+35;
+			// Hint2 button 
+			buttons[1].image=images.button2;
+			buttons[1].imageSelect=images.button2select;
+			strcpy(buttons[1].name,translation.buttonHint);   
+			buttons[1].x=455;
+			buttons[1].y=350+yOffset;
+			buttons[1].enabled=true;
+			buttons[1].xtext=buttons[1].x+20;
+			buttons[1].ytext=buttons[1].y+35;
    
-   // Hint3 button 
+			// Hint3 button 
    buttons[2].image=images.button2;
    buttons[2].imageSelect=images.button2select;
    strcpy(buttons[2].name,translation.buttonHint);
@@ -1433,7 +1448,7 @@ void initStateMachine( void )
 {	
     switch( stateMachine )
 	{
-	     case stateWelcome:	
+	     case stateMenu:	
 				initButtons();   	      
 			    break;
 			  
@@ -1717,36 +1732,38 @@ void button2y(void)
 
 void buttonA(int x,int y)
 {
-  int i;
-  for (i=0; i<MAX_POINTER; i++) pointers[i].rumble=MAX_RUMBLE;
+	int i;
+	for (i=0; i<MAX_POINTERS; i++) 
+	{
+		pointers[i].rumble=MAX_RUMBLE;
+	}
 
-  switch (stateMachine)  
-  {
-     case stateIntro1:
-	 {
-	   size=0;
-	   stateMachine=stateIntro2;
-	 }
-	 break;
+	switch (stateMachine)  
+	{
+		case stateIntro1:
+		{
+			size=0;
+			stateMachine=stateIntro2;
+		}
+		break;
 
-	 case stateIntro2:
-	 {
-	   stateMachine=stateIntro3;
-	 }
-	 break;
+		case stateIntro2:
+		{
+			stateMachine=stateIntro3;
+		}
+		break;
 	 
-	 case stateIntro3:
-	 {
-	   stateMachine=stateWelcome;
-	 }
-	 break;
-
-
-     case stateWelcome:
-     {
-        switch (buttonSelected(x,y))
-	    {
-          case 0: // language button	
+		case stateIntro3:
+		{
+			stateMachine=stateMenu;
+		}
+		break;
+		
+		case stateMenu:
+		{
+			switch (buttonSelected(x,y))
+			{
+				case 0: // language button	
 				  buttonLanguage();
 			      break;
 	  
@@ -1838,7 +1855,7 @@ void buttonA(int x,int y)
   	      switch (buttonSelected(x,y))
 	      {				 
 		     case 0: // Back button event
-			         stateMachine=stateWelcome;
+			         stateMachine=stateMenu;
 			         break;
 		  }
 	 }
@@ -1860,7 +1877,7 @@ void buttonA(int x,int y)
   	      switch (buttonSelected(x,y))
 	      {
 	         case 0: // Back button event          
-			         stateMachine=stateWelcome;
+			         stateMachine=stateMenu;
 			         break;	   
 					 
 			 case 1: // - music volume button event	           
@@ -1969,86 +1986,6 @@ void doPadPowerOff( s32 chan )
 // SCREEN LOGIC
 // -----------------------------------------------------------
 
-void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize) 
-{
-   char tmp[MAX_LEN];
-   int startIndex=0;
-   int lastSpace=0;
-   int endIndex=strlen(input);
-   int ypos=y+yOffset;
-   int i,z=0;
-
-    // Make local copy   
-   strcpy(tmp,input);
-		
-   for (i=0; i<endIndex; i++)
-   {
-      if (tmp[i]==' ') lastSpace=i;	 
-	  if (z++>maxLineWidth)
-	  {
-	     tmp[lastSpace]=0x00;
-	     drawText(x, ypos, fontNormal, tmp+startIndex);
-	
-		 startIndex=lastSpace+1;
-		 ypos=ypos+stepSize;
-		 z=0;
-	  }
-   }
-   if (z<=maxLineWidth)
-   {
-	  drawText(x, ypos, fontNormal, tmp+startIndex);
-   }
-}
-
-void drawButtons()
-{
-   int i;
-   int j;
-   
-   boolean selected=false;
-   
-   for (i=0; i<maxButtons; i++)
-   {	  
-      if ( buttons[i].enabled )
-      {
-	     selected=false;
-	  
-	     for (j=0 ;j<MAX_POINTER; j++)
-	     {
-           if ((pointers[j].xOffset>=buttons[i].x) && (pointers[j].xOffset<=buttons[i].x+buttons[i].image.w) && 
-	          (pointers[j].yOffset>=buttons[i].y) && (pointers[j].yOffset<=buttons[i].y+buttons[i].image.h) )			
-	       {
-  			  selected=true;
-			  if (--pointers[j].rumble>0) WPAD_Rumble(j,1); else WPAD_Rumble(j,0);
-	       }
-	     }
-  
-         if (selected)
-         {  
-    	     // Draw selected button
-             GRRLIB_DrawImg(buttons[i].x, buttons[i].y, buttons[i].imageSelect, 0, 1, 1, IMAGE_COLOR );		  
-	     }
-	     else
-	     {
-		   // Draw not selected button
-	       GRRLIB_DrawImg(buttons[i].x, buttons[i].y, buttons[i].image, 0, 1, 1, IMAGE_COLOR );
-   	     }
-	     drawText(buttons[i].xtext,buttons[i].ytext, fontButton, buttons[i].name);
-       }
-  	}
-   	
-	// If no button selected, stop rumble on all pointers
-	if (!selected) 
-	{
-  	  for (j=0; j<MAX_POINTER; j++) 
-	  {
-	     WPAD_Rumble(j,0);
-	     pointers[j].rumble=MAX_RUMBLE;
-	  }	  
-	}
-}
-
-
 void drawText(int x, int y, int type, char *text)
 {
    char tmp[MAX_LEN];
@@ -2116,6 +2053,85 @@ void drawText(int x, int y, int type, char *text)
 	   break;
 	 }
    }
+}
+
+void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize) 
+{
+   char tmp[MAX_LEN];
+   int startIndex=0;
+   int lastSpace=0;
+   int endIndex=strlen(input);
+   int ypos=y+yOffset;
+   int i,z=0;
+
+    // Make local copy   
+   strcpy(tmp,input);
+		
+   for (i=0; i<endIndex; i++)
+   {
+      if (tmp[i]==' ') lastSpace=i;	 
+	  if (z++>maxLineWidth)
+	  {
+	     tmp[lastSpace]=0x00;
+	     drawText(x, ypos, fontNormal, tmp+startIndex);
+	
+		 startIndex=lastSpace+1;
+		 ypos=ypos+stepSize;
+		 z=0;
+	  }
+   }
+   if (z<=maxLineWidth)
+   {
+	  drawText(x, ypos, fontNormal, tmp+startIndex);
+   }
+}
+
+void drawButtons()
+{
+   int i;
+   int j;
+   
+   boolean selected=false;
+   
+   for (i=0; i<maxButtons; i++)
+   {	  
+      if ( buttons[i].enabled )
+      {
+	     selected=false;
+	  
+	     for (j=0 ;j<MAX_POINTERS; j++)
+	     {
+           if ((pointers[j].xOffset>=buttons[i].x) && (pointers[j].xOffset<=buttons[i].x+buttons[i].image.w) && 
+	          (pointers[j].yOffset>=buttons[i].y) && (pointers[j].yOffset<=buttons[i].y+buttons[i].image.h) )			
+	       {
+  			  selected=true;
+			  if (--pointers[j].rumble>0) WPAD_Rumble(j,1); else WPAD_Rumble(j,0);
+	       }
+	     }
+  
+         if (selected)
+         {  
+    	     // Draw selected button
+             GRRLIB_DrawImg(buttons[i].x, buttons[i].y, buttons[i].imageSelect, 0, 1, 1, IMAGE_COLOR );		  
+	     }
+	     else
+	     {
+		   // Draw not selected button
+	       GRRLIB_DrawImg(buttons[i].x, buttons[i].y, buttons[i].image, 0, 1, 1, IMAGE_COLOR );
+   	     }
+	     drawText(buttons[i].xtext,buttons[i].ytext, fontButton, buttons[i].name);
+       }
+  	}
+   	
+	// If no button selected, stop rumble on all pointers
+	if (!selected) 
+	{
+  	  for (j=0; j<MAX_POINTERS; j++) 
+	  {
+	     WPAD_Rumble(j,0);
+	     pointers[j].rumble=MAX_RUMBLE;
+	  }	  
+	}
 }
 
 void drawWelcomeScreen()
@@ -2688,19 +2704,19 @@ void drawGameboard()
    if (stateMachine==stateIntro1)
    {
       drawIntro();
-	  return;
+		return;
    }
    
    if (stateMachine==stateIntro2)
    {
       drawIntro();
-	  return;
+		return;
    }
    
    if (stateMachine==stateIntro3)
    {
       drawIntro();
-	  return;
+		return;
    }
    
    // Init text layer	  
@@ -2722,7 +2738,7 @@ void drawGameboard()
       
    switch (stateMachine)
    { 
-       case stateWelcome:
+       case stateMenu:
 	     		drawWelcomeScreen();  
 	      	    break;
 	   
@@ -2779,42 +2795,42 @@ int main()
 	char *s_fn="main";
 	traceEvent(s_fn,0,"enter");
 	
-    int i;
+   int i;
 		
-    VIDEO_Init();
+   VIDEO_Init();
 	
-    WPAD_Init();
-    WPAD_SetIdleTimeout(60); // Wiimote is shutdown after 60 seconds of innactivity.
+   WPAD_Init();
+   WPAD_SetIdleTimeout(60); // Wiimote is shutdown after 60 seconds of innactivity.
 	WPAD_SetDataFormat(WPAD_CHAN_ALL,WPAD_FMT_BTNS_ACC_IR);	// enable accelerometers and IR
  
   	// Set Shutdown Callbacks.
 	SYS_SetPowerCallback( doPowerOff );
 	WPAD_SetPowerButtonCallback( doPadPowerOff );
 	
-     // Init Sound engine			
+   // Init Sound engine			
 	SND_Init(INIT_RATE_48000); 
 	MODPlay_Init(&snd1);
-    SND_Pause(0);
+   SND_Pause(0);
 
-    // Obtain the preferred video mode from the system
+   // Obtain the preferred video mode from the system
 	// This will correspond to the settings in the Wii menu
 	rmode = VIDEO_GetPreferredMode(NULL);
 		
 	if (rmode->xfbHeight==528)
 	{
-	    // TV mode PAL 50Hz
-	    yOffset = 25;  
+	   // TV mode PAL 50Hz
+	   yOffset = 25;  
 		yjpegOffset = 25;
 	}
 	else
 	{      
-	    // TV mode PAL 60Hz
-	    yOffset = 25;
+	   // TV mode PAL 60Hz
+	   yOffset = 25;
 		yjpegOffset = 0;
 	}
 
-    // Init Fat
-    fatInitDefault();
+   // Init Fat
+   fatInitDefault();
 	
 	// Open trace module
 	traceOpen(TRACE_FILENAME);
@@ -2824,8 +2840,8 @@ int main()
   	// Init game variables    
 	initGame();
 	
-    // Init music track
-    initMusicTrack();
+   // Init music track
+   initMusicTrack();
 			
 	// Init Freetype font library
 	GRRLIB_InitFreetype();
@@ -2833,28 +2849,39 @@ int main()
     // Init threads	
 	initThreads();
 			
-	// Load xml content files    
+	// Load global language content file
 	initLanguages( FILENAME_LANGUAGES );
+	
+	// Load Translation file
 	initTranslation( languages[selectedLanguage].translation );
+	
+	// Load global Topic file
 	initTopics( languages[selectedLanguage].topics );
+	
+	// Load question file.
 	initQuestions( topics[selectedTopic].filename);
+	
+	// Load images
 	initImages();
 	
-	// Load highscore xml file (if available)
+	// Init pointers
+	initPointer();
+	
+	// Load highscore xml file
 	initHighScore(HIGHSCORE_FILENAME);
 
-    // Init GRRLib graphics library
-    GRRLIB_Init();
+   // Init GRRLib graphics library
+   GRRLIB_Init();
     
 	// Make screen black
-	GRRLIB_FillScreen(0x00000000);
-    GRRLIB_Render();
+	GRRLIB_FillScreen(0x000000FF);
+   GRRLIB_Render();
 			
 	// Repeat forever
-    while(!bPowerOff)
+   while(!bPowerOff)
 	{
-	    // icon angle 
-	    if (++angle>=MAX_ANGLE) angle=0;
+	   // icon angle 
+	   if (++angle>=MAX_ANGLE) angle=0;
 		
 		// icon alfa 
 		if (alfa_direction)
@@ -2868,64 +2895,76 @@ int main()
 		   if (--alfa<=0) alfa_direction=true;
 		}
 		
-	    // Init (Update) state Machine
-	    initStateMachine();
+	   // Init (Update) state Machine
+	   initStateMachine();
 		
 		// Scan for button events
 		WPAD_SetVRes(0, 640, 480);
-        WPAD_ScanPads();
+      WPAD_ScanPads();
 		
-	    // Draw game board and other items
-        drawGameboard();
+	   // Draw game board and other items
+      drawGameboard();
 
-        for (i=0; i<MAX_POINTER; i++)
+		// Process four WiiMote pointers
+      for (i=0; i<MAX_POINTERS; i++)
 		{
-		  u32 wpaddown = WPAD_ButtonsDown(i);
-		  u32 wpadheld = WPAD_ButtonsHeld(i);
+			u32 wpaddown = WPAD_ButtonsDown(i);
+			u32 wpadheld = WPAD_ButtonsHeld(i);
 		
-          // Scan for ir events (WiiMote's)
-		  WPAD_SetVRes(i, MAX_HORZ_PIXELS, MAX_VERT_PIXELS);
-		  WPAD_IR(i, &pointers[i].ir); 
-		  pointers[i].x=pointers[i].ir.sx-WSP_POINTER_X;
-		  pointers[i].xOffset=pointers[i].x+IR_X_OFFSET;
-		  pointers[i].y=pointers[i].ir.sy-WSP_POINTER_Y;
-		  pointers[i].yOffset=pointers[i].y+IR_Y_OFFSET;
-		  pointers[i].angle=pointers[i].ir.angle;
+         // Scan for ir events (WiiMote's)
+			WPAD_SetVRes(i, MAX_HORZ_PIXELS, MAX_VERT_PIXELS);
+			WPAD_IR(i, &pointers[i].ir); 
+			pointers[i].x=pointers[i].ir.sx-WSP_POINTER_X;
+			pointers[i].xOffset=pointers[i].x+IR_X_OFFSET;
+			pointers[i].y=pointers[i].ir.sy-WSP_POINTER_Y;
+			pointers[i].yOffset=pointers[i].y+IR_Y_OFFSET;
+			pointers[i].angle=pointers[i].ir.angle;
 					
-		  // handle button events
-          if (wpaddown & BUTTON_A) buttonA(pointers[i].xOffset,pointers[i].yOffset);		
-		  if (wpaddown & BUTTON_MINUS ) buttonMinus();
-		  if (wpaddown & BUTTON_1 ) button1x();				
-		  if (wpaddown & BUTTON_2 ) button2y();		
-		  if (wpaddown & BUTTON_HOME) buttonHome();
+			// handle button events
+         if (wpaddown & BUTTON_A) 
+			{
+				buttonA(pointers[i].xOffset,pointers[i].yOffset);		
+			}
 			
-		    // Make screenshot 
-		  if (wpadheld & BUTTON_PLUS)
-		  {
+			if (wpaddown & BUTTON_MINUS ) 
+			{
+				buttonMinus();
+			}
+			
+			if (wpaddown & BUTTON_1 ) 
+			{
+				button1x();				
+			}
+			
+			if (wpaddown & BUTTON_2 ) 
+			{
+				button2y();		
+			}
+			
+			if (wpaddown & BUTTON_HOME) 
+			{
+				buttonHome();
+			}
+			
+		   // Make screenshot 
+			if (wpadheld & BUTTON_PLUS)
+			{
 		      char filename[MAX_LEN];
-      	      struct tm *level;	   
+      	   struct tm *level;	   
 		      time_t dt=time(NULL);
 		      level = localtime(&dt);
 		      sprintf(filename,"%sbiblequiz-%04d%02d%02d%02d%02d%02d.png", GAME_DIRECTORY, level->tm_year+1900,level->tm_mon+1, level->tm_mday,  level->tm_hour, level->tm_min, level->tm_sec);		  
-              GRRLIB_ScrShot(filename);			   
-		  }
+            GRRLIB_ScrShot(filename);			   
+			}
 
-     	  // Draw wiiremote two ir pointer
-		  switch(i)
-		  {
-		     case 0: GRRLIB_DrawImg( pointers[i].x, pointers[i].y, images.pointer1, pointers[i].angle, 1, 1, IMAGE_COLOR );
-			         break;
-					 
-		     case 1: GRRLIB_DrawImg( pointers[i].x, pointers[i].y, images.pointer2, pointers[i].angle, 1, 1, IMAGE_COLOR );
-			         break;
-					 
-		     case 2: GRRLIB_DrawImg( pointers[i].x, pointers[i].y, images.pointer3, pointers[i].angle, 1, 1, IMAGE_COLOR );
-			         break;
-					 
-		     case 3: GRRLIB_DrawImg( pointers[i].x, pointers[i].y, images.pointer4, pointers[i].angle, 1, 1, IMAGE_COLOR );
-			         break;
-		   }
-        }
+			// Draw wiiremote ir pointer
+			GRRLIB_DrawImg( 
+				pointers[i].x, 
+				pointers[i].y, 
+				pointers[i].image, 
+				0, //pointers[i].angle, 
+				1, 1, IMAGE_COLOR );
+		}
 		GRRLIB_Render();
 	}
 	
@@ -2939,9 +2978,9 @@ int main()
 		traceClose();
 
 		SYS_ResetSystem( SYS_POWEROFF, 0, 0 );
-    }
+   }
 
-    return 0;
+   return 0;
 }
 
 // -----------------------------------------------------------
