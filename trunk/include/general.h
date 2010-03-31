@@ -354,6 +354,7 @@ pointer pointers[MAX_POINTERS];
  *    - Update main menu screen information.
  *    - Improve game icon.
  *  - Core:
+ *    - WiiMote timeout increase from 60 to 300 seconds.
  *    - Improve stability.
  *    - Improve network thread.
  *    - Use libfat 1.0.7 as disk access engine.
