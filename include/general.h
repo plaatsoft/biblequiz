@@ -31,7 +31,7 @@
 
 #define PROGRAM_NAME	    		"BibleQuiz"
 #define PROGRAM_VERSION     	"0.95"
-#define RELEASE_DATE        	"18-02-2009" 
+#define RELEASE_DATE        	"31-03-2009" 
 
 #define FILENAME_LANGUAGES  	"languages.xml"
 #define DATA_DIRECTORY      	"sd:/apps/bibleQuiz/data"
@@ -349,22 +349,27 @@ pointer pointers[MAX_POINTERS];
  *   Documentation: wplaat\n
  *
  * @section ReleaseNotes
- *  <b>XX-XX-XXXX Version 0.95 (Up coming release)</b>
+ *  <b>31-03-2010 Version 0.95</b>
  *  - GUI:
  *    - Update main menu screen information.
+ *    - Improve game icon.
  *  - Core:
+ *    - Improve stability.
  *    - Improve network thread.
+ *    - Use libfat 1.0.7 as disk access engine.
+ *    - Use libogc 1.8.3 as Wii interface engine.
  *  - General:
- *   - Improve source code layout!
+ *   - Make source code compliant with r21 compiler.
  *   - Added source code to Google Code Repository.
  *   - Added source code documentation (Javadoc style).
  *   - Added Doxygen (automatic documentation generation tool) config file.
- *   - Build game with devkitPPC r19 compiler.
+ *   - Build game with devkitPPC r21 compiler.
  *
  *  <b>19-11-2009 Version 0.94</b>
  *  - GUI:
  *   - Update main menu screen.
  *  - Core:
+ *   - Improve stablility.
  *   - Added functionality to trace game events to trace file.
  *   - Improve network thread.
  *   - Use libfat 1.0.6 as disk access engine.
