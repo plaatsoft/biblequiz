@@ -2800,8 +2800,12 @@ int main()
    VIDEO_Init();
 	
    WPAD_Init();
-   WPAD_SetIdleTimeout(60); // Wiimote is shutdown after 60 seconds of innactivity.
-	WPAD_SetDataFormat(WPAD_CHAN_ALL,WPAD_FMT_BTNS_ACC_IR);	// enable accelerometers and IR
+	
+	// Wiimote is shutdown after 300 seconds of innactivity.
+   WPAD_SetIdleTimeout(300); 
+	
+	// enable accelerometers and IR
+	WPAD_SetDataFormat(WPAD_CHAN_ALL,WPAD_FMT_BTNS_ACC_IR);	
  
   	// Set Shutdown Callbacks.
 	SYS_SetPowerCallback( doPowerOff );
