@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<languages>
+      <language name="English" translation="en/english.xml" topics="en/topics-en.xml" id="100" />
+      <language name="Nederlands" translation="nl/nederlands.xml" topics="nl/topics-nl.xml" id="200" />
+      <language name="Deutsch" translation="d/deutsch.xml" topics="d/topics-d.xml" id="300" />
+      <language name="Espanol" translation="e/espanol.xml" topics="e/topics-e.xml" id="400" />
+      <language name="France" translation="fr/france.xml" topics="fr/topics-fr.xml" id="500" />
+</languages>
+
+   

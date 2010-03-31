@@ -1,0 +1,210 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='Van Adam tot Abraham'
+      author='wplaat'
+      created='16-11-2008' 
+      note="Een blij hart zal een medicijn goed maken; maar een verslagen geest zal het gebeente verdrogen - Spreuken" />
+
+   <item
+     question='Het verhaal over de schepping lezen we in het bijbelboek .......'
+     answerA='Numeri'
+     answerB='Genesis'
+     answerC='Leviticus'
+     answer='B'
+     number='1' />	
+
+   <item
+     question='Op de 1e dag schiep God .....'
+     answerA='de mens'
+     answerB='het licht'
+     answerC='de planten'
+     answer='B'
+     number='2' />	
+
+   <item
+     question='Op de 2e dag kwam er scheiding tussen .......'
+     answerA='zee en lucht'
+     answerB='zee en land'
+     answerC='licht en duisternis'
+     answer='A'
+     number='3' />
+
+   <item
+     question='God rustte op de .......'
+     answerA='5e dag'
+     answerB='6e dag'
+     answerC='7e dag'
+     answer='C'
+     number='4' />
+
+   <item
+     question='De Here God plantte een hof in .....'
+     answerA='Eden'
+     answerB='Aden'
+     answerC='Sinear'
+     answer='A'
+     number='5' />
+
+   <item
+     question='Mocht men eten van de boom der kennis van goed en kwaad ?'
+     answerA='Ja'
+     answerB='Nee'
+     answerC='Soms' 
+     answer='B'
+     number='6' />
+
+   <item
+     question='De eerste mensen op aarde heten .......'
+     answerA='Abram en Sarai'
+     answerB='Jozef en Maria'
+     answerC='Adam en Eva' 
+     answer='C'
+     number='7' />
+
+   <item
+     question='Twee van hun kinderen heten .......'
+     answerA='Jakob en Esau'
+     answerB='Kain en Abel'
+     answerC='Jozef en Benjamin'
+     answer='B'
+     number='8' />
+
+   <item
+     question='Kain werd boos en vermoordde  .......'
+     answerA='zijn vader'
+     answerB='zijn moeder'
+     answerC='zijn broer'
+     answer='C'
+     number='9' />
+
+   <item
+     question='Vroeger leefden de mensen .........'
+     answerA='heel lang'
+     answerB='erg kort'
+     answerC='erg gelukkig' 
+     answer='A'
+     number='10' />
+
+   <item
+     question='Metuselach werd ......'
+     answerA='69 jaar'
+     answerB='96 jaar'
+     answerC='969 jaar'
+     answer='C'
+     number='11' />
+
+   <item
+     question='God besloot de aarde te verdelgen vanwege .....'
+     answerA='de overbevolking'
+     answerB='het vele geweld'
+     answerC='het voedseltekort' 
+     answer='B'
+     number='12' />
+
+   <item
+     question='Noach was onder zijn tijdgenoten een ......'
+     answerA='vriendelijk mens'
+     answerB='onberispelijk mens'
+     answerC='godsdienstig mens'
+     answer='B'
+     number='13' />
+
+   <item
+     question='God zei tegen hem: .........'
+     answerA='Bouw een grote kerk.'
+     answerB='Bouw een grote ark.'
+     answerC='Bouw een grote gevangenis.'
+     answer='B'
+     number='14' />
+
+   <item
+     question='Hoeveel mensen willen meevaren in de ark?'
+     answerA='400 mensen'
+     answerB='200 mensen'
+     answerC='Alleen Noach en zijn gezin'
+     answer='C'
+     number='15' />
+
+   <item
+     question='Het regent ontzettend. Hoe lang?'
+     answerA='7 dagen'
+     answerB='40 dagen'
+     answerC='6 weken'
+     answer='B'
+     number='16' />
+
+   <item
+     question='Hoelang is Noach in de ark?'
+     answerA='12 weken'
+     answerB='1 jaar'
+     answerC='7 maanden' 
+     answer='B'
+     number='17' />
+
+   <item
+     question='God sluit met Noach een verbond met als teken ........'
+     answerA='Een standbeeld'
+     answerB='een gedenknaald'
+     answerC='een regenboog'
+     answer='C'
+     number='18' />
+
+   <item
+     question='De wereldbevolking is ontstaan uit .......'
+     answerA='Abraham, Isaak en Jakob'
+     answerB='Sem, Cham en Jafet'
+     answerC='Mozes, Aaron en Mirjam' 
+     answer='B'
+     number='19' />
+
+   <item
+     question='Vroeger spraken alle mensen ......'
+     answerA='Engels'
+     answerB='Hebreeuws'
+     answerC='Dezelfde taal' 
+     answer='C'
+     number='20' />
+
+   <item
+     question='In het land Sinear bouwde men een stad met .........'
+     answerA='veel parken'
+     answerB='veel flats'
+     answerC='een zeer hoge toren'
+     answer='C'
+     number='21' />
+
+   <item
+     question='De top van die toren moest reiken tot ........'
+     answerA='de wolken'
+     answerB='de hemel'
+     answerC='grote hoogte' 
+     answer='B'
+     number='22' />
+
+   <item
+     question='Ze stopten met bouwen, want ........'
+     answerA='Het bouwmateriaal raakte op'
+     answerB='men had er geen zin meer in'
+     answerC='er gebeurde iets met hun taal' 
+     answer='C'
+     number='23' />
+
+   <item
+     question='De stad waar dit gebeurde heette ........'
+     answerA='Babbel'
+     answerB='Babel'
+     answerC='Bijbel' 
+     answer='B'
+     number='24' />
+
+   <item
+     question='Het woord Babel betekent: ........'
+     answerA='grote stad'
+     answerB='grote toren'
+     answerC='spraakverwarring'
+     answer='C'
+     number='25' />
+	
+</bibleQuiz> 

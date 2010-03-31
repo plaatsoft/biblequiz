@@ -1,0 +1,189 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='Bijbelboeken'
+      author='wplaat'
+      created='14-11-2008'
+      note= "Wie wetenschap weet, houdt zijn woorden in; en een man van verstand is kostelijk van geest - Spreuken" />
+
+   <item
+     question='Uit hoeveel delen bestaat de Bijbel?'
+     answerA='2 delen'
+     answerB='3 delen'
+     answerC='4 delen'
+     answer='A' />	
+
+  <item
+     question='Hoe noemen we het oudste deel?'
+     answerA='Nieuwe Testament'
+     answerB='Oude Testament'
+     answerC='Oude en Nieuwe Testament'
+     answer='B' />
+
+  <item
+     question='Hoe heten de eerste vijf boeken van het O.T.?'
+     answerA='Genesis, Exodus, Leviticus, Psalmen, Numeri'
+     answerB='Genesis, Exodus, Leviticus, Numeri, Deuteronomium'
+     answerC='Genesis, Exodus, Jesaja, Deuteronomium, Leviticus'
+     answer='A' />
+
+  <item
+     question='Hoe heten de eerste vier boeken van het N.T.?'
+     answerA='Matteus, Marcus, Lucas, Johannes'
+     answerB='Marcus, Lucas, Johannes, Handelingen'
+     answerC='Openbaring, Matteus, Marcus, Lucas'
+     answer='B' />
+
+  <item
+     question='Wat staat er in een historisch boek?'
+     answerA='Gedichten en liederen'
+     answerB='Wetten en regels'
+     answerC='Geschiedenis van Israel'
+     answer='C' /> 
+
+ <item
+     question='Wat staat er in een poetisch boek?'
+     answerA='Psalmen en spreuken'
+     answerB='Wetten en regels'
+     answerC='Geschiedenis van Israel'
+     answer='A' />
+
+ <item
+     question='Wat staat er in een profetisch boek?'
+     answerA='Uitspraken en belevenissen van profeten'
+     answerB='Liederen en spreuken'
+     answerC='Geschiedenis van Israel'
+     answer='A' />
+
+  <item
+     question='Bij welke boeken wordt Jozua ingedeeld?'
+     answerA='Bij de profeten'
+     answerB='Bij de historische boeken'
+     answerC='Bij de wetten en regels'
+     answer='B' />
+
+  <item
+     question='Bij welke boeken hoort het boek Daniel?'
+     answerA='De historische boeken'
+     answerB='De profeten'
+     answerC='De poetische boeken'
+     answer='B' />
+  
+  <item
+     question='Hoeveel brieven zijn er van Paulus aan de Korintiers?'
+     answerA='Een'
+     answerB='Twee'
+     answerC='Drie'
+     answerD='Vier'
+     answer='A' />
+
+  <item
+     question='Hoeveel brieven van Johannes staan er in de Bijbel??'
+     answerA='Een'
+     answerB='Twee'
+     answerC='Drie'
+     answerD='Vier'
+     answer='C' />
+
+  <item
+     question='Wat is het laatste boek in het N.T.??'
+     answerA='Openbaringen'
+     answerB='Jakobus'
+     answerC='Judas'
+     answerD='Jezus'
+     answer='A' />
+
+  <item
+     question='Tussen welke boeken staan de brieven 1 en 2 Tessalonicenzen?'
+     answerA='Tussen Kollossenzen en Johannes'
+     answerB='Tussen Kollossenzen en Marcus'
+     answerC='Tussen Kollossenzen en Timoteus'
+     answer='C' />
+
+  <item
+     question='Tussen welke boeken staat Lucas?'
+     answerA='Tussen Marcus en Johannes'
+     answerB='Tussen Galaten en Johannes'
+     answerC='Tussen de Handelingen en Johannes'
+     answer='A' />
+
+  <item
+     question='Welk boek staat in het O.T.?'
+     answerA='Romeinen'
+     answerB='Hooglied'
+     answerC='1 Korintiers'
+     answer='B' />
+
+  <item
+     question='Welk boek staat in het N.T.??'
+     answerA='Lucas'
+     answerB='Nahum'
+     answerC='Spreuken'
+     answer='B' />
+
+
+  <item
+     question='Welk boek hoort bij de grote profeten?'
+     answerA='Hosea'
+     answerB='Obadja'
+     answerC='Jesaja'
+     answer='C' />
+
+  <item
+     question='Welk boek hoort bij de kleine profeten?'
+     answerA='Sefanja'
+     answerB='Klaagliederen'
+     answerC='Jeremia'
+     answer='A' />
+
+  <item
+     question='Van wie zijn er brieven opgenomen in het N.T.?'
+     answerA='Matteus'
+     answerB='Paulus'
+     answerC='Marcus'
+     answer='B' />
+
+  <item
+     question='Waar ongeveer staat het boek Psalmen in de Bijbel?'
+     answerA='Middenin'
+     answerB='Vooraan'
+     answerC='Achteraan'
+     answer='A' />
+
+  <item
+     question='Waar ongeveer staat de brief van Judas in de Bijbel?'
+     answerA='Middenin'
+     answerB='Vooraan'
+     answerC='Achteraan'
+     answer='C' />
+
+  <item
+     question='Waar ongeveer staat Deuteronomium in de Bijbel?'
+     answerA='Middenin'
+     answerB='Vooraan'
+     answerC='Achteraan'
+     answer='A' />
+
+  <item
+     question='Welk rijtje is precies op volgorde??'
+     answerA='1 Johannes, 2 Johannes, 3 Johannes, Judas'
+     answerB='1 Johannes, 2 Johannes, 3 Johannes, 2 Kronieken'
+     answerC='1 Johannes, 2 Johannes, 3 Johannes, Ester'
+     answer='A' />
+
+  <item
+     question='Welke uitspraak is juist?'
+     answerA='In het O.T. staan brieven van Petrus'
+     answerB='In het N.T. staan brieven van Petrus'
+     answerC='Er staan geen brieven van Petrus in de Bijbel'
+     answer='B' />
+
+  <item
+     question='Hoeveel hoofdstukken heeft Genesis?'
+     answerA='48'
+     answerB='50'
+     answerC='34'
+     answer='B' />
+
+</bibleQuiz> 

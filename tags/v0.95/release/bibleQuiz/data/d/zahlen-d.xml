@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<bibleQuiz>
+
+   <header 
+      topic='Bedeutendes Numbers'
+      author='wplaat'
+      created='24-11-2008' 
+      note="Weil sie die Erkenntnis hassten und die Furcht des HERRN nicht erwahlten - Sprichworter" />
+
+   <item
+     question='In wievielen Tage has Gott die Erde herstel?'
+     answerA='7'
+     answerB='6'
+     answerC='8'
+     answerD='40' 
+     answer='B'
+     number='1' />	
+
+   <item
+     question='Noah war in der Arche fur ungefahr wie lang?'
+     answerA='40 Tage'
+     answerB='354 Tage'
+     answerC="ungefahr 20 Jahre"
+     answerD='7 Tage' 
+     answer='A'
+     number='2' />
+
+   <item
+     question='Jesus war im Grab fur :'
+     answerA='3 Tage'
+     answerB='4 Tage'
+     answerC='100 Tage'
+     answerD='200 Tage' 
+     answer='A'
+     number='3' />
+
+   <item
+     question='Tiere stiegen in die Arche ein:'
+     answerA='2 x 2'
+     answerB='10 x 10'
+     answerC='3 x 3'
+     answerD='4 x 4' 
+     answer='A'
+     number='4' />
+
+   <item
+     question='Die Zahl der Pest von Agypten:'
+     answerA='2'
+     answerB='1'
+     answerC='20'
+     answerD='10' 
+     answer='D'
+     number='5' />
+
+   <item
+     question="Die Zahl Aposteln, die Jesus folgten:"
+     answerA='1'
+     answerB='2'
+     answerC='12'
+     answerD='144,000' 
+     answer='C'
+     number='6' />
+
+   <item
+     question='Die Zahl Tagen und Nachte, die es wahrend der Flut regnete:'
+     answerA='7'
+     answerB='40'
+     answerC='6'
+     answerD='144,000' 
+     answer='B'
+     number='7' />
+
+   <item
+     question='Die Zahl Evangeliumkonten:'
+     answerA='12'
+     answerB='5'
+     answerC='3'
+     answerD='4' 
+     answer='C'
+     number='8' />
+
+   <item
+     question='Die Zahl Stammen der Kinder von Israel:'
+     answerA='12'
+     answerB='5'
+     answerC='3'
+     answerD='4' 
+     answer='A'
+     number='9' />
+
+   <item
+     question='Die Zahl Buchern in der Bibel:'
+     answerA='66'
+     answerB='72'
+     answerC='29'
+     answerD='34' 
+     answer='A'
+     number='10' />
+
+</bibleQuiz> 
