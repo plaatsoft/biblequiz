@@ -71,7 +71,7 @@ int     yOffset           = 0;
 int     yjpegOffset       = 0;
 int     angle             = 0;
 int     alfa              = 0;
-boolean alfa_direction    = true;
+bool    alfa_direction    = true;
 float   size              = 0;
 float   wave1             = 0;
 float   wave2             = 0;
@@ -80,7 +80,7 @@ int     score             = 0;
 int     hintCounter       = 0;
 time_t  startTime;
 time_t  playTime;
-boolean correctAnswer     = false;
+bool    correctAnswer     = false;
 
 int     maxQuestions      = 0;
 int     maxLanguages      = 0;
@@ -418,7 +418,7 @@ void processHighScore(void)
    char *s_fn="processHighScore";
    traceEvent(s_fn,0,"enter");
 
-   boolean found=false;
+   bool found=false;
    int i;
    
    // Check if highscore is reached
@@ -1700,7 +1700,7 @@ void buttonHome(void)
 
 void button1x(void)
 {
-   boolean flag = true;
+   bool flag = true;
  
    MODPlay_Stop(&snd1);  
    if (selectedMusic<MAX_MUSIC_TRACK) selectedMusic++; else selectedMusic=1;   
@@ -1716,7 +1716,7 @@ void button1x(void)
 
 void button2y(void)
 {
-   boolean flag = true;
+   bool flag = true;
  
    MODPlay_Stop(&snd1);
    if (selectedMusic>1) selectedMusic--; else selectedMusic=(MAX_MUSIC_TRACK-1);   
@@ -2091,7 +2091,7 @@ void drawButtons()
    int i;
    int j;
    
-   boolean selected=false;
+   bool selected=false;
    
    for (i=0; i<maxButtons; i++)
    {	  
