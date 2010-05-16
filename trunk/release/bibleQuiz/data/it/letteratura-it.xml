@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<MyQuiz>
+
+   <header 
+      topic="Letteratura"
+      author="Ezio Soma'"
+      created="18-04-2010" 
+      note="" />
+
+   <item
+	question="Fa parte della trilogia di Eschilo"
+	answerA="Agamennone"
+	answerB="Medea"
+	answerC="Edipo re"
+	answerD="Achille"
+     	answer="A"
+     	explanation=""
+    	 number="1" />	
+   <item
+     	question="Scrisse i Mandarini"
+	answerA="M. Duras"
+	answerB="D. du Maurier"
+	answerC="S. de Beauvoir"
+	answerD="E. Dumas"
+     	answer="C"
+     	explanation=""
+     	number="2" />	
+   <item
+     	question="come si chiama la figlia di Swann nella recherche"
+	answerA="Odette"
+	answerB="Gilberte"
+	answerC="Albertine"
+	answerD="Celestine"
+     	answer="B"
+     	explanation=""
+     	number="3" />	
+   <item
+     	question="Nascita del premio Grinzane Cavour"
+	answerA="1982"
+	answerB="1980"
+	answerC="1975"
+	answerD="1999"
+     	answer="A"
+     	explanation=""
+     	number="4" />	
+<item
+     question="Quale di questi poeti mori' pazzo?"
+	answerA="Holderin"
+	answerB="Heine"
+	answerC="Novalis"
+	answerD="Neptune"
+     	answer="A"
+     	explanation=""
+     	number="5" />	
+<item
+     question="L'inverno del nostro scontento..., comincia cosi'" 
+	answerA="Riccardo III"
+	answerB="Riccardo II"
+	answerC="Macbeth"
+	answerD="Enrico V"
+     	answer="A"
+     	explanation=""
+     	number="6" />	
+<item
+     question="Dove si svolge il Manoscritto trovato a Saragoza ?"
+	answerA="Sierra della Cabrera"
+	answerB="Sierra Nevada"
+	answerC="Sierra Morena" 
+	answerD="Sierra Lunga"
+     	answer="C"
+     	explanation=""
+     	number="7" />	
+<item
+     question="Citta' natale di Grazia Deledda"
+	answerA="Nuoro"
+	answerB="Cagliari"
+	answerC="Oristano"
+	answerD="Orgosolo"
+     	answer="A"
+     	explanation=""
+     	number="8" />
+ </MyQuiz>

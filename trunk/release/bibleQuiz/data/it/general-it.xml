@@ -1,0 +1,555 @@
+<?xml version='1.0'?>
+<MyQuiz>
+
+   <header 
+      topic="Culturale Generale"
+      author="Ezio Soma'"
+      created="17-04-2010" 
+      note="" />
+
+   <item
+     question="Che cosa accadde il 22 Agosto 1864"
+     answerA="Fu firmata la Convenzione di Ginevra"
+     answerB="Fu inventata la penicillina"
+     answerC="Nobel istitui' il Premio Nobel"
+     answerD="Il Cavour proclamo' la nascita del regno d'Italia"
+     answer="A"
+     explanation=""
+     number="1" />	
+
+
+   <item
+     question="L'AEROX e' un modello di:"
+     answerA="Caccia"
+     answerB="Aeratore da bagno"
+     answerC="Scooter"
+     answerD="Cellulare"
+     answer="C"
+     explanation=""
+     number="2" />	
+<item
+     question="Da chi e' prodotto il gruppo emergente Godiva?"
+     answerA="Caterina Caselli"
+     answerB="G. Carletti (dei Nomadi)"
+     answerC="Claudio Cecchetto"
+     answerD="Franco Battaglia"
+     answer="B"
+     explanation=""
+     number="3" />	
+<item
+     question="Quale tra i seguenti e' un numero primo?"
+     answerA="998"
+     answerB="267"
+     answerC="911"
+     answerD="1921"
+     answer="C"
+     explanation=""
+     number="4" />	
+<item
+     question="Da che anno scolastico non e' piu' obbligatorio l'esame di 5^ elementare?"
+     answerA="Anno Scolastico 2009/2010"
+     answerB="Anno Scolastico 2004/2005"
+     answerC="Anno Scolastico 2001/2002"
+     answerD="Anno Scolastico 2006/2007"
+     answer="B"
+     explanation=""
+     number="5" />	
+<item
+     question="Che cos'e' la buccina?"
+     answerA="uno strumento a fiato"
+     answerB="Una calzatura da usare in casa"
+     answerC="Una bambola di stoffa"
+     answerD="Una buccia lavorata con appositi coltelli"
+     answer="A"
+     explanation=""
+     number="6" />	
+<item
+     question="Quante punte ha la stella disegnata nella bandiera della N.A.T.O.?"
+     answerA="5"
+     answerB="3"
+     answerC="7"
+     answerD="4"
+     answer="D"
+     explanation=""
+     number="7" />	
+<item
+     question="In quali vegetali e' contenuto l'acido citrico E330?"
+     answerA="Limoni"
+     answerB="Spinaci"
+     answerC="Fragole"
+     answerD="Meloni"
+     answer="A"
+     explanation=""
+     number="8" />	
+<item
+     question="Il seguente codice ASCII 123 che carattere della tastiera identifica?"
+     answerA="@"
+     answerB="{"
+     answerC="}"
+     answerD="$"
+     answer="B"
+     explanation=""
+     number="9" />	
+<item
+     question="In che nazione si giocheranno i mondiali di calcio FIFA 2010?"
+     answerA="Marocco"
+     answerB="Libia"
+     answerC="Sudafrica"
+     answerD="Cile"
+     answer="C"
+     explanation=""
+     number="10" />	
+<item
+     question="Cos'e' la forza CENTRIPETA?"
+     answerA="e' la componente normale dell'accelerazione nel moto circolare"
+     answerB="forza tangenziale che si crea in seguito ad una rapida rotazione attorno ad un asse"
+     answerC="variazione della velocita' lineare nell'arco di tempo di 2 secondi"
+     answerD="nessuna delle precedenti"
+     answer="A"
+     explanation=""
+     number="11" />	
+<item
+     question="Lo ziglore e' il componente di:"
+     answerA="Un carburatore"
+     answerB="Una ruota chiodata"
+     answerC="Un pc"
+     answerD="Un televisore"
+     answer="A"
+     explanation=""
+     number="12" /> 	
+<item
+     question="L'azienda ospedaliera Curatutti ha scritto nel suo regolamento: In ogni momento c'e' almeno un medico di guardia al Pronto Soccorso. Cio' equivale a dire che:"
+     answerA="Non ci sono mai due medici di guardia al Pronto Soccorso"
+     answerB="Non c'e' nessun momento in cui non ci sia almeno un medico di guardia al Pronto Soccorso"
+     answerC="La sera di Capodanno non c'e' necessariamente garantita la presenza di un medico al Pronto Soccorso"
+     answerD="C'e' un certo medico che e' sempre di guardia al Pronto Soccorso"
+     answer="B"
+     explanation=""
+     number="13" />	
+<item
+     question="In che stato si trova l'isola di Formentera?"
+     answerA="Portogallo"
+     answerB="USA"
+     answerC="Italia"
+     answerD="Spagna"
+     answer="D"
+     explanation=""
+     number="14" />	
+<item
+     question="Nel SI (sistema internazionale), l'intensita' luminosa, si misura in:"
+     answerA="Lumen"
+     answerB="Henry"
+     answerC="Lux"
+     answerD="Candele"
+     answer="D"
+     explanation=""
+     number="15" />	
+<item
+     question="Qual e' l'album musicale piu' venduto nella storia?"
+     answerA="Thriller di Michael Jackson"
+     answerB="The Wall dei Pink Floyd"
+     answerC="Nel blu dipinto di blu di Domenico Modugno"
+     answerD="Pop degli U2"
+     answer="A"
+     explanation=""
+     number="16" />	
+<item
+     question="Qual e' composizione chimica del perossido di idrogeno? (acqua ossigenata)"
+     answerA="H2O2"
+     answerB="H2O3"
+     answerC="H5O7"
+     answerD="H36O18"
+     answer="A"
+     explanation=""
+     number="17" />	
+<item
+     question="Quale tra le seguenti squadre di calcio giochera' per la prima volta in Champions League?"
+     answerA="Liverpool"
+     answerB="Benfica"
+     answerC="Udinese"
+     answerD="Anderlecht"
+     answer="C"
+     explanation=""
+     number="18" />	
+<item
+     question="In un pc, cos'e' la porta USB?"
+     answerA="Uno sportello che consente di aprire il pc per ispezionarlo e pulirlo"
+     answerB="Standard di comunicazione che consente di interconnettere periferiche con il pc"
+     answerC="E' un dispositivo presente solo nei lettori mp3 e nelle chiavette portatili"
+     answerD="Nessuna delle precedenti"
+     answer="B"
+     explanation=""
+     number="19" />	
+<item
+     question="In meccanica, piu' precisamente in una motocicletta, cos'e' la corona?"
+     answerA="Il tappo della benzina"
+     answerB="La ruota dentata, collegata al motore che consente il moto della motocicletta tramite la catena"
+     answerC="Il numero totale di raggi presenti nelle ruote"
+     answerD="La ruota dentata, collegata alla ruota posteriore che consente il moto della motocicletta tramite la catena"
+     answer="D"
+     explanation=""
+     number="20" />	
+<item
+     question="Quando fu iniziata la costruzione del muro di Berlino, caduto il 9 novembre 1989?"
+     answerA="13 Agosto 1961" 
+     answerB="17 Luglio 1949"
+     answerC="25 Giugno 1959"
+     answerD="11 Settembre 1955"
+     answer="A"
+     explanation=""
+     number="21" />	
+<item
+     question="Chi e' il nonno del figlio del figlio del fratello di mio padre"
+     answerA="mio fratello"
+     answerB="mio nipote"
+     answerC="mio cugino"
+     answerD="mio zio"     
+     answer="D"
+     explanation=""
+     number="22" />	
+<item
+     question="Qual e' il limite massimo di velocita' nel centro abitato per le macchine operatrici con cingoli?"
+     answerA="10 Km/h"
+     answerB="15 Km/h"
+     answerC="50 Km/h"
+     answerD="65 Km/h"
+     answer="B"
+     explanation=""
+     number="23" />	
+<item
+     question="A chi appartiene il record del mondo nei 1500 metri stile libero?"
+     answerA="E' una competizione che non esiste"
+     answerB="Michael Phelps"
+     answerC="E' una competizione non ufficiale e tutti si inventano campioni"
+     answerD="Grant Hackett"
+     answer="D"
+     explanation=""
+     number="24" />	
+<item
+     question="Dove si sviluppa l'acido lattico"
+     answerA="Nel latte"
+     answerB="Nelle mozzarelle"
+     answerC="Nei muscoli"
+     answerD="Nelle ghiandole mammarie"
+     answer="C"
+     explanation=""
+     number="25" />	
+<item
+     question="Se imprimo ad un sasso un'accelerazione pari a quella gravitazionale (utilizzate nei calcoli il numero approssimato alla seconda cifra decimale, non l'approssimazione a 10), supponendo assenti gli attriti, e supponendo che il sasso si sposti in modo lineare, dopo 10 secondi a che distanza si trovera' il sasso?"
+     answerA="981 metri"
+     answerB="490,5 metri"
+     answerC="98,1 metri"
+     answerD="53,56 metri"
+     answer="B"
+     explanation=""
+     number="26" />
+<item
+     question="Il Liechtenstein confina con:"
+     answerA="L'Italia"
+     answerB="L'Olanda"
+     answerC="La Russia"
+     answerD="La Svizzera"
+     answer="D"
+     explanation=""
+     number="27" />	
+<item
+     question="Da chi e' stata scritta la canzone Generale cantata da Vasco?"
+     answerA="Francesco Guccini"
+     answerB="Francesco De Gregori"
+     answerC="Mogol"
+     answerD="Jovanotti"
+     answer="B"
+     explanation=""
+     number="28" />	
+<item
+     question="In un motore, come si chiama il diametro interno del cilindro?"
+     answerA="Alesaggio"
+     answerB="Corsa"
+     answerC="Cilindrata"
+     answerD="Travaso"
+     answer="A"
+     explanation=""
+     number="29" />	
+<item
+     question="A che numero equivale il seguente codice binario 1000101?"
+     answerA="73"
+     answerB="55"
+     answerC="83"
+     answerD="69"
+     answer="D"
+     explanation=""
+     number="30" />	
+<item
+     question="Cos'e' il NASDAQ?"
+     answerA="Quotazione automatizzata dell'Associazione Nazionale degli Operatori in Titoli (Borsa di NY)"
+     answerB="La sigla interna della NASA per identificare gli shuttle Apollo"
+     answerC="Dipende dal contesto ha almeno 4 significati differenti"
+     answerD="E' un acronimo che vi siete inventati"
+     answer="A"
+     explanation=""
+     number="31" />	
+<item
+     question="Chi e' il Regista del film Braveheart?"
+     answerA="Mel Gibson"
+     answerB="Patrick Mc Goohan"
+     answerC="Quentin Tarantino"
+     answerD="Il regista ha voluto rimanere anonimo"
+     answer="A"
+     explanation=""
+     number="32" />	
+<item
+     question="Il transatlantico Titanic venne costruito ed armato, tra il 1908 ed il 1912 nei cantieri navali di:"
+     answerA="Aberdeen"
+     answerB="Calais"
+     answerC="Amsterdam"
+     answerD="Belfast"
+     answer="A"
+     explanation=""
+     number="33" />	
+<item
+     question="Cos'e' l'iconoclastia?"
+     answerA="Violenta condanna del culto delle immagini sacre"
+     answerB="Costrizione dei popoli alla venerazione di immagini sacre"
+     answerC="Svendita per lucro di immagini sacre condannata dalla Chiesa Orientale"
+     answerD="Ostinazione maniacale nel venerare immagini sacre"
+     answer="A"
+     explanation=""
+     number="34" />	
+<item
+     question="Come si lancia il segnale di S.O.S. in alfabeto Morse?"
+     answerA=". . . .  _ _ _ _  . . . ."
+     answerB=". . . _ _ _ . . ."
+     answerC=". . ."
+     answerD=". . . ." 
+     answer="B"
+     explanation=""
+     number="35" />	
+<item
+     question="Chi fu l'ideatore del Cavallo di Troia, che fece poi anche parte del drappello che attese la notte nel suo ventre per aprire le porte della citta' all'esercito degli achei?"
+     answerA="Achille"
+     answerB="Menelao"
+     answerC="Diomede"
+     answerD="Ulisse"
+     answer="D"
+     explanation=""
+     number="36" />	
+<item
+     question="Che personaggio interpreta Mel Gibson nel film Braveheart?"
+     answerA="William Windlace"
+     answerB="Robert De Bruce"
+     answerC="William Wallace"
+     answerD="Robert Windlace"
+     answer="C"
+     explanation=""
+     number="37" />	
+<item
+     question="Una centrale elettrica che sfrutta energia eolica si serve di"
+     answerA="Turbine a vapore"
+     answerB="Mulini a vento"
+     answerC="Mulini ad acqua"
+     answerD="Turbine ad acqua"
+     answer="B"
+     explanation=""
+     number="38" />	
+<item
+     question="Che animale e' il mandrillo?"
+     answerA="E' una scimmia con le natiche rosse"
+     answerB="E' un suino dotato di criniera e lunghe zanne diffuso in Asia"
+     answerC="E' un grosso pesce che vive nel bacino del Rio delle Amazzoni"
+     answerD="E' una testuggine carnivora dotata di una forte becco adunco"
+     answer="A"
+     explanation=""
+     number="39" />	
+<item
+     question="Per quale motivo la pietra pomice galleggia?"
+     answerA="Perche' costituita da una miscela di idrocarburi molto simili a quelli del petrolio ma cristallizzati per un processo catalitico"
+     answerB="Perche' una roccia sedimentaria che deriva dalla fossilizzazione di alghe monocellulari che, fermentando,
+liberano metano nel fango in cui muoiono"
+     answerC="Perche' deriva da lave molto ricche di gas i quali, durante il raffreddamento, abbandonano la roccia formando una gran quantita' di piccoli spazi vuoti"
+     answerD="Perche' e' l'ultimo stadio dalla fossilizzazione del legno, dopo quello dell'antracite"
+     answer="C"
+     explanation=""
+     number="40" />	
+<item
+     question="In quale stato e' nato il noto rivoluzionario Che Guevara?"
+     answerA="Venezuela"
+     answerB="Argentina"
+     answerC="Cuba"
+     answerD="Colombia"
+     answer="B"
+     explanation=""
+     number="41" />	
+<item
+     question="Quando fu assassinato Chico Mendez?"
+     answerA="1995"
+     answerB="1994"
+     answerC="1992"
+     answerD="1997"
+     answer="A"
+     explanation=""
+     number="42" />	
+<item
+     question="Quale di queste citta' australiane non affaccia sull'oceano?"
+     answerA="Perth"
+     answerB="Melbourne"
+     answerC="Sydney"
+     answerD="Canberra"
+     answer="D"
+     explanation=""
+     number="43" />	
+<item
+     question="Nel gioco degli scacchi, con la mossa del barbiere, qual e' il numero minimo di mosse che servono al bianco per dare scacco matto?"
+     answerA="4"
+     answerB="3"
+     answerC="5"
+     answerD="6"
+     answer="A"
+     explanation=""
+     number="44" />	
+<item
+     question="Quale di questi stati era fra i primi 12 paesi europei ad avere l'euro?"
+     answerA="Danimarca"
+     answerB="Svezia"
+     answerC="Finlandia"
+     answerD="Norvegia"
+     answer="C"
+     explanation=""
+     number="45" />	
+<item
+     question="In quale squadra di calcio non ha mai giocato il difensore dell'inter Walter Samuel?"
+     answerA="Newell's Boys"
+     answerB="Boca Juniors"
+     answerC="Real Madrid"
+     answerD="Velez"
+     answer="D"
+     explanation=""
+     number="46" />	
+<item
+     question="Qual e' la il numero che completa la seguente serie di numeri? 3 4 6 10 18 34"
+     answerA="6"
+     answerB="66"
+     answerC="64"
+     answerD="62"
+     answer="B"
+     explanation=""
+     number="47" />	
+<item
+     question="Quante carte ci sono in un mazzo appena comprato di carte Piacentine ?"
+     answerA="40"
+     answerB="42"
+     answerC="52"
+     answerD="54"
+     answer="B"
+     explanation=""
+     number="48" />	
+<item
+     question="Quale fra questi nomi non e' uno delle tre nipotine di Paperina?"
+     answerA="Emy"
+     answerB="Ely"
+     answerC="Eny"
+     answerD="Evy"
+     answer="C"
+     explanation=""
+     number="49" />	
+<item
+     question="Di che marca e' la nuova macchina RX8?"
+     answerA="Mazda"
+     answerB="Honda"
+     answerC="Nissan"
+     answerD="Pagani"
+     answer="A"
+     explanation=""
+     number="50" />	
+<item
+     question="dove e' stata organizzata la prossima giornata mondiale della gioventu'?"
+     answerA="Tokio"
+     answerB="Sydney"
+     answerC="New York"
+     answerD="Bruxelles"
+     answer="B"
+     explanation=""
+     number="51" />	
+<item
+     question="Chi fu il primo cantante dei Nomadi?"
+     answerA="Danilo Sacco"
+     answerB="Massimo Vecchi"
+     answerC="Augusto Carletti"
+     answerD="Augusto Daolio"
+     answer="D"
+     explanation=""
+     number="52" />	
+<item
+     question="Qual e' la fase del sonno in cui si sogna?"
+     answerA="Dormiveglia"
+     answerB="Fase Rem"
+     answerC="Fase non Rem"
+     answerD="Sonno leggero"
+     answer="B"
+     explanation=""
+     number="53" />	
+<item
+     question="Scrisse L'interprete dei sogni"
+     answerA="A. Freud"
+     answerB="C.G. Jung"
+     answerC="E. Erikson"
+     answerD="S. Freud"
+     answer="A"
+     explanation=""
+     number="54" />	
+<item
+     question="Viene cos� definito in psicanalisi, l'amore da parte delle bambine verso il padre, accompagnato da sentimenti di gelosia e rivalita' verso la madre:"
+     answerA="Complesso di Edipo"
+     answerB="Complesso di Sofocle"
+     answerC="Complesso di Elettra"
+     answerD="Complesso di Giocasta"
+     answer="C"
+     explanation=""
+     number="55" />	
+<item
+     question="Zona del cervello adibita allo sviluppo del linguaggio parlato:"
+     answerA="Area di Broca"
+     answerB="Lobo temporale"
+     answerC="Area di Wernike"
+     answerD="Area prefrontale"
+     answer="A"
+     explanation=""
+     number="56" />	
+<item
+     question="Qual e' il concerto che ha ottenuto il recod Europeo di vendita biglietti per lo spettacolo di un solo artista?"
+     answerA="Luciano Ligabue (10 settembre 2005 Reggio Emilia )"
+     answerB="U2 (4 settembre 2000 Reggio Emilia)"
+     answerC="Queen (6 ottobre 1990 Londra)"
+     answerD="Vascco (3 luglio 2004 Milano)"
+     answer="A"
+     explanation=""
+     number="57" />	
+<item
+     question="Un uomo in moto percorre 600 Km, sapendo che ha una ruota di scorta e che vuole percorrere con tutte e tre le
+gomme lo stesso numero di Km, si chiede quanti Km percorre ciascuna ruota."
+     answerA="200"
+     answerB="300"
+     answerC="400"
+     answerD="600"
+     answer="C"
+     explanation=""
+     number="58" />	
+<item
+     question="Quale tra questi modelli di cellulare nokia non esiste?"
+     answerA="6101"
+     answerB="3660"
+     answerC="6280"
+     answerD="5040"
+     answer="D"
+     explanation=""
+     number="59" />	
+<item
+     question="Com'e' considerato il matrimonio nel diritto civile?"
+     answerA="Un contratto economico"
+     answerB="Un negozio giuridico"
+     answerC="Una fregatura"
+     answerD="Un contratto che salvaguarda la parte piu' debole"
+     answer="B"
+     explanation=""
+     number="60" />	
+
+</MyQuiz> 

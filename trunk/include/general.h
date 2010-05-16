@@ -63,7 +63,7 @@
 #define WSP_POINTER_X       	200
 #define WSP_POINTER_Y       	250
 
-#define MAX_LANGUAGES			5
+#define MAX_LANGUAGES			6
 #define MAX_BUTTONS         	10
 #define MAX_TOPICS				20
 #define MAX_HIGHSCORE			(MAX_LANGUAGES * MAX_TOPICS)
@@ -178,6 +178,7 @@ typedef struct
    char explanation[MAX_LEN]; 
    bool played;
    bool enabled[4];
+   bool done;
 } 
 question;
 
@@ -271,6 +272,7 @@ typedef struct
   GRRLIB_texImg deutsch_flag;
   GRRLIB_texImg spanish_flag;
   GRRLIB_texImg france_flag;
+  GRRLIB_texImg italiano_flag;
   
   GRRLIB_texImg help;
   GRRLIB_texImg right;
@@ -349,6 +351,16 @@ pointer pointers[MAX_POINTERS];
  *   Documentation: wplaat\n
  *
  * @section ReleaseNotes
+ *  <b>16-05-2010 Version 0.96</b>
+ *  - GUI:
+ *   - Added italiano translation (Thanks Ezio Soma).
+ *  - Core: 
+ *   - Added random question mode (Thanks Ezio Soma).
+ *  - Content:
+ *   - Added 194 (5 topics) italiano questions (Thanks Ezio Soma)
+ *  - Core:
+ *   - Build game with devkitPPC r21 compiler
+ *
  *  <b>31-03-2010 Version 0.95</b>
  *  - GUI:
  *    - Update main menu screen information.

@@ -91,6 +91,7 @@ int     maxHighScores     = 0;
 int     selectedLanguage  = 0;
 int     selectedTopic     = 0;
 int     selectedQuestion  = 0;
+int     rndSelectedQuestion  = 0;
 int     selectedMusic     = 0;
 
 int     musicVolume       = 5;
@@ -166,6 +167,10 @@ extern int      pic14length;
 // deutsch flag Image
 extern const unsigned char     pic15data[];
 extern int      pic15length;
+
+// Italiano flag Image
+extern const unsigned char     pic45data[];
+extern int      pic45length;
 
 // bar1 Image
 extern const unsigned char     pic16data[];
@@ -919,6 +924,11 @@ void initQuestions(char* filename)
 	      strcpy(questions[maxQuestions].answerD,"");
 		  questions[maxQuestions].enabled[3]=false;
 	  }
+	  
+	  //reset the "done" flag
+	  
+	  questions[maxQuestions].done=false;
+
     
       pointer=mxmlElementGetAttr(group,"answer");
       if (pointer!=NULL) 
@@ -979,6 +989,8 @@ void initImages(void)
    GRRLIB_InitTileSet(&images.nederlands_flag, images.nederlands_flag.w, 1, 0);
    images.deutsch_flag=GRRLIB_LoadTexture( pic15data);
    GRRLIB_InitTileSet(&images.deutsch_flag, images.deutsch_flag.w, 1, 0);
+   images.italiano_flag=GRRLIB_LoadTexture( pic45data);
+   GRRLIB_InitTileSet(&images.italiano_flag, images.italiano_flag.w, 1, 0);
 
    // icons
    images.help=GRRLIB_LoadTexture( pic23data);   
@@ -1124,7 +1136,7 @@ void initButtons(void)
    strcpy(buttons[3].name,translation.buttonAnswerA);
    buttons[3].x=10;
    buttons[3].y=332+yOffset;
-   if (questions[selectedQuestion].enabled[0]) buttons[3].enabled=true; else buttons[3].enabled=false;
+   if (questions[rndSelectedQuestion].enabled[0]) buttons[3].enabled=true; else buttons[3].enabled=false;
    buttons[3].xtext=buttons[3].x+(buttons[3].image.w/2)-((strlen(buttons[3].name)*13)/2);
    buttons[3].ytext=buttons[3].y+25;
       
@@ -1134,7 +1146,7 @@ void initButtons(void)
    strcpy(buttons[4].name,translation.buttonAnswerB);
    buttons[4].x=192;
    buttons[4].y=332+yOffset;
-   if (questions[selectedQuestion].enabled[1]) buttons[4].enabled=true; else buttons[4].enabled=false;
+   if (questions[rndSelectedQuestion].enabled[1]) buttons[4].enabled=true; else buttons[4].enabled=false;
    buttons[4].xtext=buttons[4].x+(buttons[4].image.w/2)-((strlen(buttons[4].name)*13)/2);
    buttons[4].ytext=buttons[4].y+25;
       
@@ -1144,7 +1156,7 @@ void initButtons(void)
    strcpy(buttons[5].name,translation.buttonAnswerC);
    buttons[5].x=10;
    buttons[5].y=391+yOffset;
-   if (questions[selectedQuestion].enabled[2]) buttons[5].enabled=true; else buttons[5].enabled=false; 
+   if (questions[rndSelectedQuestion].enabled[2]) buttons[5].enabled=true; else buttons[5].enabled=false; 
    buttons[5].xtext=buttons[5].x+(buttons[5].image.w/2)-((strlen(buttons[5].name)*13)/2);
    buttons[5].ytext=buttons[5].y+25;
    
@@ -1154,7 +1166,7 @@ void initButtons(void)
    strcpy(buttons[6].name,translation.buttonAnswerD);
    buttons[6].x=192;
    buttons[6].y=391+yOffset;
-   if (questions[selectedQuestion].enabled[3]) buttons[6].enabled=true; else buttons[6].enabled=false;
+   if (questions[rndSelectedQuestion].enabled[3]) buttons[6].enabled=true; else buttons[6].enabled=false;
    buttons[6].xtext=buttons[6].x+(buttons[6].image.w/2)-((strlen(buttons[6].name)*13)/2);
    buttons[6].ytext=buttons[6].y+25;
    
@@ -1491,6 +1503,20 @@ void initStateMachine( void )
     stateMachinePrev=stateMachine;
 }
 
+void nextquestion(void)
+{
+	  //select a random question
+	  //srand(10000);
+	  while (maxQuestions <=( rndSelectedQuestion = (int)((   (double)rand() / ((double)(RAND_MAX)+(double)(1)) ) * maxQuestions+1)));
+	  //if question already done increment of 1 and go to the next question
+	  while(questions[rndSelectedQuestion].done)
+	  {
+		rndSelectedQuestion = ((rndSelectedQuestion+1) % maxQuestions)+1;
+	  }
+	  questions[rndSelectedQuestion].done=true;
+}
+
+
 // -----------------------------------------------------------
 // BUTTON LOGIC
 // -----------------------------------------------------------
@@ -1518,10 +1544,10 @@ void buttonHint(int number)
    int i=0;
    int count=0;
       
-   // If more then one answer is possible continue
+   // If more than one answer is possible continue
    for (i=0; i<MAX_ANSWERS; i++)
    {   
-      if (questions[selectedQuestion].enabled[i]) count++;
+      if (questions[rndSelectedQuestion].enabled[i]) count++;
    }
          
    if (count>1)
@@ -1530,10 +1556,10 @@ void buttonHint(int number)
      {
        // Random disable answer
 	   int number=rand() % 4;
-	   if (((number+1)!=questions[selectedQuestion].answer) && questions[selectedQuestion].enabled[number]==true)
+	   if (((number+1)!=questions[rndSelectedQuestion].answer) && questions[rndSelectedQuestion].enabled[number]==true)
 	   {
 	     // Disable question answer
-	     questions[selectedQuestion].enabled[number]=false;
+	     questions[rndSelectedQuestion].enabled[number]=false;
 		 
 		 // Disable answer button
 		 buttons[number+3].enabled=false;
@@ -1566,6 +1592,7 @@ void buttonTopic(void)
 
     score=0;
 	selectedQuestion=0;
+	//rndSelectedQuestion=0;
 	hintCounter=0;
 	
 	initQuestions(topics[selectedTopic].filename);
@@ -1574,6 +1601,8 @@ void buttonTopic(void)
 void buttonPlay(void)
 {
 	selectedQuestion=0;
+	nextquestion();
+	//rndSelectedQuestion=0;
 	score=0;
 	hintCounter=0;
 	startTime=time(NULL);
@@ -1588,7 +1617,7 @@ void buttonAnswer(int number)
 {
 	stateMachine=stateAnswer;
   
-	if (questions[selectedQuestion].answer==number)
+	if (questions[rndSelectedQuestion].answer==number)
 	{
 		score++;
 		correctAnswer=true;	
@@ -1619,6 +1648,7 @@ void buttonExit(int index)
    }
 }
 
+
 void buttonNext(void)
 {
    if (++selectedQuestion>=maxQuestions)
@@ -1628,7 +1658,8 @@ void buttonNext(void)
       stateMachine=stateResult;
    }
    else
-   {   
+   {
+	  nextquestion();
       stateMachine=stateQuestion;
    }
 }
@@ -2211,6 +2242,9 @@ void drawWelcomeScreen()
 				
 			case 4: GRRLIB_DrawTile(420+sin(wave1)*50,180+yOffset+(j/2),images.france_flag, 0, 1, 1, IMAGE_COLOR,j );
 					break;
+					
+			case 5: GRRLIB_DrawTile(420+sin(wave1)*50,180+yOffset+(j/2),images.italiano_flag, 0, 1, 1, IMAGE_COLOR,j );
+					break;
 		}
 		wave1+=0.02;
     }
@@ -2247,37 +2281,37 @@ void drawQuestionScreen(void)
 	ypos+=30;
 	sprintf(tmp,"%s:", translation.labelQuestion);
     drawText(40, ypos, fontParagraph, tmp);
-	drawWordwrap( questions[selectedQuestion].question, 40, ypos-10, 70, 15);
+	drawWordwrap( questions[rndSelectedQuestion].question, 40, ypos-10, 70, 15);
     	
 	ypos+=90;
     sprintf(tmp,"%s:", translation.labelAnswers);
     drawText(40, ypos, fontParagraph, tmp);
 	
 	ypos+=15;
-	if (questions[selectedQuestion].enabled[0])
+	if (questions[rndSelectedQuestion].enabled[0])
 	{	 
-	  sprintf(tmp,"A) %s", questions[selectedQuestion].answerA);
+	  sprintf(tmp,"A) %s", questions[rndSelectedQuestion].answerA);
 	  drawText(40, ypos, fontNormal, tmp);
     }	
 
 	ypos+=15;      
-	if (questions[selectedQuestion].enabled[1])
+	if (questions[rndSelectedQuestion].enabled[1])
 	{
-	  sprintf(tmp,"B) %s", questions[selectedQuestion].answerB);
+	  sprintf(tmp,"B) %s", questions[rndSelectedQuestion].answerB);
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 
     ypos+=15;    
-	if (questions[selectedQuestion].enabled[2])
+	if (questions[rndSelectedQuestion].enabled[2])
 	{
-	  sprintf(tmp,"C) %s", questions[selectedQuestion].answerC);
+	  sprintf(tmp,"C) %s", questions[rndSelectedQuestion].answerC);
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 	 
     ypos+=15; 
-	if (questions[selectedQuestion].enabled[3])
+	if (questions[rndSelectedQuestion].enabled[3])
 	{
-	  sprintf(tmp,"D) %s", questions[selectedQuestion].answerD);
+	  sprintf(tmp,"D) %s", questions[rndSelectedQuestion].answerD);
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 	
@@ -2352,6 +2386,11 @@ void drawAnswerScreen(void)
 		// Draw Wrong Label		
 		drawText(0, ypos, fontTitle, translation.labelWrong);
 	}
+	ypos+=15;
+	if (strlen(questions[rndSelectedQuestion].explanation))
+	{	 
+	  drawText(0, ypos+30, fontNormal, questions[rndSelectedQuestion].explanation);
+    }
 	sprintf(tmp,"%d fps", CalculateFrameRate());
 	drawText(20, 330, fontSpecial, tmp);
 }
@@ -2450,9 +2489,9 @@ void drawCreditsScreen(void)
 	ypos+=15;
 	drawText(0, ypos, fontNormal, "wplaat");	 
 	ypos+=15;
-	drawText(0, ypos, fontNormal, "Rhoderik");
+	drawText(0, ypos, fontNormal, "Rhoderik, Flark");
 	ypos+=15;
-	drawText(0, ypos, fontNormal, "Flark");
+	drawText(0, ypos, fontNormal, "Ezio Soma (Italiano translation and questions)");
 	ypos+=15;
 	drawText(0, ypos, fontNormal, "www.biblequizzes.com");
 	
@@ -2721,9 +2760,24 @@ void drawGameboard()
    
    // Init text layer	  
    GRRLIB_initTexture();
+   
+   // Select Next Question
 
-   if (maxQuestions<0) max=0; else max=maxQuestions;
-   if (selectedQuestion<max) select=selectedQuestion+1; else select=max;
+   if (maxQuestions<0)
+   { 
+		max=0;}
+   else
+   {
+		max=maxQuestions;
+	}
+   if (selectedQuestion<max)
+   { 
+		select=selectedQuestion+1;
+	}
+   else 
+   {
+		select=max;
+   }
    
    GRRLIB_DrawImg(10,0, images.banner, 0, 1, 1, IMAGE_COLOR );
 

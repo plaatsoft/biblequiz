@@ -1,0 +1,228 @@
+﻿<?xml version='1.0'?>
+<MyQuiz>
+
+   <header 
+      topic="Antico Testamento"
+      author="www.bibbiaonline.it"
+      created="27-04-2010" 
+      note="Su gentile concessione di D.Pino Pulcinelli" />
+
+   <item
+	question="Come si chiamavano i genitori di Caino e Abele?"  
+  answerA="Adamo ed Eva"
+  answerB="Isacco e Rebecca" 
+  answerC="Abramo e Sara" 
+  answerD="Giuseppe e Maria"
+     	answer="A"
+     	explanation="Leggi (Gn 4, 1-2)"
+    	 number="1" />	
+   <item
+     	question="Perche' Noe' con la famiglia e gli animali si rifugiarono nell'arca?"  
+  answerA="Per salvarsi dal diluvio"
+  answerB="Perche' faceva troppo freddo" 
+  answerC="Per fare una crociera" 
+  answerD="Per sfuggire a un incendio"
+     	answer="A"
+     	explanation="Leggi (Gn 7,7)"
+    	 number="2" />	
+   <item
+     	question="La colomba ritorno' da Noe' portando il ramoscello di una pianta. Quale?" 
+  answerA="Ulivo"
+  answerB="Abete" 
+  answerC="Quercia" 
+  answerD="Ciliegio"
+     	answer="A"
+     	explanation="Leggi (Gn 8,11)"
+    	 number="3" />	
+   <item
+     	question="A chi il Signore disse: 'Lascia la tua terra e va' nel paese che ti indichero'. Faro' di te un popolo numeroso, una grande nazione'?"  
+  answerA="Esau'" 
+  answerB="Abramo"
+  answerC="Adamo" 
+  answerD="Pietro"
+     	answer="B"
+     	explanation="Leggi (Gn 12, 1-2)"
+    	 number="4" />	
+   <item
+     	question="Come si chiamava il figlio di Abramo e di Sara?"  
+  answerA="Isaia" 
+  answerB="Giovanni" 
+  answerC="Isacco"
+  answerD="Ismaele"
+     	answer="C"
+     	explanation="Leggi (Gn 21, 3)"
+    	 number="5" />	
+   <item
+     	question="Come si chiamava il fratello di Giacobbe?"  
+  answerA="Ezechiele" 
+  answerB="Artu'" 
+  answerC="Esau'"
+  answerD="Mose'"
+     	answer="C"
+     	explanation="Leggi (Gn 25, 24-26)"
+    	 number="6" />	
+   <item
+     	question="In quale paese venne condotto Giuseppe dopo essere stato venduto dai fratelli?"  
+  answerA="Egitto"
+  answerB="Messico" 
+  answerC="Arabia" 
+  answerD="Cina"
+     	answer="A"
+     	explanation="Leggi (Gn 37, 28)"
+    	 number="7" />	
+   <item
+     	question="A chi apparteneva la coppa ritrovata nel sacco di Beniamino?"  
+  answerA="Ruben" 
+  answerB="Giuseppe"
+  answerC="Giacobbe" 
+  answerD="Saul"
+     	answer="B"
+     	explanation="Leggi (Gn 44, 1-2)
+"
+    	 number="8" />	
+   <item
+     	question="Sulla riva del Nilo, dentro una cesta, la figlia del faraone trovo' un bambino. Come venne chiamato?"  
+  answerA="Golia" 
+  answerB="Sansone" 
+  answerC="Mose'"
+  answerD="Noe'"
+     	answer="C"
+     	explanation="Leggi (Es 2, 5-10)"
+    	 number="9" />	
+   <item
+     	question="In quale libro della Bibbia viene descritta la liberazione del popolo d'Israele dall'Egitto?"  
+  answerA="Vangelo" 
+  answerB="Salmi" 
+  answerC="Genesi" 
+  answerD="Esodo"
+     	answer="D"
+     	explanation=""
+    	 number="10" />	
+   <item
+     	question="Su quale monte Mose' ricevette da Dio i Dieci Comandamenti?"  
+  answerA="Monte Bianco" 
+  answerB="Monte Sinai"
+  answerC="Monte degli Ulivi" 
+  answerD="Monte Tabor"
+     	answer="B"
+     	explanation="Leggi (Es 24, 12-18)"
+    	 number="11" />	
+   <item
+     	question="Chi alla morte di Mose', guido' il popolo d'Israele verso la Terra Promessa?"  
+  answerA="Salomone" 
+  answerB="Giosue'"
+  answerC="Abramo" 
+  answerD="Aronne"
+     	answer="B"
+     	explanation="Leggi (Gs 1, 1-6)"
+    	 number="12" />	
+   <item
+     	question="Quale strumento suonarono i sacerdoti d'Israele prima della conquista di Gerico?"  
+  answerA="Tamburo" 
+  answerB="Chitarra" 
+  answerC="Tromba"
+  answerD="Cetra"
+     	answer="C"
+     	explanation="Leggi (Gs 6, 4)"
+    	 number="13" />	
+   <item
+     	question="A chi Sansone confido': 'Se uno mi taglia i capelli, io perdo la mia forza'?"  
+  answerA="Dalila"
+  answerB="Giuditta" 
+  answerC="Debora" 
+  answerD="Daniela"
+     	answer="A"
+     	explanation="Leggi (Gdc 16, 15-17)"
+    	 number="14" />	
+   <item
+     	question="Gli Israeliti domandarono un re al profeta Samuele. Ubbidendo al volere di Dio venne consacrato re..."  
+  answerA="Erode il Grande" 
+  answerB="Saul"
+  answerC="Giulio Cesare" 
+  answerD="Davide"
+     	answer="B"
+     	explanation="Leggi (1Sam 11, 15)
+"
+    	 number="15" />	
+   <item
+     	question="Come si chiamava il gigante filisteo che sfid� il giovane Davide?"  
+  answerA="Ercole" 
+  answerB="Sansone" 
+  answerC="Golia"
+  answerD="Assalonne"
+     	answer="C"
+     	explanation="Leggi (1Sam 17, 4)"
+    	 number="16" />	
+   <item
+     	question="Sansone, dopo che Dalila gli ebbe tagliato i capelli, venne fatto prigioniero dai..."  
+  answerA="Filistei"
+  answerB="Israeliti" 
+  answerC="Romani" 
+  answerD="Egiziani"
+     	answer="A"
+     	explanation="Leggi (Gdc 16, 21)"
+    	 number="17" />	
+   <item
+     	question="Da quale citta' proveniva Davide?"  
+  answerA="Gerusalemme" 
+  answerB="Betlemme"
+  answerC="Nazaret" 
+  answerD="Gerico"
+     	answer="B"
+     	explanation="Leggi (1Sam 17, 12)"
+    	 number="18" />	
+   <item
+     	question="Quale re d'Israele costrui' il grandioso tempio di Gerusalemme?"  
+  answerA="Salomone"
+  answerB="Saul" 
+  answerC="Davide" 
+  answerD="Erode"
+     	answer="A"
+     	explanation="Leggi (1Re 6, 1)"
+    	 number="19" />	
+   <item
+     	question="Chi era Giona?"  
+  answerA="Profeta"
+  answerB="Soldato" 
+  answerC="Re" 
+  answerD="Marinaio"
+     	answer="A"
+     	explanation=""
+    	 number="20" />	
+   <item
+     	question="In quale citta' si reco' Giona per portare un messaggio del Signore?" 
+  answerA="Babilonia" 
+  answerB="Damasco" 
+  answerC="Ninive"
+  answerD="Atene"
+     	answer="C"
+     	explanation="Leggi (Gio 3, 1-3)"
+    	 number="21" />	
+   <item
+     	question="Un re sogno' una grande statua fatta di metallo ma con i piedi d'argilla. Poi una pietra la colp� frantumandola. Chi spiego' al re il significato del sogno?"  
+  answerA="Daniele"
+  answerB="Giuseppe" 
+  answerC="Isaia" 
+  answerD="Giona"
+     	answer="A"
+     	explanation="Leggi (Dn 2, 46-47)"
+    	 number="22" />	
+   <item
+     	question="Come si chiamava l'angelo che accompagno' Tobia nel suo viaggio?"  
+  answerA="Raffaele"
+  answerB="Gabriele" 
+  answerC="Michele"
+  answerD="Ismaele"
+     	answer="A"
+     	explanation="Leggi (Tb 5, 4)"
+    	 number="23" />	
+   <item
+     	question="Il profeta Daniele venne gettato in una fossa dove si trovavano dei..."  
+  answerA="Coccodrilli" 
+  answerB="Serpenti" 
+  answerC="Cinghiali" 
+  answerD="Leoni"
+     	answer="D"
+     	explanation="Leggi (Dn 6, 17)"
+    	 number="24" />
+  </MyQuiz>
