@@ -1,0 +1,234 @@
+<?xml version='1.0'?>
+<MyQuiz>
+
+   <header 
+      topic="Nuovo Testamento"
+      author="www.bibbiaonline.it"
+      created="27-04-2010" 
+      note="Su gentile concessione di D.Pino Pulcinelli. Coding di Ezio Soma'" />
+
+   <item
+	question="Dove abitava Maria quando l'angelo le annuncio' che sarebbe diventata la madre di Gesu'?"  
+        answerA="A Gerusalemme"
+        answerB="A Betlemme" 
+        answerC="A Emmaus" 
+        answerD="A Nazaret"
+     	answer="D"
+     	explanation="Leggi Lc 1, 26-28"
+    	 number="1" />	
+   <item
+     	question="Come si chiamava l'angelo che porto' l'annuncio a Maria?"  
+        answerA="Michele"
+        answerB="Samuele" 
+        answerC="Raffaele" 
+        answerD="Gabriele"
+     	answer="D"
+     	explanation="Leggi Lc 1, 26"
+    	 number="2" />	
+   <item
+     	question="Chi erano i genitori di Giovanni il Battista?"  
+        answerA="Abramo e Sara"
+        answerB="Giacobbe e Rebecca" 
+        answerC="Maria e Giuseppe" 
+        answerD="Zaccaria e Elisabetta"
+     	answer="D"
+     	explanation="Leggi Lc 1, 57-63"
+    	 number="3" />	
+   <item
+     	question="Con quale festa si ricorda la nascita di Gesu'?"  
+        answerA="Pasqua"
+        answerB="Pentecoste" 
+        answerC="Epifania" 
+        answerD="Natale"
+     	answer="D"
+     	explanation=""
+    	 number="4" />	
+   <item
+     	question="In quale citta' nacque Gesu'?"  
+        answerA="Betlemme"
+        answerB="Gerusalemme" 
+        answerC="Roma" 
+        answerD="Cafarnao"
+     	answer="A"
+     	explanation="Leggi Mt 2, 1"
+    	 number="5" />	
+   <item
+     	question="Chi informo' i pastori che era nato il salvatore, il figlio di Dio?"  
+        answerA="Un angelo"
+        answerB="Un pellegrino" 
+        answerC="Una soldato" 
+        answerD="Un contadino"
+     	answer="A"
+     	explanation="Leggi Lc 2, 8-10"
+    	 number="6" />	
+   <item
+     	question="Quale segno' indico' ai Magi il cammino per giungere a Betlemme?"  
+        answerA="Una mappa"
+        answerB="Un cartello" 
+        answerC="Un fulmine" 
+        answerD="Una stella"
+     	answer="D"
+     	explanation="Leggi Mt 2, 9-10"
+    	 number="7" />	
+   <item
+     	question="Cosa portarono in dono a Gesu' Bambino i Magi venuti dall'oriente?"  
+        answerA="Tre scatole di biscotti"
+        answerB="Vesti, libri e oli profumati" 
+        answerC="Oro, incenso e mirra" 
+        answerD="Rame, argento e piombo"
+     	answer="C"
+     	explanation="Leggi Mt 2, 11"
+    	 number="8" />	
+   <item
+     	question="La visita dei magi a Gesu' Bambino viene ricordata con una festa particolare. Quale?"  
+        answerA="Carnevale"
+        answerB="Natale" 
+        answerC="Epifania" 
+        answerD="Ascensione"
+     	answer="B"
+     	explanation=""
+    	 number="9" />	
+   <item
+     	question="Perche' Giuseppe, Maria e Gesu' Bambino dovettero fuggire da Betlemme per recarsi in Egitto?"  
+        answerA="Perche' Erode voleva uccidere Gesu'"
+        answerB="Per una carestia" 
+        answerC="Per paura di un terremoto" 
+        answerD="A causa di una guerra"
+     	answer="A"
+     	explanation="Leggi Mt 2, 13"
+    	 number="10" />	
+   <item
+     	question="In quale fiume Gesu' venne battezzato da Giovanni il Battista?"  
+        answerA="Nilo"
+        answerB="Eufrate" 
+        answerC="Giordano" 
+        answerD="Tevere"
+     	answer="C"
+     	explanation="Leggi Mt 3, 13"
+    	 number="11" />	
+   <item
+     	question="A Cana Gesu' compi' il suo primo miracolo trasformando dell'acqua in..."  
+        answerA="Birra"
+        answerB="Latte" 
+        answerC="Vino" 
+        answerD="Olio"
+     	answer="C"
+     	explanation="Leggi Gv 2, 3-9"
+    	 number="12" />	
+   <item
+     	question="Come si chiamavano i primi due discepoli che seguirono Gesu'?"  
+        answerA="Giacomo e Giovanni"
+        answerB="Simone e Andrea" 
+        answerC="Luca e Matteo" 
+        answerD="Marco e Giuda"
+     	answer="B"
+     	explanation="Leggi Mt 4, 18-20"
+    	 number="13" />	
+   <item
+     	question="Quanti erano gli apostoli?"  
+        answerA="Venti"
+        answerB="Dodici" 
+        answerC="Sette" 
+        answerD="Tredici"
+     	answer="B"
+     	explanation="Leggi Mt 10, 2"
+    	 number="14" />	
+   <item
+     	question="La Domenica prima di Pasqua, in ricordo dell'entrata solenne di Gesu' in Gerusalemme, vengono benedetti i ramoscelli di una pianta. Quale?"  
+        answerA="Abete"
+        answerB="Pesco" 
+        answerC="Ciliegio" 
+        answerD="Ulivo"
+     	answer="D"
+     	explanation=""
+    	 number="15" />	
+   <item
+     	question="Quale apostolo, dopo l'arresto di Gesu', nego' per tre volte di conoscerlo?"  
+        answerA="Giuda"
+        answerB="Pietro" 
+        answerC="Tommaso" 
+        answerD="Giovanni"
+     	answer="B"
+     	explanation="Leggi Lc 22, 61"
+    	 number="16" />	
+   <item
+     	question="Come si chiamava l'apostolo che tradi' Gesu'?"  
+        answerA="Andrea"
+        answerB="Giuda" 
+        answerC="Giovanni" 
+        answerD="Giacomo"
+     	answer="B"
+     	explanation="Leggi Mc 14, 43-45"
+    	 number="17" />	
+   <item
+     	question="Prima di crocifiggere Gesu' i soldati gli misero sul capo una corona di..."  
+        answerA="Fiori"
+        answerB="Cartone" 
+        answerC="Rami spinosi" 
+        answerD="Diamanti"
+     	answer="C"
+     	explanation="Leggi Mt 27, 27-29"
+    	 number="18" />	
+   <item
+     	question="Con quale festa si ricorda la resurrezione di Gesu' Cristo?"  
+        answerA="Natale"
+        answerB="Capodanno" 
+        answerC="Pasqua" 
+        answerD="Ascensione"
+     	answer="C"
+     	explanation=""
+    	 number="19" />	
+   <item
+     	question="A quale apostolo Gesu' risorto disse: 'Non essere incredulo ma credente?"  
+        answerA="Matteo"
+        answerB="Giuda" 
+        answerC="Tommaso" 
+        answerD="Pietro"
+     	answer="C"
+     	explanation="Leggi Gv 20, 26-27"
+    	 number="20" />	
+   <item
+     	question="Con quale festa si ricorda la discesa dello Spirito Santo sugli apostoli?"  
+        answerA="Pentecoste"
+        answerB="Ascensione" 
+        answerC="Pasqua" 
+        answerD="Discensione"
+     	answer="A"
+     	explanation=""
+    	 number="21" />	
+   <item
+     	question="Quanti giorni dopo Pasqua si celebra la festa di Pentecoste?"  
+        answerA="Dodici"
+        answerB="Cinquanta" 
+        answerC="Quaranta" 
+        answerD="Cinque"
+     	answer="B"
+     	explanation=""
+    	 number="22" />	
+   <item
+     	question="Con quale festa si ricorda la salita al cielo di Gesu' risorto?"  
+        answerA="Ascensione"
+        answerB="Natale" 
+        answerC="Lunedi' dell'Angelo" 
+        answerD="Pentecoste"
+     	answer="A"
+     	explanation=""
+    	 number="23" />	
+   <item
+     	question="Quale discepolo prese il posto di Giuda Iscariota tra gli apostoli?"  
+        answerA="Luca"
+        answerB="Filippo" 
+        answerC="Mattia" 
+        answerD="Roberto"
+     	answer="D"
+     	explanation="Leggi At 1, 26"
+    	 number="24" />	
+</MyQuiz>
+ 
+ 
+ 
+ 
+
+
+ 
+

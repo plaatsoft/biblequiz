@@ -76,6 +76,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#af71684b98d7fb4da350099fabf553db8">initImages</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a1d1587f6212266515e381aff7eb3662e">initButtons</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#ae3193cfcdfecbf55af42586e4c12a6e7">initStateMachine</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#abba9271c87fb3adea6b5f77c87e6710a">nextquestion</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a51ca28b0048a59f19ef0fda5e295013b">buttonSelected</a> (int x, int y)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#acc0748e875499a0e89017d12d2c8d115">buttonHint</a> (int number)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a2f8530b4bc39aa43a866d3237d22fe42">buttonLanguage</a> (void)</td></tr>
@@ -133,6 +134,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a13789134b7ee3a8892c2b1df6dabc849">selectedLanguage</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#ab7945b788a4ca7931338648353cf2ec7">selectedTopic</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#ab45e351df23c63f70b12ccff464af724">selectedQuestion</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#af5273434140f870c17d9e4d7103d9bd1">rndSelectedQuestion</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a429fd1b06fedd9c3ab002a84f2656eb7">selectedMusic</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a93072262778c750b1245b6a70298ceeb">musicVolume</a> = 5</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a69f4d084c16284a2a59913106c3003b5">effectVolume</a> = 5</td></tr>
@@ -175,6 +177,8 @@
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a61c95fdc3d177f57e339779ab3f844cb">pic14length</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const unsigned char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a1bae69ed064d8130c7fb0115bd23766e">pic15data</a> []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a514f27d5211f387e9a210eb01ce88ce4">pic15length</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const unsigned char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#ad36e6e42215011062fd784ff4d016490">pic45data</a> []</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a293597fa82f5e0d44070f34fa6f07971">pic45length</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const unsigned char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#a6c1899a9c55c34e52d33bc54a26d602b">pic16data</a> []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#afb52d5d460c85ae0feac94daed6ed6aa">pic16length</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const unsigned char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bible_quiz_8c.html#aea8c4283f0a86ffeb442110c0276e350">pic17data</a> []</td></tr>
@@ -1101,6 +1105,24 @@
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abba9271c87fb3adea6b5f77c87e6710a"></a><!-- doxytag: member="bibleQuiz.c::nextquestion" ref="abba9271c87fb3adea6b5f77c87e6710a" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nextquestion </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
@@ -2338,6 +2360,32 @@
 
 </div>
 </div>
+<a class="anchor" id="ad36e6e42215011062fd784ff4d016490"></a><!-- doxytag: member="bibleQuiz.c::pic45data" ref="ad36e6e42215011062fd784ff4d016490" args="[]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char <a class="el" href="bible_quiz_8c.html#ad36e6e42215011062fd784ff4d016490">pic45data</a>[]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a293597fa82f5e0d44070f34fa6f07971"></a><!-- doxytag: member="bibleQuiz.c::pic45length" ref="a293597fa82f5e0d44070f34fa6f07971" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="bible_quiz_8c.html#a293597fa82f5e0d44070f34fa6f07971">pic45length</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a864df362062dc49e8fd38900e49bf3cd"></a><!-- doxytag: member="bibleQuiz.c::pic4data" ref="a864df362062dc49e8fd38900e49bf3cd" args="[]" -->
 <div class="memitem">
 <div class="memproto">
@@ -2487,6 +2535,19 @@
       <table class="memname">
         <tr>
           <td class="memname">GXRModeObj* <a class="el" href="http_8c.html#af6cd231ed45c21c8a0c0ab76bb73897d">rmode</a> = NULL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5273434140f870c17d9e4d7103d9bd1"></a><!-- doxytag: member="bibleQuiz.c::rndSelectedQuestion" ref="af5273434140f870c17d9e4d7103d9bd1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="bible_quiz_8c.html#af5273434140f870c17d9e4d7103d9bd1">rndSelectedQuestion</a> = 0</td>
         </tr>
       </table>
 </div>

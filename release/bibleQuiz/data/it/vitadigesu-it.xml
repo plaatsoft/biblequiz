@@ -1,0 +1,264 @@
+<?xml version='1.0'?>
+<MyQuiz>
+
+   <header 
+      topic="Vita di Ges'"
+      author="www.bibbiaonline.it"
+      created="03-05-2010" 
+      note="Su gentile concessione di D.Pino Pulcinelli. Coding di Ezio Soma'" />
+
+   <item
+	question="Quale profeta predisse che Gesu' sarebbe nato a Betleem?"  
+  answerA="Zaccaria"
+  answerB="Isaia" 
+  answerC="Michea" 
+  answerD="Zebedia"
+     	answer="C"
+     	explanation="Leggi (Michea 5:1)"
+    	 number="1" />	
+   <item
+     	question="Quale profeta predisse che il Cristo sarebbe nato da una vergine?"  
+  answerA="Geremia"
+  answerB="Isaia" 
+  answerC="Abdia" 
+  answerD="Michea"
+     	answer="B"
+     	explanation="Leggi (Isaia 7:14)"
+    	 number="2" />	
+   <item
+     	question="Da quale tribu' d'Israele e' sorto Gesu' Cristo?"  
+  answerA="Giuda"
+  answerB="Zabulon" 
+  answerC="Beniamino" 
+  answerD="Manasse"
+     	answer="A"
+     	explanation="Leggi (Ebrei 7:14)"
+    	 number="3" />	
+   <item
+     	question="In quali acque fu battezzato Gesu' Cristo?"  
+  answerA="Nelle acque del fiume Nilo"
+  answerB="Nelle acque del fiume Giordano" 
+  answerC="Nelle acque del mare di Tiberiade" 
+  answerD="Nelle acque del fiume Eufrate"
+     	answer="B"
+     	explanation="Leggi (Matteo 3:13-16)"
+    	 number="4" />	
+   <item
+     	question="Quanti anni aveva Gesu' quando si mise a insegnare?"  
+  answerA="25"
+  answerB="circa 30" 
+  answerC="33" 
+  answerD="44"
+     	answer="B"
+     	explanation="Leggi (Luca 3:23)"
+    	 number="5" />	
+   <item
+     	question="Quale fu il primo miracolo che fece Gesu'?"  
+  answerA="La prima moltiplicazione dei pani e dei pesci"
+  answerB="La resurrezione di Lazzaro" 
+  answerC="Il mutamento dell'acqua in vino a Cana di Galilea" 
+  answerD="Camminare sulle acque"
+     	answer="C"
+     	explanation="Leggi (Giovanni 2:1-11)"
+    	 number="6" />	
+   <item
+     	question="A chi disse Gesu' queste parole: 'Sta' di buon animo, figliuola; la tua fede t'ha guarita'?"  
+  answerA="Alla donna tutta curvata"
+  answerB="Alla donna dal flusso di sangue" 
+  answerC="A Maria Maddalena" 
+  answerD="All'adultera"
+     	answer="B"
+     	explanation="Leggi (Matteo 9:20-22)"
+    	 number="7" />	
+   <item
+     	question="A chi disse Gesu': 'Va'; e come hai creduto, siati fatto'?"  
+  answerA="All'ufficiale reale che aveva il figlio malato"
+  answerB="A Lairo che aveva la figlia che stava per morire" 
+  answerC="Al centurione che aveva il servitore gravemente malato" 
+  answerD="Alla Madre di Lazzaro"
+     	answer="C"
+     	explanation="Leggi (Matteo 8:13)"
+    	 number="8" />	
+   <item
+     	question=" Chi fu a tradire Gesu' Cristo?"  
+  answerA="Simon Pietro"
+  answerB="Giuda Iscariota" 
+  answerC="Bartolomeo" 
+  answerD="Mattia"
+     	answer="B"
+     	explanation="Leggi (Giovanni 13:21-26)"
+    	 number="9" />	
+   <item
+     	question="Quanti giorni e quante notti digiuno' Gesu' nel deserto?"  
+  answerA="40"
+  answerB="30" 
+  answerC="20" 
+  answerD="10"
+     	answer="A"
+     	explanation="Leggi (Matteo 4:2)"
+    	 number="10" />	
+   <item
+     	question="Dove and� ad abitare Giuseppe, il padre putativo di Gesu', quando torno' dall'Egitto in Israele?"  
+  answerA="A Capernaum"
+  answerB="A Betleem" 
+  answerC="A Nazaret" 
+  answerD="A Gerusalemme"
+     	answer="C"
+     	explanation="Leggi (Matteo 2:23)"
+    	 number="11" />	
+   <item
+     	question="In che parte d'Israele si trovava Nazaret?"  
+  answerA="In Giudea"
+  answerB="In Samaria" 
+  answerC="In Galilea" 
+  answerD="In Palestina"
+     	answer="C"
+     	explanation="Leggi (Matteo 2:22-23)"
+    	 number="12" />	
+   <item
+     	question="Quanti giorni aveva il fanciullino Gesu' quando gli fu posto il nome di Gesu'?"  
+  answerA="1"
+  answerB="8" 
+  answerC="3" 
+  answerD="7"
+     	answer="B"
+     	explanation="Leggi (Luca 2:21)"
+    	 number="13" />	
+   <item
+     	question="Chi fu l'uomo che fu costretto a portare la croce di Gesu'?"  
+  answerA="Simon Cireneo"
+  answerB="Simon di Giovanni" 
+  answerC="Malco" 
+  answerD="Giuseppe d'Arimatea"
+     	answer="A"
+     	explanation="Leggi (Marco 15:21)"
+    	 number="14" />	
+   <item
+     	question="Chi fu l'uomo che chiese a Pilato di poter togliere il corpo di Gesu' dalla croce?"  
+  answerA="Simon Cireneo"
+  answerB="Nicodemo" 
+  answerC="Simone" 
+  answerD="Giuseppe d'Arimatea"
+     	answer="D"
+     	explanation="Leggi (Giovanni 19:38)"
+    	 number="15" />	
+   <item
+     	question="Fra queste tre affermazioni qual'e' quella vera fatta da Gesu'?"  
+  answerA="Prima che Abramo fosse nato, io sono nato"
+  answerB="Prima che Abramo fosse nato, io ero" 
+  answerC="Prima che Abramo fosse nato, io sono" 
+  answerD="Dopo che Abramo fosse nato, io nacqui"
+     	answer="C"
+     	explanation="Leggi (Giovanni 8:54-59)"
+    	 number="16" />	
+   <item
+     	question="Quanti erano i magi d'Oriente che offrirono a Gesu' bambino oro, incenso e mirra?"  
+  answerA="7"
+  answerB="4" 
+  answerC="La scrittura non lo dice" 
+  answerD="3"
+     	answer="C"
+     	explanation=""
+    	 number="17" />	
+   <item
+     	question="La donna dal flusso di sangue che poi fu guarita da Gesu', da quanti anni aveva quel flusso?"  
+  answerA="12"
+  answerB="7" 
+  answerC="10" 
+  answerD="3"
+     	answer="A"
+     	explanation="Leggi (Matteo 9:20)"
+    	 number="18" />	
+   <item
+     	question="In quale citta' ando' ad abitare Gesu' quando lascio' Nazaret?"  
+  answerA="Capernaum"
+  answerB="Betsaida" 
+  answerC="Corazin" 
+  answerD="Gerusalemme"
+     	answer="A"
+     	explanation="Leggi (Matteo 4:13)"
+    	 number="19" />	
+   <item
+     	question="Che cosa stava facendo Gesu' quando lo Spirito Santo scese su lui?"  
+  answerA="Stava pregando"
+  answerB="Stava parlando con Giovanni Battista" 
+  answerC="Stava dormendo" 
+  answerD="Non stava facendo nulla di particolare"
+     	answer="A"
+     	explanation="Leggi (Luca 3:21-22)"
+    	 number="20" />	
+   <item
+     	question="Per quanti giorni si fece vedere Gesu' dagli apostoli dopo essere risorto, prima di essere assunto in cielo?"  
+  answerA="42 giorni"
+  answerB="40 giorni" 
+  answerC="30 giorni" 
+  answerD="37 giorni"
+     	answer="A"
+     	explanation="Leggi (Atti 1:3)"
+    	 number="21" />	
+   <item
+     	question=" chi disse Gesu' queste parole: 'Oggi la salvezza e' entrata in questa casa, poiche' anche questo e' figliuolo d'Abramo: poiche' il Figliuol dell'uomo e' venuto per cercare e salvare cio' che era perito'?"  
+  answerA="A Lairo"
+  answerB="A Matteo" 
+  answerC="A Zaccheo" 
+  answerD="A Lazzaro"
+     	answer="C"
+     	explanation="Leggi (Luca 19:1-10)"
+    	 number="22" />	
+   <item
+     	question="A chi apparve Gesu' per primo dopo essere risorto?"  
+  answerA="A Simon Pietro"
+  answerB="A Maria Maddalena" 
+  answerC="A Maria, sua madre" 
+  answerD="A Giovanni apostolo"
+     	answer="B"
+     	explanation="Leggi (Marco 16:9)"
+    	 number="23" />	
+   <item
+     	question="Chi fu quell'uomo la cui fede fece meravigliare Gesu'?"  
+  answerA="Zaccheo"
+  answerB="Bartimeo" 
+  answerC="Pietro" 
+  answerD="Il centurione"
+     	answer="D"
+     	explanation="Leggi (Matteo 8:5-10)"
+    	 number="24" />	
+   <item
+     	question="Che cosa disse Gesu' al ladrone convertitosi sulla croce?"  
+  answerA="Io ti dico che tu un giorno sarai con  me in paradiso"
+  answerB="Io ti dico in verit� che oggi tu sarai meco in paradiso" 
+  answerC="Io te lo dico oggi: In verit� tu sarai in paradiso con me" 
+  answerD="Io te lo dico: oggi andrai in paradiso"
+     	answer="A"
+     	explanation="Leggi (Luca 23:43)"
+    	 number="25" />	
+   <item
+     	question="Che significato hanno le seguenti parole pronunciate da Gesu' sulla croce: 'Eli', Eli', lama' sabactani'?'"  
+  answerA="Dio mio, Dio mio, perch� mi hai abbandonato?"
+  answerB="Dio mio, Dio mio, perch� non intervieni e mi liberi?" 
+  answerC="Dio mio, Dio mio, perch� mi hai trattato cosi'?" 
+  answerD="Dio Mio perdonali perche' non sanno quello che fanno"
+     	answer="A"
+     	explanation="Leggi (Matteo 27:46)"
+    	 number="26" />	
+</MyQuiz>
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+
+ 
+ 
+  
+ 
+
+ 
+ 
+
+ 
+ 

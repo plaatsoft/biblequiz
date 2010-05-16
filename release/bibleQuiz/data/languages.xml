@@ -5,6 +5,7 @@
       <language name="Deutsch" translation="d/deutsch.xml" topics="d/topics-d.xml" id="300" />
       <language name="Espanol" translation="e/espanol.xml" topics="e/topics-e.xml" id="400" />
       <language name="France" translation="fr/france.xml" topics="fr/topics-fr.xml" id="500" />
+	<language name="Italiano" translation="it/italiano.xml" topics="it/topics-it.xml" id="600" />
 </languages>
 
    
