@@ -289,8 +289,8 @@ extern int      xml2length;
 // GAME LOGIC
 // -----------------------------------------------------------
 
-static u8 CalculateFrameRate() 
-{
+static u8 CalculateFrameRate() {
+
     static u8 frameCount = 0;
     static u32 lastTime;
     static u8 FPS = 0;
@@ -305,8 +305,8 @@ static u8 CalculateFrameRate()
     return FPS;
 }
 
-void saveHighScore(char* filename)
-{
+void saveHighScore(char* filename) {
+
    char *s_fn="saveHighScore";
    traceEvent(s_fn,0,"enter");
    
@@ -318,8 +318,8 @@ void saveHighScore(char* filename)
       
    xml = mxmlNewXML("1.0");   
    group = mxmlNewElement(xml, "bibleQuiz");
-   for(i=0; i<maxHighScores; i++)
-   {
+   for(i=0; i<maxHighScores; i++) {
+	
       data = mxmlNewElement(group, "topic");
   
       //Create Some config value
@@ -363,8 +363,8 @@ void saveHighScore(char* filename)
    traceEvent(s_fn,0,"leave [void]");
 }
   
-void initHighScore(char* filename)
-{
+void initHighScore(char* filename) {
+
    char *s_fn="initHighScore" ;
    traceEvent(s_fn,0,"enter");
    
@@ -384,8 +384,8 @@ void initHighScore(char* filename)
 
      for (data = mxmlFindElement(tree, tree, "topic", NULL, NULL, MXML_DESCEND);
        data != NULL;
-       data = mxmlFindElement(data, tree, "topic", NULL, NULL, MXML_DESCEND))
-    {		   
+       data = mxmlFindElement(data, tree, "topic", NULL, NULL, MXML_DESCEND)) {		   
+		 
         tmp=mxmlElementGetAttr(data,"startTime");   
         if (tmp!=NULL) highscores[maxHighScores].startTime=atoi(tmp); else highscores[maxHighScores].startTime=0;
 		
@@ -418,8 +418,8 @@ void initHighScore(char* filename)
    traceEvent(s_fn,0,"leave [void]");
 }
 
-void processHighScore(void)
-{
+void processHighScore(void) {
+
    char *s_fn="processHighScore";
    traceEvent(s_fn,0,"enter");
 
@@ -427,50 +427,50 @@ void processHighScore(void)
    int i;
    
    // Check if highscore is reached
-   for (i=0; i<maxHighScores; i++)
-   {
-      if ( topics[selectedTopic].id==highscores[i].topicId )
-	  {
-	     // Update exiting entry, if needed
-         if ( score>highscores[i].score)  
-	     {
-	       highscores[i].startTime=startTime;
-	       highscores[i].playTime=playTime;
-		   highscores[i].score=score;
-		   highscores[i].questions=maxQuestions;
-		   highscores[i].hint=hintCounter;
-		   highscores[i].topicId=topics[selectedTopic].id;
-		   strcpy(highscores[i].topic,topics[selectedTopic].name);
-		   highscores[i].languageId=languages[selectedLanguage].id;
+   for (i=0; i<maxHighScores; i++) {
+	
+      if ( topics[selectedTopic].id==highscores[i].topicId ) {
+		
+			// Update exiting entry, if needed
+         if ( score>highscores[i].score) {
+			
+				highscores[i].startTime=startTime;
+				highscores[i].playTime=playTime;
+				highscores[i].score=score;
+				highscores[i].questions=maxQuestions;
+				highscores[i].hint=hintCounter;
+				highscores[i].topicId=topics[selectedTopic].id;
+				strcpy(highscores[i].topic,topics[selectedTopic].name);
+				highscores[i].languageId=languages[selectedLanguage].id;
 			   
-		   // Store updated high score in file
-		   saveHighScore(HIGHSCORE_FILENAME);
-	     }
-		 found=true;
-	  }
+				// Store updated high score in file
+				saveHighScore(HIGHSCORE_FILENAME);
+			}
+			found=true;
+		}
    }
    
    // new entry in highscore 
-   if (!found)
-   {
-      highscores[maxHighScores].startTime=startTime;
-	  highscores[maxHighScores].playTime=playTime;
-	  highscores[maxHighScores].score=score;
-	  highscores[maxHighScores].questions=maxQuestions;
-	  highscores[maxHighScores].hint=hintCounter;
-	  highscores[maxHighScores].topicId=topics[selectedTopic].id;
-	  strcpy(highscores[maxHighScores].topic,topics[selectedTopic].name);
-	  highscores[maxHighScores].languageId=languages[selectedLanguage].id;
-	  maxHighScores++;
+   if (!found) {
+	
+		highscores[maxHighScores].startTime=startTime;
+		highscores[maxHighScores].playTime=playTime;
+		highscores[maxHighScores].score=score;
+		highscores[maxHighScores].questions=maxQuestions;
+		highscores[maxHighScores].hint=hintCounter;
+		highscores[maxHighScores].topicId=topics[selectedTopic].id;
+		strcpy(highscores[maxHighScores].topic,topics[selectedTopic].name);
+		highscores[maxHighScores].languageId=languages[selectedLanguage].id;
+		maxHighScores++;
 	  
-	  // Store new high score in file
-	  saveHighScore(HIGHSCORE_FILENAME);
+		// Store new high score in file
+		saveHighScore(HIGHSCORE_FILENAME);
    }
    traceEvent(s_fn,0,"leave [void]");
 }
 
-void initThreads(void)
-{ 
+void initThreads(void) { 
+
    char *s_fn="initThreads";
    traceEvent(s_fn,0,"enter");
    
@@ -495,8 +495,8 @@ void initThreads(void)
    traceEvent(s_fn,0,"leave [void]");
 }
 
-void initGame()
-{
+void initGame() {
+
    char *s_fn="initGame";
    traceEvent(s_fn,0,"enter");
 	
@@ -554,13 +554,10 @@ void initLanguages(char* filename)
 
    /*Load our xml file! */
    fp = fopen(tmp, "r");
-   if (fp!=NULL)
-   {   
+   if (fp!=NULL) {   
       tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
       fclose(fp);
-   }
-   else
-   {
+   } else {
       // If file is not found, us internal xml file.
       tree = mxmlLoadString(NULL, xml1data, MXML_TEXT_CALLBACK);
    }
@@ -568,21 +565,37 @@ void initLanguages(char* filename)
    // Read Questions
    for (group = mxmlFindElement(tree, tree, "language", NULL, NULL, MXML_DESCEND);
         group != NULL;
-        group = mxmlFindElement(group, tree, "language", NULL, NULL, MXML_DESCEND))
-   {		  
+        group = mxmlFindElement(group, tree, "language", NULL, NULL, MXML_DESCEND)) {
+		  
       pointer=mxmlElementGetAttr(group,"name");
-	  if (pointer!=NULL) strcpy(languages[maxLanguages].name,pointer); else strcpy(languages[maxLanguages].name,"");
+		if (pointer!=NULL)  {
+			strcpy(languages[maxLanguages].name,pointer); 
+		} else {
+			strcpy(languages[maxLanguages].name,"");
+		}
 	  	  
       pointer=mxmlElementGetAttr(group,"translation");
-      if (pointer!=NULL) strcpy(languages[maxLanguages].translation,pointer); else strcpy(languages[maxLanguages].translation,"");
+      if (pointer!=NULL) {
+			strcpy(languages[maxLanguages].translation,pointer); 
+		} else { 
+			strcpy(languages[maxLanguages].translation,"");
+		}
 	  
       pointer=mxmlElementGetAttr(group,"topics");
-      if (pointer!=NULL) strcpy(languages[maxLanguages].topics,pointer); else strcpy(languages[maxLanguages].topics,"");
+      if (pointer!=NULL) { 
+			strcpy(languages[maxLanguages].topics,pointer); 
+		} else {
+			strcpy(languages[maxLanguages].topics,"");
+		}
 	
       pointer=mxmlElementGetAttr(group,"id");
-      if (pointer!=NULL) languages[maxLanguages].id=atoi(pointer); else languages[maxLanguages].id=0;
+      if (pointer!=NULL) {
+			languages[maxLanguages].id=atoi(pointer); 
+		} else {
+			languages[maxLanguages].id=0;
+		}
 	 	  
-	  maxLanguages++;	  
+		maxLanguages++;	  
    }
    
    mxmlDelete(group);
@@ -634,43 +647,41 @@ void initMusicTrack(void)
 			   MODPlay_Start(&snd1);	
 			   break;
    } 
-   MODPlay_SetVolume( &snd1, musicVolume*MUSIC_MULTIPLER,musicVolume*MUSIC_MULTIPLER); 
-   traceEvent(s_fn,0,"leave [void]");
+   
+	MODPlay_SetVolume( &snd1, 
+		musicVolume*MUSIC_MULTIPLER,
+		musicVolume*MUSIC_MULTIPLER); 
+   
+	traceEvent(s_fn,0,"leave [void]");
 }
 
 
-void storeXmlValue(mxml_node_t *tree, char *key, char *value)
-{
+void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
+
    char *s_fn="storeXmlValue";
    traceEvent(s_fn,0,"enter");
-   
-   
-  mxml_node_t *group;
-  const char  *pointer;
+    
+	mxml_node_t *group;
+	const char  *pointer;
   
-  group = mxmlFindElement(tree, tree, key, NULL, NULL, MXML_DESCEND);  
-  pointer=mxmlElementGetAttr(group,"value");
+	group = mxmlFindElement(tree, tree, key, NULL, NULL, MXML_DESCEND);  
+	pointer=mxmlElementGetAttr(group,"value");
   
-  if (pointer!=NULL) 
-  {
+	if (pointer!=NULL) {
      strcpy(value,pointer); 
-  }
-  else 
-  {  
+	} else  {  
      strcpy(value,"");
-  }
-
-  mxmlDelete(group); 
-  
-  traceEvent(s_fn,0,"leave [void]");
+	}
+	mxmlDelete(group);   
+	
+	traceEvent(s_fn,0,"leave [void]");
 }
 
 
-void initTranslation(char* filename)
-{	  
+void initTranslation(char* filename) {
+	  
    char *s_fn="initTranslation";
    traceEvent(s_fn,0,"enter");
-   
    
    FILE *fp;
    mxml_node_t *tree;
@@ -680,13 +691,10 @@ void initTranslation(char* filename)
    
    /*Load our xml file! */
    fp = fopen(tmp, "r");
-   if (fp!=NULL)
-   {   
+   if (fp!=NULL) {   
       tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
       fclose(fp);
-   }
-   else
-   {
+   } else {
       // If file is not found, us internal xml files.	  
       tree = mxmlLoadString(NULL,xml2data, MXML_TEXT_CALLBACK);  
    }
@@ -739,12 +747,11 @@ void initTranslation(char* filename)
    traceEvent(s_fn,0,"leave [void]");
 }
 
-void initPointer()
-{
+void initPointer() {
    int i;
 	
-	for (i=0; i<MAX_POINTERS; i++)
-	{
+	for (i=0; i<MAX_POINTERS; i++) {
+	
 		switch(i)
 		{
 		   case 0: 
@@ -766,8 +773,8 @@ void initPointer()
 	}		
 }
 
-void initTopics(char* filename)
-{
+void initTopics(char* filename) {
+
    char *s_fn="initTopics";
    traceEvent(s_fn,0,"enter");
    
@@ -784,13 +791,10 @@ void initTopics(char* filename)
    
    /*Load our xml file! */
    fp = fopen(tmp, "r");
-   if (fp!=NULL)
-   {   
+   if (fp!=NULL) {   
       tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
       fclose(fp);
-   }
-   else
-   {
+   } else {
       // If file is not found, return direct
       maxTopics=-1;
       return;
@@ -801,14 +805,26 @@ void initTopics(char* filename)
         group != NULL;
        group = mxmlFindElement(group, tree, "topic", NULL, NULL, MXML_DESCEND))
    {		  
-        pointer=mxmlElementGetAttr(group,"name");
-	    if (pointer!=NULL) strcpy(topics[maxTopics].name,pointer); else strcpy(topics[maxTopics].name,"");
+			pointer=mxmlElementGetAttr(group,"name");
+			if (pointer!=NULL) {
+				strcpy(topics[maxTopics].name,pointer); 
+			} else {
+				strcpy(topics[maxTopics].name,"");
+			}
 	  
-        pointer=mxmlElementGetAttr(group,"filename");
-        if (pointer!=NULL) strcpy(topics[maxTopics].filename,pointer); else strcpy(topics[maxTopics].filename,"");
+			pointer=mxmlElementGetAttr(group,"filename");
+			if (pointer!=NULL) {
+				strcpy(topics[maxTopics].filename,pointer); 
+			} else {
+				strcpy(topics[maxTopics].filename,"");
+			}
    	  
-        pointer=mxmlElementGetAttr(group,"id");
-        if (pointer!=NULL) topics[maxTopics].id=atoi(pointer); else topics[maxTopics].id=0;
+			pointer=mxmlElementGetAttr(group,"id");
+			if (pointer!=NULL) {
+				topics[maxTopics].id=atoi(pointer); 
+			} else {
+				topics[maxTopics].id=0;
+			}
    
         maxTopics++;    
    }     
@@ -1040,7 +1056,9 @@ void initButtons(void)
 			buttons[0].x=10;
 			buttons[0].y=332+yOffset;
 			buttons[0].enabled=true;
-			buttons[0].xtext=buttons[0].x+(buttons[0].image.w/2)-((strlen(buttons[0].name)*13)/2);
+			buttons[0].xtext=buttons[0].x+
+				(buttons[0].image.w/2)-
+				((strlen(buttons[0].name)*13)/2);
 			buttons[0].ytext=buttons[0].y+25;
   
 			// Topic button
@@ -1049,8 +1067,14 @@ void initButtons(void)
 			strcpy(buttons[1].name,topics[selectedTopic].name);
 			buttons[1].x=10;
 			buttons[1].y=391+yOffset;
-			if (maxQuestions!=-1) buttons[1].enabled=true; else buttons[1].enabled=false;
-			buttons[1].xtext=buttons[1].x+(buttons[1].image.w/2)-((strlen(buttons[1].name)*13)/2);
+			if (maxQuestions!=-1) {
+				buttons[1].enabled=true; 
+			} else {
+				buttons[1].enabled=false;
+			}
+			buttons[1].xtext=buttons[1].x+
+				(buttons[1].image.w/2)-
+				((strlen(buttons[1].name)*13)/2);
 			buttons[1].ytext=buttons[1].y+25;
    
 			// Sound button
@@ -1060,7 +1084,9 @@ void initButtons(void)
 			buttons[2].x=194;
 			buttons[2].y=332+yOffset;
 			buttons[2].enabled=true;
-			buttons[2].xtext=buttons[2].x+(buttons[2].image.w/2)-((strlen(buttons[2].name)*13)/2);
+			buttons[2].xtext=buttons[2].x+
+				(buttons[2].image.w/2)-
+				((strlen(buttons[2].name)*13)/2);
 			buttons[2].ytext=buttons[2].y+25;
   
 			// Play button
@@ -1069,8 +1095,14 @@ void initButtons(void)
 			strcpy(buttons[3].name,translation.buttonPlay);
 			buttons[3].x=(MAX_HORZ_PIXELS-200);
 			buttons[3].y=332+yOffset;
-			if (maxQuestions!=-1) buttons[3].enabled=true; else buttons[3].enabled=false;
-			buttons[3].xtext=buttons[3].x+(buttons[3].image.w/2)-((strlen(buttons[3].name)*13)/2);
+			if (maxQuestions!=-1) {
+				buttons[3].enabled=true; 
+			} else {
+				buttons[3].enabled=false;
+			}
+			buttons[3].xtext=buttons[3].x+
+				(buttons[3].image.w/2)-
+				((strlen(buttons[3].name)*13)/2);
 			buttons[3].ytext=buttons[3].y+25;
    
 			// Stop button
@@ -1080,7 +1112,9 @@ void initButtons(void)
 			buttons[4].x=(MAX_HORZ_PIXELS-200);
 			buttons[4].y=391+yOffset;
 			buttons[4].enabled=true;
-			buttons[4].xtext=buttons[4].x+(buttons[4].image.w/2)-((strlen(buttons[4].name)*13)/2);
+			buttons[4].xtext=buttons[4].x+
+				(buttons[4].image.w/2)-
+				((strlen(buttons[4].name)*13)/2);
 			buttons[4].ytext=buttons[4].y+25;
    
 			// High Score button
@@ -1089,13 +1123,19 @@ void initButtons(void)
 			strcpy(buttons[5].name,translation.labelHighScore);
 			buttons[5].x=194;
 			buttons[5].y=391+yOffset;
-			if (maxQuestions!=-1) buttons[5].enabled=true; else buttons[5].enabled=false;
-			buttons[5].xtext=buttons[5].x+(buttons[5].image.w/2)-((strlen(buttons[5].name)*13)/2);
+			if (maxQuestions!=-1) {
+				buttons[5].enabled=true; 
+			} else {
+				buttons[5].enabled=false;
+			}
+			buttons[5].xtext=buttons[5].x+
+				(buttons[5].image.w/2)-
+				((strlen(buttons[5].name)*13)/2);
 			buttons[5].ytext=buttons[5].y+25;  
 		}
 		break;
 	  
-		case stateQuestion:
+		case stateQuestion: 
 		{
 			maxButtons=7;
 			angle=0;
@@ -1121,54 +1161,78 @@ void initButtons(void)
 			buttons[1].ytext=buttons[1].y+35;
    
 			// Hint3 button 
-   buttons[2].image=images.button2;
-   buttons[2].imageSelect=images.button2select;
-   strcpy(buttons[2].name,translation.buttonHint);
-   buttons[2].x=535;
-   buttons[2].y=350+yOffset;
-   buttons[2].enabled=true;
-   buttons[2].xtext=buttons[2].x+20;
-   buttons[2].ytext=buttons[2].y+35;
+			buttons[2].image=images.button2;
+			buttons[2].imageSelect=images.button2select;
+			strcpy(buttons[2].name,translation.buttonHint);
+			buttons[2].x=535;
+			buttons[2].y=350+yOffset;
+			buttons[2].enabled=true;
+			buttons[2].xtext=buttons[2].x+20;
+			buttons[2].ytext=buttons[2].y+35;
    
-   // AnswerA button
-   buttons[3].image=images.button1;
-   buttons[3].imageSelect=images.button1select;
-   strcpy(buttons[3].name,translation.buttonAnswerA);
-   buttons[3].x=10;
-   buttons[3].y=332+yOffset;
-   if (questions[rndSelectedQuestion].enabled[0]) buttons[3].enabled=true; else buttons[3].enabled=false;
-   buttons[3].xtext=buttons[3].x+(buttons[3].image.w/2)-((strlen(buttons[3].name)*13)/2);
-   buttons[3].ytext=buttons[3].y+25;
+			// AnswerA button
+			buttons[3].image=images.button1;
+			buttons[3].imageSelect=images.button1select;
+			strcpy(buttons[3].name,translation.buttonAnswerA);
+			buttons[3].x=10;
+			buttons[3].y=332+yOffset;
+			if (questions[rndSelectedQuestion].enabled[0]) {	
+				buttons[3].enabled=true; 
+			} else {
+				buttons[3].enabled=false;
+			}
+			buttons[3].xtext=buttons[3].x+
+				(buttons[3].image.w/2)-
+				((strlen(buttons[3].name)*13)/2);
+			buttons[3].ytext=buttons[3].y+25;
       
-   // AnswerB button
-   buttons[4].image=images.button1;
-   buttons[4].imageSelect=images.button1select;
-   strcpy(buttons[4].name,translation.buttonAnswerB);
-   buttons[4].x=192;
-   buttons[4].y=332+yOffset;
-   if (questions[rndSelectedQuestion].enabled[1]) buttons[4].enabled=true; else buttons[4].enabled=false;
-   buttons[4].xtext=buttons[4].x+(buttons[4].image.w/2)-((strlen(buttons[4].name)*13)/2);
-   buttons[4].ytext=buttons[4].y+25;
+			// AnswerB button
+			buttons[4].image=images.button1;
+			buttons[4].imageSelect=images.button1select;
+			strcpy(buttons[4].name,translation.buttonAnswerB);
+			buttons[4].x=192;
+			buttons[4].y=332+yOffset;
+			if (questions[rndSelectedQuestion].enabled[1]) {
+				buttons[4].enabled=true; 
+			} else {
+				buttons[4].enabled=false;
+			}
+			buttons[4].xtext=buttons[4].x+
+				(buttons[4].image.w/2)-
+				((strlen(buttons[4].name)*13)/2);
+			buttons[4].ytext=buttons[4].y+25;
       
-   // AnswerC button
-   buttons[5].image=images.button1;
-   buttons[5].imageSelect=images.button1select;
-   strcpy(buttons[5].name,translation.buttonAnswerC);
-   buttons[5].x=10;
-   buttons[5].y=391+yOffset;
-   if (questions[rndSelectedQuestion].enabled[2]) buttons[5].enabled=true; else buttons[5].enabled=false; 
-   buttons[5].xtext=buttons[5].x+(buttons[5].image.w/2)-((strlen(buttons[5].name)*13)/2);
-   buttons[5].ytext=buttons[5].y+25;
+			// AnswerC button
+			buttons[5].image=images.button1;
+			buttons[5].imageSelect=images.button1select;
+			strcpy(buttons[5].name,translation.buttonAnswerC);
+			buttons[5].x=10;
+			buttons[5].y=391+yOffset;
+			if (questions[rndSelectedQuestion].enabled[2]) {
+				buttons[5].enabled=true; 
+			} else { 
+				buttons[5].enabled=false; 
+			}
+			buttons[5].xtext=buttons[5].x+
+				(buttons[5].image.w/2)-
+				((strlen(buttons[5].name)*13)/2);
+			buttons[5].ytext=buttons[5].y+25;
    
-   // AnswerD button
-   buttons[6].image=images.button1;
-   buttons[6].imageSelect=images.button1select;
-   strcpy(buttons[6].name,translation.buttonAnswerD);
-   buttons[6].x=192;
-   buttons[6].y=391+yOffset;
-   if (questions[rndSelectedQuestion].enabled[3]) buttons[6].enabled=true; else buttons[6].enabled=false;
-   buttons[6].xtext=buttons[6].x+(buttons[6].image.w/2)-((strlen(buttons[6].name)*13)/2);
-   buttons[6].ytext=buttons[6].y+25;
+			// AnswerD button
+			buttons[6].image=images.button1;
+			buttons[6].imageSelect=images.button1select;
+			strcpy(buttons[6].name,translation.buttonAnswerD);
+			buttons[6].x=192;
+			buttons[6].y=391+yOffset;
+			if (questions[rndSelectedQuestion].enabled[3]) {
+				buttons[6].enabled=true; 
+			} else {
+				buttons[6].enabled=false;
+			}
+			buttons[6].xtext=buttons[6].x+
+				(buttons[6].image.w/2)-
+				((strlen(buttons[6].name)*13)/2);
+			buttons[6].ytext=buttons[6].y+25;
    
 	  }
 	  break;
@@ -1188,7 +1252,9 @@ void initButtons(void)
    buttons[0].x=10;
    buttons[0].y=332+yOffset;
    buttons[0].enabled=true;
-   buttons[0].xtext=buttons[0].x+(buttons[0].image.w/2)-((strlen(buttons[0].name)*13)/2);
+   buttons[0].xtext=buttons[0].x+
+		(buttons[0].image.w/2)-
+		((strlen(buttons[0].name)*13)/2);
    buttons[0].ytext=buttons[0].y+25;
    
 	  }
@@ -1210,7 +1276,9 @@ void initButtons(void)
    buttons[0].x=10;
    buttons[0].y=391+yOffset;
    buttons[0].enabled=true;
-   buttons[0].xtext=buttons[0].x+(buttons[0].image.w/2)-((strlen(buttons[0].name)*13)/2);
+   buttons[0].xtext=buttons[0].x+
+		(buttons[0].image.w/2)-
+		((strlen(buttons[0].name)*13)/2);
    buttons[0].ytext=buttons[0].y+25;
    
 	  }
@@ -1458,62 +1526,64 @@ void initButtons(void)
 
 void initStateMachine( void )
 {	
-    switch( stateMachine )
+   switch( stateMachine )
 	{
-	     case stateMenu:	
-				initButtons();   	      
-			    break;
+	   case stateMenu:	
+			initButtons();   	      
+		    break;
 			  
-	     case stateQuestion:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;
+	   case stateQuestion:
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;
+		 
+	   case stateAnswer:
+			if (stateMachinePrev!=stateMachine) initButtons(); 
+		   break;
 			  
-	     case stateAnswer:
-				if (stateMachinePrev!=stateMachine) initButtons(); 
-		        break;
-			  
-		 case stateResult:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;
+		case stateResult:
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;
 				
-		 case stateSound:
-		        if (stateMachinePrev!=stateMachine) initButtons();
-				break;
+		case stateSound:
+		   if (stateMachinePrev!=stateMachine) initButtons();
+			break;
 				
 		 case stateGoodbye:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;		
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;		
 
 		 case stateCredits:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;			
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;			
 				
 		 case stateHighScore:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;	
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;	
 				
 		 case stateHelp:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;	
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;	
 				
 		 case stateReleaseNotes:
-				if (stateMachinePrev!=stateMachine) initButtons();  
-		        break;	
+			if (stateMachinePrev!=stateMachine) initButtons();  
+		   break;	
     }	
     stateMachinePrev=stateMachine;
 }
 
-void nextquestion(void)
-{
-	  //select a random question
-	  //srand(10000);
-	  while (maxQuestions <=( rndSelectedQuestion = (int)((   (double)rand() / ((double)(RAND_MAX)+(double)(1)) ) * maxQuestions+1)));
-	  //if question already done increment of 1 and go to the next question
-	  while(questions[rndSelectedQuestion].done)
-	  {
+void nextquestion(void) {
+
+	//select a random question
+	//srand(10000);
+	while (maxQuestions<=(
+		rndSelectedQuestion=(int)(((double)rand() / 
+		   ((double)(RAND_MAX)+(double)(1)) ) * maxQuestions+1)));
+
+	//if question already done increment of 1 and go to the next question
+	while(questions[rndSelectedQuestion].done) {
 		rndSelectedQuestion = ((rndSelectedQuestion+1) % maxQuestions)+1;
-	  }
-	  questions[rndSelectedQuestion].done=true;
+	}
+	questions[rndSelectedQuestion].done=true;
 }
 
 
@@ -1521,60 +1591,70 @@ void nextquestion(void)
 // BUTTON LOGIC
 // -----------------------------------------------------------
 
-int buttonSelected(int x, int y)
-{
+int buttonSelected(int x, int y) {
    int i;
    
-   for (i=0; i<maxButtons; i++)
-   {
+   for (i=0; i<maxButtons; i++) {
+	
        if ( buttons[i].enabled &&
 	        (x>=buttons[i].x) && (x<=buttons[i].x+buttons[i].image.w) && 
-	        (y>=buttons[i].y) && (y<=buttons[i].y+buttons[i].image.h) )
-	   {
-          SND_SetVoice(SND_GetFirstUnusedVoice(), VOICE_MONO_16BIT, 8000, 0, (char *) effect3_wav, effect3_wav_size, effectVolume*EFFECT_MULTIPLER, effectVolume*EFFECT_MULTIPLER, NULL);
+	        (y>=buttons[i].y) && (y<=buttons[i].y+buttons[i].image.h) ) {
+			  
+          SND_SetVoice(SND_GetFirstUnusedVoice(), 
+				VOICE_MONO_16BIT, 
+				8000, 
+				0, 
+				(char *) 
+				effect3_wav, 
+				effect3_wav_size, 
+				effectVolume*EFFECT_MULTIPLER, 
+				effectVolume*EFFECT_MULTIPLER, 
+				NULL);
+				
 	      return i;
 	   }	   
    }
    return -1;
 }
 
-void buttonHint(int number)
-{
+void buttonHint(int number) {
+
    bool flag=true;
    int i=0;
    int count=0;
       
    // If more than one answer is possible continue
-   for (i=0; i<MAX_ANSWERS; i++)
-   {   
+   for (i=0; i<MAX_ANSWERS; i++) {   
       if (questions[rndSelectedQuestion].enabled[i]) count++;
    }
          
-   if (count>1)
-   {
-     while (flag)
-     {
-       // Random disable answer
-	   int number=rand() % 4;
-	   if (((number+1)!=questions[rndSelectedQuestion].answer) && questions[rndSelectedQuestion].enabled[number]==true)
-	   {
-	     // Disable question answer
-	     questions[rndSelectedQuestion].enabled[number]=false;
+   if (count>1) {
+	
+		while (flag) {
+			// Random disable answer
+			int number=rand() % 4;
+			if (((number+1)!=questions[rndSelectedQuestion].answer) 
+				&& questions[rndSelectedQuestion].enabled[number]==true) {
+			
+				// Disable question answer
+				questions[rndSelectedQuestion].enabled[number]=false;
 		 
-		 // Disable answer button
-		 buttons[number+3].enabled=false;
-		 hintCounter++;
+				// Disable answer button
+				buttons[number+3].enabled=false;
+				hintCounter++;
 		 
-		 flag=false;
-	    }
-     }
-     buttons[number].enabled=false;
+				flag=false;
+			}
+		}
+		buttons[number].enabled=false;
    }
 }
 
 void buttonLanguage(void)
 {
-    if (++selectedLanguage>=maxLanguages) selectedLanguage=0;
+   if (++selectedLanguage>=maxLanguages) {
+		selectedLanguage=0;
+	}
 	
 	selectedTopic=0;
 	selectedQuestion=0;
@@ -1588,9 +1668,11 @@ void buttonLanguage(void)
 
 void buttonTopic(void)
 {
-    if (++selectedTopic>=maxTopics) selectedTopic=0;
+   if (++selectedTopic>=maxTopics) {
+		selectedTopic=0;
+	}
 
-    score=0;
+   score=0;
 	selectedQuestion=0;
 	//rndSelectedQuestion=0;
 	hintCounter=0;
@@ -1598,8 +1680,8 @@ void buttonTopic(void)
 	initQuestions(topics[selectedTopic].filename);
 }
 
-void buttonPlay(void)
-{
+void buttonPlay(void) {
+
 	selectedQuestion=0;
 	nextquestion();
 	//rndSelectedQuestion=0;
@@ -1608,30 +1690,27 @@ void buttonPlay(void)
 	startTime=time(NULL);
 	
 	correctAnswer=false;
-    initQuestions( topics[selectedTopic].filename );
+   initQuestions( topics[selectedTopic].filename );
    
 	stateMachine=stateQuestion;
 }
 
-void buttonAnswer(int number)
-{
+void buttonAnswer(int number) {
+
 	stateMachine=stateAnswer;
   
-	if (questions[rndSelectedQuestion].answer==number)
-	{
+	if (questions[rndSelectedQuestion].answer==number) {
 		score++;
 		correctAnswer=true;	
 		//SND_SetVoice(SND_GetFirstUnusedVoice(), VOICE_MONO_16BIT, 8000, 0, (char *) effect1_wav, effect1_wav_size, effectVolume*EFFECT_MULTIPLER, effectVolume*EFFECT_MULTIPLER, NULL);             
-	}
-	else
-	{
+	} else {
 	    correctAnswer=false;
 		//SND_SetVoice(SND_GetFirstUnusedVoice(), VOICE_MONO_16BIT, 8000, 0, (char *) effect2_wav, effect2_wav_size, effectVolume*EFFECT_MULTIPLER, effectVolume*EFFECT_MULTIPLER, NULL);		
 	}
 }
 			
-void buttonExit(int index)
-{    
+void buttonExit(int index) {    
+
    // Stop network thread
    LAN(tcp_stop_thread();)
 
@@ -1649,82 +1728,95 @@ void buttonExit(int index)
 }
 
 
-void buttonNext(void)
-{
-   if (++selectedQuestion>=maxQuestions)
-   {	
+void buttonNext(void) {
+   if (++selectedQuestion>=maxQuestions) {	
       playTime = time(NULL)-startTime; 
       processHighScore();
       stateMachine=stateResult;
-   }
-   else
-   {
+   } else {
 	  nextquestion();
       stateMachine=stateQuestion;
    }
 }
 	  	 
 
-void buttonMinus(void)
-{
-   if ((stateMachine!=stateGoodbye) && (stateMachine!=stateHelp) && (stateMachine!=stateCredits))
-   {
+void buttonMinus(void) {
+
+   if ((stateMachine!=stateGoodbye) && 
+		(stateMachine!=stateHelp) && 
+		(stateMachine!=stateCredits)) {
 	  stateMachineStorage2=stateMachine;
 	  stateMachine=stateHelp;
    }
 }
  
-void buttonMinusVolume(int index)
-{
-   if (index==0)
-   {
+void buttonMinusVolume(int index) {
+
+   if (index==0) {
        // Music volume
-	   if (musicVolume>0) musicVolume--;   
-	   MODPlay_SetVolume( &snd1, musicVolume*MUSIC_MULTIPLER,musicVolume*MUSIC_MULTIPLER);
-   }
-   else if (index==1)
-   {
-       // Effect volume
-       if (effectVolume>0) effectVolume--; 
-   }
-   else if (index==2)
-   {
+	   if (musicVolume>0) { 
+			musicVolume--;   
+		}
+	   MODPlay_SetVolume( &snd1, 
+			musicVolume*MUSIC_MULTIPLER,
+			musicVolume*MUSIC_MULTIPLER);
+			
+   } else if (index==1) {
+      
+		// Effect volume
+      if (effectVolume>0) {
+			effectVolume--; 
+		}
+		
+   } else if (index==2) {
+	
       MODPlay_Stop(&snd1);
-      if (selectedMusic>1) selectedMusic--; else selectedMusic=(MAX_MUSIC_TRACK-1);
-	  initMusicTrack();
+      if (selectedMusic>1) {
+			selectedMusic--; 
+		} else { 
+			selectedMusic=(MAX_MUSIC_TRACK-1);
+		}
+		initMusicTrack();
    }
 }
 
-void buttonPlusVolume(int index)
-{
+void buttonPlusVolume(int index) {
+
    if (index==0)
    {
        // Music volume
-	   if (musicVolume<MAX_SOUND_VOLUME) musicVolume++;   
-	   MODPlay_SetVolume( &snd1, musicVolume*MUSIC_MULTIPLER,musicVolume*MUSIC_MULTIPLER); 
+	   if (musicVolume<MAX_SOUND_VOLUME) {
+			musicVolume++;   
+		}
+	   MODPlay_SetVolume( &snd1, 
+			musicVolume*MUSIC_MULTIPLER,
+			musicVolume*MUSIC_MULTIPLER); 
    }
-   else if (index==1)
-   {
-       // Effect volume
-       if (effectVolume<MAX_SOUND_VOLUME) effectVolume++; 
-   }
-   else if (index==2)
-   {
+   else if (index==1) {
+	
+      // Effect volume
+      if (effectVolume<MAX_SOUND_VOLUME) {
+			effectVolume++; 
+		}
+		
+   } else if (index==2) {
+	
       MODPlay_Stop(&snd1);
-      if (selectedMusic<MAX_MUSIC_TRACK) selectedMusic++; else selectedMusic=1;
-	  initMusicTrack();
+      if (selectedMusic<MAX_MUSIC_TRACK) {
+			selectedMusic++; 
+		} else {
+			selectedMusic=1;
+		}
+		initMusicTrack();
    }
 }
 
 void buttonHome(void)
 {
-   if (stateMachine!=stateGoodbye)
-   {
+   if (stateMachine!=stateGoodbye) {
 	  stateMachineStorage=stateMachine;
 	  stateMachine=stateGoodbye;
-   }
-   else
-   {      
+   } else {      
       buttonExit(0);
    }
 }
@@ -1734,14 +1826,20 @@ void button1x(void)
    bool flag = true;
  
    MODPlay_Stop(&snd1);  
-   if (selectedMusic<MAX_MUSIC_TRACK) selectedMusic++; else selectedMusic=1;   
+   if (selectedMusic<MAX_MUSIC_TRACK) {
+		selectedMusic++; 
+	} else {
+		selectedMusic=1;   
+	}
    initMusicTrack();
       
    // Handle buttons events  
    while ( flag && !bPowerOff)
    {
       WPAD_ScanPads(); 	
-      if (WPAD_ButtonsUp(0) & BUTTON_1) flag=false;
+      if (WPAD_ButtonsUp(0) & BUTTON_1) {
+			flag=false;
+		}
    }
 }
 
@@ -1750,19 +1848,24 @@ void button2y(void)
    bool flag = true;
  
    MODPlay_Stop(&snd1);
-   if (selectedMusic>1) selectedMusic--; else selectedMusic=(MAX_MUSIC_TRACK-1);   
+   if (selectedMusic>1) {
+		selectedMusic--; 
+	} else {
+		selectedMusic=(MAX_MUSIC_TRACK-1);   
+	}
    initMusicTrack();
       
    // Handle buttons events  
-   while ( flag && !bPowerOff)
-   {
+   while ( flag && !bPowerOff) {
       WPAD_ScanPads(); 	
-      if (WPAD_ButtonsUp(0) & BUTTON_2) flag=false;
+      if (WPAD_ButtonsUp(0) & BUTTON_2) {
+			flag=false;
+		}
    }
 }
 
-void buttonA(int x,int y)
-{
+void buttonA(int x,int y) {
+
 	int i;
 	for (i=0; i<MAX_POINTERS; i++) 
 	{
@@ -1997,17 +2100,14 @@ void buttonA(int x,int y)
 }
 
 //	PowerOff callback function.
-void doPowerOff( void )
-{
+void doPowerOff( void ) {
 	bPowerOff = true;
 	return;
 }
 
 //	PowerOff callback function for the Wii Remote power button.
-void doPadPowerOff( s32 chan )
-{
-	if ( chan == WPAD_CHAN_0 )
-	{
+void doPadPowerOff( s32 chan ) {
+	if ( chan == WPAD_CHAN_0 ) {
 		bPowerOff = true;
 	}
 	return;
@@ -2017,19 +2117,17 @@ void doPadPowerOff( s32 chan )
 // SCREEN LOGIC
 // -----------------------------------------------------------
 
-void drawText(int x, int y, int type, char *text)
-{
+void drawText(int x, int y, int type, char *text) {
+
    char tmp[MAX_LEN];
    memset(tmp,0x00,sizeof(tmp));
-   //void *string1;
    
-   if (text!=NULL)
-   {    		
-     strcpy(tmp, text);
+   if (text==NULL) return;    		
+   strcpy(tmp, text);
 	 
-     switch (type)
-     {
-       case fontTitle: 
+   switch (type)
+   {
+      case fontTitle: 
 	   {
 	      if (x==0) x=320-((strlen(tmp)*33)/2);  
 		  GRRLIB_Printf2(x, y-70, tmp, 72, COLOR_WHITESMOKE); 
@@ -2082,7 +2180,6 @@ void drawText(int x, int y, int type, char *text)
 		   GRRLIB_Printf2(x, y, tmp, 10, COLOR_WHITESMOKE);            
 	   }
 	   break;
-	 }
    }
 }
 
@@ -2124,41 +2221,45 @@ void drawButtons()
    
    bool selected=false;
    
-   for (i=0; i<maxButtons; i++)
-   {	  
-      if ( buttons[i].enabled )
-      {
-	     selected=false;
+   for (i=0; i<maxButtons; i++) {	  
+      if ( buttons[i].enabled ) {
+			selected=false;
 	  
-	     for (j=0 ;j<MAX_POINTERS; j++)
-	     {
-           if ((pointers[j].xOffset>=buttons[i].x) && (pointers[j].xOffset<=buttons[i].x+buttons[i].image.w) && 
-	          (pointers[j].yOffset>=buttons[i].y) && (pointers[j].yOffset<=buttons[i].y+buttons[i].image.h) )			
-	       {
-  			  selected=true;
-			  if (--pointers[j].rumble>0) WPAD_Rumble(j,1); else WPAD_Rumble(j,0);
-	       }
-	     }
+			for (j=0 ;j<MAX_POINTERS; j++) {
+				if ((pointers[j].xOffset>=buttons[i].x) && 
+					(pointers[j].xOffset<=buttons[i].x+buttons[i].image.w) && 
+					(pointers[j].yOffset>=buttons[i].y) && 
+					(pointers[j].yOffset<=buttons[i].y+buttons[i].image.h) ) {
+					
+					selected=true;
+					if (--pointers[j].rumble>0) {
+						WPAD_Rumble(j,1); 
+					} else {
+						WPAD_Rumble(j,0);
+					}
+				}
+			}
   
-         if (selected)
-         {  
+         if (selected) {  
     	     // Draw selected button
-             GRRLIB_DrawImg(buttons[i].x, buttons[i].y, buttons[i].imageSelect, 0, 1, 1, IMAGE_COLOR );		  
-	     }
-	     else
-	     {
-		   // Draw not selected button
-	       GRRLIB_DrawImg(buttons[i].x, buttons[i].y, buttons[i].image, 0, 1, 1, IMAGE_COLOR );
-   	     }
-	     drawText(buttons[i].xtext,buttons[i].ytext, fontButton, buttons[i].name);
-       }
+             GRRLIB_DrawImg(buttons[i].x, 
+					buttons[i].y, 
+					buttons[i].imageSelect, 0, 1, 1, IMAGE_COLOR );		  
+			} else {
+				// Draw not selected button
+				GRRLIB_DrawImg(buttons[i].x, 
+					buttons[i].y, 
+					buttons[i].image, 0, 1, 1, IMAGE_COLOR );
+   	   }
+			drawText(buttons[i].xtext,
+				buttons[i].ytext, 
+				fontButton, buttons[i].name);
+      }
   	}
    	
 	// If no button selected, stop rumble on all pointers
-	if (!selected) 
-	{
-  	  for (j=0; j<MAX_POINTERS; j++) 
-	  {
+	if (!selected) {
+  	  for (j=0; j<MAX_POINTERS; j++) {
 	     WPAD_Rumble(j,0);
 	     pointers[j].rumble=MAX_RUMBLE;
 	  }	  
@@ -2167,67 +2268,72 @@ void drawButtons()
 
 void drawWelcomeScreen()
 {
-    int ypos=130+yOffset;
+   int ypos=130+yOffset;
 	char *version=NULL;
 	char *status=NULL;
-    char tmp[MAX_LEN];
+   char tmp[MAX_LEN];
 	int j=0;
  
 	// Draw panel
-    GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
-
-    // Draw title
-    drawText(0, ypos, fontTitle, translation.labelWelcome);
+	GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
+	
+	// Draw title
+	drawText(0, ypos, fontTitle, translation.labelWelcome);
 		
 	// Check is new bibleQuiz version is available
 	LAN(version=tcp_get_version();)
-    if ( (version!=NULL) && (strlen(version)>0) && (strcmp(version,PROGRAM_VERSION)!=0) )
-    {    
-        char tmp[MAX_LEN];     	
-	    sprintf(tmp,"%s [v%s]",translation.labelNewVersion,version);
-	    drawText(0, ypos+5, fontNew, tmp);
-    }
+	if ( 	(version!=NULL) && 
+			(strlen(version)>0) && 
+			(strcmp(version,PROGRAM_VERSION)!=0)) {    
+			
+			char tmp[MAX_LEN];
+			sprintf(tmp,"%s [v%s]",translation.labelNewVersion,version);
+			drawText(0, ypos+5, fontNew, tmp);
+   }
     
 	// Draw content
 	LAN( status = tcp_get_state(); )
-	if (status!=NULL)
-	{
+	if (status!=NULL) {
 	   sprintf(tmp,"Network Thread: %s",status);
-	}
-	else
-	{
+	} else {
 	   sprintf(tmp,"Network Thread: disabled" );
 	}
-    drawText(40, 80, fontSpecial, tmp);
+	drawText(40, 80, fontSpecial, tmp);
 
 	ypos+=20;
 	sprintf(tmp,"%s:", translation.labelTopic);
 	drawText(40, ypos, fontParagraph, tmp);
 	ypos+=12;
-	if (maxQuestions!=-1) drawText(40, ypos, fontNormal, information.topic);
+	if (maxQuestions!=-1) {
+		drawText(40, ypos, fontNormal, information.topic);
+	}
 	
 	ypos+=30;
 	sprintf(tmp,"%s:", translation.labelCreated);
 	drawText(40, ypos, fontParagraph, tmp);
 	ypos+=12;
-	if (maxQuestions!=-1) drawText(40, ypos, fontNormal, information.timestamp);
+	if (maxQuestions!=-1) {
+		drawText(40, ypos, fontNormal, information.timestamp);
+	}
 	
 	ypos+=30;
 	sprintf(tmp,"%s:", translation.labelAuthor);
 	drawText(40, ypos, fontParagraph, tmp);
 	ypos+=12;
-	if (maxQuestions!=-1) drawText(40, ypos, fontNormal, information.author);
+	if (maxQuestions!=-1) {
+		drawText(40, ypos, fontNormal, information.author);
+	}
 	
 	ypos+=20;
-	if (maxQuestions!=-1) drawWordwrap( information.note, 0, ypos-10, 70, 15);
+	if (maxQuestions!=-1) {
+		drawWordwrap( information.note, 0, ypos-10, 70, 15);
+	}
 
-    // Draw flag logo		 
-   	for(j=0;j<images.english_flag.h;j++)
-	{
-        // GRRLIB_DrawTile(((640-images.logo2.w)/2)+sin(wave1)*50, (((480-images.logo2.h)/2)-50)+j, images.logo, 0, 1, 1, IMAGE_COLOR,j );
-            		  
-	    switch (selectedLanguage)		  
-		{  
+	// Draw flag logo		 
+	for(j=0;j<images.english_flag.h;j++) {
+   		  
+		switch (selectedLanguage) {  
+		
 			case 0: GRRLIB_DrawTile(420+sin(wave1)*50,180+yOffset+(j/2),images.english_flag, 0, 1, 1, IMAGE_COLOR,j );
 					break;
 					 
@@ -2247,21 +2353,20 @@ void drawWelcomeScreen()
 					break;
 		}
 		wave1+=0.02;
-    }
+   }
 	wave2+=0.02;
-    wave1=wave2;
+   wave1=wave2;
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
 	drawText(20, 330, fontSpecial, tmp);
 }
 
-void drawQuestionScreen(void)
-{ 
-    int ypos=yOffset+70;
-    char tmp[MAX_LEN];
+void drawQuestionScreen(void) { 
+   int ypos=yOffset+70;
+   char tmp[MAX_LEN];
 	
-     // Draw panel
-    GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
+   // Draw panel
+   GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
 
     // Draw background1 icon
 	GRRLIB_DrawImg(200,140+yOffset, images.background1, 0, 2.8, 2.8, IMAGE_COLOR );
@@ -2280,37 +2385,33 @@ void drawQuestionScreen(void)
 	     
 	ypos+=30;
 	sprintf(tmp,"%s:", translation.labelQuestion);
-    drawText(40, ypos, fontParagraph, tmp);
+   drawText(40, ypos, fontParagraph, tmp);
 	drawWordwrap( questions[rndSelectedQuestion].question, 40, ypos-10, 70, 15);
     	
 	ypos+=90;
-    sprintf(tmp,"%s:", translation.labelAnswers);
-    drawText(40, ypos, fontParagraph, tmp);
+   sprintf(tmp,"%s:", translation.labelAnswers);
+   drawText(40, ypos, fontParagraph, tmp);
 	
 	ypos+=15;
-	if (questions[rndSelectedQuestion].enabled[0])
-	{	 
+	if (questions[rndSelectedQuestion].enabled[0]) {	 
 	  sprintf(tmp,"A) %s", questions[rndSelectedQuestion].answerA);
 	  drawText(40, ypos, fontNormal, tmp);
-    }	
+   }	
 
 	ypos+=15;      
-	if (questions[rndSelectedQuestion].enabled[1])
-	{
+	if (questions[rndSelectedQuestion].enabled[1]) {
 	  sprintf(tmp,"B) %s", questions[rndSelectedQuestion].answerB);
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 
     ypos+=15;    
-	if (questions[rndSelectedQuestion].enabled[2])
-	{
+	if (questions[rndSelectedQuestion].enabled[2]) {
 	  sprintf(tmp,"C) %s", questions[rndSelectedQuestion].answerC);
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 	 
     ypos+=15; 
-	if (questions[rndSelectedQuestion].enabled[3])
-	{
+	if (questions[rndSelectedQuestion].enabled[3]) {
 	  sprintf(tmp,"D) %s", questions[rndSelectedQuestion].answerD);
 	  drawText(40, ypos, fontNormal, tmp);
 	}
@@ -2319,38 +2420,37 @@ void drawQuestionScreen(void)
 	drawText(20, 330, fontSpecial, tmp);
 }
 
-void drawResultScreen(void)
-{  
+void drawResultScreen(void) {  
 	int  ypos=yOffset+140;
 	float cat1=maxQuestions*0.6;
 	float cat2=maxQuestions*0.8;
 	char tmp[MAX_LEN];
 	
-	 // Draw panel
-    GRRLIB_DrawImg(10,60,images.panel2, 0, 1, 1, IMAGE_COLOR );
+	// Draw panel
+   GRRLIB_DrawImg(10,60,images.panel2, 0, 1, 1, IMAGE_COLOR );
  	
-    // Draw background2 icon
+   // Draw background2 icon
 	GRRLIB_DrawImg(180,90+yOffset,images.background2, 0, 1.4, 1.2, 0x88888888 );
 	
 	// Draw Info icon
 	GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset, images.info, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
 
-   	// Show title
-    drawText(0, ypos, fontTitle, translation.labelResults);
+   // Show title
+   drawText(0, ypos, fontTitle, translation.labelResults);
  
-     // Show Content
+   // Show Content
 	ypos+=40;
 	drawText(0, ypos, fontSubTitle, translation.labelResult);
 	
-    ypos+=60;
+   ypos+=60;
 	sprintf(tmp,"%2.2f-%d.00 %s", cat2+1, maxQuestions, translation.labelCategory1);
 	drawText(0, ypos, fontSubTitle, tmp );	
 	
-    ypos+=30;
+   ypos+=30;
 	sprintf(tmp,"%2.2f-%2.2f %s ", cat1+1, cat2, translation.labelCategory2);
 	drawText(0, ypos, fontSubTitle, tmp );	
 
-    ypos+=30;
+   ypos+=30;
 	sprintf(tmp,"0.00-%2.2f %s", cat1, translation.labelCategory3);
 	drawText(0, ypos, fontSubTitle, tmp);
 	
@@ -2358,28 +2458,24 @@ void drawResultScreen(void)
 	drawText(20, 395, fontSpecial, tmp);
 }
 
-void drawAnswerScreen(void)
-{		 
-     int ypos=200+yOffset;
-	 char tmp[MAX_LEN];
+void drawAnswerScreen(void) {		 
+   int ypos=200+yOffset;
+	char tmp[MAX_LEN];
 	
-    // Draw panel
-    GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
+   // Draw panel
+   GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
 
     // Draw background1 icon
 	GRRLIB_DrawImg(200,140+yOffset, images.background1, 0, 2.8, 2.8, IMAGE_COLOR);
 		
 	// Draw title
-   	if ( correctAnswer )
-	{
+   if ( correctAnswer ) {
 	    // Draw Right icon
 	    GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset, images.right, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
 		
 		// Draw Righ label		
 		drawText(0, ypos, fontTitle, translation.labelRight);
-	}
-	else
-	{
+	} else {
 	    // Draw Wrong Icon
 	    GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset, images.wrong, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
 		
@@ -2387,16 +2483,15 @@ void drawAnswerScreen(void)
 		drawText(0, ypos, fontTitle, translation.labelWrong);
 	}
 	ypos+=15;
-	if (strlen(questions[rndSelectedQuestion].explanation))
-	{	 
+	if (strlen(questions[rndSelectedQuestion].explanation))	{	 
 	  drawText(0, ypos+30, fontNormal, questions[rndSelectedQuestion].explanation);
-    }
+   }
 	sprintf(tmp,"%d fps", CalculateFrameRate());
 	drawText(20, 330, fontSpecial, tmp);
 }
 
-void drawSoundScreen(void)
-{  
+void drawSoundScreen(void) {  
+
     int ypos=100+yOffset;
 	char tmp[MAX_LEN];
 	
@@ -2428,31 +2523,31 @@ void drawSoundScreen(void)
 	drawText(20, 395, fontSpecial, tmp);
 }
 
-void drawGoodbyeScreen(void)
-{
-    int ypos=205+yOffset;
+void drawGoodbyeScreen(void) {
+
+   int ypos=205+yOffset;
 	char tmp[MAX_LEN];
 	
-	 // Draw panel
-    GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
+	// Draw panel
+   GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
 
-    // Draw Exit icon
+   // Draw Exit icon
 	GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset,images.exit, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
  	
-    // Draw title
+   // Draw title
 	drawText(0, ypos, fontTitle, translation.labelGoodbye);		
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
 	drawText(20, 330, fontSpecial, tmp);
 }
 
-void drawCreditsScreen(void)
-{
-    int  ypos=yOffset+65;
+void drawCreditsScreen(void) {
+
+   int  ypos=yOffset+65;
 	char tmp[MAX_LEN];
 	
-    // Draw panel
-    GRRLIB_DrawImg(10,60, images.panel2, 0, 1, 1, IMAGE_COLOR );
+   // Draw panel
+   GRRLIB_DrawImg(10,60, images.panel2, 0, 1, 1, IMAGE_COLOR );
 	
     // Draw background3 icon
 	GRRLIB_DrawImg(190,95+yOffset, images.background3, 0, 1.3, 1.3, 0xFFFFFF00 | alfa );
@@ -2491,7 +2586,7 @@ void drawCreditsScreen(void)
 	ypos+=15;
 	drawText(0, ypos, fontNormal, "Rhoderik, Flark");
 	ypos+=15;
-	drawText(0, ypos, fontNormal, "Ezio Soma (Italiano translation and questions)");
+	drawText(0, ypos, fontNormal, "Ezio Soma (Italiano translation & questions)");
 	ypos+=15;
 	drawText(0, ypos, fontNormal, "www.biblequizzes.com");
 	
@@ -2561,8 +2656,8 @@ void drawHighScoreScreen(void)
 	drawText(20, 395, fontSpecial, tmp);
 }
 
-void drawHelpScreen(void)
-{
+void drawHelpScreen(void) {
+
 	int  ypos=yOffset+80;
 	char tmp[MAX_LEN];
 
@@ -2583,9 +2678,8 @@ void drawHelpScreen(void)
 	drawText(20, 395, fontSpecial, tmp);
 }
 
+void drawReleaseNotes(void) {
 
-void drawReleaseNotes(void)
-{
    int  ypos=yOffset+60;
    int  i=0;
    int  len=0;
@@ -2650,132 +2744,81 @@ void drawReleaseNotes(void)
 	drawText(20, 395, fontSpecial, tmp);
 }
 
-void drawIntro(void)
-{ 	   
-	char tmp[MAX_LEN];
-				  
-    switch( stateMachine )	
-	{	
+void drawIntro1(void) { 	   
 
-	   case stateIntro1:
-	   {	  
-	      // Draw background
-		  GRRLIB_DrawImg(0,0, images.logo1, 0, 1, 1, IMAGE_COLOR );
-		  		  
-		  // Init text layer	  
-          GRRLIB_initTexture();	
-		  	  
-		  //sprintf(tmp,"%d fps", CalculateFrameRate());
-		  //drawText(20, 460, fontSpecial, tmp);
-		  
-		  // Draw text layer on top of background 
-          GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
-	   }	   
-	   break;
-	   
-	   case stateIntro2:
-	   {
-	      int  ypos=yOffset+320;
-		  int  j;
-		  
-	      // Draw background
-		  GRRLIB_DrawImg(0,0, images.background4, 0, 1, 1, IMAGE_COLOR );
-
-		  // Draw Plaatsoft logo		 
-   	      for(j=0;j<images.logo.h;j++)
-		  {
-             GRRLIB_DrawTile(((640-images.logo2.w)/2)+sin(wave1)*50, (((480-images.logo2.h)/2)-50)+j, images.logo, 0, 1, 1, IMAGE_COLOR,j );
-             wave1+=0.02;
-          }
-		  wave2+=0.02;
-          wave1=wave2;
-		  
-		  // Init text layer	  
-          GRRLIB_initTexture();	
-		  
-		  drawText(0, ypos, fontSubTitle,  "Please visit my website for more information."  );
-		  ypos+=40;
-		  drawText(0, ypos, fontSubTitle,  "http://www.plaatsoft.nl"  );
-			  
-		  sprintf(tmp,"%d fps", CalculateFrameRate());
-		  drawText(20, 460, fontSpecial, tmp);
-		  
-		  // Draw text layer on top of background 
-          GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
-	   }	   
-	   break;
-	   	   
-	   case stateIntro3:
-	   {
-	      int  ypos=yOffset+390;
-
-		  // Draw background
-		  GRRLIB_DrawImg(0,0, images.logo3, 0, 0.95, 0.98, IMAGE_COLOR );
-		  GRRLIB_DrawImg(310,0, images.logo4, 0, 0.95, 0.98, IMAGE_COLOR );
-		  GRRLIB_DrawImg(0,240, images.logo5, 0, 0.95, 0.98, IMAGE_COLOR );
-		  GRRLIB_DrawImg(310,240, images.logo6, 0, 0.95, 0.98, IMAGE_COLOR );
-		  
-          GRRLIB_DrawImg(350, 240, images.logo2, 0, 0.5, 0.5, IMAGE_COLOR );
-
-		  // Init text layer	  
-          GRRLIB_initTexture();	
-		  
-		  drawText(350, ypos, fontNormal,  "Some more Wii games developed"  );
-		  ypos+=20;
-		  drawText(400, ypos, fontNormal,  "by www.plaatsoft.nl"  );
-			 
-		  sprintf(tmp,"%d fps", CalculateFrameRate()); 
-		  drawText(580, 460, fontSpecial, tmp); 
- 
-		  // Draw text layer on top of background 
-          GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
-	   }	   
-	   break;
-   }
+	// Draw background
+	GRRLIB_DrawImg(0,0, images.logo1, 0, 1, 1, IMAGE_COLOR );
+		  		  		  	  
+	// Draw text layer on top of background 
+   GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
 }
 
-void drawGameboard()
-{ 
-   int max;
+
+void drawIntro2(void) { 	
+	
+	char tmp[MAX_LEN];			     
+   int  ypos=yOffset+320;
+	int  j;
+		  
+   // Draw background
+	GRRLIB_DrawImg(0,0, images.background4, 0, 1, 1, IMAGE_COLOR );
+
+	// Draw Plaatsoft logo		 
+   for(j=0;j<images.logo.h;j++) {
+      GRRLIB_DrawTile(((640-images.logo2.w)/2)+
+		sin(wave1)*50, 
+		(((480-images.logo2.h)/2)-50)+j, 
+		images.logo, 0, 1, 1, IMAGE_COLOR,j );
+      wave1+=0.02;
+   }
+	wave2+=0.02;
+   wave1=wave2;
+		  
+	drawText(0, ypos, fontSubTitle, "Please visit my website for more information.");
+	ypos+=40;
+	drawText(0, ypos, fontSubTitle,  "http://www.plaatsoft.nl"  );
+			  
+	sprintf(tmp,"%d fps", CalculateFrameRate());
+	drawText(20, 460, fontSpecial, tmp);
+}
+
+void drawIntro3(void) { 
+	
+	char tmp[MAX_LEN];
+	int  ypos=yOffset+390;
+
+	// Draw background
+	GRRLIB_DrawImg(0,0, images.logo3, 0, 0.95, 0.98, IMAGE_COLOR );
+	GRRLIB_DrawImg(310,0, images.logo4, 0, 0.95, 0.98, IMAGE_COLOR );
+	GRRLIB_DrawImg(0,240, images.logo5, 0, 0.95, 0.98, IMAGE_COLOR );
+	GRRLIB_DrawImg(310,240, images.logo6, 0, 0.95, 0.98, IMAGE_COLOR );
+		  
+   GRRLIB_DrawImg(350, 240, images.logo2, 0, 0.5, 0.5, IMAGE_COLOR );
+		  
+	drawText(350, ypos, fontNormal,  "Some more Wii games developed"  );
+	ypos+=20;
+	drawText(400, ypos, fontNormal,  "by www.plaatsoft.nl"  );
+			 
+	sprintf(tmp,"%d fps", CalculateFrameRate()); 
+	drawText(580, 460, fontSpecial, tmp); 
+}
+
+void drawBannerInfo() {
+
+	int max;
    int select;   
    char tmp[MAX_LEN];
 	
-   if (stateMachine==stateIntro1)
-   {
-      drawIntro();
-		return;
-   }
-   
-   if (stateMachine==stateIntro2)
-   {
-      drawIntro();
-		return;
-   }
-   
-   if (stateMachine==stateIntro3)
-   {
-      drawIntro();
-		return;
-   }
-   
-   // Init text layer	  
-   GRRLIB_initTexture();
-   
    // Select Next Question
-
-   if (maxQuestions<0)
-   { 
-		max=0;}
-   else
-   {
+   if (maxQuestions<0) { 
+		max=0;
+	} else {
 		max=maxQuestions;
 	}
-   if (selectedQuestion<max)
-   { 
+	
+   if (selectedQuestion<max) { 
 		select=selectedQuestion+1;
-	}
-   else 
-   {
+	} else  {
 		select=max;
    }
    
@@ -2789,63 +2832,97 @@ void drawGameboard()
    	  
    sprintf(tmp,"%s %02d", translation.labelScore, score);
    drawText(445+(115-((strlen(tmp)*14)/2)), yOffset, fontHead, tmp);
-      
-   switch (stateMachine)
-   { 
-       case stateMenu:
-	     		drawWelcomeScreen();  
-	      	    break;
-	   
-       case stateQuestion:	   
-	  			drawQuestionScreen();
-                break;
+}
 
-       case stateAnswer:
-	     		drawAnswerScreen();
-	     	    break;
+void drawGameboard() { 
+     
+   // Init text layer	  
+   GRRLIB_initTexture();
+      
+   switch (stateMachine) {
+ 
+		case stateIntro1:
+			drawIntro1();
+			break;
+
+		case stateIntro2:
+			drawIntro2();
+			break;
+
+		case stateIntro3:
+			drawIntro3();
+			break;
+		 
+      case stateMenu:
+			drawBannerInfo();
+	   	drawWelcomeScreen();  
+			drawButtons(); 
+	     	break;
 	   
-       case stateResult:
-       			drawResultScreen();
-	     	    break;	
+      case stateQuestion:	   
+			drawBannerInfo();
+	  		drawQuestionScreen();
+			drawButtons(); 
+         break;
+
+      case stateAnswer:
+			drawBannerInfo();
+	   	drawAnswerScreen();
+			drawButtons(); 
+	      break;
+	   
+      case stateResult:
+			drawBannerInfo();
+      	drawResultScreen();
+			drawButtons(); 
+	      break;	
    	   
 	   case stateHighScore:  
-	     	    drawHighScoreScreen();
-				break;
+			drawBannerInfo();
+	      drawHighScoreScreen();
+			drawButtons(); 
+			break;
 				
 	   case stateSound:
-				drawSoundScreen();
-				break;
+			drawBannerInfo();
+			drawSoundScreen();
+			drawButtons(); 
+			break;
 	   
 	   case stateCredits:  
-	   		    drawCreditsScreen();		   
-				break;
+			drawBannerInfo();
+	   	drawCreditsScreen();		   
+			drawButtons(); 
+			break;
 				
 	   case stateGoodbye:
-				drawGoodbyeScreen();
-				break;
+			drawBannerInfo();
+			drawGoodbyeScreen();
+			drawButtons(); 
+			break;
 				
 	   case stateHelp:
-				drawHelpScreen();
-				break;
+			drawBannerInfo();
+			drawHelpScreen();
+			drawButtons(); 
+			break;
 				
 	   case stateReleaseNotes:
-				drawReleaseNotes();
-				break;
+			drawBannerInfo();
+			drawReleaseNotes();
+			drawButtons(); 
+			break;
 	}  
 		
-	// draw buttons
-	drawButtons(); 
-
-    // Draw text layer on top of panels and buttons
-    GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
+   // Draw text layer on top of panels and buttons
+   GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
 }
 
 // -----------------------------------------------------------
 // MAIN
 // -----------------------------------------------------------
 
-int main()
-{
+int main() {
 	char *s_fn="main";
 	traceEvent(s_fn,0,"enter");
 	
@@ -2874,14 +2951,11 @@ int main()
 	// This will correspond to the settings in the Wii menu
 	rmode = VIDEO_GetPreferredMode(NULL);
 		
-	if (rmode->xfbHeight==528)
-	{
+	if (rmode->xfbHeight==528) {
 	   // TV mode PAL 50Hz
 	   yOffset = 25;  
 		yjpegOffset = 25;
-	}
-	else
-	{      
+	} else {      
 	   // TV mode PAL 60Hz
 	   yOffset = 25;
 		yjpegOffset = 0;
@@ -2979,34 +3053,28 @@ int main()
 			pointers[i].angle=pointers[i].ir.angle;
 					
 			// handle button events
-         if (wpaddown & BUTTON_A) 
-			{
+         if (wpaddown & BUTTON_A) {
 				buttonA(pointers[i].xOffset,pointers[i].yOffset);		
 			}
 			
-			if (wpaddown & BUTTON_MINUS ) 
-			{
+			if (wpaddown & BUTTON_MINUS ) {
 				buttonMinus();
 			}
 			
-			if (wpaddown & BUTTON_1 ) 
-			{
+			if (wpaddown & BUTTON_1 ) {
 				button1x();				
 			}
 			
-			if (wpaddown & BUTTON_2 ) 
-			{
+			if (wpaddown & BUTTON_2 ) {
 				button2y();		
 			}
 			
-			if (wpaddown & BUTTON_HOME) 
-			{
+			if (wpaddown & BUTTON_HOME) {
 				buttonHome();
 			}
 			
 		   // Make screenshot 
-			if (wpadheld & BUTTON_PLUS)
-			{
+			if (wpadheld & BUTTON_PLUS) {
 		      char filename[MAX_LEN];
       	   struct tm *level;	   
 		      time_t dt=time(NULL);
@@ -3029,8 +3097,7 @@ int main()
 	GRRLIB_Exit();
 	
 	// Shut the system down.
-	if ( bPowerOff )
-	{
+	if ( bPowerOff ) {
 		traceEvent(s_fn, 0,"Shut the system down");
 		traceEvent(s_fn, 0,"%s %s Stopped", PROGRAM_NAME, PROGRAM_VERSION);
 		traceClose();
