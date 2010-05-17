@@ -163,6 +163,7 @@ info information;
 topic topics[MAX_TOPICS];
 
 typedef struct {
+	int  id;
    char question[MAX_LEN+1]; 
    char answerA[MAX_LEN+1]; 
    char answerB[MAX_LEN+1]; 
