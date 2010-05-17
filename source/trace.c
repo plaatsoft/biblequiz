@@ -34,7 +34,7 @@
 #define MAX_BUFFER_SIZE		    8192
 
 // Enable / Disable trace file functionality
-bool traceOn = false;
+bool traceOn = true;
 
 FILE *fp = NULL;
 

@@ -308,7 +308,7 @@ static u8 CalculateFrameRate() {
 void saveHighScore(char* filename) {
 
    char *s_fn="saveHighScore";
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [filename=%s]",filename);
    
    int i;
    mxml_node_t *xml;
@@ -366,7 +366,7 @@ void saveHighScore(char* filename) {
 void initHighScore(char* filename) {
 
    char *s_fn="initHighScore" ;
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [filename=%s]",filename);
    
    maxHighScores=0;
 
@@ -572,7 +572,7 @@ void initGame() {
 void initLanguages(char* filename)
 {
    char *s_fn="initLanguages";
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [filename=%s]",filename);
    
    maxLanguages=0;
 
@@ -640,7 +640,6 @@ void initMusicTrack(void)
    char *s_fn="initMusicTrack";
    traceEvent(s_fn,0,"enter");
    
-   
    switch (selectedMusic)
    {
       case 1 : MODPlay_SetMOD(&snd1, track1_mod);
@@ -690,7 +689,7 @@ void initMusicTrack(void)
 void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 
    char *s_fn="storeXmlValue";
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [%s=%s]", key, value);
     
 	mxml_node_t *group;
 	const char  *pointer;
@@ -705,13 +704,13 @@ void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 	}
 	mxmlDelete(group);   
 	
-	traceEvent(s_fn,0,"leave [void]");
+	traceEvent(s_fn,0,"leave");
 }
 
 void initTranslation(char* filename) {
 	  
    char *s_fn="initTranslation";
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [filename=%s]",filename);
    
    FILE *fp;
    mxml_node_t *tree;
@@ -725,6 +724,7 @@ void initTranslation(char* filename) {
       tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
       fclose(fp);
    } else {
+		traceEvent(s_fn,0,"error reading [filename=%s]",filename);
       // If file is not found, us internal xml files.	  
       tree = mxmlLoadString(NULL,xml2data, MXML_TEXT_CALLBACK);  
    }
@@ -806,7 +806,7 @@ void initPointer() {
 void initTopics(char* filename) {
 
    char *s_fn="initTopics";
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [filename=%s]",filename);
    
    maxTopics=0;
 
@@ -824,6 +824,7 @@ void initTopics(char* filename) {
       tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
       fclose(fp);
    } else {
+		traceEvent(s_fn,0,"error reading [filename=%s]",filename);
       // If file is not found, return direct
       maxTopics=-1;
       return;
@@ -866,7 +867,7 @@ void initTopics(char* filename) {
 void initQuestions(char* filename)
 {
    char *s_fn="initQuestions";
-   traceEvent(s_fn,0,"enter");
+   traceEvent(s_fn,0,"enter [filename=%s]",filename);
    
    maxQuestions=0;
    
@@ -885,7 +886,8 @@ void initQuestions(char* filename)
       fclose(fp);
    } else {
       // If file is not found, return direct
-	  maxQuestions=-1;
+		traceEvent(s_fn,0,"error reading [filename=%s]",filename);
+		maxQuestions=-1;
       return;
    }
    
@@ -939,12 +941,13 @@ void initQuestions(char* filename)
 		questions[maxQuestions].enabled[2]=false;
 		questions[maxQuestions].enabled[3]=false;
 		  
+		questions[maxQuestions].id=0;
 		questions[maxQuestions].answer=0;		
 		questions[maxQuestions].done=false;	 		 
 		questions[maxQuestions].played=false;
   
 		// Fill in question data from xml file
-		
+				
       pointer=mxmlElementGetAttr(group,"question");
 		if ((pointer!=NULL) && (strlen(pointer)>0)) {
 	      strncpy(questions[maxQuestions].question,pointer, MAX_LEN); 
@@ -992,14 +995,20 @@ void initQuestions(char* filename)
 			strncpy(questions[maxQuestions].explanation,pointer, MAX_LEN); 
 		}
 		
+		pointer=mxmlElementGetAttr(group,"number");
+      if ((pointer!=NULL) && (strlen(pointer)>0)) {				
+			strncpy(questions[maxQuestions].answerA,pointer, MAX_LEN);
+			questions[maxQuestions].id=atoi(pointer);
+		}
 		
+		// Validate question.
 		if ((strlen(questions[maxQuestions].question)>0) &&
 			 ((questions[maxQuestions].enabled[0]) ||
 			  (questions[maxQuestions].enabled[1]) ||
 			  (questions[maxQuestions].enabled[2]) || 
 			  (questions[maxQuestions].enabled[3])) ) {
 		
-			// Valide question, data ok, keep it
+			// data ok, keep it
 			maxQuestions++;
 		}
    }
@@ -1612,21 +1621,27 @@ void initStateMachine( void )
 
 void nextquestion(void) {
 
+	char *s_fn="nextquestion";
+	traceEvent(s_fn,0,"enter");
+	
 	//select a random question
 	int count=0;
 	
 	bool found=false;
 	while (!found) {
 		
-		rndSelectedQuestion=(rand() % maxQuestions)+1;
+		rndSelectedQuestion=(rand() % maxQuestions);
 		if (!questions[rndSelectedQuestion].done) {
 			found=true;
 		}
 		if (++count>1000) {
 			break;
 		}
+		traceEvent(s_fn,0,"rndSelectedQuestion=%d", rndSelectedQuestion);
 	}
 	questions[rndSelectedQuestion].done=true;
+	
+	traceEvent(s_fn,0,"leave");
 }
 
 // -----------------------------------------------------------
@@ -2233,8 +2248,8 @@ void drawText(int x, int y, int type, char *text) {
    }
 }
 
-void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize) 
-{
+void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize)  {
+
    char tmp[MAX_LEN+1];
    int startIndex=0;
    int lastSpace=0;
@@ -2264,8 +2279,7 @@ void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize)
    }
 }
 
-void drawButtons()
-{
+void drawButtons() {
    int i;
    int j;
    
@@ -2316,8 +2330,65 @@ void drawButtons()
 	}
 }
 
-void drawWelcomeScreen()
-{
+void drawIntro1(void) { 	   
+
+	// Draw background
+	GRRLIB_DrawImg(0,0, images.logo1, 0, 1, 1, IMAGE_COLOR );
+		  		
+}
+
+
+void drawIntro2(void) { 	
+	
+	char tmp[MAX_LEN];			     
+   int  ypos=yOffset+320;
+	int  j;
+		  
+   // Draw background
+	GRRLIB_DrawImg(0,0, images.background4, 0, 1, 1, IMAGE_COLOR );
+
+	// Draw Plaatsoft logo		 
+   for(j=0;j<images.logo.h;j++) {
+      GRRLIB_DrawTile(((640-images.logo2.w)/2)+
+		sin(wave1)*50, 
+		(((480-images.logo2.h)/2)-50)+j, 
+		images.logo, 0, 1, 1, IMAGE_COLOR,j );
+      wave1+=0.02;
+   }
+	wave2+=0.02;
+   wave1=wave2;
+		  
+	drawText(0, ypos, fontSubTitle, "Please visit my website for more information.");
+	ypos+=40;
+	drawText(0, ypos, fontSubTitle,  "http://www.plaatsoft.nl"  );
+			  
+	sprintf(tmp,"%d fps", CalculateFrameRate());
+	drawText(20, 460, fontSpecial, tmp);
+}
+
+void drawIntro3(void) { 
+	
+	char tmp[MAX_LEN];
+	int  ypos=yOffset+390;
+
+	// Draw background
+	GRRLIB_DrawImg(0,0, images.logo3, 0, 0.95, 0.98, IMAGE_COLOR );
+	GRRLIB_DrawImg(310,0, images.logo4, 0, 0.95, 0.98, IMAGE_COLOR );
+	GRRLIB_DrawImg(0,240, images.logo5, 0, 0.95, 0.98, IMAGE_COLOR );
+	GRRLIB_DrawImg(310,240, images.logo6, 0, 0.95, 0.98, IMAGE_COLOR );
+		  
+   GRRLIB_DrawImg(350, 240, images.logo2, 0, 0.5, 0.5, IMAGE_COLOR );
+		  
+	drawText(350, ypos, fontNormal,  "Some more Wii games developed"  );
+	ypos+=20;
+	drawText(400, ypos, fontNormal,  "by www.plaatsoft.nl"  );
+			 
+	sprintf(tmp,"%d fps", CalculateFrameRate()); 
+	drawText(580, 460, fontSpecial, tmp); 
+}
+
+void drawWelcomeScreen() {
+
    int ypos=130+yOffset;
 	char *version=NULL;
 	char *status=NULL;
@@ -2412,14 +2483,15 @@ void drawWelcomeScreen()
 }
 
 void drawQuestionScreen(void) { 
-   int ypos=yOffset+70;
+
+   int ypos=yOffset+50;
    char tmp[MAX_LEN];
 	
    // Draw panel
    GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
 
-    // Draw background1 icon
-	GRRLIB_DrawImg(200,140+yOffset, images.background1, 0, 2.8, 2.8, IMAGE_COLOR );
+   // Draw background1 icon
+	//GRRLIB_DrawImg(200,140+yOffset, images.background1, 0, 2.8, 2.8, IMAGE_COLOR );
 	
 	// Draw question icon
 	GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset, images.question, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
@@ -2454,7 +2526,7 @@ void drawQuestionScreen(void) {
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 
-    ypos+=15;    
+   ypos+=15;    
 	if (questions[rndSelectedQuestion].enabled[2]) {
 	  sprintf(tmp,"C) %s", questions[rndSelectedQuestion].answerC);
 	  drawText(40, ypos, fontNormal, tmp);
@@ -2466,11 +2538,18 @@ void drawQuestionScreen(void) {
 	  drawText(40, ypos, fontNormal, tmp);
 	}
 	
+	ypos+=30;
+	drawText(40, ypos, fontParagraph, "Id:");
+	ypos+=15; 
+	sprintf(tmp,"%03d", questions[rndSelectedQuestion].id);
+	drawText(40, ypos, fontNormal, tmp);
+	 
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 330, fontSpecial, tmp);
+	drawText(570, 330, fontSpecial, tmp);
 }
 
 void drawResultScreen(void) {  
+
 	int  ypos=yOffset+140;
 	float cat1=maxQuestions*0.6;
 	float cat2=maxQuestions*0.8;
@@ -2505,7 +2584,7 @@ void drawResultScreen(void) {
 	drawText(0, ypos, fontSubTitle, tmp);
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 395, fontSpecial, tmp);
+	drawText(570, 395, fontSpecial, tmp);
 }
 
 void drawAnswerScreen(void) {		 
@@ -2516,7 +2595,7 @@ void drawAnswerScreen(void) {
    GRRLIB_DrawImg(10,60, images.panel1, 0, 1, 1, IMAGE_COLOR );
 
     // Draw background1 icon
-	GRRLIB_DrawImg(200,140+yOffset, images.background1, 0, 2.8, 2.8, IMAGE_COLOR);
+	//GRRLIB_DrawImg(200,140+yOffset, images.background1, 0, 2.8, 2.8, IMAGE_COLOR);
 		
 	// Draw title
    if ( correctAnswer ) {
@@ -2537,29 +2616,29 @@ void drawAnswerScreen(void) {
 	  drawText(0, ypos+30, fontNormal, questions[rndSelectedQuestion].explanation);
    }
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 330, fontSpecial, tmp);
+	drawText(570, 330, fontSpecial, tmp);
 }
 
 void drawSoundScreen(void) {  
 
-    int ypos=100+yOffset;
+   int ypos=100+yOffset;
 	char tmp[MAX_LEN];
 	
 	// Draw panel
-    GRRLIB_DrawImg(10,60, images.panel2, 0, 1, 1, IMAGE_COLOR );
+   GRRLIB_DrawImg(10,60, images.panel2, 0, 1, 1, IMAGE_COLOR );
 	
 	// Draw Sound icon
 	GRRLIB_DrawImg((640/2)-128, ((480/2)-140)+yOffset, images.sound, angle, 1, 1, IMAGE_COLOR );
 	
-    // Draw content	
-    drawText(0, ypos, fontSubTitle, translation.labelMusic);	
+   // Draw content	
+   drawText(0, ypos, fontSubTitle, translation.labelMusic);	
 	ypos+=20;
-    GRRLIB_DrawImg(104,ypos, images.bar1, 0, 1, 1, IMAGE_COLOR );
+   GRRLIB_DrawImg(104,ypos, images.bar1, 0, 1, 1, IMAGE_COLOR );
 	ypos+=10;
 	GRRLIB_DrawImg(115+(musicVolume*40),ypos, images.bar_cursor1, 0, 1, 1, IMAGE_COLOR );
   
-    ypos+=80;
-    drawText(0, ypos, fontSubTitle, translation.labelEffects);
+   ypos+=80;
+   drawText(0, ypos, fontSubTitle, translation.labelEffects);
 	ypos+=20;	
 	GRRLIB_DrawImg(104,ypos, images.bar1, 0, 1, 1, IMAGE_COLOR );
 	ypos+=10;
@@ -2570,7 +2649,7 @@ void drawSoundScreen(void) {
 	drawText(0, ypos, fontSubTitle, tmp);		
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 395, fontSpecial, tmp);
+	drawText(570, 395, fontSpecial, tmp);
 }
 
 void drawGoodbyeScreen(void) {
@@ -2588,7 +2667,7 @@ void drawGoodbyeScreen(void) {
 	drawText(0, ypos, fontTitle, translation.labelGoodbye);		
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 330, fontSpecial, tmp);
+	drawText(570, 330, fontSpecial, tmp);
 }
 
 void drawCreditsScreen(void) {
@@ -2638,13 +2717,15 @@ void drawCreditsScreen(void) {
 	ypos+=15;
 	drawText(0, ypos, fontNormal, "Ezio Soma (Italiano translation & questions)");
 	ypos+=15;
+	drawText(0, ypos, fontNormal, "David Lecoeuvre (French translation & questions)");
+	ypos+=15;
 	drawText(0, ypos, fontNormal, "www.biblequizzes.com");
 	
 	ypos+=25;
 	drawText(0, ypos, fontNormal,"Greetings to everybody in the Wii homebrew scene");
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 395, fontSpecial, tmp);
+	drawText(570, 395, fontSpecial, tmp);
 }		 
 
 void drawHighScoreScreen(void)
@@ -2675,7 +2756,7 @@ void drawHighScoreScreen(void)
 	drawText(420, ypos, fontParagraph, translation.labelHints);
 	drawText(495, ypos, fontParagraph, translation.labelTopic);
 
-    for (i=0; i<maxHighScores; i++)
+   for (i=0; i<maxHighScores; i++)
 	{
 	   // Show only highscores from the seleceted language
        if ( languages[selectedLanguage].id==highscores[i].languageId )
@@ -2703,7 +2784,7 @@ void drawHighScoreScreen(void)
 	}	
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 395, fontSpecial, tmp);
+	drawText(570, 395, fontSpecial, tmp);
 }
 
 void drawHelpScreen(void) {
@@ -2725,7 +2806,7 @@ void drawHelpScreen(void) {
 	drawText(0, ypos, fontNormal, "Please visit http://www.plaatsoft.nl for more information");
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 395, fontSpecial, tmp);
+	drawText(570, 395, fontSpecial, tmp);
 }
 
 void drawReleaseNotes(void) {
@@ -2791,66 +2872,7 @@ void drawReleaseNotes(void) {
     }
 	
 	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 395, fontSpecial, tmp);
-}
-
-void drawIntro1(void) { 	   
-
-	// Draw background
-	GRRLIB_DrawImg(0,0, images.logo1, 0, 1, 1, IMAGE_COLOR );
-		  		  		  	  
-	// Draw text layer on top of background 
-   GRRLIB_DrawImg2(0, 0, GRRLIB_GetTexture(), 0, 1.0, 1.0, 255);
-}
-
-
-void drawIntro2(void) { 	
-	
-	char tmp[MAX_LEN];			     
-   int  ypos=yOffset+320;
-	int  j;
-		  
-   // Draw background
-	GRRLIB_DrawImg(0,0, images.background4, 0, 1, 1, IMAGE_COLOR );
-
-	// Draw Plaatsoft logo		 
-   for(j=0;j<images.logo.h;j++) {
-      GRRLIB_DrawTile(((640-images.logo2.w)/2)+
-		sin(wave1)*50, 
-		(((480-images.logo2.h)/2)-50)+j, 
-		images.logo, 0, 1, 1, IMAGE_COLOR,j );
-      wave1+=0.02;
-   }
-	wave2+=0.02;
-   wave1=wave2;
-		  
-	drawText(0, ypos, fontSubTitle, "Please visit my website for more information.");
-	ypos+=40;
-	drawText(0, ypos, fontSubTitle,  "http://www.plaatsoft.nl"  );
-			  
-	sprintf(tmp,"%d fps", CalculateFrameRate());
-	drawText(20, 460, fontSpecial, tmp);
-}
-
-void drawIntro3(void) { 
-	
-	char tmp[MAX_LEN];
-	int  ypos=yOffset+390;
-
-	// Draw background
-	GRRLIB_DrawImg(0,0, images.logo3, 0, 0.95, 0.98, IMAGE_COLOR );
-	GRRLIB_DrawImg(310,0, images.logo4, 0, 0.95, 0.98, IMAGE_COLOR );
-	GRRLIB_DrawImg(0,240, images.logo5, 0, 0.95, 0.98, IMAGE_COLOR );
-	GRRLIB_DrawImg(310,240, images.logo6, 0, 0.95, 0.98, IMAGE_COLOR );
-		  
-   GRRLIB_DrawImg(350, 240, images.logo2, 0, 0.5, 0.5, IMAGE_COLOR );
-		  
-	drawText(350, ypos, fontNormal,  "Some more Wii games developed"  );
-	ypos+=20;
-	drawText(400, ypos, fontNormal,  "by www.plaatsoft.nl"  );
-			 
-	sprintf(tmp,"%d fps", CalculateFrameRate()); 
-	drawText(580, 460, fontSpecial, tmp); 
+	drawText(570, 395, fontSpecial, tmp);
 }
 
 void drawBannerInfo() {
@@ -3088,8 +3110,8 @@ int main() {
       drawGameboard();
 
 		// Process four WiiMote pointers
-      for (i=0; i<MAX_POINTERS; i++)
-		{
+      for (i=0; i<MAX_POINTERS; i++) {
+		
 			u32 wpaddown = WPAD_ButtonsDown(i);
 			u32 wpadheld = WPAD_ButtonsHeld(i);
 		

@@ -3,7 +3,7 @@
 
    <header 
       topic="Letteratura"
-      author="Ezio Soma'"
+      author="Ezio Soma"
       created="18-04-2010" 
       note="" />
 
@@ -16,6 +16,7 @@
      	answer="A"
      	explanation=""
     	 number="1" />	
+
    <item
      	question="Scrisse i Mandarini"
 	answerA="M. Duras"
@@ -25,6 +26,7 @@
      	answer="C"
      	explanation=""
      	number="2" />	
+
    <item
      	question="come si chiama la figlia di Swann nella recherche"
 	answerA="Odette"
@@ -34,6 +36,7 @@
      	answer="B"
      	explanation=""
      	number="3" />	
+
    <item
      	question="Nascita del premio Grinzane Cavour"
 	answerA="1982"
@@ -43,7 +46,8 @@
      	answer="A"
      	explanation=""
      	number="4" />	
-<item
+
+   <item
      question="Quale di questi poeti mori' pazzo?"
 	answerA="Holderin"
 	answerB="Heine"
@@ -52,7 +56,8 @@
      	answer="A"
      	explanation=""
      	number="5" />	
-<item
+
+  <item
      question="L'inverno del nostro scontento..., comincia cosi'" 
 	answerA="Riccardo III"
 	answerB="Riccardo II"
@@ -61,7 +66,8 @@
      	answer="A"
      	explanation=""
      	number="6" />	
-<item
+
+  <item
      question="Dove si svolge il Manoscritto trovato a Saragoza ?"
 	answerA="Sierra della Cabrera"
 	answerB="Sierra Nevada"
@@ -70,7 +76,8 @@
      	answer="C"
      	explanation=""
      	number="7" />	
-<item
+
+ <item
      question="Citta' natale di Grazia Deledda"
 	answerA="Nuoro"
 	answerB="Cagliari"
@@ -79,4 +86,5 @@
      	answer="A"
      	explanation=""
      	number="8" />
- </MyQuiz>
+ 
+</MyQuiz>
