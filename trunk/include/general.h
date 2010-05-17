@@ -30,8 +30,8 @@
 #define LAN(x) x
 
 #define PROGRAM_NAME	    		"BibleQuiz"
-#define PROGRAM_VERSION     	"0.95"
-#define RELEASE_DATE        	"31-03-2009" 
+#define PROGRAM_VERSION     	"0.96"
+#define RELEASE_DATE        	"17-04-2009" 
 
 #define FILENAME_LANGUAGES  	"languages.xml"
 #define DATA_DIRECTORY      	"sd:/apps/bibleQuiz/data"
@@ -101,8 +101,7 @@
 // ENUMS
 // -----------------------------------------------------------
 
-enum
-{
+enum {
    stateIntro1=0,   
    stateIntro2=1, 
    stateIntro3=2,    
@@ -119,8 +118,7 @@ enum
    stateNone=13 
 };
 
-enum
-{
+enum {
    fontTitle=0,
    fontSubTitle=1,
    fontParagraph=2,
@@ -135,8 +133,7 @@ enum
 // TYPEDEFS and ENUMS
 // -----------------------------------------------------------
  
-typedef struct
-{
+typedef struct {
     int  id;
 	char name[MAX_LEN];
 	char translation[MAX_LEN];
@@ -146,16 +143,14 @@ language;
 
 language languages[MAX_LANGUAGES+1];
 
-typedef struct
-{
+typedef struct {
     int  id;
     char name[MAX_LEN];
 	char filename[MAX_LEN];
 }
 topic;
 
-typedef struct 
-{
+typedef struct {
 	char author[MAX_LEN];
 	char topic[MAX_LEN];
 	char timestamp[MAX_LEN];
@@ -167,8 +162,7 @@ info information;
 
 topic topics[MAX_TOPICS];
 
-typedef struct
-{
+typedef struct {
    char question[MAX_LEN]; 
    char answerA[MAX_LEN]; 
    char answerB[MAX_LEN]; 
@@ -184,10 +178,8 @@ question;
 
 question questions[MAX_QUESTIONS+1];
 
-
-typedef struct 
-{
-    char labelWelcome[MAX_LEN];
+typedef struct {
+   char labelWelcome[MAX_LEN];
 	char labelTopic[MAX_LEN];
 	char labelScore[MAX_LEN];
 	char labelCreated[MAX_LEN];
@@ -205,7 +197,7 @@ typedef struct
 	char labelEffects[MAX_LEN];
 	char labelHighScore[MAX_LEN];
 	char labelDate[MAX_LEN];
-    char labelHints[MAX_LEN];
+   char labelHints[MAX_LEN];
 	char labelPlayTime[MAX_LEN];
 	char labelResults[MAX_LEN];
 	char labelHelp[MAX_LEN];
@@ -234,9 +226,7 @@ trans;
 
 trans translation;
 
-
-typedef struct
-{
+typedef struct {
    GRRLIB_texImg image;
    GRRLIB_texImg imageSelect;
    char name[MAX_LEN]; 
@@ -250,9 +240,7 @@ button;
 
 button buttons[MAX_BUTTONS+1];
 
-
-typedef struct 
-{
+typedef struct {
   // png + jpg Image index  
   GRRLIB_texImg button1;
   GRRLIB_texImg button1select;
@@ -304,9 +292,7 @@ image;
 
 image images;
 
-
-typedef struct
-{
+typedef struct {
   time_t startTime;
   time_t playTime;
   int    score;
@@ -320,8 +306,7 @@ highscore;
 
 highscore highscores[MAX_TOPICS+1];
 
-typedef struct 
-{
+typedef struct {
   ir_t    ir;
   GRRLIB_texImg image;
   int     x;
@@ -351,8 +336,9 @@ pointer pointers[MAX_POINTERS];
  *   Documentation: wplaat\n
  *
  * @section ReleaseNotes
- *  <b>16-05-2010 Version 0.96</b>
+ *  <b>17-05-2010 Version 0.96</b>
  *  - GUI:
+ *   - Update main menu screen information.
  *   - Added italiano translation (Thanks Ezio Soma).
  *  - Core: 
  *   - Added random question mode (Thanks Ezio Soma).
