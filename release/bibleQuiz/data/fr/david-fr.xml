@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<bibleQuiz>
+
+   <header 
+      topic="La vie de David"
+      author="www.biblequizzes.com traduit par Feujak"
+      created="10-04-2010"
+      language="fr" 
+      note="Si tu dis: Ah ! Nous ne savions pas !... Celui qui pèse les coeurs ne le voit-il pas ? - Proverbes" />
+
+   <item
+     question="Qui était le pére de David ?"
+     answerA="Joseph"
+     answerB="Isaï"
+     answerC="Nébat"
+     answerD="Joram"
+     answer="B"
+     explanation="Voir 1 Sam 16:1"
+     number="1" />	
+
+   <item
+     question="Où vivait David dans son enfance ?"
+     answerA="A Jérusalem"
+     answerB="En Samarie"
+     answerC="A Tsiklag"
+     answerD="A Bethlehem"
+     answer="D"
+     explanation="Voir 1 Sam 16:1"
+     number="2" />
+
+   <item
+     question="Qui est le frère de David ?"
+     answerA="Samma"
+     answerB="Isaï"
+     answerC="Jonathan"
+     answerD="Ela"
+     answer="A"
+     explanation="Voir 1 Sam 16:9"
+     number="3" />
+
+   <item
+     question="Quel talent de David l'amena premièrement devant Saül?"
+     answerA="La guerre"
+     answerB="La chasse"
+     answerC="L'écriture"
+     answerD="La musique"
+     answer="D"
+     explanation="Voir 1 Sam 16:18,19"
+     number="4" />
+
+   <item
+     question="D'où Goliath était-il originaire ?"
+     answerA="D'Hebron"
+     answerB="D'Hékron"
+     answerC="De Gath"
+     answerD="De Gaza"
+     answer="C"
+     explanation="Voir 1 Sam 17:4"
+     number="5" />
+
+   <item
+     question="Quelle était la particularité de Goliath ?"
+     answerA="Trés grand"
+     answerB="Trés rapide"
+     answerC="Trés gros"
+     answerD="Trés laid"
+     answer="A"
+     explanation="Voir 1 Sam 17:4"
+     number="6" />
+
+   <item
+     question="Pendant combien de temps Goliath tourmenta-t-il les troupes d'Israel ?"
+     answerA="3 Jours"
+     answerB="7 Jours"
+     answerC="12 Jours"
+     answerD="40 Jours"
+     answer="D"
+     explanation="Voir 1 Sam 17:16"
+     number="7" />
+
+   <item
+     question="Combien des fréres de David se trouvaient à la guerre ?"
+     answerA="2"
+     answerB="3"
+     answerC="4"
+     answerD="5"
+     answer="B"
+     explanation="Voir 1 Sam 17:13"
+     number="8" />
+
+   <item
+     question="Pour quelle raison David se rendit-il au lieu du combat ?"
+     answerA="Pour tuer Goliath"
+     answerB="Pour voir de l'action"
+     answerC="Pour amener des provisions"
+     answerD="Pour le plaisir"
+     answer="C"
+     explanation="Voir 1 Sam 17:17"
+     number="9" />
+
+   <item
+     question="Quelle fut la réaction de David face aux menaces de Goliath ?"
+     answerA="L'indignation"
+     answerB="La peur"
+     answerC="Le rire"
+     answerD="L'admiration"
+     answer="A"
+     explanation="Voir 1 Sam 17:26"  
+     number="10" />
+
+   <item
+     question="Quelle fut la réaction d'Eliab face à David ?"
+     answerA="L'indignation"
+     answerB="La peur"
+     answerC="Le rire"
+     answerD="L'admiration"
+     answer="A"
+     explanation="Voir 1 Sam 17:28"
+     number="11" />
+
+   <item
+     question="Pourquoi David n'utilisa-t-il pas l'armure de Saül ?"
+     answerA="Elle était trop grande pour lui"
+     answerB="Elle était trop petite pour lui"
+     answerC="Saül essayait de le tuer"
+     answerD="Il n'y était pas accoutumé"
+     answer="D"
+     explanation="Voir 1 Sam 17:39"
+     number="12" />
+
+   <item
+     question="Quelle fut la réaction de Goliath à la vue de David ?"
+     answerA="L'indignation"
+     answerB="Le mépris"
+     answerC="La peur"
+     answerD="L'admiration"
+     answer="B"
+     explanation="Voir 1 Sam 17:43"
+     number="13" />
+
+   <item
+     question="Combien de pierres David emporta-t-il ?"
+     answerA="1"
+     answerB="3"
+     answerC="5"
+     answerD="7"
+     answer="C"
+     explanation="Voir 1 Sam 17:40"
+     number="14" />
+
+   <item
+     question="Combien de pierres David utilisa-t-il ?"
+     answerA="1"
+     answerB="3"
+     answerC="5"
+     answerD="7"
+     answer="A"
+     explanation="Voir 1 Sam 17:49,50"
+     number="15" />
+
+   <item
+     question="Qui était le commandant de l'armée de Saül ?"
+     answerA="Joab"
+     answerB="David"
+     answerC="Jonathan"
+     answerD="Abner"
+     answer="D"
+     explanation="Voir 1 Sam 17:55"
+     number="16" />
+
+   <item
+     question="Qui était le père de Michal ?"
+     answerA="Isaï"
+     answerB="Saül"
+     answerC="Samuel"
+     answerD="Abner"
+     answer="B"
+     explanation="Voir 1 Sam 18:20"
+     number="17" />
+
+   <item
+     question="Combien de Philistins David dut-il tuer pour épouser Michal ?"
+     answerA="100"
+     answerB="200"
+     answerC="300"
+     answerD="400"
+     answer="B"
+     explanation="Voir 1 Sam 18:27"
+     number="18" />
+
+    <item
+     question="Qui était le meilleur ami de David?"
+     answerA="Joab"
+     answerB="Abner"
+     answerC="Jonathan"
+     answerD="Samuel"
+     answer="C"
+     explanation="Voir 1 Sam 18:1"
+     number="19" />
+
+   <item
+     question="De quelle ville David obtint-il l'aide des prêtres ?"
+     answerA="Nob"
+     answerB="Béthel"
+     answerC="Jérusalem"
+     answerD="Silo"
+     answer="A"
+     explanation="Voir 1 Sam 21:1"
+     number="20" />   
+
+   <item
+     question="Quand David arriva à Nob, pour quelle raison prétendit-il être la ?"
+     answerA="Pour fuir Saül"
+     answerB="Pour une mission secrète"
+     answerC="Pour remplir un voeu"
+     answerD="Pour rechercher des Philistins"
+     answer="B"
+     explanation="Voir 1 Sam 21:2"
+     number="21" />
+
+   <item
+     question="Un homme de Saül se trouvait la, lequel ?"
+     answerA="Doëg l'Edomite"
+     answerB="Goliath de Gath"
+     answerC="Mesha le Moabite"
+     answerD="Héglon le Guirgasien"
+     answer="A"
+     explanation="Voir 1 Sam 21:7"
+     number="22" />
+
+   <item
+     question="David obtint une arme à Nob, laquelle ?"
+     answerA="L'épée de Jonathan"
+     answerB="Son ancienne fronde"
+     answerC="L'arc de son frère"
+     answerD="Lépée de Goliath"
+     answer="D"
+     explanation="Voir 1 Sam 21:9"
+     number="23" />
+
+   <item
+     question="En quittant Nob, David fuit vers quel Roi ?"
+     answerA="Agag Roi d'Hamalec"
+     answerB="Akis Roi de Gath"
+     answerC="Gilgamesh Roi d'Hékron"
+     answerD="Mésah Roi de Moab"
+     answer="B"
+     explanation="Voir 1 Sam 21:10"
+     number="24" />
+
+   <item
+     question="Afin d'echapper à ce Roi, David pretendit être : "
+     answerA="Un héros"
+     answerB="Saül"
+     answerC="Fou"
+     answerD="Un Philistin"
+     answer="C"
+     explanation="Voir 1 Sam 21:13"
+     number="25" />
+
+   <item
+     question="David plaça sa famille sous la protection :"
+     answerA="Du roi de Moab"
+     answerB="De Jonathan"
+     answerC="De Samuel"
+     answerD="D'Akis"
+     answer="A"
+     explanation="Voir 1 Sam 22:3"
+     number="26" />
+
+   <item
+     question="Pendant que Saül le poursuivait, David parvint à couper discretement une portion son manteau. Que faisait Saül à ce moment ?"
+     answerA="Il dormait"
+     answerB="Il se soûlait"
+     answerC="Il satisfaisait un besoin naturel"
+     answerD="Il était en transe"
+     answer="C"
+     explanation="Voir 1 Sam 24:3,4"
+     number="27" />
+
+   <item
+     question="Quand par la suite il s'adresse à Saül, à quoi se compare-t-il ?"
+     answerA="Un héros"
+     answerB="Un chien mort"
+     answerC="Une gazelle pourchassée"
+     answerD="Un fils prodigue"
+     answer="B"
+     explanation="Voir 1 Sam 24:14"
+     number="28" />
+
+   <item
+     question="Quelle fut la réaction de Saül au discours de David ?"
+     answerA="Il se mit en colère"
+     answerB="Il prit peur"
+     answerC="Il rit"
+     answerD="Il pleura"
+     answer="D"
+     explanation="Voir 1 Sam 24:16"
+     number="29" />
+
+   <item
+     question="Où vivait Samuel ?"
+     answerA="Rama"
+     answerB="Bethel"
+     answerC="Silo"
+     answerD="Nob"
+     answer="A"
+     explanation="Voir 1 Sam 25:1"
+     number="30" />
+
+   <item
+     question="La femme de David Abigaïl fut auparavant mariée à :"
+     answerA="Jonathan"
+     answerB="Nabal"
+     answerC="Phalti"
+     answerD="Belial"
+     answer="B"
+     explanation="Voir 1 Sam 25:3"
+     number="31" />
+
+   <item
+     question="La femme de David Mical fut ensuite mariée à :"
+     answerA="Jonathan"
+     answerB="Nabal"
+     answerC="Phalti"
+     answerD="Belial"
+     answer="C"
+     explanation="Voir 1 Sam 25:44"
+     number="32" />
+
+   <item
+     question="Pendant que Saül le poursuivait, David parvint à voler sa lance et sa cruche d'eau. Que faisait Saül à ce moment ?"
+     answerA="Il dormait"
+     answerB="Il se soûlait"
+     answerC="Il satisfaisait un besoin naturel"
+     answerD="Il était en transe"
+     answer="A"
+     explanation="Voir 1 Sam 26:7"
+     number="33" />
+
+   <item
+     question="Qui était avec David à ce moment ?"
+     answerA="Abischaï"
+     answerB="Hazaël"
+     answerC="Joab"
+     answerD="Bénaja"
+     answer="A"
+     explanation="Voir 1 Sam 26:6"
+     number="34" />
+
+   <item
+     question="Que recommanda-t-il de faire ? "
+     answerA="Fuir"
+     answerB="Se cacher"
+     answerC="Transpercer Saül avec la lance"
+     answerD="Prier"
+     answer="C"
+     explanation="Voir 1 Sam 26:8"
+     number="35" />
+
+   <item
+     question="David fuit vers le Roi Akisch, qui lui donna une ville où vivre. Quelle ville ? "
+     answerA="Bethlehem"
+     answerB="Tsiklag"
+     answerC="Gath"
+     answerD="Hebron"
+     answer="B"
+     explanation="Voir 1 Sam 27:5,6"
+     number="36" />
+
+   <item
+     question="Le Roi des Philistins ne permit pas à David de se joindre à la bataille. David retourna ensuite vers cette ville. Dans quel état la trouva-t-il ?"
+     answerA="Abandonnée"
+     answerB="En fête"
+     answerC="En deuil"
+     answerD="Complètement détruite"
+     answer="D"
+     explanation="Voir 1 Sam 30:1"
+     number="37" />
+
+   <item
+     question="Saül et son fils moururent à quel endroit ?"
+     answerA="La montagne de Guilboa"
+     answerB="La plaine d'Aphek"
+     answerC="La vallée de Jizreel"
+     answerD="A Jérusalem"
+     answer="A"
+     explanation="Voir 1 Sam 31:1,6"
+     number="38" />
+
+   <item
+     question="Que firent les Philistins avec le corps de Saül ?"
+     answerA="Ils l'enterrèrent"
+     answerB="Ils le brûlèrent"
+     answerC="Ils le lancèrent dans une rivière"
+     answerD="Ils l'attachèrent aux murs de la ville"
+     answer="D"
+     explanation="Voir 1 Sam 31:10"
+     number="39" />
+
+   <item
+     question="Que fit David à l'homme qui se vanta d'avoir tué Saül ?"
+     answerA="Il le récompensa"
+     answerB="Il le tua"
+     answerC="Il le promut"
+     answerD="Il le recruta"
+     answer="B"
+     explanation="Voir 2 Sam 1:15"
+     number="40" />
+
+</bibleQuiz> 

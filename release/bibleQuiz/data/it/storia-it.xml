@@ -1,4 +1,4 @@
-﻿<?xml version='1.0'?>
+<?xml version='1.0' encoding="UTF-8" ?>
 <MyQuiz>
 
    <header 
@@ -26,7 +26,7 @@
      	explanation=""
     	 number="2" />	
    <item
-     	question="La Seconda guerra Punica (216 a.C.) vide protagonisti�" 
+     	question="La Seconda guerra Punica (216 a.C.) vide protagonisti " 
  answerA="Annibale e Fabio Massimo" 
  answerB="Fabio Massimo e Scipione l'Africano" 
  answerC="Scipione l'Africano e Asdrubale" 
@@ -170,7 +170,7 @@
      	explanation=""
     	 number="18" />	
    <item
-     	question="Promosse lo scisma d�Inghilterra e la creazione della chiesa anglicana:" 
+     	question="Promosse lo scisma d Inghilterra e la creazione della chiesa anglicana:" 
  answerA="Edoardo IV" 
  answerB="Guglielmo III" 
  answerC="Carlo VII" 
@@ -188,7 +188,7 @@
      	explanation=""
     	 number="20" />	
    <item
-     	question="Nella seconda met� dell�800 l'Inghilterra possedeva..." 
+     	question="Nella seconda met  dell 800 l'Inghilterra possedeva..." 
  answerA="India e Australia"
  answerB="Canada e Madagascar" 
  answerC="Cipro e Messico" 
@@ -197,8 +197,8 @@
      	explanation=""
     	 number="21" />	
    <item
-     	question="Garibaldi � definito 'l'eroe dei due mondi' perche':" 
- answerA="suscito' le rivolte di alcuni stati africani contro l�oppressione della Francia e della Gran Bretagna" 
+     	question="Garibaldi   definito 'l'eroe dei due mondi' perche':" 
+ answerA="suscito' le rivolte di alcuni stati africani contro l oppressione della Francia e della Gran Bretagna" 
  answerB="combatte' sia in Europa che in Sud America"
  answerC="diede un contributo anche nella guerra di indipendenza americana" 
  answerD="favori' l'annessione del Regno delle Due Sicilie al regno Sabaudo"
@@ -210,7 +210,7 @@
  answerA="venne abrogata la pena di morte"
  answerB="vennero concessi gli assegni di maternita' ed altri sussidi sociali" 
  answerC="venne concesso il diritto di sciopero" 
- answerD="venne esteso l�obbligo scolastico sino a 10 anni"
+ answerD="venne esteso l obbligo scolastico sino a 10 anni"
      	answer="A"
      	explanation=""
     	 number="23" />	
@@ -224,11 +224,11 @@
      	explanation=""
     	 number="24" />	
    <item
-     	question="Quale evento sanc� il definitivo tramonto di Napoleone I Bonaparte?" 
+     	question="Quale evento sanc  il definitivo tramonto di Napoleone I Bonaparte?" 
  answerA="La disfatta di Lipsia" 
  answerB="La battaglia di Trafalgar" 
  answerC="La sconfitta di Waterloo"
- answerD="L�esilio nell'isola d'Elba"
+ answerD="L esilio nell'isola d'Elba"
      	answer="C"
      	explanation=""
     	 number="25" />	
@@ -260,7 +260,7 @@
      	explanation=""
     	 number="28" />	
    <item
-     	question="Nel 1800 chi e' stato il primo re d�Italia?" 
+     	question="Nel 1800 chi e' stato il primo re d Italia?" 
  answerA="Carlo Felice" 
  answerB="Vittorio Emanuele I" 
  answerC="Vittorio Emanuele II"
@@ -269,7 +269,7 @@
      	explanation=""
     	 number="29" />	
    <item
-     	question="L�insurrezione di Genova del 1832-1833 fu organizzata da Mazzini, che in quel periodo era..." 
+     	question="L insurrezione di Genova del 1832-1833 fu organizzata da Mazzini, che in quel periodo era..." 
  answerA="A Roma" 
  answerB="In Austria" 
  answerC="A Marsiglia"
@@ -350,7 +350,7 @@
      	explanation=""
     	 number="38" />	
    <item
-     	question="Nel 1947 una parte dell�India ottenne l'indipendenza e divenne uno stato autonomo, chiamato..."
+     	question="Nel 1947 una parte dell India ottenne l'indipendenza e divenne uno stato autonomo, chiamato..."
  answerA="Cambogia" 
  answerB="Pakistan"
  answerC="Tibet" 
@@ -372,7 +372,7 @@
  answerA="la riforma elettorale che riconobbe il diritto di voto anche alle donne" 
  answerB="la dichiarazione sulla discriminazione razziale"
  answerC="la dichiarazione di dissoluzione del Commonwealth" 
- answerD="la dichiarazione universale dei diritti dell�uomo"
+ answerD="la dichiarazione universale dei diritti dell uomo"
      	answer="B"
      	explanation=""
     	 number="41" />	
@@ -395,11 +395,11 @@
      	explanation=""
     	 number="43" />	
    <item
-     	question="L�ex-presidente americano Reagan fu coinvolto in uno scandalo, passato alla storia come..." 
+     	question="L ex-presidente americano Reagan fu coinvolto in uno scandalo, passato alla storia come..." 
  answerA="Scandalo Profumo" 
  answerB="Irangate"
  answerC="Watergate"
- answerD="L�affaire Dreyfus"
+ answerD="L affaire Dreyfus"
      	answer="B"
      	explanation=""
     	 number="44" />	
@@ -435,7 +435,7 @@
  answerA="Presidente del G8" 
  answerB="Presidente degli Stati Uniti"
  answerC="Presidente del Commonwealth" 
- answerD="Presidente dell�ONU"
+ answerD="Presidente dell ONU"
      	answer="B"
      	explanation=""
     	 number="48" />	

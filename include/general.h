@@ -67,14 +67,14 @@
 #define MAX_BUTTONS         	10
 #define MAX_TOPICS				20
 #define MAX_HIGHSCORE			(MAX_LANGUAGES * MAX_TOPICS)
-#define MAX_QUESTIONS			100
+#define MAX_QUESTIONS			200
 #define MAX_ANSWERS         	4
 #define MAX_RUMBLE				4
 #define MAX_HORZ_PIXELS			640
 #define MAX_VERT_PIXELS			480
 #define MAX_SOUND_VOLUME		10
 #define MAX_BUFFER_SIZE	    	8196
-#define MAX_LEN			 		200
+#define MAX_LEN			 		1024
 #define MAX_MUSIC_TRACK     	10
 #define MAX_ANGLE					360
 #define MAX_ALFA					128
@@ -134,27 +134,27 @@ enum {
 // -----------------------------------------------------------
  
 typedef struct {
-    int  id;
-	char name[MAX_LEN];
-	char translation[MAX_LEN];
-	char topics[MAX_LEN];
+	int  id;
+	char name[MAX_LEN+1];
+	char translation[MAX_LEN+1];
+	char topics[MAX_LEN+1];
 }
 language;
 
 language languages[MAX_LANGUAGES+1];
 
 typedef struct {
-    int  id;
-    char name[MAX_LEN];
-	char filename[MAX_LEN];
+	int  id;
+	char name[MAX_LEN+1];
+	char filename[MAX_LEN+1];
 }
 topic;
 
 typedef struct {
-	char author[MAX_LEN];
-	char topic[MAX_LEN];
-	char timestamp[MAX_LEN];
-	char note[MAX_LEN];
+	char author[MAX_LEN+1];
+	char topic[MAX_LEN+1];
+	char timestamp[MAX_LEN+1];
+	char note[MAX_LEN+1];
 }
 info;
 
@@ -163,13 +163,13 @@ info information;
 topic topics[MAX_TOPICS];
 
 typedef struct {
-   char question[MAX_LEN]; 
-   char answerA[MAX_LEN]; 
-   char answerB[MAX_LEN]; 
-   char answerC[MAX_LEN]; 
-   char answerD[MAX_LEN]; 
+   char question[MAX_LEN+1]; 
+   char answerA[MAX_LEN+1]; 
+   char answerB[MAX_LEN+1]; 
+   char answerC[MAX_LEN+1]; 
+   char answerD[MAX_LEN+1]; 
    int  answer;
-   char explanation[MAX_LEN]; 
+   char explanation[MAX_LEN+1]; 
    bool played;
    bool enabled[4];
    bool done;
@@ -179,48 +179,48 @@ question;
 question questions[MAX_QUESTIONS+1];
 
 typedef struct {
-   char labelWelcome[MAX_LEN];
-	char labelTopic[MAX_LEN];
-	char labelScore[MAX_LEN];
-	char labelCreated[MAX_LEN];
-	char labelQuestion[MAX_LEN];
-	char labelAnswers[MAX_LEN];
-	char labelResult[MAX_LEN];
-	char labelCategory1[MAX_LEN];
-	char labelCategory2[MAX_LEN];
-	char labelCategory3[MAX_LEN];
-	char labelRight[MAX_LEN];
-	char labelWrong[MAX_LEN];
-	char labelAuthor[MAX_LEN];
-	char labelGoodbye[MAX_LEN];
-	char labelMusic[MAX_LEN];
-	char labelEffects[MAX_LEN];
-	char labelHighScore[MAX_LEN];
-	char labelDate[MAX_LEN];
-   char labelHints[MAX_LEN];
-	char labelPlayTime[MAX_LEN];
-	char labelResults[MAX_LEN];
-	char labelHelp[MAX_LEN];
-	char labelTrack[MAX_LEN];
-	char labelNewVersion[MAX_LEN];
+   char labelWelcome[MAX_LEN+1];
+	char labelTopic[MAX_LEN+1];
+	char labelScore[MAX_LEN+1];
+	char labelCreated[MAX_LEN+1];
+	char labelQuestion[MAX_LEN+1];
+	char labelAnswers[MAX_LEN+1];
+	char labelResult[MAX_LEN+1];
+	char labelCategory1[MAX_LEN+1];
+	char labelCategory2[MAX_LEN+1];
+	char labelCategory3[MAX_LEN+1];
+	char labelRight[MAX_LEN+1];
+	char labelWrong[MAX_LEN+1];
+	char labelAuthor[MAX_LEN+1];
+	char labelGoodbye[MAX_LEN+1];
+	char labelMusic[MAX_LEN+1];
+	char labelEffects[MAX_LEN+1];
+	char labelHighScore[MAX_LEN+1];
+	char labelDate[MAX_LEN+1];
+   char labelHints[MAX_LEN+1];
+	char labelPlayTime[MAX_LEN+1];
+	char labelResults[MAX_LEN+1];
+	char labelHelp[MAX_LEN+1];
+	char labelTrack[MAX_LEN+1];
+	char labelNewVersion[MAX_LEN+1];
 		
-	char buttonAnswerA[MAX_LEN];
-	char buttonAnswerB[MAX_LEN];
-	char buttonAnswerC[MAX_LEN];
-	char buttonAnswerD[MAX_LEN];
-	char buttonHint[MAX_LEN];
-	char buttonRetry[MAX_LEN];
-	char buttonPlay[MAX_LEN];
-	char buttonNext[MAX_LEN];
-	char buttonStop[MAX_LEN];
-	char buttonExit1[MAX_LEN];
-	char buttonExit2[MAX_LEN];
-	char buttonContinue[MAX_LEN];
-	char buttonSound[MAX_LEN];
-	char buttonBack[MAX_LEN];
-	char buttonCredits[MAX_LEN];
-	char buttonPrevious[MAX_LEN];
-	char buttonReleaseNotes[MAX_LEN];
+	char buttonAnswerA[MAX_LEN+1];
+	char buttonAnswerB[MAX_LEN+1];
+	char buttonAnswerC[MAX_LEN+1];
+	char buttonAnswerD[MAX_LEN+1];
+	char buttonHint[MAX_LEN+1];
+	char buttonRetry[MAX_LEN+1];
+	char buttonPlay[MAX_LEN+1];
+	char buttonNext[MAX_LEN+1];
+	char buttonStop[MAX_LEN+1];
+	char buttonExit1[MAX_LEN+1];
+	char buttonExit2[MAX_LEN+1];
+	char buttonContinue[MAX_LEN+1];
+	char buttonSound[MAX_LEN+1];
+	char buttonBack[MAX_LEN+1];
+	char buttonCredits[MAX_LEN+1];
+	char buttonPrevious[MAX_LEN+1];
+	char buttonReleaseNotes[MAX_LEN+1];
 }
 trans;
 
@@ -229,7 +229,7 @@ trans translation;
 typedef struct {
    GRRLIB_texImg image;
    GRRLIB_texImg imageSelect;
-   char name[MAX_LEN]; 
+   char name[MAX_LEN+1]; 
    bool enabled;
    int x;
    int y;
@@ -299,7 +299,7 @@ typedef struct {
   int    questions;
   int    hint;
   int    topicId;
-  char   topic[MAX_LEN];
+  char   topic[MAX_LEN+1];
   int    languageId;
 }
 highscore;
@@ -341,10 +341,16 @@ pointer pointers[MAX_POINTERS];
  *   - Update main menu screen information.
  *   - Added italiano translation (Thanks Ezio Soma).
  *  - Core: 
- *   - Added random question mode (Thanks Ezio Soma).
+ *   - Added random question mode.
+ *   - Added UTF-8 xml file support.
+ *   - Proteced internal xml storage from overflow.
+ *   - Validate question data before adding it to question list.
  *  - Content:
  *   - Added 194 (5 topics) italiano questions (Thanks Ezio Soma)
+ *   - Added 80 ( 4 topics) french questions (Thanks )
  *  - Core:
+ *   - Increase question size to 1024 bytes.
+ *   - Cleanup source code
  *   - Build game with devkitPPC r21 compiler
  *
  *  <b>31-03-2010 Version 0.95</b>

@@ -1,4 +1,4 @@
-﻿<?xml version='1.0'?>
+<?xml version='1.0' encoding="UTF-8" ?>
 <MyQuiz>
 
    <header 
@@ -145,7 +145,7 @@
 "
     	 number="15" />	
    <item
-     	question="Come si chiamava il gigante filisteo che sfid� il giovane Davide?"  
+     	question="Come si chiamava il gigante filisteo che sfid  il giovane Davide?"  
   answerA="Ercole" 
   answerB="Sansone" 
   answerC="Golia"
@@ -199,7 +199,7 @@
      	explanation="Leggi (Gio 3, 1-3)"
     	 number="21" />	
    <item
-     	question="Un re sogno' una grande statua fatta di metallo ma con i piedi d'argilla. Poi una pietra la colp� frantumandola. Chi spiego' al re il significato del sogno?"  
+     	question="Un re sogno' una grande statua fatta di metallo ma con i piedi d'argilla. Poi una pietra la colp  frantumandola. Chi spiego' al re il significato del sogno?"  
   answerA="Daniele"
   answerB="Giuseppe" 
   answerC="Isaia" 
