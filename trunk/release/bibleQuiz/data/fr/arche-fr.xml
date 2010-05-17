@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<bibleQuiz>
+
+   <header 
+      topic="L'Arche de Noé"
+      author="www.biblequizzes.com traduit par Feujak"
+      created="10-04-2010"
+      language="fr" 
+      note="Si tu dis: Ah ! Nous ne savions pas !... Celui qui pèse les coeurs ne le voit-il pas ? - Proverbes" />
+
+   <item
+     question="Quel défaut de l'homme entraîna la construction de L'Arche de Noé ?"
+     answerA="La cupidité"
+     answerB="L'envie"
+     answerC="La violence"
+     answerD="La faiblesse"
+     answer="C"
+     explanation="Voir Genèse 6:13-17"
+     number="1" />	
+
+   <item
+     question="De quoi l'arche était-elle fait ?"
+     answerA="De papyrus"
+     answerB="De bois"
+     answerC="De fer"
+     answerD="De bronze"
+     answer="B"
+     explanation="voir Genèse 6:14"
+     number="2" />
+
+   <item
+     question="Quel matériau fut utilisé afin de rendre l'arche étanche ?"
+     answerA="De la colle"
+     answerB="De la sève"
+     answerC="De la bouillie"
+     answerD="Du bitume"
+     answer="D"
+     explanation="Voir Genèse 6:14"
+     number="3" />
+
+   <item
+     question="Quel âge avait Noé quand survint le déluge ?"
+     answerA="150 ans"
+     answerB="600 ans"
+     answerC="500 ans"
+     answerD="800 ans"
+     answer="B"
+     explanation="Voir Genèse 7:6"
+     number="4" />
+
+   <item
+     question="Combien de personnes montèrent dans l'arche ?"
+     answerA="10"
+     answerB="6"
+     answerC="20"
+     answerD="8"
+     answer="D"
+     explanation="Voir Genèse 7:7"
+     number="5" />
+
+   <item
+     question="Pendant combien de temps a-t-il plu ?"
+     answerA="12 jours et 12 nuits"
+     answerB="7 semaines"
+     answerC="40 jours et 40 nuits"
+     answerD="3 mois"
+     answer="C"
+     explanation="Voir Genèse 7:17 "
+     number="6" />
+
+   <item
+     question="Combien d'animaux purs montèrent dans l'arche ?"
+     answerA="1 couple de chaque"
+     answerB="2 couples de chaque"
+     answerC="3 couples de chaque"
+     answerD="7 couples de chaque"
+     answer="D"
+     explanation="Voir Genèse 7:2"
+     number="7" />
+
+   <item
+     question="Qui ferma la porte de l'arche ?"
+     answerA="Noé"
+     answerB="Un de ses fils"
+     answerC="Dieu"
+     answerD="La femme de Noé"
+     answer="C"
+     explanation="Voir Genèse 7:16"
+     number="8" />
+
+   <item
+     question="Combien d'étages avait l'arche ?"
+     answerA="3"
+     answerB="5"
+     answerC="2"
+     answerD="4"
+     answer="A"
+     explanation="Voir Genèse 6:16"
+     number="9" />
+
+   <item
+     question="Jusqu'à quel niveau est-elle montée ? "
+     answerA="Au dessus des maisons"
+     answerB="Au dessus des personnes"
+     answerC="Au dessus des montagnes"
+     answerD="Au dessus des arbres"
+     answer="C"
+     explanation="Voir Genèse 7:19"
+     number="10" />
+
+   <item
+     question="Pendant combien de temps l'arche flotta-t-elle ?"
+     answerA="3 mois"
+     answerB="150 jours"
+     answerC="6 mois"
+     answerD="200 jours"
+     answer="B"
+     explanation="Voir Genèse 8:3"
+     number="11" />
+
+   <item
+     question="Où l'arche s'échoua-t-elle ?"
+     answerA="Les collines de Judé"
+     answerB="Les montagnes d'Ararat"
+     answerC="La vallée d'Eschcol"
+     answerD="La montagne de Galaad"
+     answer="B"
+     explanation="Voir Genèse 8:4"
+     number="12" />
+
+   <item
+     question="Quelle fut la première créature à quitter l'arche ?"
+     answerA="Une vache"
+     answerB="Une colombe"
+     answerC="Un passereau"
+     answerD="Un corbeau"
+     answer="D"
+     explanation="Voir Genèse 8:7"
+     number="13" />
+
+   <item
+     question="Quelle fut la seconde créature à quitter l'arche ?"
+     answerA="Un vache"
+     answerB="Une colombe"
+     answerC="Un passereau"
+     answerD="Un corbeau"
+     answer="B"
+     explanation="Voir Genèse 8:8"
+     number="14" />
+
+   <item
+     question="Qui dit à Noé de quitter l'arche ?"
+     answerA="Son fils"
+     answerB="Un ange"
+     answerC="La femme de Noé"
+     answerD="Dieu"
+     answer="D"
+     explanation="Voir Genèse 8:15"
+     number="15" />
+
+   <item
+     question="Que ramena la colombe lorsqu'elle revint à l'arche ?"
+     answerA="Une brindille"
+     answerB="Un caillou"
+     answerC="Une feuille d'olivier"
+     answerD="Une autre colombe"
+     answer="C"
+     explanation="Voir Genèse 8:11"
+     number="16" />
+
+   <item
+     question="Que fut la première chose que Noé construisit en quittant l'arche ?"
+     answerA="Un autel"
+     answerB="Une maison"
+     answerC="Un hotel"
+     answerD="Un zoo"
+     answer="A"
+     explanation="Voir Genèse 8:20"
+     number="17" />
+
+   <item
+     question="Que promit Dieu à Noé ?"
+     answerA="Le paradis"
+     answerB="Une grande famille"
+     answerC="Plus de déluge"
+     answerD="Une longue vie"
+     answer="C"
+     explanation="Voir Genèse 9:11"
+     number="18" />
+
+   <item
+     question="Quel signe Dieu plaça-t-il pour rappeler cette alliance ?"
+     answerA="Un anneau"
+     answerB="Le feu"
+     answerC="L'arc en ciel"
+     answerD="Le lever du soleil"
+     answer="C"
+     explanation="Voir Genèse 9:13 "
+     number="19" />
+
+   <item
+     question="Pourquoi Noé fut-il sauvé du déluge ?"
+     answerA="C'était un bon constructeur de bateau"
+     answerB="Il était un prédicateur fervent"
+     answerC="Il était un bon fermier"
+     answerD="Il était un homme juste"
+     answer="D"
+     explanation="Voir Genèse 6:9"
+     number="20" />   
+	
+</bibleQuiz> 
+

@@ -1,4 +1,4 @@
-<?xml version='1.0'?>
+<?xml version='1.0' encoding="UTF-8" ?>
 <languages>
       <language name="English" translation="en/english.xml" topics="en/topics-en.xml" id="100" />
       <language name="Nederlands" translation="nl/nederlands.xml" topics="nl/topics-nl.xml" id="200" />

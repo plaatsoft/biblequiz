@@ -1,48 +1,46 @@
-<?xml version='1.0'?>
+<?xml version='1.0' encoding="UTF-8" ?>
 <english>      
       <labelWelcome value='Bienvenue' />
-      <labelTopic value='Matiere' />
-      <labelCreated value='Cree' />
+      <labelTopic value='Sujets' />
+      <labelCreated value='Créé le' />
       <labelScore value='Points' />
       <labelQuestion value='Question' />
       <labelAnswers value='Reponse' />
-      <labelResult value='Comment allez-vous?' />
-      <labelCategory1 value='Wouah, le grand travail!' />
-      <labelCategory2 value='pas le mauvais!' />
-      <labelCategory3 value='Oops, essai encore!' />
-      <labelRight value='Droite' />
-      <labelWrong value='Mal' />
+      <labelResult value='Comment avez vous fait ?' />
+      <labelCategory1 value='Wouah, cest du bon travail !' />
+      <labelCategory2 value='pas mal !' />
+      <labelCategory3 value='Oops, réessayez !' />
+      <labelRight value='Vrai' />
+      <labelWrong value='Faux' />
       <labelAuthor value='Auteur' />
       <labelGoodbye value='Au revoir' />
-      <labelMusic value='Volume de musique ' />
-      <labelEffects value='Effectue le volume' />
-	<labelHighScore value='Hauts points' />
-	<labelDate value='Date' />
- 	<labelHints value='Conseils' />
-	<labelPlayTime value='Duree' />
+      <labelMusic value='Volume de la musique ' />
+      <labelEffects value='Volume des effets' />
+        <labelHighScore value='Hit-scores' />
+        <labelDate value='Date' />
+        <labelHints value='Conseils' />
+        <labelPlayTime value='Durée' />
       <labelResults value='Resultats' />
-	<labelHelp value='Aide' />
-	<labelTrack value='Voie de musique' />
+        <labelHelp value='Aide' />
+        <labelTrack value='Musique' />
       <labelNewVersion value='La nouvelle version est disponible' />
 
       <buttonAnswerA value='Reponse A' />
       <buttonAnswerB value='Reponse B' />
       <buttonAnswerC value='Reponse C' />
       <buttonAnswerD value='Reponse D' />
-      <buttonHint value='Hint' />
-      <buttonRetry value='Tentative' />
-      <buttonPlay value='Jeu' />
-      <buttonNext value='Apres' />
-      <buttonStop value='Arret' />
-      <buttonExit1 value='Sortez a HBC' />
-      <buttonExit2 value='Remise Wii' />
-      <buttonContinue value='Continuez' />
-      <buttonSound value='Bruit' />
-      <buttonBack value='Dos' />
-      <buttonCredits value='Credits' />
-      <buttonPrevious value='Precedent' />
-      <buttonReleaseNotes value='Release Notes'/>
+      <buttonHint value='Joker' />
+      <buttonRetry value='Réessayer' />
+      <buttonPlay value='Jouer' />
+      <buttonNext value='Suivant' />
+      <buttonStop value='Arreter' />
+      <buttonExit1 value='Sortie HBC' />
+      <buttonExit2 value='Redémarrer Wii' />
+      <buttonContinue value='Continuer' />
+      <buttonSound value='Volume' />
+      <buttonBack value='Retour' />
+      <buttonCredits value='Crédits' />
+      <buttonPrevious value='Précédent' />
+      <buttonReleaseNotes value='Notes'/>
  
 </english>
-
-   

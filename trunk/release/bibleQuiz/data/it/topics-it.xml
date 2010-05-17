@@ -1,4 +1,4 @@
-<?xml version='1.0'?>
+<?xml version='1.0' encoding="UTF-8" ?>
 <topics>
    <topic name="Cultura Generale" filename="it/general-it.xml" id="601" />
    <topic name="Letteratura" filename="it/letteratura-it.xml" id="602" />

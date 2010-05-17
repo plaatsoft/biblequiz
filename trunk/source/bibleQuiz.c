@@ -377,41 +377,73 @@ void initHighScore(char* filename) {
    
    /*Load our xml file! */
    fp = fopen(filename, "r");
-   if (fp!=NULL)
-   {
-     tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
-     fclose(fp);
+   if (fp!=NULL) {
+     
+		tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
+		fclose(fp);
 
-     for (data = mxmlFindElement(tree, tree, "topic", NULL, NULL, MXML_DESCEND);
-       data != NULL;
-       data = mxmlFindElement(data, tree, "topic", NULL, NULL, MXML_DESCEND)) {		   
+		for (data = mxmlFindElement(tree, tree, "topic", NULL, NULL, MXML_DESCEND);
+			data != NULL;
+			data = mxmlFindElement(data, tree, "topic", NULL, NULL, MXML_DESCEND)) {		   
 		 
-        tmp=mxmlElementGetAttr(data,"startTime");   
-        if (tmp!=NULL) highscores[maxHighScores].startTime=atoi(tmp); else highscores[maxHighScores].startTime=0;
+			tmp=mxmlElementGetAttr(data,"startTime");   
+			if (tmp!=NULL) {
+				highscores[maxHighScores].startTime=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].startTime=0;
+			}
 		
-		tmp=mxmlElementGetAttr(data,"playTime"); 
-		if (tmp!=NULL) highscores[maxHighScores].playTime=atoi(tmp); else highscores[maxHighScores].playTime=0;
+			tmp=mxmlElementGetAttr(data,"playTime"); 
+			if (tmp!=NULL) {
+				highscores[maxHighScores].playTime=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].playTime=0;
+			}
 		
-		tmp=mxmlElementGetAttr(data,"score"); 
-		if (tmp!=NULL) highscores[maxHighScores].score=atoi(tmp); else highscores[maxHighScores].score=0;
+			tmp=mxmlElementGetAttr(data,"score"); 
+			if (tmp!=NULL) {
+				highscores[maxHighScores].score=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].score=0;
+			}
 		
-		tmp=mxmlElementGetAttr(data,"questions"); 
-		if (tmp!=NULL) highscores[maxHighScores].questions=atoi(tmp); else highscores[maxHighScores].questions=0;
+			tmp=mxmlElementGetAttr(data,"questions"); 
+			if (tmp!=NULL) {
+				highscores[maxHighScores].questions=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].questions=0;
+			}
 				
-		tmp=mxmlElementGetAttr(data,"hint"); 
-		if (tmp!=NULL) highscores[maxHighScores].hint=atoi(tmp); else highscores[maxHighScores].hint=0;
+			tmp=mxmlElementGetAttr(data,"hint"); 
+			if (tmp!=NULL) {
+				highscores[maxHighScores].hint=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].hint=0;
+			}
 
-		tmp=mxmlElementGetAttr(data,"topicId"); 
-		if (tmp!=NULL) highscores[maxHighScores].topicId=atoi(tmp); else highscores[maxHighScores].topicId=0;
+			tmp=mxmlElementGetAttr(data,"topicId"); 
+			if (tmp!=NULL) {
+				highscores[maxHighScores].topicId=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].topicId=0;
+			}
 
-        tmp=mxmlElementGetAttr(data,"topic"); 
-		if (tmp!=NULL) strcpy(highscores[maxHighScores].topic,tmp); else strcpy(highscores[maxHighScores].topic,"");
+			tmp=mxmlElementGetAttr(data,"topic"); 
+			if (tmp!=NULL) {
+				strncpy(highscores[maxHighScores].topic,tmp, MAX_LEN); 
+			} else {
+				strcpy(highscores[maxHighScores].topic,"");
+			}
 		
-		tmp=mxmlElementGetAttr(data,"languageId"); 
-		if (tmp!=NULL) highscores[maxHighScores].languageId=atoi(tmp); else highscores[maxHighScores].languageId=0;
+			tmp=mxmlElementGetAttr(data,"languageId"); 
+			if (tmp!=NULL) {
+				highscores[maxHighScores].languageId=atoi(tmp); 
+			} else {
+				highscores[maxHighScores].languageId=0;
+			}
 		
-		maxHighScores++;
-	 } 
+			maxHighScores++;
+		} 
    }   
    mxmlDelete(data);
    mxmlDelete(tree);
@@ -440,7 +472,7 @@ void processHighScore(void) {
 				highscores[i].questions=maxQuestions;
 				highscores[i].hint=hintCounter;
 				highscores[i].topicId=topics[selectedTopic].id;
-				strcpy(highscores[i].topic,topics[selectedTopic].name);
+				strncpy(highscores[i].topic,topics[selectedTopic].name, MAX_LEN);
 				highscores[i].languageId=languages[selectedLanguage].id;
 			   
 				// Store updated high score in file
@@ -459,7 +491,7 @@ void processHighScore(void) {
 		highscores[maxHighScores].questions=maxQuestions;
 		highscores[maxHighScores].hint=hintCounter;
 		highscores[maxHighScores].topicId=topics[selectedTopic].id;
-		strcpy(highscores[maxHighScores].topic,topics[selectedTopic].name);
+		strncpy(highscores[maxHighScores].topic,topics[selectedTopic].name, MAX_LEN);
 		highscores[maxHighScores].languageId=languages[selectedLanguage].id;
 		maxHighScores++;
 	  
@@ -569,21 +601,21 @@ void initLanguages(char* filename)
 		  
       pointer=mxmlElementGetAttr(group,"name");
 		if (pointer!=NULL)  {
-			strcpy(languages[maxLanguages].name,pointer); 
+			strncpy(languages[maxLanguages].name,pointer,MAX_LEN); 
 		} else {
 			strcpy(languages[maxLanguages].name,"");
 		}
 	  	  
       pointer=mxmlElementGetAttr(group,"translation");
       if (pointer!=NULL) {
-			strcpy(languages[maxLanguages].translation,pointer); 
+			strncpy(languages[maxLanguages].translation,pointer,MAX_LEN); 
 		} else { 
 			strcpy(languages[maxLanguages].translation,"");
 		}
 	  
       pointer=mxmlElementGetAttr(group,"topics");
       if (pointer!=NULL) { 
-			strcpy(languages[maxLanguages].topics,pointer); 
+			strncpy(languages[maxLanguages].topics,pointer,MAX_LEN); 
 		} else {
 			strcpy(languages[maxLanguages].topics,"");
 		}
@@ -655,7 +687,6 @@ void initMusicTrack(void)
 	traceEvent(s_fn,0,"leave [void]");
 }
 
-
 void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 
    char *s_fn="storeXmlValue";
@@ -668,7 +699,7 @@ void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 	pointer=mxmlElementGetAttr(group,"value");
   
 	if (pointer!=NULL) {
-     strcpy(value,pointer); 
+     strncpy(value,pointer,MAX_LEN); 
 	} else  {  
      strcpy(value,"");
 	}
@@ -676,7 +707,6 @@ void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 	
 	traceEvent(s_fn,0,"leave [void]");
 }
-
 
 void initTranslation(char* filename) {
 	  
@@ -778,7 +808,6 @@ void initTopics(char* filename) {
    char *s_fn="initTopics";
    traceEvent(s_fn,0,"enter");
    
-   
    maxTopics=0;
 
    FILE *fp;
@@ -807,14 +836,14 @@ void initTopics(char* filename) {
    {		  
 			pointer=mxmlElementGetAttr(group,"name");
 			if (pointer!=NULL) {
-				strcpy(topics[maxTopics].name,pointer); 
+				strncpy(topics[maxTopics].name,pointer,MAX_LEN); 
 			} else {
 				strcpy(topics[maxTopics].name,"");
 			}
 	  
 			pointer=mxmlElementGetAttr(group,"filename");
 			if (pointer!=NULL) {
-				strcpy(topics[maxTopics].filename,pointer); 
+				strncpy(topics[maxTopics].filename,pointer, MAX_LEN); 
 			} else {
 				strcpy(topics[maxTopics].filename,"");
 			}
@@ -851,13 +880,10 @@ void initQuestions(char* filename)
    
    /*Load our xml file! */
    fp = fopen(tmp, "r");
-   if (fp!=NULL)
-   {   
+   if (fp!=NULL) {   
       tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
       fclose(fp);
-   }
-   else
-   {
+   } else {
       // If file is not found, return direct
 	  maxQuestions=-1;
       return;
@@ -867,102 +893,115 @@ void initQuestions(char* filename)
    group = mxmlFindElement(tree, tree, "header", NULL, NULL, MXML_DESCEND);  
 	 
    pointer=mxmlElementGetAttr(group,"topic");
-   if (pointer!=NULL) strcpy(information.topic,pointer); else strcpy(information.topic,"");
+   if (pointer!=NULL) {
+		strncpy(information.topic,pointer,MAX_LEN); 
+	} else {
+		strcpy(information.topic,"");
+	}
 	  
    pointer=mxmlElementGetAttr(group,"author");
-   if (pointer!=NULL) strcpy(information.author,pointer); else strcpy(information.author,"");
+   if (pointer!=NULL) {
+		strncpy(information.author,pointer,MAX_LEN); 
+	} else {
+		strcpy(information.author,"");
+	}
    
    pointer=mxmlElementGetAttr(group,"created");
-   if (pointer!=NULL) strcpy(information.timestamp,pointer); else strcpy(information.timestamp,"");
+   if (pointer!=NULL) {
+		strncpy(information.timestamp,pointer, MAX_LEN); 
+	} else {
+		strcpy(information.timestamp,"");
+	}
 
    pointer=mxmlElementGetAttr(group,"note");
-   if (pointer!=NULL) strcpy(information.note,pointer); else strcpy(information.note,"");
+   if (pointer!=NULL) {
+		strncpy(information.note,pointer,MAX_LEN); 
+	} else {
+		strcpy(information.note,"");
+	}
 
    // Read Questions
    for (group = mxmlFindElement(tree, tree, "item", NULL, NULL, MXML_DESCEND);
         group != NULL;
         group = mxmlFindElement(group, tree, "item", NULL, NULL, MXML_DESCEND))
    {		  
+		// Initial new question
+		strcpy(questions[maxQuestions].question,"");
+		strcpy(questions[maxQuestions].explanation,"");
+		
+		strcpy(questions[maxQuestions].answerA,"");
+		strcpy(questions[maxQuestions].answerB,"");
+		strcpy(questions[maxQuestions].answerC,"");
+		strcpy(questions[maxQuestions].answerD,"");
+			
+		questions[maxQuestions].enabled[0]=false;
+		questions[maxQuestions].enabled[1]=false;
+		questions[maxQuestions].enabled[2]=false;
+		questions[maxQuestions].enabled[3]=false;
+		  
+		questions[maxQuestions].answer=0;		
+		questions[maxQuestions].done=false;	 		 
+		questions[maxQuestions].played=false;
+  
+		// Fill in question data from xml file
+		
       pointer=mxmlElementGetAttr(group,"question");
-	  if ((pointer!=NULL) && (strlen(pointer)>0))
-	  {
-	      strcpy(questions[maxQuestions].question,pointer); 
-	  }  
-	  else 
-	  {  
-	     strcpy(questions[maxQuestions].question,"");
-	  }
+		if ((pointer!=NULL) && (strlen(pointer)>0)) {
+	      strncpy(questions[maxQuestions].question,pointer, MAX_LEN); 
+		} 
 	  
       pointer=mxmlElementGetAttr(group,"answerA");
-      if ((pointer!=NULL) && (strlen(pointer)>0))
-	  {
-	     strcpy(questions[maxQuestions].answerA,pointer);
-		 questions[maxQuestions].enabled[0]=true; 
-      }
-      else 
-	  {
-	     strcpy(questions[maxQuestions].answerA,"");
-		 questions[maxQuestions].enabled[0]=false;
-	  }
+      if ((pointer!=NULL) && (strlen(pointer)>0)) {
+			strncpy(questions[maxQuestions].answerA,pointer, MAX_LEN);
+			questions[maxQuestions].enabled[0]=true; 
+		}
   
       pointer=mxmlElementGetAttr(group,"answerB");
-      if ((pointer!=NULL) && (strlen(pointer)>0))
-      {  
+      if ((pointer!=NULL) && (strlen(pointer)>0)) {  
 	      questions[maxQuestions].enabled[1]=true;
-          strcpy(questions[maxQuestions].answerB,pointer); 
-	  }
-	  else 
-	  {
-	      strcpy(questions[maxQuestions].answerB,"");
-		  questions[maxQuestions].enabled[1]=false;
-      }
+          strncpy(questions[maxQuestions].answerB,pointer,MAX_LEN); 
+		} 
   
       pointer=mxmlElementGetAttr(group,"answerC");
-      if ((pointer!=NULL) && (strlen(pointer)>0))
-	  {
+      if ((pointer!=NULL) && (strlen(pointer)>0)) {
 	      questions[maxQuestions].enabled[2]=true;
-	      strcpy(questions[maxQuestions].answerC,pointer); 
-	  }
-	  else 
-	  {
-	      strcpy(questions[maxQuestions].answerC,"");
-		  questions[maxQuestions].enabled[2]=false;
-	  }
+	      strncpy(questions[maxQuestions].answerC,pointer, MAX_LEN); 
+		} 
   
       pointer=mxmlElementGetAttr(group,"answerD");
-      if ((pointer!=NULL) && (strlen(pointer)>0))
-      { 
+      if ((pointer!=NULL) && (strlen(pointer)>0)) { 
 	      questions[maxQuestions].enabled[3]=true;
-	      strcpy(questions[maxQuestions].answerD,pointer);  
-      }
-      else 
-	  { 
-	      strcpy(questions[maxQuestions].answerD,"");
-		  questions[maxQuestions].enabled[3]=false;
-	  }
-	  
-	  //reset the "done" flag
-	  
-	  questions[maxQuestions].done=false;
-
-    
+	      strncpy(questions[maxQuestions].answerD,pointer, MAX_LEN);  
+      } 
+	 
       pointer=mxmlElementGetAttr(group,"answer");
-      if (pointer!=NULL) 
-	  {
-	     // Convert (A,B,C,D) to (1,2,3,4)
+      if (pointer!=NULL) {
+		
+			// Convert (A,B,C,D) to (1,2,3,4)
          questions[maxQuestions].answer=pointer[0]-64;  
-	  }
-	  else
-	  {
-	     questions[maxQuestions].answer=0;
-	  }
+			
+			// Validate answer
+			if ((questions[maxQuestions].answer<0) || 
+			   (questions[maxQuestions].answer>4)) {
+				questions[maxQuestions].answer=0;
+			}
+		} 
 		 
-	  pointer=mxmlElementGetAttr(group,"explanation");	 
-	  if (pointer!=NULL) strcpy(questions[maxQuestions].explanation,pointer); else strcpy(questions[maxQuestions].explanation,"");
-		 		 
-	  questions[maxQuestions].played=false;
-	  
-	  maxQuestions++;
+		pointer=mxmlElementGetAttr(group,"explanation");	 
+		if (pointer!=NULL) {
+			strncpy(questions[maxQuestions].explanation,pointer, MAX_LEN); 
+		}
+		
+		
+		if ((strlen(questions[maxQuestions].question)>0) &&
+			 ((questions[maxQuestions].enabled[0]) ||
+			  (questions[maxQuestions].enabled[1]) ||
+			  (questions[maxQuestions].enabled[2]) || 
+			  (questions[maxQuestions].enabled[3])) ) {
+		
+			// Valide question, data ok, keep it
+			maxQuestions++;
+		}
    }
      
    mxmlDelete(group);
@@ -1574,18 +1613,21 @@ void initStateMachine( void )
 void nextquestion(void) {
 
 	//select a random question
-	//srand(10000);
-	while (maxQuestions<=(
-		rndSelectedQuestion=(int)(((double)rand() / 
-		   ((double)(RAND_MAX)+(double)(1)) ) * maxQuestions+1)));
-
-	//if question already done increment of 1 and go to the next question
-	while(questions[rndSelectedQuestion].done) {
-		rndSelectedQuestion = ((rndSelectedQuestion+1) % maxQuestions)+1;
+	int count=0;
+	
+	bool found=false;
+	while (!found) {
+		
+		rndSelectedQuestion=(rand() % maxQuestions)+1;
+		if (!questions[rndSelectedQuestion].done) {
+			found=true;
+		}
+		if (++count>1000) {
+			break;
+		}
 	}
 	questions[rndSelectedQuestion].done=true;
 }
-
 
 // -----------------------------------------------------------
 // BUTTON LOGIC
@@ -1727,14 +1769,22 @@ void buttonExit(int index) {
    }
 }
 
-
+/** 
+ * Next question
+ */
 void buttonNext(void) {
-   if (++selectedQuestion>=maxQuestions) {	
-      playTime = time(NULL)-startTime; 
+   
+	if (++selectedQuestion>=maxQuestions) {	
+   
+		// Quiz ended
+		playTime = time(NULL)-startTime; 
       processHighScore();
       stateMachine=stateResult;
+		
    } else {
-	  nextquestion();
+	
+		// Next question
+		nextquestion();
       stateMachine=stateQuestion;
    }
 }
@@ -2185,7 +2235,7 @@ void drawText(int x, int y, int type, char *text) {
 
 void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize) 
 {
-   char tmp[MAX_LEN];
+   char tmp[MAX_LEN+1];
    int startIndex=0;
    int lastSpace=0;
    int endIndex=strlen(input);
@@ -2193,7 +2243,7 @@ void drawWordwrap(char *input, int x, int y, int maxLineWidth, int stepSize)
    int i,z=0;
 
     // Make local copy   
-   strcpy(tmp,input);
+   strncpy(tmp,input, MAX_LEN);
 		
    for (i=0; i<endIndex; i++)
    {
@@ -2661,11 +2711,11 @@ void drawHelpScreen(void) {
 	int  ypos=yOffset+80;
 	char tmp[MAX_LEN];
 
-    // Draw panel
-    GRRLIB_DrawImg(10,60, images.panel2, 0, 1, 1, IMAGE_COLOR );
+   // Draw panel
+   GRRLIB_DrawImg(10,60, images.panel2, 0, 1, 1, IMAGE_COLOR );
  		
-    // Draw Help icon
-    GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset, images.question, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
+   // Draw Help icon
+   GRRLIB_DrawImg(ICON_X,ICON_Y+yOffset, images.question, 0, ICON_ZOOM, ICON_ZOOM, IMAGE_COLOR );
 	
 	// Draw Image
 	ypos+=25;

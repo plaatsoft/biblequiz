@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<bibleQuiz>
+
+   <header 
+      topic='La création de la Terre'
+      author='www.biblequizzes.com traduit par Feujak'
+      created='09-04-2010'
+      language='fr' 
+      note="Si tu dis: Ah ! Nous ne savions pas !... Celui qui pèse les coeurs ne le voit-il pas ? - Proverbes" />
+
+   <item
+     question='Comment était la Terre avant la création du monde tel que nous le connaissons ?'
+     answerA='Plate'
+     answerB='Lumineuse'
+     answerC='Vide'
+     answerD='Habitée par des hommes poissons' 
+     answer='C'
+     number='1' />      
+
+   <item
+     question='Combien Dieu a-t-il mis de jours pour créer le monde ?'
+     answerA='5 jours'
+     answerB='indéfini'
+     answerC='7 jours'
+     answerD="8 millions d'années" 
+     answer='C'
+     number='2' />
+
+   <item
+     question='Au premier jour, Dieu vit que la lumière ...'
+     answerA='était brillante'
+     answerB='était trop faible'
+     answerC="n'était pas"
+     answerD='était bonne' 
+     answer='D'
+     number='3' />
+
+   <item
+     question='Afin d illuminer le monde au quatrième jour, combien Dieu créa-t-il de grand luminaire ?'
+     answerA='Un'
+     answerB='Deux'
+     answerC='Trois'
+     answerD='Quatre' 
+     answer='A'
+     number='4' />
+
+   <item
+     question='Quel jour les boeufs furent-ils créés ?'
+     answerA='Sixième'
+     answerB='Troisième'
+     answerC='Cinquième'
+     answerD='Deuxième' 
+     answer='D'
+     number='5' />
+
+   <item
+     question="Dieu appela le sec ______, et il appela l'amas des eaux ______."
+     answerA='sable/océans'
+     answerB='sable/lac'
+     answerC='terre/mers'
+     answerD='terre/marais' 
+     answer='C'
+     number='6' />
+
+   <item
+     question="Quel jour l'homme fut-il créé ?"
+     answerA='Deuxième'
+     answerB='Quatrième'
+     answerC='Sixième'
+     answerD='Septième' 
+     answer='C'
+     number='7' />
+
+   <item
+     question='Les oiseaux furent créés le même jour que :'
+     answerA='le paradis'
+     answerB='la terre et la mer'
+     answerC='les animaux terrestres'
+     answerD='les poissons' 
+     answer='C'
+     number='8' />
+
+   <item
+     question='Sur quelle partie de la création Dieu donna-t-il la domination à l homme ?'
+     answerA='Tout sur la terre ferme'
+     answerB='Tout dans les mers'
+     answerC='Les animaux et les choses qui rampent'
+     answerD='Toute la Terre' 
+     answer='D'
+     number='9' />
+
+   <item
+     question='A partir de quoi fut créé le premier homme ?'
+     answerA='Un singe'
+     answerB='De la poussière'
+     answerC='Des feuilles'
+     answerD='Des branches d arbres' 
+     answer='B'
+     number='10' />
+        
+</bibleQuiz> 
+
+
+
+

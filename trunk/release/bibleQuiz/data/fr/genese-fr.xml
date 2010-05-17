@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding="UTF-8"  ?>
+<bibleQuiz>
+
+   <header 
+      topic="La Genèse"
+     author="www.biblequizzes.com traduit par Feujak"
+      created="10-04-2010"
+      language="fr" 
+      note="Laissez votre travail parler pour lui-même, ne l'interrompez pas. - Edgar J. Kaiser" />
+
+   <item
+     question="Que fera le serpent aux hommes en punition pour ce qu'il a fait dans le jardin d'Eden ?"
+     answerA="Il les tuera"
+     answerB="Il les mangera"
+     answerC="Il les utilisera"
+     answerD="Il leur mordra le talon" 
+     answer="D" 
+     number="1" />	
+
+  <item
+     question="Quelle nouriture Dieu donna-t-il à tous les animaux ?"
+     answerA="Les autres animaux"
+     answerB="Les plantes"
+     answerC="Les hommes"
+     answerD="Les poissons"
+     answer="B"
+     number="2"  />
+
+  <item
+     question="Le serpent parvint à persuader Eve de :"
+     answerA="manger le fruit défendu"
+     answerB="lui donner à manger"
+     answerC="quitter le jadin d'Eden"
+     answerD="faire manger de l'arbre interdit à son mari"
+     answer="A" 
+     number="3" />
+
+  <item
+     question="Combien y a-t-il de générations entre Adam et Noé ? (Adam et Noé compris)"
+     answerA="15"
+     answerB="13"
+     answerC="10"
+     answerD="6"
+     answer="C"
+     number="4" />
+
+  <item
+     question="Quel est le nom du premier fils d'Adam ?"
+     answerA="Caïn"
+     answerB="Abel"
+     answerC="Seth"
+     answerD="Lémec"
+     answer="A"
+     number="5" />
+
+  <item 
+     question="Qui planta le jardin d'Eden?"
+     answerA="Adam et Eve"
+     answerB="Dieu"
+     answerC="Les anges"
+     answerD="Adam"
+     answer="B"
+     number="6" />
+	
+  <item
+     question="De qui Dieu accepta-t-il l'offrande?"
+     answerA="Caïn"
+     answerB="Des Deux"
+     answerC="Abel"
+     answerD="Aucun"
+     answer="C"
+     number="7" />
+
+  <item
+     question="Quel animal était le plus malin de tous ?"
+     answerA="Le singe"
+     answerB="Le serpent"
+     answerC="Le lion"
+     answerD="L'aigle"
+     answer="B"
+     number="8" />
+
+  <item
+     question="Que fit Adam à tous les animaux ?"
+     answerA="Il leur donna à manger"
+     answerB="Il les offrit en sacrifice à Dieu"
+     answerC="Il les goûta pour savoir lesquels étaient bons à manger"
+     answerD="Il leur donna des noms"
+     answer="D" 
+     number="9" />
+  
+  <item
+     question="Quelle offrande Caïn fit-il à Dieu ?"
+     answerA="Un repas"
+     answerB="De l'eau"
+     answerC="Les produits du sol"
+     answerD="Des animaux"
+     answer="C" 
+     number="10" />
+
+</bibleQuiz> 
