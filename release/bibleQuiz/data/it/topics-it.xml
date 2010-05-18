@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 <topics>
-   <topic name="Cultura Generale" filename="it/general-it.xml" id="601" />
+   <topic name="Generale" filename="it/general-it.xml" id="601" />
    <topic name="Letteratura" filename="it/letteratura-it.xml" id="602" />
    <topic name="Storia" filename="it/storia-it.xml" id="603" />
-   <topic name="Anticotestamento" filename="it/anticotestamento-it.xml" id="604" />
-   <topic name="Nuovotestamento" filename="it/nuovotestamento-it.xml" id="605" />
+   <topic name="Antico test." filename="it/anticotestamento-it.xml" id="604" />
+   <topic name="Nuovo test." filename="it/nuovotestamento-it.xml" id="605" />
    <topic name="Vitadigesu" filename="it/vitadigesu-it.xml" id="606" />
 </topics>
 
