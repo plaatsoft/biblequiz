@@ -31,12 +31,12 @@
 
 #define PROGRAM_NAME	    		"BibleQuiz"
 #define PROGRAM_VERSION     	"0.96"
-#define RELEASE_DATE        	"17-04-2009" 
+#define RELEASE_DATE        	"18-04-2009" 
 
 #define FILENAME_LANGUAGES  	"languages.xml"
 #define DATA_DIRECTORY      	"sd:/apps/bibleQuiz/data"
 #define HIGHSCORE_FILENAME  	"sd:/apps/bibleQuiz/highscore.xml"
-#define TRACE_FILENAME      	"sd:/apps/bibleQuiz/biblequiz.trc"
+#define TRACE_FILENAME      	"sd:/apps/bibleQuiz/BibleQuiz.trc"
 #define GAME_DIRECTORY      	"sd:/apps/bibleQuiz/"
 #define URL_TOKEN           	" Version "
 
@@ -337,20 +337,22 @@ pointer pointers[MAX_POINTERS];
  *   Documentation: wplaat\n
  *
  * @section ReleaseNotes
- *  <b>17-05-2010 Version 0.96</b>
+ *  <b>18-05-2010 Version 0.96</b>
  *  - GUI:
- *   - Update main menu screen information.
- *   - Added italiano translation (Thanks Ezio Soma).
+ *   - Update main menu screen layout and information.
  *  - Core: 
  *   - Added random question mode.
  *   - Added UTF-8 xml file support.
  *   - Proteced internal xml storage from overflow.
  *   - Validate question data before adding it to question list.
- *  - Content:
- *   - Added 194 (5 topics) italiano questions (Thanks Ezio Soma)
- *   - Added 80 ( 4 topics) french questions (Thanks )
- *  - Core:
  *   - Increase question size to 1024 bytes.
+ *   - Improve debug trace mode.
+ *  - Content:
+ *   - Added italiano translation (Thanks Ezio Soma).
+ *   - Improve french translation (Thanks David Lecoeuvre).
+ *   - Added 194 (5 topics) italiano questions (Thanks Ezio Soma)
+ *   - Added 80 ( 4 topics) french questions (Thanks David Lecoeuvre)
+ *  - General:
  *   - Cleanup source code
  *   - Build game with devkitPPC r21 compiler
  *

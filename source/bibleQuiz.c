@@ -689,7 +689,7 @@ void initMusicTrack(void)
 void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 
    char *s_fn="storeXmlValue";
-   traceEvent(s_fn,0,"enter [%s=%s]", key, value);
+   traceEvent(s_fn,0,"enter");
     
 	mxml_node_t *group;
 	const char  *pointer;
@@ -704,6 +704,7 @@ void storeXmlValue(mxml_node_t *tree, char *key, char *value) {
 	}
 	mxmlDelete(group);   
 	
+	traceEvent(s_fn,0,"%s=%s [%d]", key, value, strlen(pointer));
 	traceEvent(s_fn,0,"leave");
 }
 
@@ -900,6 +901,7 @@ void initQuestions(char* filename)
 	} else {
 		strcpy(information.topic,"");
 	}
+	traceEvent(s_fn,0,"Topic=[%s]",information.topic);
 	  
    pointer=mxmlElementGetAttr(group,"author");
    if (pointer!=NULL) {
@@ -907,6 +909,7 @@ void initQuestions(char* filename)
 	} else {
 		strcpy(information.author,"");
 	}
+	traceEvent(s_fn,0,"Author=[%s]",information.author);
    
    pointer=mxmlElementGetAttr(group,"created");
    if (pointer!=NULL) {
@@ -914,6 +917,7 @@ void initQuestions(char* filename)
 	} else {
 		strcpy(information.timestamp,"");
 	}
+	traceEvent(s_fn,0,"Timestamp=[%s]",information.timestamp);
 
    pointer=mxmlElementGetAttr(group,"note");
    if (pointer!=NULL) {
@@ -921,6 +925,7 @@ void initQuestions(char* filename)
 	} else {
 		strcpy(information.note,"");
 	}
+	traceEvent(s_fn,0,"Note=[%s]",information.note);
 
    // Read Questions
    for (group = mxmlFindElement(tree, tree, "item", NULL, NULL, MXML_DESCEND);
