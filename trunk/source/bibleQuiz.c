@@ -1001,6 +1001,10 @@ void initQuestions(char* filename)
 			questions[maxQuestions].id=atoi(pointer);
 		}
 		
+		traceEvent(s_fn,0,"Question [%d] [%s]"
+		 ,maxQuestions
+		 ,questions[maxQuestions].question);
+		
 		// Validate question.
 		if ((strlen(questions[maxQuestions].question)>0) &&
 			 ((questions[maxQuestions].enabled[0]) ||
@@ -2903,7 +2907,7 @@ void drawBannerInfo() {
    drawText(240, yOffset, fontHead, tmp);
    	  
    sprintf(tmp,"%s %02d", translation.labelScore, score);
-   drawText(445+(115-((strlen(tmp)*14)/2)), yOffset, fontHead, tmp);
+   drawText(425+(115-((strlen(tmp)*14)/2)), yOffset, fontHead, tmp);
 }
 
 void drawGameboard() { 
