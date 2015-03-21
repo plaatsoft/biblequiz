@@ -1,0 +1,10 @@
+# Introduction #
+
+This project contains the source code of the BibleQuiz Wii Nintendo game.
+
+# Details #
+
+If you have any comments please let me known.
+
+Checkout also my website
+http://www.plaatsoft.nl
