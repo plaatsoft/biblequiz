@@ -323,7 +323,6 @@ pointer pointers[MAX_POINTERS];
 
 /** 
  * @mainpage Wii BibleQuiz Documentation
- * @image html BibleQuiz.png
  *   Welcome to the BibleQuiz documentation.
  *
  * @section Introduction
